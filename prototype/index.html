@@ -230,7 +230,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
 <!-- utility bar + header -->
 <div class="util"><div class="wrap">
   <span class="trust">Tests ordered by clinicians · Reports in 7–10 days · Collection centres in 4 cities</span>
-  <span>Clinician desk <b>{{PRIMARY_PHONE}}</b> · WhatsApp <b>{{WHATSAPP}}</b></span>
+  <span>Clinician desk <b>+91 81462 17196</b> · WhatsApp <b>+91 81462 17196</b> <small>(proposed single number, to confirm)</small></span>
 </div></div>
 <header class="site-head"><div class="wrap">
   <a class="logo" href="#home" data-go="home"><span class="mark" aria-hidden="true"></span><span class="word"><b>EMBRYOGENESIS</b><span>Redefining Fertility Evaluation</span></span></a>
@@ -244,7 +244,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
     <a href="#contact" data-go="contact">Contact</a>
   </nav>
   <div class="actions">
-    <span class="btn pill phone-pill">☏ {{PRIMARY_PHONE}}</span>
+    <span class="btn pill phone-pill">☏ +91 81462 17196</span>
     <a class="btn primary" href="#partner" data-go="partner">Become a Collection Partner</a>
   </div>
 </div></header>
@@ -255,7 +255,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
     <div class="photo">
       <span class="eyebrow">Endometrial diagnostics laboratory · Mohali, India</span>
       <h1>Specialised endometrial testing for IVF clinics across India</h1>
-      <p>Infection, immune and receptivity panels from a single biopsy, reported to the treating clinician in 7 to 10 days.</p>
+      <p>If the embryo is the seed, the endometrium is the soil. We test the soil: infection, immune balance, maturation and receptivity from one biopsy, reported to the treating clinician in 7 to 10 days.</p>
       <div class="row"><a class="btn gold" href="#clinicians" data-go="clinicians">View the test menu</a><a class="btn ghost" href="#partner" data-go="partner">Partner with us</a></div>
     </div>
     <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
@@ -307,7 +307,8 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
       <div><div class="ico">EIT</div><div><h3>Endometrial Infection Test</h3><p>Detects chronic endometritis. ESHRE (2023): testing can be considered in recurrent implantation failure. <a href="#test" data-go="test">Details</a></p></div></div>
       <div><div class="ico">ERFA</div><div><h3>ERFA · Endometrial Receptivity &amp; Function Assay</h3><p>Assesses the implantation window. Patent application published. Evidence for routine use still developing. <a href="#test" data-go="test">Details</a></p></div></div>
       <div><div class="ico">EIP</div><div><h3>Endo-Immune Test</h3><p>Uterine NK cells and cytokine profile for selected RIF / RPL cases. <a href="#test" data-go="test">Details</a></p></div></div>
-      <div><div class="ico">PX</div><div><h3>Receptivity PX</h3><p>{{ONE_LINE_DESCRIPTION}} Patent application published. <a href="#test" data-go="test">Details</a></p></div></div>
+      <div><div class="ico">ERMA</div><div><h3>ERMA · Endometrial Receptivity &amp; Maturation Analysis</h3><p>Adhesion and anti-adhesion molecules at the window of implantation. Patent application published (2022). <a href="#test" data-go="test">Details</a></p></div></div>
+      <div><div class="ico">TB</div><div><h3>Genital TB PCR (add-on)</h3><p>Screened on the same biopsy at the physician's request.</p></div></div>
     </div></div>
     <div class="panel" id="t2" hidden><div class="svc">
       <div><div class="ico">01</div><div><h3>Ordering &amp; kits</h3><p>Request form, pre-labelled kits, unique sample IDs.</p></div></div>
@@ -336,11 +337,12 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
   <div class="band"><div class="wrap stack">
     <div class="center stack"><h2>Our collection centres</h2><p class="sub">Samples can be given at any centre below and reach the Mohali laboratory within 48 hours.</p></div>
     <div class="centres">
-      <div class="centre"><b>Mohali · Main laboratory</b><span>Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab {{PIN}}</span></div>
+      <div class="centre"><b>Mohali · Central laboratory</b><span>Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University Campus, VPO Sahauran, Kharar, Mohali, Punjab 140302</span></div>
       <div class="centre"><b>Navi Mumbai</b><span>Nirmal Multi Speciality Hospital, Kopar Khairane</span></div>
-      <div class="centre"><b>Udaipur</b><span>Shree B.L. Jain Memorial Hospital, Savina</span></div>
+      <div class="centre"><b>Udaipur</b><span>Shree B.L. Jain Memorial Hospital, Savina {{CONFIRM: brochure lists Narayani Women's Hospital}}</span></div>
       <div class="centre"><b>Jalandhar</b><span>Advance Fertility Services &amp; IVF Centre, Kapurthala Road</span></div>
     </div>
+    <p class="quiet center">The 2024 brochure also lists New Delhi (Najafgarh), Ahmedabad, Bikaner and Panchkula. {{CONFIRM which centres are active and consent to be named}}</p>
     <div class="center"><a class="btn outline" href="#partner" data-go="partner">Add your hospital to the network</a></div>
   </div></div>
 
@@ -363,9 +365,11 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
   <div class="band"><div class="wrap stack center">
     <h2>Affiliations and recognition</h2>
     <div class="logos">
-      <div>Bahra University, HP</div><div>Rayat Bahra University, Mohali</div><div>ITHS</div><div>Guru Ghasidas Vishwavidyalaya (MoU)</div><div>NBHC 2024, IIT Delhi · Best Innovator Award (founder)</div><div>ORCID 0000-0002-8814-9939</div>
+      <div>Rayat Bahra University, Mohali · academic partner</div><div>Bahra University, HP · academic partner</div><div>ITHS · knowledge partner</div><div>Indian Fertility Society · life member IFS-2900</div><div>MSME / Udyam {{NO}}</div><div>ISO {{STANDARD &amp; CERT NO}}</div><div>NBHC 2024, IIT Delhi · Best Innovator Award (founder)</div><div>Featured in: Times of India, 3 Jul 2024</div>
     </div>
-    <p class="quiet">Logos used with written permission only. Patent applications for ERFA and Receptivity PX are published, not granted.</p>
+    <p class="quiet">Logos used with written permission only. Patent applications for ERFA (2024) and ERMA (2022) are published, not granted.</p>
+    <h3 style="margin-top:14px">Clinicians who work with us</h3>
+    <p class="quiet">{{CONSENT PENDING}}: the 2024 brochure shows handover photos with Dr. Ritesh Agarwal (Indira IVF, Udaipur), Dr. Parul Sharda (Parul IVF, Ahmedabad), Dr. Krishan Poonia (Vatsalya IVF, Bikaner), Dr. Kamla Singh (ex-DGHS Haryana) and others. With written consent, this becomes a photo strip of partner clinicians: compliant professional endorsement, not patient testimonials.</p>
   </div></div>
 
   <div class="band tint"><div class="wrap stack">
@@ -400,10 +404,11 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
     <div class="tablewrap"><table>
       <thead><tr><th>Test</th><th>Indication</th><th>Sample</th><th>Timing</th><th>Turnaround</th><th>Evidence status</th></tr></thead>
       <tbody>
-        <tr><td><b>Endometrial Infection Test</b></td><td>RIF, RPL, unexplained infertility</td><td>Endometrial biopsy</td><td>{{TIMING}}</td><td class="num">7–10 d</td><td><span class="tag ok">Can be considered (ESHRE 2023)</span></td></tr>
-        <tr><td><b>ERFA</b></td><td>RIF with good-quality embryos</td><td>Endometrial biopsy</td><td>LH+7 / P+5</td><td class="num">7–10 d</td><td><span class="tag gold">Emerging; not routine</span></td></tr>
-        <tr><td><b>Endo-Immune Test</b></td><td>Selected RIF / RPL</td><td>Same biopsy</td><td>Mid-luteal</td><td class="num">7–10 d</td><td><span class="tag gold">Emerging; not routine</span></td></tr>
-        <tr><td><b>Receptivity PX</b></td><td>{{INDICATION}}</td><td>Endometrial biopsy</td><td>{{TIMING}}</td><td class="num">7–10 d</td><td><span class="tag gold">Emerging</span></td></tr>
+        <tr><td><b>Endometrial Infection Test</b><br><span class="quiet">incl. CEF, plasma cells</span></td><td>RIF, RPL, unexplained infertility</td><td>Endometrial biopsy (pipelle or D&amp;C)</td><td>Day 21–23; LH+7 to +9; P+6 to +8</td><td class="num">7–10 d</td><td><span class="tag ok">Can be considered (ESHRE 2023)</span></td></tr>
+        <tr><td><b>ERFA · The Soil Test</b><br><span class="quiet">7-factor panel</span></td><td>RIF with good-quality embryos</td><td>Endometrial biopsy</td><td>Day 21–23 (pref. 21); LH+7 to +9; P+6 to +8</td><td class="num">7–10 d</td><td><span class="tag gold">Emerging; not routine</span></td></tr>
+        <tr><td><b>ERMA</b><br><span class="quiet">adhesion / anti-adhesion</span></td><td>RIF, unexplained infertility</td><td>Same biopsy</td><td>Window of implantation, as above</td><td class="num">7–10 d</td><td><span class="tag gold">Emerging; not routine</span></td></tr>
+        <tr><td><b>Endo-Immune Test</b><br><span class="quiet">TNF-α, PDM, uNK, plasma cells</span></td><td>Selected RIF / RPL</td><td>Same biopsy</td><td>Mid-luteal, as above</td><td class="num">7–10 d</td><td><span class="tag gold">Emerging; not routine</span></td></tr>
+        <tr><td><b>Genital TB PCR</b></td><td>Add-on at physician request</td><td>Same biopsy</td><td>As above</td><td class="num">7–10 d</td><td><span class="tag">Add-on</span></td></tr>
       </tbody>
     </table></div>
     <p class="quiet">Prices are shared with registered clinicians and partner centres on request.</p>
@@ -473,7 +478,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
       <table>
         <tr><th>Indications</th><td>RIF after good-quality embryo transfer; RPL; unexplained infertility; suspected CE on hysteroscopy</td></tr>
         <tr><th>Sample</th><td>Endometrial biopsy (pipelle), {{VOLUME}}</td></tr>
-        <tr><th>Timing</th><td>{{TIMING}} · avoid within 2 weeks of antibiotics</td></tr>
+        <tr><th>Timing</th><td>Cycle day 21–23 (preferred 21); natural cycle LH+7 to LH+9; HRT cycle P+6 to P+8 · avoid within 2 weeks of antibiotics {{CONFIRM}}</td></tr>
         <tr><th>Method</th><td>{{METHOD e.g. CD138 IHC ± culture/PCR}}</td></tr>
         <tr><th>Report</th><td>Plasma cells per {{UNIT}}, interpretation, suggested follow-up per literature</td></tr>
       </table></div>
@@ -482,7 +487,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
   </div></div>
   <div class="band tint"><div class="wrap stack">
     <div class="evidence"><span class="eyebrow">Evidence status</span><p>ESHRE's 2023 RIF recommendations state that testing for chronic endometritis <b>can be considered</b>. Observational studies associate treated CE with improved implantation in some cohorts; randomised evidence is limited.</p><p class="quiet">1. ESHRE Working Group on RIF, Hum Reprod Open 2023. 2. Cicinelli E et al., Hum Reprod 2015. 3. Kitaya K et al., Am J Reprod Immunol 2017. {{VERIFY}}</p></div>
-    <div class="reviewer"><span>Scientifically reviewed by <b>Prof. (Dr.) Pulakes Purkait</b>, Founder &amp; Director</span><span>Clinical review: <b>{{CLINICIAN}}, {{NMC_REG_NO}}</b></span><span>Last reviewed: 15 Oct 2026</span></div>
+    <div class="reviewer"><span>Scientifically reviewed by <b>Prof. (Dr.) Pulakes Purkait</b>, Founder &amp; Director</span><span>Clinical review: <b>Dr. Vidhu Wadhwa, MBBS, MD (Path), Reg. no. {{NMC_REG_NO}}</b></span><span>Last reviewed: 15 Oct 2026</span></div>
     <p class="disclaimer">This page is for information. It does not replace advice from your treating doctor, who orders and interprets the test.</p>
   </div></div>
   <div class="band"><div class="wrap stack"><h2>Frequently asked</h2><div class="faq">
@@ -546,7 +551,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
       <div><b>2025–26</b>Collection centres: Navi Mumbai, Udaipur, Jalandhar</div>
     </div></div>
     <div class="stack"><h2>Team</h2>
-      <div class="card"><h3>Dr. Vidhu Wadhwa</h3><p class="quiet">Consultant Pathologist &amp; Quality Manager · {{NMC_REG_NO}}</p></div>
+      <div class="card"><h3>Dr. Vidhu Wadhwa, MBBS, MD (Pathology)</h3><p class="quiet">Consultant Pathologist &amp; Quality Manager · Clinical reviewer · Reg. no. {{NMC_REG_NO}}</p></div>
       <div class="card"><h3>Dr. Meenu Bhanot</h3><p class="quiet">Consultant Embryologist</p></div>
       <div class="ph" style="aspect-ratio:4/3">REAL PHOTO: team in the Mohali laboratory</div>
     </div>
@@ -564,7 +569,7 @@ th{font-family:var(--head);font-size:.74rem;letter-spacing:.06em;text-transform:
 <section class="page" id="page-contact">
   <div class="band"><div class="wrap cols-2">
     <div class="stack"><h1>Talk to the laboratory</h1>
-      <div class="card"><h3>Main laboratory, Mohali</h3><p>Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab {{PIN}}</p><p><b>Phone</b> {{PRIMARY_PHONE}}<br><b>WhatsApp</b> {{WHATSAPP}}<br><b>Email</b> info.embryogenesis@gmail.com</p><p class="quiet">Mon–Sat, 9:00–18:00 IST · Map link</p></div>
+      <div class="card"><h3>Central laboratory, Mohali</h3><p>Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab 140302</p><p><b>Phone</b> +91 81462 17196<br><b>WhatsApp</b> +91 81462 17196<br><b>Email</b> director@embryogenesis.in · info.embryogenesis@gmail.com</p><p class="quiet">Mon–Sat, 9:00–18:00 IST · Map link</p></div>
       <div class="ph" style="aspect-ratio:16/9">MAP: Mohali laboratory</div>
     </div>
     <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
@@ -601,6 +606,8 @@ const NOTES={
  home:["Borrowed from Indira / Nova / Baby Joy: utility bar with a trust line and phone, header with one strong CTA, photo hero with a lead-form card beside it (Baby Joy), four proof circles (Nova, Baby Joy), 'How can we help you?' hexagon cards (Nova), tabbed services with icons (Indira), centre grid with addresses (Baby Joy), deep-colour form band with map (Indira), affiliations strip (Baby Joy), FAQ with a filled answer (Indira), blog cards, floating call + WhatsApp, sticky mobile bar.",
   "Changed on purpose: no pop-up on load (Google mobile penalty); proof circles show operational facts, not babies or success rates; no testimonials (NMC Oct 2026); no 'best'; no prices or offers; hero text is live HTML, not baked into an image.",
   "Lead form asks for clinic and role, because the primary audience is clinicians and partner hospitals; patients are pointed to their doctor.",
+  "From the client's brochures (15 Oct): full address with PIN 140302, lab phone +91 81462 17196 proposed as the single number, ERMA added to the test list, ERFA biopsy timing, the soil-and-seed metaphor in the hero, Dr. Vidhu Wadhwa MBBS MD as clinical reviewer, Times of India coverage, IFS / MSME / ISO credentials (numbers needed), and a consent-pending 'Clinicians who work with us' strip.",
+  "FIX: confirm which collection centres are active (website lists 3; brochure lists Delhi + 5 others).",
   "FIX: replace every PHOTO placeholder with real photography from the half-day Mohali shoot; replace MAP placeholders with an embedded map."],
  clinicians:["Two-column pattern all three references use: content left, contact card right.","Test menu adds an Evidence-status column so the page is honest and quotable by AI answer engines.","FIX: client to confirm methods, timings, transport and the turnaround count basis."],
  partner:["Form card in the hero, Baby Joy style, so a hospital can apply without scrolling.","'What partners receive' as six cards; four-step onboarding in the same step component as the sample journey.","FIX: confirm the partner offer and commercial model with the lawyer (no referral commissions)."],

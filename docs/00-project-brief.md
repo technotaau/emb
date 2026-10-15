@@ -29,24 +29,31 @@ This brief is the single source of truth for every TechnoTaau Team contributor. 
 ## 2. Business facts
 
 - **Entity:** EmbryoGenesis, an infertility diagnostic and research centre. Established Nov 2023.
-- **Address:** Top Floor, Rayat Bahra Dental College & Hospital, Mohali, Punjab.
-- **Email:** info.embryogenesis@gmail.com
-- **Phones on current site (inconsistent, needs one primary number):** 9691736435, 9815692195, +91 8146217196, +91 9599877196.
-- **Collection centres:**
-  - Navi Mumbai: Nirmal Multi Speciality Hospital, Kopar Khairane.
-  - Udaipur: Shree B.L. Jain Memorial Hospital, Savina.
-  - Jalandhar: Advance Fertility Services & IVF Centre, Shakuntala Devi VIG Hospital.
+- **Address (brochure, with PIN):** EmbryoGenesis – Infertility Diagnostic & Research, Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab 140302.
+- **Email:** director@embryogenesis.in, info.embryogenesis@gmail.com (also embryogenesis.laboratory@gmail.com, iths.rbu@gmail.com for admissions).
+- **Phones by role (from brochures):** lab +91 81462 17196 (**proposed single public number and WhatsApp, to confirm**); director +91 95998 77196; admissions 96917 36435; Delhi regional centre 98156 92195.
+- **Collection centres (conflicting; client to confirm which are active):**
+  - Website 2026: Navi Mumbai (Nirmal Multi Speciality Hospital), Udaipur (Shree B.L. Jain Memorial Hospital), Jalandhar (Advance Fertility Services & IVF Centre).
+  - Brochure 2024: Regional centre New Delhi (CD Imaging & Path Lab, Najafgarh); Ahmedabad (Parul Women's Hospital & Fertility Centre); Udaipur (Narayani Women's Hospital); Bikaner (Vatsalya IVF); Panchkula (IRCC Hospital & IVF); Jalandhar.
+- **MoUs (brochure/docx):** GIOSTAR USA (stem-cell company: legal view needed before showing), Indira IVF Udaipur, Vatsalya IVF Bikaner, Parul IVF Ahmedabad, Guru Ghasidas Vishwavidyalaya.
+- **Credentials shown in brochures (numbers needed):** ISO (standard and certificate no.), MSME/Udyam registration, Indian Fertility Society life membership IFS-2900.
+- **Media:** Times of India, 3 Jul 2024 (ERFA launch at RBU); Himachal Tonite, 6 Jul 2024 (HP's first clinical embryology programme).
+- **Source materials:** text extracts in `content/source/`; review in `docs/research/06-source-materials-review.md`.
 - **Founder:**
   - Prof. (Dr.) Pulakes Purkait, M.Sc., Ph.D., Postdoc. Scientist; **not MBBS**.
   - ORCID 0000-0002-8814-9939.
   - Best Innovator Award, NBHC 2024 (IIT Delhi), and Best Innovator Award for Human Infertility Treatment, Research & Innovation Park, New Delhi, Nov 2024.
-- **Team on site:** Dr. Vidhu Wadhwa (Consultant Pathologist & Quality Manager), Dr. Meenu Bhanot (Consultant Embryologist).
-- **Diagnostics:**
-  - ERFA, "The Soil Test" (Endometrial Receptivity & Function Assay)
-  - Endo-Immune Test (uNK / cytokine profile)
-  - Endometrial Infection Test (EIT, chronic endometritis)
-  - Receptivity PX
+- **Team on site:** Dr. Vidhu Wadhwa, **MBBS, MD (Pathology)**, Consultant Pathologist & Quality Manager (registered medical practitioner: proposed clinical reviewer; registration number needed); Dr. Meenu Bhanot (Consultant Embryologist).
+- **Diagnostics (full menu from brochures; website shows only three):**
+  - ERFA, "The Soil Test" (Endometrial Receptivity & Function Assay): patent application 202431001616 A, published 9 Feb 2024. Reports seven factors: glandular development arrest, maturation, receptivity, anti-adhesion molecules, cytokine abnormalities, immune tolerance, inflammation/infection.
+  - ERMA (Endometrial Receptivity & Maturation Analysis): patent application 202211073981 A, published 30 Dec 2022. Adhesion vs anti-adhesion molecules.
+  - Endo-Immune Test: TNF-α (Th1), PDM (Th17), uNK cells, plasma cells. Components also offered singly: ECT (cytokines), CEF (chronic endometritis factor), TNF-α, PDM, uNK.
+  - Endometrial Infection Test (EIT, chronic endometritis).
+  - Receptivity PX (patent application 202411059621 A).
+  - Add-on: female genital TB / TB-PCR / PAMP.
+  - **Sample:** endometrial biopsy (D&C or pipelle). **Timing:** cycle day 21–23 (preferred 21); natural cycle LH+7 to LH+9; HRT cycle P+6 to P+8.
   - Stated turnaround is 7 to 10 days.
+  - **Brand metaphor to keep:** "the embryo is the seed, the endometrium is the soil."
 - **Therapies (on hold, see section 1):** LIT, PBMC, PRP, Stem Cell, Molecular Hydrogen.
 - **Academy:**
   - B.Sc./M.Sc. Clinical Embryology with ITHS + Bahra University (Shimla Hills, HP).
