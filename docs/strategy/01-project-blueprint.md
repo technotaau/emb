@@ -234,7 +234,7 @@ These targets assume the client signs off copy on time and runs partner outreach
 | `docs/research/03-current-site-audit.md` | ✅ Done |
 | `docs/research/04-existing-website-and-social-review.md` | ✅ Done |
 | `docs/strategy/01-project-blueprint.md` (this file) | ✅ Done |
-| `docs/strategy/02-seo-strategy.md` | In progress (agent paused by usage limit) |
+| `docs/strategy/02-seo-strategy.md` | ✅ Done, in client review |
 | `docs/strategy/03-social-media-strategy.md` | ✅ Done, in client review |
 | `docs/strategy/04-brand-voice-and-design-system.md` | ✅ Done, in client review |
 | `content/00–05` priority page copy + copy notes | ✅ Done, pending scientific review |
