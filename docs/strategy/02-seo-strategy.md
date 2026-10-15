@@ -610,7 +610,7 @@ The blueprint recommends a lightweight block theme (or Astra with native blocks)
 | General > Image SEO | Do **not** auto-add alt or title from filenames. Writers supply real alt text. |
 | General > Others | RSS: no "Powered by"; no extra links. |
 | Titles & Meta > Global | Separator `\|` (fixes the empty `%sep%` bug). Robots default `index, follow`, `max-image-preview:large`, `max-snippet:-1`, `max-video-preview:-1`. OG image fallback: 1200×630 brand image. Twitter card: `summary_large_image`. |
-| Titles & Meta > Local SEO | Organization; name "EmbryoGenesis"; logo 600×600; URL; contact. Our filter (6.10) overrides the type to DiagnosticLab/MedicalBusiness. |
+| Titles & Meta > Local SEO | Organization; name "EmbryoGenesis"; logo 600×600; URL; contact. Our filter (6.11) overrides the type to DiagnosticLab/MedicalBusiness. |
 | Titles & Meta > Social | Facebook page, Twitter/X handle: use the unified handles (7.3) only after they are confirmed. |
 | Titles & Meta > Homepage | Title "EmbryoGenesis \| Endometrial Diagnostics Lab, Mohali" (≤ 60); description per copy deck; OG image set |
 | Titles & Meta > Authors | **Disable author archives.** Author URLs in schema point to `/about/pulakes-purkait/` and `/about/team/#{name}` instead. |
@@ -655,8 +655,8 @@ The blueprint recommends a lightweight block theme (or Astra with native blocks)
 | Carousels | **Drop heavy sliders** (Prime Slider, Owl, Swiper, UIkit). No carousel above the fold. Show patent-application and award certificates as a static grid of thumbnails that open a lightweight lightbox, or link to `/research/`. |
 
 **Fonts:**
-- At most 2 families and 4 font files in total (WOFF2). Brand fonts come from the design-system doc (`04-brand-voice-and-design-system.md`).
-- Self-host; no Google Fonts API calls. `font-display: swap`. Preload only the primary text weight. Subset to Latin.
+- Exactly 2 variable font files, per the design-system doc (`04-brand-voice-and-design-system.md`, section 8.1): **Inter** (body/UI, `wght` 400–700) and **Source Serif 4** (headings, `wght` 500–700), both roman only, Latin subset, WOFF2.
+- Self-host (WordPress Font Library or theme.json `fontFace`); no Google Fonts API calls. `font-display: swap`. Preload **only the Inter file**.
 - Remove Font Awesome 4/5, icofont, ekiticons and eicons; use inline SVG icons.
 
 **Other:**
@@ -858,7 +858,7 @@ Sitemap: https://embryogenesis.in/sitemap_index.xml
   - `https://embryogenesis.in/#founder`
   - `https://embryogenesis.in/{path}/#webpage`
   - `https://embryogenesis.in/{path}/#breadcrumb`
-- Rank Math already outputs Organization, WebSite, WebPage, Article and BreadcrumbList. To avoid duplicate or conflicting nodes, the developer adds a small must-use plugin that hooks Rank Math's `rank_math/json_ld` filter (see 6.10). It does three things:
+- Rank Math already outputs Organization, WebSite, WebPage, Article and BreadcrumbList. To avoid duplicate or conflicting nodes, the developer adds a small must-use plugin that hooks Rank Math's `rank_math/json_ld` filter (see 6.11). It does three things:
   1. replaces the Organization node with 6.2;
   2. upgrades page nodes to MedicalWebPage where the template says so;
   3. appends page-type nodes from ACF fields (test facts, program facts, event facts).
@@ -898,8 +898,8 @@ Sitemap: https://embryogenesis.in/sitemap_index.xml
       },
       "image": "{{LAB_PHOTO_URL_1200x630}}",
       "slogan": "Redefining Fertility Evaluation",
-      "description": "EmbryoGenesis is an endometrial and reproductive diagnostics and research laboratory in Mohali, Punjab. It works with IVF clinics across India through partner sample-collection centres and runs a clinical embryology academy with university partners.",
-      "disambiguatingDescription": "EmbryoGenesis (Mohali, India) is a diagnostics laboratory and academy. It is not the biological process of embryogenesis.",
+      "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab. It develops endometrial tests in-house, partners with IVF clinics across India, and trains embryologists.",
+      "disambiguatingDescription": "EmbryoGenesis (Mohali, India) is an infertility diagnostic and research centre and embryology academy. It is not the biological process of embryogenesis.",
       "foundingDate": "2023-11",
       "founder": { "@id": "https://embryogenesis.in/#founder" },
       "address": {
@@ -1129,7 +1129,7 @@ The partner is **not** an EmbryoGenesis branch, so it keeps its own name. Embryo
   "worksFor": { "@id": "https://embryogenesis.in/#organization" },
   "url": "https://embryogenesis.in/about/pulakes-purkait/",
   "image": "{{FOUNDER_PHOTO_URL}}",
-  "description": "Reproductive geneticist and founder of EmbryoGenesis, Mohali. Post-doctoral research at Panjab University; more than 15 years of research and teaching in molecular and medical genetics.",
+  "description": "Prof. (Dr.) Pulakes Purkait is the Founder and Director of EmbryoGenesis. He is a reproductive scientist with an M.Sc., a Ph.D. and postdoctoral research experience. He is not a medical practitioner.",
   "alumniOf": [
     { "@type": "CollegeOrUniversity", "name": "Vidyasagar University" },
     { "@type": "CollegeOrUniversity", "name": "Andhra University" },
@@ -1154,7 +1154,7 @@ The partner is **not** an EmbryoGenesis branch, so it keeps its own name. Embryo
 }
 ```
 
-Award names are proper nouns and may be quoted exactly as titled; do not paraphrase them into claims like "best innovator in India". Team members (Dr. Vidhu Wadhwa, Dr. Meenu Bhanot) get the same pattern on `/about/team/` with `@id` `https://embryogenesis.in/about/team/#{slug}`. Use `Physician` only for a team member who holds an MBBS/MD with NMC/SMC registration, and add `"identifier": {"@type":"PropertyValue","propertyID":"NMC/SMC registration","value":"{{REG_NO}}"}`.
+**Verify before go-live** (design-system doc 04, section 6, items marked [CV]): exact award titles and issuers as printed on the certificates, and the universities for each degree (`alumniOf`). Remove `alumniOf` entries the client has not confirmed. Award names are proper nouns and may be quoted exactly as titled; never paraphrase them into claims like "best innovator in India". The `description` uses the approved founder bio wording. Team members (Dr. Vidhu Wadhwa, Dr. Meenu Bhanot) get the same pattern on `/about/team/` with `@id` `https://embryogenesis.in/about/team/#{slug}`. Use `Physician` only for a team member who holds an MBBS/MD with NMC/SMC registration, and add `"identifier": {"@type":"PropertyValue","propertyID":"NMC/SMC registration","value":"{{REG_NO}}"}`.
 
 ### 6.6 FAQPage (any page with a visible FAQ)
 
@@ -1248,13 +1248,20 @@ Use 4–6 questions per page. Do not repeat the same FAQ on multiple pages.
     "location": {
       "@type": "Place",
       "name": "EmbryoGenesis laboratory, Mohali",
-      "address": { "@id": "https://embryogenesis.in/#organization" }
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, {{LOCALITY}}",
+        "addressLocality": "Mohali",
+        "addressRegion": "Punjab",
+        "postalCode": "{{PIN_CODE}}",
+        "addressCountry": "IN"
+      }
     }
   }
 }
 ```
 
-If `location.address` by `@id` fails validation in the developer's tests, inline the PostalAddress from 6.2.
+Keep the address identical to the master NAP record (7.3); the ACF options page should fill it.
 
 ### 6.8 Article (blog posts)
 
@@ -1358,7 +1365,7 @@ Rank Math outputs this when breadcrumbs are on. The template below is for refere
 **Notes:**
 - `price: 0` here is a free event registration, not a test price.
 - Call it "CME" only if the session is accredited by a state medical council (`{{CME_ACCREDITATION}}`); otherwise use "webinar" or "case discussion".
-- After the event: set `eventStatus` to stay `EventScheduled` (past events are fine), and add the recording as a `VideoObject` on the same page.
+- After the event: leave the Event markup in place (past events are valid; keep `eventStatus` as `EventScheduled` unless it was cancelled or moved), and add the recording as a `VideoObject` on the same page.
 
 ### 6.11 Developer note: the Rank Math filter
 
@@ -1382,11 +1389,12 @@ Create `wp-content/mu-plugins/eg-schema.php`. Hook `add_filter( 'rank_math/json_
 | Context | Form |
 |---|---|
 | Brand name in copy | **EmbryoGenesis**: one word, capital E and G. Never "Embryo Genesis", "Embryogenesis" or "EMBRYOGENESIS" in running text. The ™ appears only in the logo lock-up. |
-| First mention on every page and profile | "EmbryoGenesis, an endometrial diagnostics and research lab in Mohali, Punjab" (or a short variant that keeps "lab" and "Mohali") |
+| First mention on every page and profile | "EmbryoGenesis, an infertility diagnostic and research centre in Mohali, Punjab" (the approved boilerplate wording in `04-brand-voice-and-design-system.md`, section 6). Keep "Mohali" in every first mention. |
+| Listing and press descriptions | The 25-, 50- or 100-word boilerplate from doc 04, section 6, **verbatim**. The 100-word version names the partner cities only once each partner has consented. |
 | Schema `name` | "EmbryoGenesis"; `alternateName` "EmbryoGenesis Diagnostics" (6.2) |
 | Listings that allow a descriptor field | "EmbryoGenesis Diagnostics, Mohali" (matches the blueprint) |
 | Google Business Profile **name** | Exactly what is on the signage at the lab (`{{SIGNAGE_NAME}}`). GBP rules forbid adding descriptors or keywords to the name unless they are part of the real-world name. If the signage reads "EmbryoGenesis", the GBP name is "EmbryoGenesis"; the descriptor goes in the category and description. |
-| Disambiguation sentence (About page, LinkedIn "About", GBP description, Wikidata description) | "EmbryoGenesis is a diagnostics laboratory and academy in Mohali, India, focused on endometrial and reproductive testing for IVF clinics. Not to be confused with embryogenesis, the biological process." |
+| Disambiguation sentence (About page footer note, LinkedIn "About", Wikidata description; add after the boilerplate) | "Not to be confused with embryogenesis, the biological process of embryo development." |
 | Founder | "Prof. (Dr.) Pulakes Purkait, Founder & Director". Never "Dr." alone in a context that implies a medical doctor; add "Ph.D." where space allows. |
 
 ### 7.3 NAP and handles (one master record)
@@ -1410,7 +1418,7 @@ Use the same NAP, character for character, on the site, GBP, Bing Places, Apple 
 - **One profile, for the Mohali lab only.** It is the only place EmbryoGenesis staff serve people in person.
 - **Primary category:** "Medical laboratory". Secondary: "Research institute". Add "Educational institution" only if academy staff are on-site and serve students at that address during stated hours; otherwise leave it off.
 - **Website link:** `https://embryogenesis.in/?utm_source=google&utm_medium=organic&utm_campaign=gbp`. Appointment link: `/contact/`.
-- **Description** (750 characters max): the disambiguation sentence, then the test list, the partner network and the academy. No prices, no superlatives.
+- **Description** (750 characters max): the 50-word boilerplate (doc 04) verbatim, then the test names and "Tests are ordered by your doctor". No prices, no superlatives.
 - **Photos:** real exterior, signage, entrance (for wayfinding inside the dental college), lab and team. Geotagging is unnecessary. No AI images.
 - **Services:** list the 4 tests by name with no prices.
 - **Products:** off. **Posts:** monthly (CME, news).
@@ -1483,7 +1491,7 @@ AI Overviews appear on a large share of health queries (estimates range from 44%
 
 ```
 # EmbryoGenesis
-> EmbryoGenesis is an endometrial and reproductive diagnostics and research laboratory in Mohali, Punjab, India (est. Nov 2023). It works with IVF clinics through partner sample-collection centres (Navi Mumbai, Udaipur, Jalandhar) and runs a clinical embryology academy with university partners. Tests are ordered and interpreted by the treating doctor. Prices are not published; partner rate card on request.
+> EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, established in November 2023. Its lab develops endometrial tests in-house and works with IVF clinicians through partner collection centres. Founded by reproductive scientist Prof. (Dr.) Pulakes Purkait, it also trains embryologists through university-affiliated degree programmes and hands-on lab courses. Tests are ordered and interpreted by the treating doctor. Prices are not published; partner rate card on request.
 
 ## Tests
 - [Endometrial Infection Test (chronic endometritis)](https://embryogenesis.in/diagnostics/endometrial-infection-test/)
