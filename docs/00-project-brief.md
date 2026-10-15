@@ -71,11 +71,13 @@ This brief is the single source of truth for every TechnoTaau Team contributor. 
 
 | Token | Hex | Suggested use |
 |---|---|---|
-| Teal | `#25A2AA` | Primary accent, links, icons |
-| Teal Mid | `#11858E` | Buttons, hover states |
-| Deep Teal | `#0E6970` | Headings, header/footer background, dark sections |
-| Green | `#218A6A` | Secondary accent, success states, "evidence" highlights |
-| Gold | `#C39F4E` | Premium accent: awards, dividers, small highlights only (fails contrast as body text on white) |
+| Teal | `#25A2AA` | Icons, borders, large text only (3.08:1 on white) |
+| Teal Mid | `#11858E` | Focus rings, active states, large numerals (4.40:1 on white: white button labels fail AA) |
+| Deep Teal | `#0E6970` | Primary buttons, headings, links, header/footer background (6.42:1 on white; hover `#0B5C62`) |
+| Green | `#218A6A` | Evidence highlights, success states, large text/icons (4.28:1) |
+| Gold | `#C39F4E` | Decorative accents only: awards, dividers (2.50:1 on white; never as text on white) |
+
+Contrast ratios were computed for `docs/strategy/04-brand-voice-and-design-system.md` (section 7.2).
 
 ## 4. Positioning (TechnoTaau Team recommendation)
 

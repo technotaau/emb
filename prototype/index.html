@@ -7,7 +7,7 @@
 :root{
   --teal:#25A2AA; --teal-mid:#11858E; --teal-deep:#0E6970; --green:#218A6A; --gold:#C39F4E;
   --bg:#F6FAFA; --paper:#FFFFFF; --tint:#E8F4F5; --ink:#12302F; --ink-2:#3F5C5B; --line:#CFE2E3;
-  --accent:#11858E; --accent-ink:#0E6970; --on-accent:#FFFFFF;
+  --accent:#0E6970; --accent-ink:#0E6970; --on-accent:#FFFFFF;
   --rail-bg:#12302F; --rail-fg:#E8F4F5; --rail-line:#2A4A49;
   --ok:#218A6A; --warn:#B8860B; --note:#FFF8E6; --note-line:#E6D3A0;
   --display:"IBM Plex Serif",Georgia,"Times New Roman",serif;
@@ -46,6 +46,8 @@ a{color:var(--accent-ink)}
 .tint .card{background:var(--paper)}
 .btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font:inherit;font-weight:600}
 .btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:#0B5C62;color:#FFFFFF}
+:root[data-theme="dark"] .btn.primary:hover,:root:not([data-theme="light"]) .btn.primary:hover{background:var(--accent);color:var(--on-accent);filter:brightness(1.1)}
 .btn.ghost{border-color:var(--accent);color:var(--accent-ink);background:transparent}
 .btn.gold{background:var(--gold);color:#1E1A0C}
 .btn:focus-visible,.nav a:focus-visible,.rail button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}

@@ -4,7 +4,7 @@
 |---|---|
 | **URL** | `/` |
 | **SEO title** (59 chars) | EmbryoGenesis \| Endometrial Diagnostics Lab for IVF Clinics |
-| **Meta description** (147 chars) | Specialised endometrial and reproductive diagnostics for IVF clinics across India. Reports in 7 to 10 days. Become a sample collection partner. |
+| **Meta description** (143 chars) | Specialised endometrial and reproductive diagnostics for IVF clinics across India. Reports in 7 to 10 days. Become a sample collection partner. |
 | **Primary keyword** | endometrial diagnostics lab for IVF clinics |
 | **Secondary keywords** | chronic endometritis test India; endometrial receptivity test India; fertility diagnostics lab Mohali; diagnostic lab partnership IVF clinic; clinical embryology course Punjab |
 | **Audience order** | IVF clinicians and clinic/hospital owners first; patients and students second |

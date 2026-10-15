@@ -4,7 +4,7 @@
 |---|---|
 | **URL** | `/partner-with-us/` |
 | **SEO title** (55 chars) | Become a Collection Partner \| EmbryoGenesis Diagnostics |
-| **Meta description** (150 chars) | Partner with EmbryoGenesis as a sample collection centre. Offer endometrial infection, receptivity and immune testing with reports in 7 to 10 days. |
+| **Meta description** (147 chars) | Partner with EmbryoGenesis as a sample collection centre. Offer endometrial infection, receptivity and immune testing with reports in 7 to 10 days. |
 | **Primary keyword** | diagnostic lab partnership for IVF clinics |
 | **Secondary keywords** | sample collection centre partnership; collection centre franchise diagnostic lab (B2B intent); endometrial biopsy test lab India; chronic endometritis test lab for IVF clinics |
 | **Audience** | IVF clinic owners, hospital administrators, gynaecologists and IVF specialists, lab managers |
