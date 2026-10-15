@@ -9,7 +9,16 @@ This brief is the single source of truth for every TechnoTaau Team contributor. 
 
 ---
 
-## 1. Client decisions (confirmed by Jakhar Singh, 15 Oct 2026)
+## 0. Decision update (Jakhar Singh, 15 Oct 2026, evening)
+
+The client has changed the scope of the website work:
+
+- **Keep the old website's content as it is.** No rewriting of pages. The new pages we proposed ("For Clinicians", "Become a Collection Partner", clinician hub) are **dropped**. The site keeps the old structure: Home, About Us, Services (Diagnostic, Therapeutic), Courses, Lab Training, Blog, Media & Event, Contact Us.
+- **Change only the design**, in the style of Indira IVF (https://www.indiraivf.com/), with the new logo and palette. Photos and icons may be used.
+- Prototype v3 (`prototype/index.html`) implements this. The B2B copy in `content/` and the B2B parts of the strategy documents are **parked**, not deleted, in case the client returns to them.
+- The compliance findings in `docs/research/` remain TechnoTaau Team's recommendations. They do not change the content unless the client asks.
+
+## 1. Client decisions (confirmed by Jakhar Singh, 15 Oct 2026, morning; see section 0 for later changes)
 
 | Topic | Decision |
 |---|---|
