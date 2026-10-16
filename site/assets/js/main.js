@@ -86,9 +86,10 @@
      move keyboard focus to the target, and mark the section currently in view */
   var jumps = Array.prototype.slice.call(d.querySelectorAll('[data-jump]'));
   jumps.forEach(function (b) {
-    b.addEventListener('click', function () {
+    b.addEventListener('click', function (e) {
       var t = d.getElementById(b.dataset.jump);
       if (!t) return;
+      if (b.tagName === 'A') { e.preventDefault(); if (history.replaceState) history.replaceState(null, '', '#' + t.id); }
       setH();
       t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
       if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1');

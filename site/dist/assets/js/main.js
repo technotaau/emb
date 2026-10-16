@@ -86,9 +86,10 @@
      move keyboard focus to the target, and mark the section currently in view */
   var jumps = Array.prototype.slice.call(d.querySelectorAll('[data-jump]'));
   jumps.forEach(function (b) {
-    b.addEventListener('click', function () {
+    b.addEventListener('click', function (e) {
       var t = d.getElementById(b.dataset.jump);
       if (!t) return;
+      if (b.tagName === 'A') { e.preventDefault(); if (history.replaceState) history.replaceState(null, '', '#' + t.id); }
       setH();
       t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
       if (!t.hasAttribute('tabindex')) t.setAttribute('tabindex', '-1');
@@ -108,11 +109,11 @@
 
   /* hero slider: .slides > .slide, .dots buttons */
   d.querySelectorAll('.slides').forEach(function (wrap) {
-    var slides = wrap.querySelectorAll('.slide'), dots = wrap.querySelectorAll('.dots button'), i = 0, timer;
+    var slides = wrap.querySelectorAll('.slide'), dots = wrap.querySelectorAll('.dots button'), i = 0, timer, started = false;
     if (slides.length < 2) return;
     function show(n) {
       i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) { s.hidden = k !== i; s.classList.toggle('is-in', k === i); });
+      slides.forEach(function (s, k) { s.hidden = k !== i; s.classList.toggle('is-in', started && k === i); });
       dots.forEach(function (b, k) { b.setAttribute('aria-current', String(k === i)); });
     }
     function play() { stop(); timer = setInterval(function () { if (!d.hidden) show(i + 1); }, 6000); }
@@ -130,7 +131,7 @@
     dots.forEach(function (b, k) { b.addEventListener('click', function () { show(k); resume(); }); });
     wrap.addEventListener('mouseenter', stop); wrap.addEventListener('mouseleave', resume);
     wrap.addEventListener('focusin', stop); wrap.addEventListener('focusout', resume);
-    show(0); resume();
+    show(0); started = true; resume();
   });
 
   /* reveal on scroll; children of card grids get a short stagger via --rv-i (see add-qc.css) */
