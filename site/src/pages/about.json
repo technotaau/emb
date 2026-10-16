@@ -1,1 +1,42 @@
-{"path":"/about/","title":"about | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/about/",
+ "title": "About EmbryoGenesis | Infertility Diagnostic Centre, Mohali",
+ "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, established in Nov 2023. Meet our founder, scientific team and mentors.",
+ "nav": "about",
+ "og_image": "/assets/img/lab.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "About Us",
+   "/about/"
+  ]
+ ],
+ "priority": 0.8,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "AboutPage",
+   "@id": "https://embryogenesis.in/about/#webpage",
+   "name": "About EmbryoGenesis",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "about": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "mainEntity": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "primaryImageOfPage": "https://embryogenesis.in/assets/img/lab.jpg",
+   "inLanguage": "en-IN",
+   "mentions": [
+    {
+     "@id": "https://embryogenesis.in/pulakes-purkait-profile/#person"
+    }
+   ]
+  }
+ ]
+}

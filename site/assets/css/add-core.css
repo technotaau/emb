@@ -1,0 +1,67 @@
+/* EmbryoGenesis · core pages (home, about, contact, media, privacy, 404) · TechnoTaau Team
+   Class prefix: core-. Loaded after style.css by build.py. */
+
+/* visually hidden (screen-reader only) */
+.core-vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* ---------- home hero slider ---------- */
+.core-hero .slide{min-height:520px}
+.core-hero .wrap{padding-bottom:56px}
+.core-hero .panel .h1like,
+.core-hero .panel h1{font-family:var(--head);font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.2;font-weight:500;color:#fff;text-wrap:balance;margin:0}
+.core-hero .heroimg.core-pos-c{object-position:center 30%}
+.core-hero .dots{position:absolute;z-index:3;left:0;right:0;bottom:6px;justify-content:center;gap:0}
+.core-hero .dots button{width:44px;height:44px;background:none;border-radius:50%;display:grid;place-items:center}
+.core-hero .dots button::before{content:"";width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.7);box-shadow:0 0 0 1px rgba(14,105,112,.5)}
+.core-hero .dots button[aria-current="true"]{background:none}
+.core-hero .dots button[aria-current="true"]::before{background:var(--gold);width:14px;height:14px}
+html:not(.js) .core-hero .dots{display:none}
+@media (max-width:760px){.core-hero .slide{min-height:0}.core-hero .wrap{min-height:460px;padding-bottom:60px}}
+
+/* ---------- key facts band ---------- */
+.core-facts .keyfacts dd a{color:var(--deep)}
+.core-lead{max-width:72ch;margin-inline:auto;text-align:center}
+.core-lead b{color:var(--deep)}
+
+/* links inside content */
+.core-more{font-family:var(--head);font-weight:600;color:var(--deep);display:inline-flex;align-items:center;min-height:44px}
+.card .body .core-more{justify-self:start}
+.core-care small a,.core-visit a{color:var(--deep)}
+
+/* inline placeholder for widgets the WordPress build will connect */
+.core-widget{min-height:120px;width:100%}
+
+/* ---------- contact ---------- */
+.core-contact .icard a{color:var(--deep);font-weight:600;overflow-wrap:anywhere;display:inline-block;padding-block:6px}
+.core-contact address{font-style:normal}
+.core-form label:not(.consent){font-family:var(--head);font-weight:600;font-size:.86rem;color:var(--deep);margin-bottom:-4px}
+.core-social{display:flex;flex-wrap:wrap;gap:10px}
+.core-social a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;background:var(--tint);color:var(--deep);font-family:var(--head);font-weight:600;font-size:.9rem;text-decoration:none}
+.core-social a:hover{background:var(--deep);color:#fff}
+.core-social svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+.core-maplink{font-family:var(--head);font-weight:600}
+
+/* ---------- media & event ---------- */
+.core-chips button{min-height:44px}
+.core-ext{font-family:var(--head);font-weight:600;color:var(--deep);display:inline-flex;align-items:center;gap:6px;min-height:44px;justify-self:start}
+.core-ext svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
+.card .body .core-src{font-size:.9rem;color:var(--ink-2)}
+
+/* ---------- team tabs (about) ---------- */
+.core-tabs .tab{min-height:44px}
+
+/* ---------- simple pages: privacy, 404 ---------- */
+.core-simple{max-width:760px;margin-inline:auto}
+.core-links{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
+.core-links a{display:flex;align-items:center;min-height:52px;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font-family:var(--head);font-weight:600;color:var(--deep);text-decoration:none}
+.core-links a:hover{border-color:var(--teal);background:var(--tint)}
+.core-links small{display:block;font-family:var(--body);font-weight:400;color:var(--ink-2);font-size:.86rem}
+
+/* h2 styled as a card title (keeps heading order h1 > h2) */
+.core-h3{font-family:var(--head);font-size:1.15rem;font-weight:600;color:var(--deep);line-height:1.25}
+/* larger tap targets for the service "Book Now" links (home) */
+.core-duo .item a{display:inline-flex;align-items:center;min-height:44px}
+/* media cards: keep tag and title at the top of each card */
+.core-mcards .card{align-content:start;grid-template-rows:auto 1fr}
+.core-mcards .card .body{align-content:start}
+.core-top{align-items:start}

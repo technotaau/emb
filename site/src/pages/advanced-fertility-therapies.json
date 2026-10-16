@@ -1,1 +1,84 @@
-{"path":"/advanced-fertility-therapies/","title":"advanced-fertility-therapies | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/advanced-fertility-therapies/",
+ "title": "Fertility Therapies: LIT, PBMC, PRP | EmbryoGenesis Mohali",
+ "description": "Therapeutic services at EmbryoGenesis, Mohali: LIT, PBMC, PRP, Stem Cell and Molecular Hydrogen therapy. What each therapy is, key benefits and FAQs.",
+ "nav": "therapeutic",
+ "og_image": "/assets/img/lit.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Therapeutic",
+   "/advanced-fertility-therapies/"
+  ]
+ ],
+ "priority": 0.7,
+ "faq": [
+  {
+   "q": "How do I know which therapy is right for me?",
+   "a": "Our fertility specialists will evaluate your medical history and current health to recommend the most suitable therapy for your needs."
+  },
+  {
+   "q": "Are these therapies safe?",
+   "a": "Yes, all of our therapies are designed with safety and efficacy in mind. They are supported by extensive research and performed by experienced medical professionals."
+  },
+  {
+   "q": "What should I expect during my therapy?",
+   "a": "Each therapy is tailored to your condition, and our team will provide detailed guidance before, during, and after treatment. Get started on your personalized fertility journey today! Contact us for more information or to schedule your consultation."
+  }
+ ],
+ "schema": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://embryogenesis.in/advanced-fertility-therapies/#webpage",
+   "name": "Therapeutic Services – EmbryoGenesis",
+   "inLanguage": "en-IN",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/advanced-fertility-therapies/#breadcrumb"
+   },
+   "about": [
+    {
+     "@type": "MedicalTherapy",
+     "@id": "https://embryogenesis.in/advanced-fertility-therapies/#lit",
+     "name": "LIT Therapy",
+     "description": "Lymphocyte Immunization Therapy (LIT) helps manage immune-related fertility challenges. This therapy involves the careful extraction and processing of your white blood cells (leukocytes), which are then reintroduced to stimulate a balanced immune response.",
+     "alternateName": "Lymphocyte Immunization Therapy"
+    },
+    {
+     "@type": "MedicalTherapy",
+     "@id": "https://embryogenesis.in/advanced-fertility-therapies/#pbmc",
+     "name": "PBMC Therapy",
+     "description": "Peripheral Blood Mononuclear Cell (PBMC) Therapy leverages your body’s natural immune cells to create an environment conducive to successful conception.",
+     "alternateName": "Peripheral Blood Mononuclear Cell Therapy"
+    },
+    {
+     "@type": "MedicalTherapy",
+     "@id": "https://embryogenesis.in/advanced-fertility-therapies/#prp",
+     "name": "PRP Therapy",
+     "description": "Platelet-Rich Plasma (PRP) Therapy involves the extraction of a small sample of your blood, concentrating the platelets, and injecting them into the reproductive region.",
+     "alternateName": "Platelet-Rich Plasma Therapy"
+    },
+    {
+     "@type": "MedicalTherapy",
+     "@id": "https://embryogenesis.in/advanced-fertility-therapies/#stem-cell",
+     "name": "Stem Cell Therapy",
+     "description": "Stem Cell Therapy uses human mesenchymal stem cells (hMSCs), which can differentiate and repair damaged tissues."
+    },
+    {
+     "@type": "MedicalTherapy",
+     "@id": "https://embryogenesis.in/advanced-fertility-therapies/#molecular-hydrogen",
+     "name": "Molecular Hydrogen Therapy",
+     "description": "Hydrogen therapy harnesses this non-toxic, odorless gas to reduce oxidative stress and inflammation."
+    }
+   ]
+  }
+ ]
+}

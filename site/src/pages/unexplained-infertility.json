@@ -1,0 +1,49 @@
+{
+ "path": "/unexplained-infertility/",
+ "title": "Unexplained Infertility: Causes & Diagnosis | EmbryoGenesis",
+ "description": "What is unexplained infertility? Symptoms, possible causes, diagnosis and treatment options, including ERFA – The Soil Test, explained by EmbryoGenesis.",
+ "nav": "blog",
+ "lang": "en",
+ "article": true,
+ "og_image": "/assets/img/blog-unexplained.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Blog",
+   "/blog/"
+  ],
+  [
+   "Unexplained Infertility",
+   "/unexplained-infertility/"
+  ]
+ ],
+ "priority": 0.6,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://embryogenesis.in/unexplained-infertility/#article",
+   "headline": "Unexplained Infertility",
+   "description": "What is unexplained infertility? Symptoms, possible causes, diagnosis and treatment options, including ERFA – The Soil Test, explained by EmbryoGenesis.",
+   "datePublished": "2024-04-01",
+   "dateModified": "2024-04-01",
+   "author": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "image": "https://embryogenesis.in/assets/img/blog-unexplained.jpg",
+   "inLanguage": "en-IN",
+   "mainEntityOfPage": "https://embryogenesis.in/unexplained-infertility/",
+   "url": "https://embryogenesis.in/unexplained-infertility/",
+   "articleSection": "Uncategorized",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/blog/#blog"
+   }
+  }
+ ]
+}

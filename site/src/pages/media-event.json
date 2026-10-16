@@ -1,1 +1,71 @@
-{"path":"/media-event/","title":"media-event | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/media-event/",
+ "title": "Media & Event | EmbryoGenesis News, Awards and MoUs",
+ "description": "EmbryoGenesis in the news: ERFA – The Soil Test launch, the Clinical Embryology program with Bahra University, the Best Innovator Award, MoUs and appreciation.",
+ "nav": "media",
+ "og_image": "/assets/img/news.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Media & Event",
+   "/media-event/"
+  ]
+ ],
+ "priority": 0.6,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://embryogenesis.in/media-event/#webpage",
+   "name": "Media & Event: EmbryoGenesis",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "about": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "inLanguage": "en-IN",
+   "mentions": [
+    {
+     "@type": "NewsArticle",
+     "headline": "ERFA – The Soil Test & LIT- H2 Therapy kit to check IVF failure launched",
+     "datePublished": "2024-07-03",
+     "url": "https://timesofindia.indiatimes.com/city/chandigarh/therapy-kit-to-check-ivf-failure-launched-at-rbu/articleshow/111465666.cms",
+     "publisher": {
+      "@type": "Organization",
+      "name": "Times of India"
+     },
+     "about": {
+      "@id": "https://embryogenesis.in/#org"
+     }
+    },
+    {
+     "@type": "NewsArticle",
+     "headline": "Bahra University, Waknaghat (HP), in partnership with ITHS and EmbryoGenesis, launches Himachal Pradesh’s first comprehensive Clinical Embryology program",
+     "datePublished": "2024-07-06",
+     "url": "https://himachaltonite.com/himachal/bahra-university-launches-himachals-first-embryology-nutrigenetics-and-ai-programs/",
+     "publisher": {
+      "@type": "Organization",
+      "name": "Himachal Tonite"
+     },
+     "about": {
+      "@id": "https://embryogenesis.in/#org"
+     }
+    },
+    {
+     "@type": "NewsArticle",
+     "headline": "Cutting-Edge Digital Biothesiometer Gains Design Patent, Enhancing Medical Diagnostics",
+     "datePublished": "2024-07-27",
+     "url": "https://english.newsnationtv.com/brand-stories/brand-stories-english/cutting-edge-digital-biothesiometer-gains-design-patent-enhancing-medical-diagnostics-6706451",
+     "publisher": {
+      "@type": "Organization",
+      "name": "News Nation"
+     }
+    }
+   ]
+  }
+ ]
+}

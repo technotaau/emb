@@ -1,0 +1,49 @@
+{
+ "path": "/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/",
+ "title": "LIT Therapy for Recurrent Pregnancy Loss | EmbryoGenesis",
+ "description": "Lymphocyte Immunization Therapy (LIT) explained: how it works, potential benefits, side effects and considerations for couples facing recurrent pregnancy loss.",
+ "nav": "blog",
+ "lang": "en",
+ "article": true,
+ "og_image": "/assets/img/blog-lit.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Blog",
+   "/blog/"
+  ],
+  [
+   "Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss",
+   "/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/"
+  ]
+ ],
+ "priority": 0.6,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/#article",
+   "headline": "Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss",
+   "description": "Lymphocyte Immunization Therapy (LIT) explained: how it works, potential benefits, side effects and considerations for couples facing recurrent pregnancy loss.",
+   "datePublished": "2024-05-21",
+   "dateModified": "2024-05-21",
+   "author": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "image": "https://embryogenesis.in/assets/img/blog-lit.jpg",
+   "inLanguage": "en-IN",
+   "mainEntityOfPage": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/",
+   "url": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/",
+   "articleSection": "Uncategorized",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/blog/#blog"
+   }
+  }
+ ]
+}

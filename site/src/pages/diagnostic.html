@@ -1,88 +1,108 @@
 <div class="ihero"><div class="wrap ihero-grid">
     <div class="ihero-text">
       <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Services</span> / <span>Diagnostic</span></nav>
-      <h1>Diagnostic</h1>
+      <h1>Diagnostic Services</h1>
       <p class="lead">Comprehensive Diagnostic Services at Embryogenesis</p>
-      <p class="just" style="color:#DCEEF0">At Embryogenesis, we know that understanding the root cause of fertility challenges is the first step toward successful treatment. Our state-of-the-art diagnostic services are designed to provide detailed insights into reproductive health, enabling personalized and effective care for individuals and couples seeking answers.</p>
+      <p class="med-ihero-p"><span class="med-entity">EmbryoGenesis, an infertility diagnostic and research centre in Mohali, Punjab,</span> offers three endometrial tests: ERFA – The Soil Test, the Endo-Immune Test and the Endometrial Infection Test (EIT).</p>
+      <p class="just med-ihero-p">At Embryogenesis, we know that understanding the root cause of fertility challenges is the first step toward successful treatment. Our state-of-the-art diagnostic services are designed to provide detailed insights into reproductive health, enabling personalized and effective care for individuals and couples seeking answers.</p>
     </div>
-    <form class="formcard" data-lead>
-      <h3>Book Your Test Today</h3>
-      <select id="d-test" required><option value="">Select test *</option><option>ERFA – The Soil Test</option><option>Endo-Immune Test</option><option>Endometrial Infection Test (EIT)</option></select>
-      <input id="d-name" placeholder="Name *" required><input id="d-phone" type="tel" placeholder="Phone *" required><input id="d-city" placeholder="City *">
-      <label class="consent"><input id="d-consent" type="checkbox" required><span>I agree to the Privacy Policy.</span></label>
+    <form class="formcard" data-lead aria-labelledby="d-formh">
+      <h2 class="med-formh" id="d-formh">Book Your Test Today</h2>
+      <label class="med-field"><span class="med-vh">Select test</span>
+        <select id="d-test" name="test" required><option value="">Select test *</option><option>ERFA – The Soil Test</option><option>Endo-Immune Test</option><option>Endometrial Infection Test (EIT)</option></select></label>
+      <label class="med-field"><span class="med-vh">Name</span><input id="d-name" name="name" placeholder="Name *" autocomplete="name" required></label>
+      <label class="med-field"><span class="med-vh">Phone</span><input id="d-phone" name="phone" type="tel" placeholder="Phone *" autocomplete="tel" required></label>
+      <label class="med-field"><span class="med-vh">City</span><input id="d-city" name="city" placeholder="City *" autocomplete="address-level2" required></label>
+      <label class="consent"><input id="d-consent" name="consent" type="checkbox" value="yes" required><span>I agree to the <a href="/privacy-policy/">Privacy Policy</a>.</span></label>
       <button class="btn primary" type="submit">Book Now</button><p class="form-msg" role="status" tabindex="-1" hidden>Thank you. We will contact you shortly.</p>
     </form>
   </div></div>
 
-  <div class="jump"><div class="wrap"><span>OUR ADVANCED DIAGNOSTIC TESTS</span><button data-jump="t-erfa">ERFA – The Soil Test</button><button data-jump="t-ei">Endo-Immune Test</button><button data-jump="t-eit">Endometrial Infection Test (EIT)</button></div></div>
+  <div class="jump med-jump"><div class="wrap"><span>OUR ADVANCED DIAGNOSTIC TESTS</span><button type="button" data-jump="t-erfa">ERFA – The Soil Test</button><button type="button" data-jump="t-ei">Endo-Immune Test</button><button type="button" data-jump="t-eit">Endometrial Infection Test (EIT)</button></div></div>
 
-  <div class="band" id="t-erfa"><div class="wrap zig">
-    <img class="pic zph" src="/assets/img/erfa.jpg" alt="Seedling growing in soil, the idea behind ERFA – The Soil Test">
+  <div class="band" id="t-erfa"><div class="wrap stack">
+    <div class="zig">
+    <img class="pic zph" src="/assets/img/erfa.jpg" alt="Young seedlings sprouting from dark soil, the seed-and-soil idea behind ERFA – The Soil Test">
     <div class="stack">
       <span class="eyebrow">Test 1</span>
       <h2>Endometrial Receptivity &amp; Function Assay (ERFA – The Soil Test)</h2>
       <h3 class="sm">What is ERFA?</h3>
       <p class="just">The ERFA, or Endometrial Soil Test, is a groundbreaking diagnostic tool that assesses the readiness of the uterine lining (endometrium) for successful embryo implantation. This comprehensive test analyzes multiple biomarkers to pinpoint factors affecting fertility and implantation success.</p>
       <div class="twolist">
-        <div><h3 class="sm">Who is it for?</h3><ul class="ticks"><li>Individuals with unexplained infertility</li><li>Those who have experienced recurrent implantation failure (RIF)</li><li>Women facing repeated IVF failures or recurrent pregnancy loss (RPL</li></ul></div>
-        <div><h3 class="sm">Benefits:</h3><ul class="ticks"><li>Provides a full profile of endometrial receptivity</li><li>Explains hidden causes of implantation challenges</li><li>Guides personalized treatment strategies</li></ul></div>
+        <div><h3 class="sm">Who is ERFA for?</h3><ul class="ticks"><li>Individuals with unexplained infertility</li><li>Those who have experienced recurrent implantation failure (RIF)</li><li>Women facing repeated IVF failures or recurrent pregnancy loss (RPL)</li></ul></div>
+        <div><h3 class="sm">What are the benefits of ERFA?</h3><ul class="ticks"><li>Provides a full profile of endometrial receptivity</li><li>Explains hidden causes of implantation challenges</li><li>Guides personalized treatment strategies</li></ul></div>
       </div>
       <p class="quote">“Gain crucial insights into your fertility journey with ERFA – The SoiL Test.”</p>
+      <p class="med-more">Read more: <a href="/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/">ERFA – The Soil Test: Understanding Successful Pregnancy &amp; Embryo Implantation</a></p>
       <a class="btn primary" href="/contact-us/">Book Your Test Today</a>
+    </div>
+    </div>
+    <div class="med-facts reveal">
+      <h3>ERFA – The Soil Test: sample requirements and key facts</h3>
+      <dl class="keyfacts">
+        <div><dt>Sample type</dt><dd>Endometrial tissue (biopsy)</dd></div>
+        <div><dt>Method of collection</dt><dd>Curettage procedure (D&amp;C) or needle biopsy</dd></div>
+        <div><dt>Collection day: menstrual cycle</dt><dd>Day 21–23 <small>Preferred: 21st day</small></dd></div>
+        <div><dt>Collection day: natural cycle</dt><dd>LH+7 to LH+9 <small>7–9 days after ovulation</small></dd></div>
+        <div><dt>Collection day: HRT / mock cycle</dt><dd>P+6 to P+8 <small>6–8 days after start of progesterone</small></dd></div>
+        <div><dt>Results</dt><dd>Typically within 7–10 days <small>Depending on the complexity of the test</small></dd></div>
+        <div><dt>Factors assessed</dt><dd>7 endometrial factors <small>Glandular development, maturation, receptivity, anti-adhesion molecules, cytokine abnormalities, immune tolerance, inflammation &amp; infection</small></dd></div>
+        <div><dt>Patent application</dt><dd>No. 202431001616 A</dd></div>
+      </dl>
+      <p class="quiet">A complete pathology report requires an accurate time for biopsy sampling, that plays a significant role in the test result.</p>
     </div>
   </div></div>
 
   <div class="band tint" id="t-ei"><div class="wrap zig rev">
-    <img class="pic zph" src="/assets/img/immune.jpg" alt="Immune cells">
+    <img class="pic zph" src="/assets/img/immune.jpg" alt="Electron micrograph of a white blood cell, representing the immune cells studied in the Endo-Immune Test">
     <div class="stack">
       <span class="eyebrow">Test 2</span>
       <h2>Endo-Immune Test</h2>
       <h3 class="sm">What is the Endo-Immune Test?</h3>
       <p class="just">This test delves into the immune landscape of the endometrium, essential for maintaining a balance between pro-inflammatory and anti-inflammatory responses. By evaluating cytokines and immune cells, we help identify potential immune-related issues causing recurrent miscarriages or failed implantation.</p>
-      <h3 class="sm">Key Highlights:</h3>
+      <h3 class="sm">Key highlights of the Endo-Immune Test</h3>
       <ul class="ticks"><li>Assesses immune competency to support healthy embryo implantation</li><li>Identifies imbalances in cytokine levels and uNK cell activity</li><li>Offers targeted insights for immune-modulatory treatments</li></ul>
       <p class="quote">“Find answers to immune-related fertility challenges and explore tailored solutions.”</p>
+      <p class="med-more">Read more: <a href="/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/">Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It</a></p>
       <a class="btn primary" href="/contact-us/">Book your test today</a>
     </div>
   </div></div>
 
   <div class="band" id="t-eit"><div class="wrap zig">
-    <img class="pic zph" src="/assets/img/microscope.jpg" alt="Pathologist examining a slide under the microscope">
+    <img class="pic zph" src="/assets/img/microscope.jpg" alt="Woman scientist in a lab coat examining a slide under a microscope">
     <div class="stack">
       <span class="eyebrow">Test 3</span>
       <h2>Endometrial Infection Test (EIT)</h2>
+      <h3 class="sm">What is the Endometrial Infection Test (EIT)?</h3>
       <p class="just">Endometrial infections can go unnoticed but may severely impact fertility by altering the environment needed for successful implantation. The Endometrial Infection Test detects hidden bacterial or viral infections and chronic endometritis.</p>
       <div class="twolist">
-        <div><h3 class="sm">Who Should Consider This Test?</h3><ul class="ticks"><li>Women with recurrent pregnancy loss (RPL)</li><li>Those experiencing repeated IVF failures or unexplained infertility</li></ul></div>
-        <div><h3 class="sm">Advantages:</h3><ul class="ticks"><li>Detects asymptomatic infections affecting fertility</li><li>Ensures a thorough assessment for a healthier endometrial environment</li></ul></div>
+        <div><h3 class="sm">Who should consider this test?</h3><ul class="ticks"><li>Women with recurrent pregnancy loss (RPL)</li><li>Those experiencing repeated IVF failures or <a href="/unexplained-infertility/">unexplained infertility</a></li></ul></div>
+        <div><h3 class="sm">Advantages of the EIT</h3><ul class="ticks"><li>Detects asymptomatic infections affecting fertility</li><li>Ensures a thorough assessment for a healthier endometrial environment</li></ul></div>
       </div>
       <p class="quote">“Ensure your endometrium is prepared for a healthy pregnancy with our EIT.”</p>
       <a class="btn primary" href="/contact-us/">Book your test today</a>
     </div>
   </div></div>
 
-  <div class="band tint"><div class="wrap stack">
+  <div class="band tint"><div class="wrap stack reveal">
     <h2 class="center">Why Choose Embryogenesis for Your Diagnostic Needs?</h2>
     <div class="cards3">
-      <div class="icard"><div class="ico"><svg><use href="#i-heart"/></svg></div><h3>Personalized Care</h3><p>We understand that each fertility journey is unique. Our diagnostic services are tailored to meet your specific reproductive health needs, ensuring accurate, individualized results.</p></div>
-      <div class="icard"><div class="ico"><svg><use href="#i-dna"/></svg></div><h3>Cutting-Edge Technology</h3><p>Utilizing advanced molecular biomarkers and state-of-the-art equipment, our diagnostics are at the forefront of reproductive science.</p></div>
-      <div class="icard"><div class="ico"><svg><use href="#i-users"/></svg></div><h3>Experienced Specialists</h3><p>Our team of dedicated experts brings years of experience in reproductive health and diagnostics, guiding you with empathy and professionalism every step of the way.</p></div>
+      <div class="icard"><div class="ico"><svg aria-hidden="true"><use href="#i-heart"/></svg></div><h3>Personalized Care</h3><p>We understand that each fertility journey is unique. Our diagnostic services are tailored to meet your specific reproductive health needs, ensuring accurate, individualized results.</p></div>
+      <div class="icard"><div class="ico"><svg aria-hidden="true"><use href="#i-dna"/></svg></div><h3>Cutting-Edge Technology</h3><p>Utilizing advanced molecular biomarkers and state-of-the-art equipment, our diagnostics are at the forefront of reproductive science.</p></div>
+      <div class="icard"><div class="ico"><svg aria-hidden="true"><use href="#i-users"/></svg></div><h3>Experienced Specialists</h3><p>Our team of dedicated experts brings years of experience in reproductive health and diagnostics, guiding you with empathy and professionalism every step of the way.</p></div>
     </div>
   </div></div>
 
-  <div class="band"><div class="wrap stack">
+  <div class="band" id="faqs"><div class="wrap stack reveal">
     <h2 class="center">FAQs</h2>
-    <div class="faq">
-      <details open><summary>What can I expect during these diagnostic tests?</summary><p>Each test includes a comprehensive consultation, a simple collection process, and a detailed explanation of results. Our specialists ensure you feel informed and supported throughout.</p></details>
-      <details><summary>How soon will I get my results?</summary><p>Results are typically available within 7-10 days, depending on the complexity of the test. We prioritize accuracy and timely reporting to help you move forward confidently.</p></details>
-      <details><summary>Will these tests help if I’ve already had IVF treatments?</summary><p>Absolutely. Our diagnostic tests are particularly beneficial for those who have faced IVF failures or unexplained fertility issues. They provide deeper insights that standard tests may miss.</p></details>
-    </div>
+    <!--FAQ-->
+    <p class="med-disclaimer">Information only. Testing is ordered and interpreted by your treating doctor.</p>
   </div></div>
 
-  <div class="band tint"><div class="wrap cross">
-    <div class="ico"><svg><use href="#i-shield"/></svg></div>
+  <div class="band tint"><div class="wrap cross reveal">
+    <div class="ico"><svg aria-hidden="true"><use href="#i-shield"/></svg></div>
     <div><span class="eyebrow">Therapeutic Services</span><h3>Explore advanced therapies like LIT Therapy, Stem Cell Therapy, PRP, and Molecular Hydrogen Therapy.</h3><p>Our personalized treatments improve reproductive health and help couples achieve their dream of parenthood.</p></div>
     <a class="btn deep" href="/advanced-fertility-therapies/">Therapeutic →</a>
   </div></div>
 
-  <div class="ctaband"><div class="wrap ctagrid"><div><p class="q2">“Embryogenesis is committed to being your partner in uncovering answers and paving the way toward successful outcomes. Contact us today to learn more or schedule your consultation.”</p></div><div class="row"><a class="btn primary" href="/contact-us/">Book Now</a><span class="callpill"><svg><use href="#i-phone"/></svg> +91 8146217196</span></div></div></div>
+  <div class="ctaband"><div class="wrap ctagrid"><div><p class="q2">“Embryogenesis is committed to being your partner in uncovering answers and paving the way toward successful outcomes. Contact us today to learn more or schedule your consultation.”</p></div><div class="row"><a class="btn primary" href="/contact-us/">Book Now</a><a class="callpill" href="tel:+918146217196"><svg aria-hidden="true"><use href="#i-phone"/></svg> +91 8146217196</a></div></div></div>

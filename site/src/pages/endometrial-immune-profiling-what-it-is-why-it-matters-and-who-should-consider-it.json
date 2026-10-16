@@ -1,0 +1,50 @@
+{
+ "path": "/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/",
+ "title": "Endometrial Immune Profiling: What It Is | EmbryoGenesis",
+ "description": "Endometrial Immune Profiling (EIP) assesses the immune activity of the endometrium in women with repeated IVF failures or recurrent pregnancy loss.",
+ "nav": "blog",
+ "lang": "en",
+ "article": true,
+ "og_image": "/assets/img/blog-eip.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Blog",
+   "/blog/"
+  ],
+  [
+   "Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It",
+   "/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/"
+  ]
+ ],
+ "priority": 0.6,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/#article",
+   "headline": "Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It",
+   "description": "Endometrial Immune Profiling (EIP) assesses the immune activity of the endometrium in women with repeated IVF failures or recurrent pregnancy loss.",
+   "datePublished": "2025-07-28",
+   "dateModified": "2025-07-28",
+   "author": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "image": "https://embryogenesis.in/assets/img/blog-eip.jpg",
+   "inLanguage": "en-IN",
+   "mainEntityOfPage": "https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/",
+   "url": "https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/",
+   "articleSection": "Fertility Testing & Diagnostics; Reproductive Immunology",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/blog/#blog"
+   },
+   "keywords": "endometrial immune profiling, recurrent pregnancy loss, IVF failure causes, reproductive immunology testing"
+  }
+ ]
+}

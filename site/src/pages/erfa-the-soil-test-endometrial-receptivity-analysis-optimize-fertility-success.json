@@ -1,0 +1,50 @@
+{
+ "path": "/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/",
+ "title": "ERFA The Soil Test: Endometrial Receptivity | EmbryoGenesis",
+ "description": "ERFA – The Soil Test (Endometrial Receptivity & Function Assay) evaluates multiple endometrial biomarkers during the window of implantation. Who it can help.",
+ "nav": "blog",
+ "lang": "en",
+ "article": true,
+ "og_image": "/assets/img/blog-erfa.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Blog",
+   "/blog/"
+  ],
+  [
+   "ERFA -The Soil Test: Understanding Successful Pregnancy & Embryo Implantation",
+   "/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/"
+  ]
+ ],
+ "priority": 0.6,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/#article",
+   "headline": "ERFA -The Soil Test: Understanding Successful Pregnancy & Embryo Implantation",
+   "description": "ERFA – The Soil Test (Endometrial Receptivity & Function Assay) evaluates multiple endometrial biomarkers during the window of implantation. Who it can help.",
+   "datePublished": "2024-06-07",
+   "dateModified": "2024-06-07",
+   "author": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "image": "https://embryogenesis.in/assets/img/blog-erfa.jpg",
+   "inLanguage": "en-IN",
+   "mainEntityOfPage": "https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/",
+   "url": "https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/",
+   "articleSection": "ERFA The Soil Test",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/blog/#blog"
+   },
+   "keywords": "endometrial receptivity, endometrial receptivity analysis, endometrial receptivity assay"
+  }
+ ]
+}

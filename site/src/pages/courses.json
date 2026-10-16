@@ -1,1 +1,132 @@
-{"path":"/courses/","title":"courses | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/courses/",
+ "title": "Clinical Embryology Courses, B.Sc. to Ph.D. | EmbryoGenesis",
+ "description": "Admission open 2025-26: B.Sc., M.Sc., Ph.D. and PG Diploma in Clinical Embryology and ART with EmbryoGenesis, ITHS, Bahra and Rayat Bahra University.",
+ "nav": "courses",
+ "og_image": "/assets/img/students-lab.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Courses",
+   "/courses/"
+  ]
+ ],
+ "priority": 0.8,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://embryogenesis.in/courses/#webpage",
+   "name": "Courses at EmbryoGenesis",
+   "description": "B.Sc., M.Sc., Ph.D. and PG Diploma programmes in Clinical Embryology and ART & Clinical Embryology offered by EmbryoGenesis with ITHS, Bahra University and Rayat Bahra University.",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "about": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/courses/#breadcrumb"
+   },
+   "mainEntity": {
+    "@id": "https://embryogenesis.in/courses/#programmes"
+   },
+   "inLanguage": "en-IN"
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://embryogenesis.in/courses/#programmes",
+   "name": "Clinical Embryology and ART & Clinical Embryology programmes",
+   "numberOfItems": 6,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#bsc",
+      "name": "BSc in Clinical Embryology",
+      "url": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#bsc",
+      "description": "Explore the rapidly growing field of Assisted Reproductive Technology (ART) with our BSc & MSc in Clinical Embryology program at Bahra University. Eligibility: 12th with Physics, Chemistry, and Biology. Duration: 4 Years.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#msc",
+      "name": "MSc in Clinical Embryology",
+      "url": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#msc",
+      "description": "Explore the rapidly growing field of Assisted Reproductive Technology (ART) with our BSc & MSc in Clinical Embryology program at Bahra University. Duration: 2 Years (4 Semesters).",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#bsc",
+      "name": "B.Sc. in ART & Clinical Embryology",
+      "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#bsc",
+      "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: 12th with Physics, Chemistry, and Biology/Math. Duration: 4 Years.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#msc",
+      "name": "M.Sc. in ART & Clinical Embryology",
+      "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#msc",
+      "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: B.Sc./B.Tech in Life Sciences, MBBS, BDS etc. Duration: 2 Years.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#phd",
+      "name": "Ph.D. in ART & Clinical Embryology",
+      "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#phd",
+      "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: Post Graduation in relevant field Duration: 3-4 Years.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#pgd",
+      "name": "PG Diploma in ART & Clinical Embryology",
+      "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#pgd",
+      "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: B.Sc./M.Sc. in Life Sciences, MBBS etc. Duration: 1 Years.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+/* EmbryoGenesis · medical & blog pages (diagnostic, therapies, blog, posts, founder profile)
+   TechnoTaau Team · all classes prefixed .med- */
+
+/* visually hidden (screen-reader only) */
+.med-vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* forms: h2 used as form title (keeps heading order h1 → h2) */
+.formcard .med-formh{font-size:1.15rem;color:var(--deep);font-weight:600}
+.formcard .med-field{display:grid;gap:4px}
+
+/* hero helpers */
+.ihero .med-entity{color:#fff;font-weight:700}
+.ihero .med-ihero-p{color:#DCEEF0}
+
+/* larger tap targets for chips (≥44px) */
+.med-chips button{min-height:44px}
+
+/* key facts block */
+.med-facts{display:grid;gap:14px;background:var(--tint);border-radius:14px;padding:22px}
+.band.tint .med-facts{background:var(--paper)}
+.med-facts h3{color:var(--deep)}
+.med-facts .keyfacts dd{font-weight:600}
+.med-facts .keyfacts dd small{display:block;font-weight:400;color:var(--ink-2);font-size:.86rem}
+.med-facts .quiet a{font-weight:700}
+
+/* read-more line under a test or therapy */
+.med-more{font-size:.95rem;color:var(--ink-2)}
+.med-more a{font-weight:700}
+
+/* medical disclaimer */
+.med-disclaimer{font-size:.88rem;color:var(--ink-2);border-top:1px solid var(--line);padding-top:12px;margin:8px 0 0}
+.band .wrap>.med-disclaimer{max-width:1000px;margin-inline:auto;text-align:center;border-top:0}
+
+/* ---------- blog index ---------- */
+.featured h3{font-size:1.4rem;color:var(--deep);font-weight:500}
+.featured .meta,.card .meta{font-size:.84rem;color:var(--ink-2)}
+.card h3 a,.featured h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover,.featured h3 a:hover{text-decoration:underline}
+.card .body>a:last-child{font-family:var(--head);font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+.card[hidden],.featured[hidden]{display:none}
+.med-sideh{font-size:1.15rem;color:var(--deep);font-weight:600}
+.med-sidelist{display:grid}
+@media (max-width:900px){.blogwrap{grid-template-columns:1fr}.side{position:static}}
+@media (max-width:700px){.featured{grid-template-columns:1fr}.featured .pic{aspect-ratio:16/9;min-height:0;height:auto}}
+
+/* ---------- blog post ---------- */
+.med-postband{padding-top:34px}
+.med-posthead{display:grid;gap:10px}
+.med-post .crumb{color:var(--ink-2)}
+.med-post .crumb a{color:var(--deep)}
+.med-post h1{color:var(--deep);font-size:clamp(1.7rem,3.6vw,2.4rem)}
+.med-post .med-sub{font-family:var(--head);font-size:1.15rem;color:var(--teal-mid);margin:0}
+.med-post .meta a{color:var(--deep)}
+.med-postimg{border-radius:12px!important}
+.med-post h4{font-size:1.05rem;color:var(--deep);margin-top:6px}
+.med-post p,.med-post li{overflow-wrap:anywhere}
+.med-post h2[id],.med-post h3[id]{scroll-margin-top:calc(var(--header-h,76px) + 16px)}
+.med-post .toc b{font-family:var(--head);color:var(--deep)}
+.med-post .toc ol{gap:4px}
+.med-post .toc li{padding:3px 0}
+.med-related{background:var(--tint);border-radius:14px;padding:22px;display:grid;gap:14px;margin-top:10px}
+.med-related h2{margin-top:0!important;font-size:1.25rem!important}
+.med-relgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr))}
+.med-relgrid a{display:grid;gap:4px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink);min-width:0}
+.med-relgrid a:hover{border-top-color:var(--gold)}
+.med-relgrid b{font-family:var(--head);color:var(--deep)}
+.med-relgrid span{font-size:.9rem;color:var(--ink-2)}
+.med-related .btn{justify-self:start}
+.med-related p{margin:0}
+
+/* ---------- founder profile ---------- */
+.med-prof-grid{display:grid;gap:32px;grid-template-columns:260px 1fr;align-items:center;padding-block:44px}
+.med-prof-grid>*{min-width:0}
+.med-prof-photo{width:100%;max-width:260px;height:auto;border-radius:16px;border:4px solid rgba(255,255,255,.85);box-shadow:0 18px 40px rgba(0,0,0,.2);background:#fff}
+.med-prof-cred{color:#F3E7C8;font-family:var(--head);font-size:1rem}
+.med-badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 14px;font-family:var(--head);font-weight:600;font-size:.88rem;color:#fff;justify-self:start;max-width:100%}
+.med-badge svg{width:18px;height:18px;stroke:#F3E7C8;fill:none;stroke-width:2;flex:none}
+.med-prof-body{display:grid;gap:30px;grid-template-columns:1fr 320px;align-items:start}
+.med-prof-body>*{min-width:0}
+.med-prof-main{display:grid;gap:16px}
+.med-prof-main h2{font-size:1.5rem;color:var(--deep);margin-top:14px}
+.med-prof-main p{max-width:75ch}
+.med-numlist{margin:0;padding-left:24px;display:grid;gap:8px}
+.med-numlist li{padding-left:4px}
+.med-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92rem;overflow-wrap:anywhere}
+.med-links{display:grid;gap:10px}
+.med-links a{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper);text-decoration:none;font-family:var(--head);font-weight:600;color:var(--deep);overflow-wrap:anywhere}
+.med-links a:hover{border-color:var(--teal)}
+.med-links small{display:block;font-family:var(--body);font-weight:400;color:var(--ink-2);font-size:.8rem}
+.med-contact{display:grid;gap:6px;font-size:.95rem}
+.med-contact a{overflow-wrap:anywhere}
+@media (max-width:900px){.med-prof-body{grid-template-columns:1fr}}
+@media (max-width:700px){.med-prof-grid{grid-template-columns:1fr;padding-block:32px}.med-prof-photo{max-width:200px}}
+
+/* therapy headings: category h2 > therapy h3 > question h4 */
+.med-thh{font-size:1.5rem;color:var(--deep);font-weight:500}
+h4.med-q{font-size:1rem;color:var(--deep);font-weight:600;font-family:var(--head);line-height:1.3;margin:0}
+
+/* jump bar buttons on test/therapy pages: ≥44px tap target */
+.med-jump button{min-height:44px}
+.sidebox .callpill{justify-self:start}
+.blogwrap .card{grid-template-rows:auto 1fr}
+.blogwrap .card .body{align-content:start}

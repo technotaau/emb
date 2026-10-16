@@ -1,1 +1,36 @@
-{"path":"/contact-us/","title":"contact-us | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/contact-us/",
+ "title": "Contact EmbryoGenesis | Book a Test or Course, Mohali",
+ "description": "Contact EmbryoGenesis, Mohali: call or WhatsApp +91 8146217196, email info.embryogenesis@gmail.com, or visit a collection centre in Mumbai, Udaipur, Jalandhar.",
+ "nav": "contact",
+ "og_image": "/assets/img/map-mohali.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Contact Us",
+   "/contact-us/"
+  ]
+ ],
+ "priority": 0.8,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "ContactPage",
+   "@id": "https://embryogenesis.in/contact-us/#webpage",
+   "name": "Contact EmbryoGenesis",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "about": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "mainEntity": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "inLanguage": "en-IN"
+  }
+ ]
+}

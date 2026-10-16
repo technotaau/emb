@@ -1,0 +1,186 @@
+{
+ "path": "/art-and-clinical-embryology-in-rayat-bahra-university/",
+ "title": "ART & Clinical Embryology at Rayat Bahra | EmbryoGenesis",
+ "description": "B.Sc., M.Sc., Ph.D. and PG Diploma in ART & Clinical Embryology at Rayat Bahra University, Mohali, with EmbryoGenesis and ITHS: eligibility, duration, syllabus.",
+ "nav": "courses",
+ "og_image": "/assets/img/campus.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Courses",
+   "/courses/"
+  ],
+  [
+   "ART & Clinical Embryology",
+   "/art-and-clinical-embryology-in-rayat-bahra-university/"
+  ]
+ ],
+ "priority": 0.8,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "WebPage",
+   "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#webpage",
+   "name": "ART & Clinical Embryology at Rayat Bahra University",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#breadcrumb"
+   },
+   "about": [
+    {
+     "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#bsc"
+    },
+    {
+     "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#msc"
+    },
+    {
+     "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#phd"
+    },
+    {
+     "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#pgd"
+    }
+   ],
+   "inLanguage": "en-IN"
+  },
+  {
+   "@type": "Course",
+   "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#bsc",
+   "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#bsc",
+   "name": "B.Sc. in ART & Clinical Embryology",
+   "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: 12th with Physics, Chemistry, and Biology/Math. Duration: 4 Years.",
+   "provider": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "educationalCredentialAwarded": "B.Sc. in ART & Clinical Embryology",
+   "coursePrerequisites": "12th with Physics, Chemistry, and Biology/Math.",
+   "timeRequired": "P4Y",
+   "teaches": [
+    "Reproductive Biology",
+    "Fundamentals of Andrology",
+    "Basics of Clinical Embryology",
+    "Laboratory Andrology Tools & Techniques",
+    "Practical Training in ART Laboratory Processes"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "location": {
+     "@type": "Place",
+     "name": "Institute of Translational Health Science (ITHS), Rayat Bahra University",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University",
+      "addressLocality": "Mohali",
+      "addressRegion": "Punjab",
+      "addressCountry": "IN"
+     }
+    }
+   }
+  },
+  {
+   "@type": "Course",
+   "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#msc",
+   "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#msc",
+   "name": "M.Sc. in ART & Clinical Embryology",
+   "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: B.Sc./B.Tech in Life Sciences, MBBS, BDS etc. Duration: 2 Years.",
+   "provider": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "educationalCredentialAwarded": "M.Sc. in ART & Clinical Embryology",
+   "coursePrerequisites": "B.Sc./B.Tech in Life Sciences, MBBS, BDS etc.",
+   "timeRequired": "P2Y",
+   "teaches": [
+    "Advanced Reproductive Genetics & Genetic Testing in ART",
+    "Ethics and Regulation in ART",
+    "Advanced ART Laboratory Processes (Andrology and Embryology)",
+    "Research in ART Techniques and Laboratory Management"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "location": {
+     "@type": "Place",
+     "name": "Institute of Translational Health Science (ITHS), Rayat Bahra University",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University",
+      "addressLocality": "Mohali",
+      "addressRegion": "Punjab",
+      "addressCountry": "IN"
+     }
+    }
+   }
+  },
+  {
+   "@type": "Course",
+   "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#phd",
+   "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#phd",
+   "name": "Ph.D. in ART & Clinical Embryology",
+   "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: Post Graduation in relevant field Duration: 3-4 Years.",
+   "provider": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "educationalCredentialAwarded": "Ph.D. in ART & Clinical Embryology",
+   "coursePrerequisites": "Post Graduation in relevant field",
+   "teaches": [
+    "Reproductive Genetics",
+    "Advanced Embryology Techniques",
+    "Assisted Reproductive Technologies (ART)"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "location": {
+     "@type": "Place",
+     "name": "Institute of Translational Health Science (ITHS), Rayat Bahra University",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University",
+      "addressLocality": "Mohali",
+      "addressRegion": "Punjab",
+      "addressCountry": "IN"
+     }
+    }
+   }
+  },
+  {
+   "@type": "Course",
+   "@id": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#pgd",
+   "url": "https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/#pgd",
+   "name": "PG Diploma in ART & Clinical Embryology",
+   "description": "EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART & Clinical Embryology. Eligibility: B.Sc./M.Sc. in Life Sciences, MBBS etc. Duration: 1 Years.",
+   "provider": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "educationalCredentialAwarded": "PG Diploma in ART & Clinical Embryology",
+   "coursePrerequisites": "B.Sc./M.Sc. in Life Sciences, MBBS etc.",
+   "timeRequired": "P1Y",
+   "teaches": [
+    "Fundamental Andrology and Clinical Embryology",
+    "ART Laboratory Processes and Techniques",
+    "Reproductive Genetics and Genetic Testing",
+    "Ethics and Regulation in ART"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "location": {
+     "@type": "Place",
+     "name": "Institute of Translational Health Science (ITHS), Rayat Bahra University",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University",
+      "addressLocality": "Mohali",
+      "addressRegion": "Punjab",
+      "addressCountry": "IN"
+     }
+    }
+   }
+  }
+ ]
+}

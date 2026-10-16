@@ -1,0 +1,130 @@
+{
+ "path": "/pulakes-purkait-profile/",
+ "title": "Prof. (Dr.) Pulakes Purkait, Founder | EmbryoGenesis Mohali",
+ "description": "Prof. (Dr.) Pulakes Purkait, Founder & Director of EmbryoGenesis, Mohali: Reproductive Geneticist, biography, education, patent list, awards and memberships.",
+ "nav": "about",
+ "og_image": "/assets/img/founder.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "About Us",
+   "/about/"
+  ],
+  [
+   "Prof. (Dr.) Pulakes Purkait",
+   "/pulakes-purkait-profile/"
+  ]
+ ],
+ "priority": 0.7,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "ProfilePage",
+   "@id": "https://embryogenesis.in/pulakes-purkait-profile/#webpage",
+   "name": "Prof. (Dr.) Pulakes Purkait – Profile",
+   "inLanguage": "en-IN",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "mainEntity": {
+    "@id": "https://embryogenesis.in/pulakes-purkait-profile/#person"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/pulakes-purkait-profile/#breadcrumb"
+   },
+   "primaryImageOfPage": "https://embryogenesis.in/assets/img/founder.jpg"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://embryogenesis.in/pulakes-purkait-profile/#person",
+   "honorificPrefix": "Prof. (Dr.)",
+   "givenName": "Pulakes",
+   "familyName": "Purkait",
+   "description": "Reproductive Geneticist; academician, scholar of translational research and entrepreneur; Founder & Director of EmbryoGenesis, Mohali.",
+   "alumniOf": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "Vidyasagar University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "Andhra University"
+    },
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "Panjab University"
+    }
+   ],
+   "hasCredential": [
+    {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "degree",
+     "name": "M.Sc., Biological Anthropology",
+     "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "Vidyasagar University"
+     }
+    },
+    {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "degree",
+     "name": "Ph.D., Clinical Molecular Anthropology",
+     "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "Andhra University"
+     }
+    }
+   ],
+   "award": [
+    "Best Innovator Awardee: NBHC 2024 at IIT Delhi",
+    "Post-Doctoral Fellowship (2017), UGC",
+    "Senior Research Fellowship (2012), Anthropological Survey of India",
+    "Junior Research Fellowship (2008), Anthropological Survey of India"
+   ],
+   "memberOf": [
+    {
+     "@type": "Organization",
+     "name": "Indian Fertility Society"
+    },
+    {
+     "@type": "Organization",
+     "name": "Global Andrology Forum"
+    },
+    {
+     "@type": "Organization",
+     "name": "BIOinformatics CLUb for Experimenting Scientists (BIOCLUES)"
+    }
+   ],
+   "affiliation": [
+    {
+     "@id": "https://embryogenesis.in/#org"
+    },
+    {
+     "@type": "Organization",
+     "name": "Institute of Translational Health Science (ITHS)",
+     "url": "https://translationalhealthscience.in/"
+    },
+    {
+     "@type": "Organization",
+     "name": "Institute of Nutrigenetics & Nutrigenomics Research (INNR)",
+     "url": "https://nutrigenetics.in"
+    }
+   ],
+   "knowsAbout": [
+    "Reproductive genetics",
+    "Molecular and Medical Genetics",
+    "Endometrial receptivity",
+    "Epigenetics",
+    "Clinical embryology"
+   ],
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0000-0002-8814-9939"
+   }
+  }
+ ]
+}

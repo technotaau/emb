@@ -1,0 +1,135 @@
+{
+ "path": "/bsc-in-clinical-embryology-in-bahra-university/",
+ "title": "BSc Clinical Embryology, Bahra University | EmbryoGenesis",
+ "description": "BSc & MSc in Clinical Embryology at Bahra University, Shimla Hills, with EmbryoGenesis: eligibility, 4-year and 2-year duration, fee per semester, admission.",
+ "nav": "courses",
+ "og_image": "/assets/img/students-lab.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Courses",
+   "/courses/"
+  ],
+  [
+   "BSc & MSc in Clinical Embryology",
+   "/bsc-in-clinical-embryology-in-bahra-university/"
+  ]
+ ],
+ "priority": 0.8,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "WebPage",
+   "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#webpage",
+   "name": "BSc & MSc in Clinical Embryology at Bahra University",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#breadcrumb"
+   },
+   "about": [
+    {
+     "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#bsc"
+    },
+    {
+     "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#msc"
+    }
+   ],
+   "inLanguage": "en-IN"
+  },
+  {
+   "@type": "Course",
+   "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#bsc",
+   "url": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#bsc",
+   "name": "BSc in Clinical Embryology",
+   "description": "Explore the rapidly growing field of Assisted Reproductive Technology (ART) with our BSc & MSc in Clinical Embryology program at Bahra University. Eligibility: 12th with Physics, Chemistry, and Biology. Duration: 4 Years.",
+   "provider": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "educationalCredentialAwarded": "B.Sc. in Clinical Embryology",
+   "coursePrerequisites": "12th with Physics, Chemistry, and Biology.",
+   "timeRequired": "P4Y",
+   "teaches": [
+    "Embryo culture",
+    "Cryopreservation",
+    "ART techniques"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "location": {
+     "@type": "Place",
+     "name": "Department of Clinical Embryology, Bahra University",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Shimla Hills",
+      "addressRegion": "Himachal Pradesh",
+      "addressCountry": "IN"
+     }
+    }
+   },
+   "offers": {
+    "@type": "Offer",
+    "category": "Paid",
+    "price": 39875,
+    "priceCurrency": "INR",
+    "description": "₹39,875 per semester",
+    "priceSpecification": {
+     "@type": "UnitPriceSpecification",
+     "price": 39875,
+     "priceCurrency": "INR",
+     "unitText": "per semester"
+    }
+   }
+  },
+  {
+   "@type": "Course",
+   "@id": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#msc",
+   "url": "https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/#msc",
+   "name": "MSc in Clinical Embryology",
+   "description": "Explore the rapidly growing field of Assisted Reproductive Technology (ART) with our BSc & MSc in Clinical Embryology program at Bahra University. Duration: 2 Years (4 Semesters).",
+   "provider": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "educationalCredentialAwarded": "M.Sc. in Clinical Embryology",
+   "coursePrerequisites": "Undergraduate / B.Sc. Life Sciences, Embryology, Nutrigenetics, Genetics, Microbiology, Biotechnology, Anthropology, Human Biology, MLT / MBBS, BDS, BVSc., and Allied Sciences",
+   "timeRequired": "P2Y",
+   "teaches": [
+    "Embryo culture",
+    "Cryopreservation",
+    "ART techniques"
+   ],
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "location": {
+     "@type": "Place",
+     "name": "Department of Clinical Embryology, Bahra University",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Shimla Hills",
+      "addressRegion": "Himachal Pradesh",
+      "addressCountry": "IN"
+     }
+    }
+   },
+   "offers": {
+    "@type": "Offer",
+    "category": "Paid",
+    "price": 100000,
+    "priceCurrency": "INR",
+    "description": "INR 1,00,000/- Per Semester",
+    "priceSpecification": {
+     "@type": "UnitPriceSpecification",
+     "price": 100000,
+     "priceCurrency": "INR",
+     "unitText": "per semester"
+    }
+   }
+  }
+ ]
+}

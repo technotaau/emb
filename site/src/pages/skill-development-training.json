@@ -1,1 +1,271 @@
-{"path":"/skill-development-training/","title":"skill-development-training | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/skill-development-training/",
+ "title": "Skill Development Lab Training in Mohali | EmbryoGenesis",
+ "description": "Hands-on skill development training at EmbryoGenesis, Mohali: 8 lab courses from biochemistry to stem cell processing, 1 to 5 days, 10 seats a batch, with fees.",
+ "nav": "training",
+ "og_image": "/assets/img/training.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Lab Training",
+   "/skill-development-training/"
+  ]
+ ],
+ "priority": 0.7,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://embryogenesis.in/skill-development-training/#webpage",
+   "name": "Skill Development Training",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "about": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/skill-development-training/#breadcrumb"
+   },
+   "mainEntity": {
+    "@id": "https://embryogenesis.in/skill-development-training/#programmes"
+   },
+   "inLanguage": "en-IN"
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://embryogenesis.in/skill-development-training/#programmes",
+   "name": "Hands-on skill development training programmes",
+   "numberOfItems": 8,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#biochemistry",
+      "url": "https://embryogenesis.in/skill-development-training/#biochemistry",
+      "name": "Hands-on Training on Biochemistry (Semi Auto Analyser)",
+      "description": "Hands-on Training on Biochemistry (Semi Auto Analyser). Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 1 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P1D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 1000,
+       "priceCurrency": "INR",
+       "description": "Fee: 1000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#molecular-genetics",
+      "url": "https://embryogenesis.in/skill-development-training/#molecular-genetics",
+      "name": "Hands-on Training on Molecular Genetics & Bioinformatics",
+      "description": "Hands-on Training on Molecular Genetics & Bioinformatics. Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 5 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P5D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 7000,
+       "priceCurrency": "INR",
+       "description": "Fee: 7000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#tissue-processing",
+      "url": "https://embryogenesis.in/skill-development-training/#tissue-processing",
+      "name": "Hands-on Training on Tissue Processing & Microtomy",
+      "description": "Hands-on Training on Tissue Processing & Microtomy. Eligibility: B.Sc. MLT, M.Sc., Ph.D., Faculty of Life Science, Allied Health Science. Duration: 2 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P2D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 5000,
+       "priceCurrency": "INR",
+       "description": "Fee: 5000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#immunohistochemistry",
+      "url": "https://embryogenesis.in/skill-development-training/#immunohistochemistry",
+      "name": "Hands-on Training on Immunohistochemistry",
+      "description": "Hands-on Training on Immunohistochemistry. Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 3 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P3D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 20000,
+       "priceCurrency": "INR",
+       "description": "Fee: 20,000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#prp-lit",
+      "url": "https://embryogenesis.in/skill-development-training/#prp-lit",
+      "name": "Hands-on Training on PRP Therapy & LIT Therapy",
+      "description": "Hands-on Training on PRP Therapy & LIT Therapy. Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 1 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P1D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 20000,
+       "priceCurrency": "INR",
+       "description": "Fee: 20,000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#lit-hydrogen",
+      "url": "https://embryogenesis.in/skill-development-training/#lit-hydrogen",
+      "name": "Hands-on Training on LIT Therapy & Molecular Hydrogen Therapy",
+      "description": "Hands-on Training on LIT Therapy & Molecular Hydrogen Therapy. Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 1 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P1D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 25000,
+       "priceCurrency": "INR",
+       "description": "Fee: 25,000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#hydrogen",
+      "url": "https://embryogenesis.in/skill-development-training/#hydrogen",
+      "name": "Hands-on Training on Molecular Hydrogen Therapy in Health Management",
+      "description": "Hands-on Training on Molecular Hydrogen Therapy in Health Management. Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 1 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P1D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 15000,
+       "priceCurrency": "INR",
+       "description": "Fee: 15,000/-"
+      }
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "item": {
+      "@type": "Course",
+      "@id": "https://embryogenesis.in/skill-development-training/#stem-cell",
+      "url": "https://embryogenesis.in/skill-development-training/#stem-cell",
+      "name": "Hands-on Training on Stem Cell Processing & Cryopreservation",
+      "description": "Hands-on Training on Stem Cell Processing & Cryopreservation. Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science. Duration: 1 Days. Seat in Batch: 10.",
+      "provider": {
+       "@id": "https://embryogenesis.in/#org"
+      },
+      "coursePrerequisites": "B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science",
+      "timeRequired": "P1D",
+      "hasCourseInstance": {
+       "@type": "CourseInstance",
+       "courseMode": "onsite",
+       "maximumAttendeeCapacity": 10
+      },
+      "offers": {
+       "@type": "Offer",
+       "category": "Paid",
+       "price": 35000,
+       "priceCurrency": "INR",
+       "description": "Fee: 35,000/-"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

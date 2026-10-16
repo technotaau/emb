@@ -1,1 +1,88 @@
-{"path":"/diagnostic/","title":"diagnostic | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/diagnostic/",
+ "title": "Diagnostic Tests: ERFA, Endo-Immune & EIT | EmbryoGenesis",
+ "description": "ERFA – The Soil Test, Endo-Immune Test and Endometrial Infection Test (EIT) at EmbryoGenesis, Mohali: who each test is for, sample timing and 7–10 day results.",
+ "nav": "diagnostic",
+ "og_image": "/assets/img/erfa.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Diagnostic",
+   "/diagnostic/"
+  ]
+ ],
+ "priority": 0.9,
+ "faq": [
+  {
+   "q": "What can I expect during these diagnostic tests?",
+   "a": "Each test includes a comprehensive consultation, a simple collection process, and a detailed explanation of results. Our specialists ensure you feel informed and supported throughout."
+  },
+  {
+   "q": "How soon will I get my results?",
+   "a": "Results are typically available within 7-10 days, depending on the complexity of the test. We prioritize accuracy and timely reporting to help you move forward confidently."
+  },
+  {
+   "q": "Will these tests help if I’ve already had IVF treatments?",
+   "a": "Absolutely. Our diagnostic tests are particularly beneficial for those who have faced IVF failures or unexplained fertility issues. They provide deeper insights that standard tests may miss."
+  }
+ ],
+ "schema": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://embryogenesis.in/diagnostic/#webpage",
+   "name": "Diagnostic Services – EmbryoGenesis",
+   "inLanguage": "en-IN",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/diagnostic/#breadcrumb"
+   },
+   "audience": [
+    {
+     "@type": "Patient"
+    },
+    {
+     "@type": "MedicalAudience",
+     "audienceType": "Clinician"
+    }
+   ],
+   "about": [
+    {
+     "@type": "MedicalTest",
+     "@id": "https://embryogenesis.in/diagnostic/#erfa",
+     "name": "Endometrial Receptivity & Function Assay (ERFA – The Soil Test)",
+     "alternateName": [
+      "ERFA",
+      "Endometrial Soil Test",
+      "ERFA – The Soil Test"
+     ],
+     "description": "The ERFA, or Endometrial Soil Test, is a diagnostic tool that assesses the readiness of the uterine lining (endometrium) for successful embryo implantation. This comprehensive test analyzes multiple biomarkers to pinpoint factors affecting fertility and implantation success."
+    },
+    {
+     "@type": "MedicalTest",
+     "@id": "https://embryogenesis.in/diagnostic/#endo-immune",
+     "name": "Endo-Immune Test",
+     "description": "This test delves into the immune landscape of the endometrium, essential for maintaining a balance between pro-inflammatory and anti-inflammatory responses. By evaluating cytokines and immune cells, it helps identify potential immune-related issues causing recurrent miscarriages or failed implantation."
+    },
+    {
+     "@type": "MedicalTest",
+     "@id": "https://embryogenesis.in/diagnostic/#eit",
+     "name": "Endometrial Infection Test (EIT)",
+     "alternateName": "EIT",
+     "description": "The Endometrial Infection Test detects hidden bacterial or viral infections and chronic endometritis.",
+     "usedToDiagnose": {
+      "@type": "MedicalCondition",
+      "name": "Chronic endometritis"
+     }
+    }
+   ]
+  }
+ ]
+}

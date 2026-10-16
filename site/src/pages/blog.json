@@ -1,1 +1,96 @@
-{"path":"/blog/","title":"blog | EmbryoGenesis","description":"TODO","breadcrumbs":[["Home","/"]],"faq":[],"schema":[]}
+{
+ "path": "/blog/",
+ "title": "Blog: Infertility Research & Diagnostics | EmbryoGenesis",
+ "description": "EmbryoGenesis blog on ERFA – The Soil Test, endometrial immune profiling, IVF failure, LIT therapy for recurrent pregnancy loss and unexplained infertility.",
+ "nav": "blog",
+ "og_image": "/assets/img/blog-erfa.jpg",
+ "breadcrumbs": [
+  [
+   "Home",
+   "/"
+  ],
+  [
+   "Blog",
+   "/blog/"
+  ]
+ ],
+ "priority": 0.7,
+ "faq": [],
+ "schema": [
+  {
+   "@type": "CollectionPage",
+   "@id": "https://embryogenesis.in/blog/#webpage",
+   "name": "EmbryoGenesis Blog",
+   "inLanguage": "en-IN",
+   "isPartOf": {
+    "@id": "https://embryogenesis.in/#website"
+   },
+   "mainEntity": {
+    "@id": "https://embryogenesis.in/blog/#blog"
+   },
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/blog/#breadcrumb"
+   }
+  },
+  {
+   "@type": "Blog",
+   "@id": "https://embryogenesis.in/blog/#blog",
+   "name": "EmbryoGenesis Blog",
+   "url": "https://embryogenesis.in/blog/",
+   "publisher": {
+    "@id": "https://embryogenesis.in/#org"
+   },
+   "inLanguage": [
+    "en-IN",
+    "hi-IN"
+   ],
+   "blogPost": [
+    {
+     "@type": "BlogPosting",
+     "@id": "https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/#article",
+     "headline": "Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It",
+     "url": "https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/",
+     "datePublished": "2025-07-28",
+     "inLanguage": "en-IN",
+     "image": "https://embryogenesis.in/assets/img/blog-eip.jpg"
+    },
+    {
+     "@type": "BlogPosting",
+     "@id": "https://embryogenesis.in/tips-and-treatments-for-pregnancy-after-ivf-failure/#article",
+     "headline": "IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार",
+     "url": "https://embryogenesis.in/tips-and-treatments-for-pregnancy-after-ivf-failure/",
+     "datePublished": "2024-07-09",
+     "inLanguage": "hi-IN",
+     "image": "https://embryogenesis.in/assets/img/blog-ivf.jpg"
+    },
+    {
+     "@type": "BlogPosting",
+     "@id": "https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/#article",
+     "headline": "ERFA -The Soil Test: Understanding Successful Pregnancy & Embryo Implantation",
+     "url": "https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/",
+     "datePublished": "2024-06-07",
+     "inLanguage": "en-IN",
+     "image": "https://embryogenesis.in/assets/img/blog-erfa.jpg"
+    },
+    {
+     "@type": "BlogPosting",
+     "@id": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/#article",
+     "headline": "Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss",
+     "url": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/",
+     "datePublished": "2024-05-21",
+     "inLanguage": "en-IN",
+     "image": "https://embryogenesis.in/assets/img/blog-lit.jpg"
+    },
+    {
+     "@type": "BlogPosting",
+     "@id": "https://embryogenesis.in/unexplained-infertility/#article",
+     "headline": "Unexplained Infertility",
+     "url": "https://embryogenesis.in/unexplained-infertility/",
+     "datePublished": "2024-04-01",
+     "inLanguage": "en-IN",
+     "image": "https://embryogenesis.in/assets/img/blog-unexplained.jpg"
+    }
+   ]
+  }
+ ]
+}
