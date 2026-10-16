@@ -1,0 +1,7 @@
+# Apache equivalent of _redirects (use Rank Math Redirections in WordPress instead)
+Redirect 301 /diagnostic-services/ /diagnostic/
+Redirect 301 /research-and-training/ /skill-development-training/
+Redirect 301 /apply-now/ /courses/
+Redirect 301 /clinical-embryology-scholarship/ /courses/
+Redirect 410 /cache/
+ErrorDocument 404 /404.html

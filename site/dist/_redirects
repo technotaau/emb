@@ -1,0 +1,7 @@
+# Netlify/Cloudflare Pages style. Old URLs that are merged or retired.
+/diagnostic-services/            /diagnostic/                   301
+/research-and-training/          /skill-development-training/   301
+/apply-now/                      /courses/                      301
+/clinical-embryology-scholarship/ /courses/                     301
+/cache/                          /                              410
+/home/                           /                              301
