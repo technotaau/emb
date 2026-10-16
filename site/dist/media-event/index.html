@@ -16,6 +16,9 @@
 <meta property="og:description" content="EmbryoGenesis in the news: ERFA – The Soil Test launch, the Clinical Embryology program with Bahra University, the Best Innovator Award, MoUs and appreciation.">
 <meta property="og:url" content="https://embryogenesis.in/media-event/">
 <meta property="og:image" content="https://embryogenesis.in/assets/img/news.jpg">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="935">
+<meta property="og:image:alt" content="Media &amp; Event | EmbryoGenesis News, Awards and MoUs">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@EmbryoGenesiss">
 <link rel="icon" href="/assets/img/favicon.png" type="image/png">
@@ -30,35 +33,70 @@
  "@graph": [
   {
    "@type": [
-    "MedicalOrganization",
-    "DiagnosticLab"
+    "DiagnosticLab",
+    "MedicalBusiness"
    ],
    "@id": "https://embryogenesis.in/#org",
    "name": "EmbryoGenesis",
    "alternateName": [
     "EmbryoGenesis – Infertility Diagnostic & Research",
+    "EMBRYOGENESIS",
     "Embryogenesis Mohali"
    ],
+   "slogan": "Redefining Fertility Evaluation",
    "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, India, offering endometrial diagnostic tests (ERFA – The Soil Test, Endo-Immune Test, Endometrial Infection Test), fertility therapies, and B.Sc./M.Sc. Clinical Embryology programmes with ITHS, Bahra University and Rayat Bahra University.",
    "disambiguatingDescription": "EmbryoGenesis (Mohali, India) is an infertility diagnostic and research centre. It is not the biological process of embryogenesis.",
    "url": "https://embryogenesis.in/",
-   "logo": "https://embryogenesis.in/assets/img/logo.png",
-   "image": "https://embryogenesis.in/assets/img/lab.jpg",
+   "logo": {
+    "@type": "ImageObject",
+    "@id": "https://embryogenesis.in/#logo",
+    "url": "https://embryogenesis.in/assets/img/logo.png",
+    "contentUrl": "https://embryogenesis.in/assets/img/logo.png",
+    "width": 403,
+    "height": 102,
+    "caption": "EmbryoGenesis"
+   },
+   "image": {
+    "@id": "https://embryogenesis.in/#logo"
+   },
    "foundingDate": "2023-11",
    "telephone": "+91-8146217196",
    "email": "info.embryogenesis@gmail.com",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, Kharar",
+    "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar",
     "addressLocality": "Mohali",
     "addressRegion": "Punjab",
+    "postalCode": "140302",
     "addressCountry": "IN"
    },
    "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 30.7811558,
-    "longitude": 76.6176566
+    "latitude": 30.7809862,
+    "longitude": 76.6193467
    },
+   "hasMap": "https://maps.app.goo.gl/C5ciaW6wBCrUkU9Q6",
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer service",
+     "telephone": "+91-8146217196",
+     "email": "info.embryogenesis@gmail.com",
+     "areaServed": "IN"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "admissions",
+     "telephone": "+91-9691736435",
+     "areaServed": "IN"
+    },
+    {
+     "@type": "ContactPoint",
+     "contactType": "admissions",
+     "telephone": "+91-9815692195",
+     "areaServed": "IN"
+    }
+   ],
    "areaServed": {
     "@type": "Country",
     "name": "India"
@@ -66,17 +104,20 @@
    "medicalSpecialty": [
     "Gynecologic",
     "Pathology",
-    "Laboratory"
+    "LaboratoryScience"
    ],
+   "award": "Best Innovator Award for Human Infertility Treatment, Research & Innovation Park, New Delhi (27 Nov 2024)",
    "founder": {
-    "@id": "https://embryogenesis.in/pulakes-purkait-profile/#person"
+    "@type": "Person",
+    "@id": "https://embryogenesis.in/pulakes-purkait-profile/#person",
+    "name": "Prof. (Dr.) Pulakes Purkait",
+    "url": "https://embryogenesis.in/pulakes-purkait-profile/"
    },
    "sameAs": [
     "https://www.facebook.com/EmbryoGenesis",
     "https://www.instagram.com/embryo_genesis",
     "https://twitter.com/EmbryoGenesiss",
-    "https://www.youtube.com/@Embryo-Genesis",
-    "https://www.linkedin.com/company/embryogenesis"
+    "https://www.youtube.com/@Embryo-Genesis"
    ],
    "knowsAbout": [
     "Endometrial receptivity",
@@ -92,10 +133,14 @@
    "@id": "https://embryogenesis.in/#website",
    "url": "https://embryogenesis.in/",
    "name": "EmbryoGenesis",
+   "alternateName": "EmbryoGenesis – Infertility Diagnostic & Research",
    "publisher": {
     "@id": "https://embryogenesis.in/#org"
    },
-   "inLanguage": "en-IN"
+   "inLanguage": [
+    "en-IN",
+    "hi-IN"
+   ]
   },
   {
    "@type": "BreadcrumbList",
@@ -164,6 +209,9 @@
      }
     }
    ],
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/media-event/#breadcrumb"
+   },
    "url": "https://embryogenesis.in/media-event/"
   }
  ]
@@ -239,7 +287,7 @@
     <div class="chipsbar center-chips core-chips" role="group" aria-label="Filter media and events" data-filter-group="media"><button type="button" aria-pressed="true" data-filter="all">All</button><button type="button" aria-pressed="false" data-filter="app">Appreciation</button><button type="button" aria-pressed="false" data-filter="award">Award</button><button type="button" aria-pressed="false" data-filter="mou">MOU</button><button type="button" aria-pressed="false" data-filter="news">News</button></div>
     <div class="cards core-mcards">
       <article class="card" data-cat="news"><picture><source type="image/webp" srcset="/assets/img/news.webp"><img class="pic r169" src="/assets/img/news.jpg" alt="Newspapers on a printing press" loading="eager" width="1400" height="935" decoding="async"></picture><div class="body"><span class="tag">News · Jul 3, 2024</span><h3>ERFA – The Soil Test &amp; LIT- H2 Therapy kit to check IVF failure launched</h3><p class="core-src">Times of India, Chandigarh</p><a class="core-ext" href="https://timesofindia.indiatimes.com/city/chandigarh/therapy-kit-to-check-ivf-failure-launched-at-rbu/articleshow/111465666.cms" rel="noopener" target="_blank">Read the story<span class="core-vh"> on Times of India (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><a class="core-more" href="/diagnostic/">About ERFA – The Soil Test</a></div></article>
-      <article class="card" data-cat="news"><picture><source type="image/webp" srcset="/assets/img/news.webp"><img class="pic r169" src="/assets/img/news.jpg" alt="Newspapers on a printing press" width="1400" height="935" loading="lazy" decoding="async"></picture><div class="body"><span class="tag">News · July 6, 2024</span><h3>Bahra University, Waknaghat (HP), in partnership with ITHS and EmbryoGenesis, launches Himachal Pradesh’s first comprehensive Clinical Embryology program</h3><p class="core-src">Himachal Tonite</p><a class="core-ext" href="https://himachaltonite.com/himachal/bahra-university-launches-himachals-first-embryology-nutrigenetics-and-ai-programs/" rel="noopener" target="_blank">Read the story<span class="core-vh"> on Himachal Tonite (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><a class="core-more" href="/bsc-in-clinical-embryology-in-bahra-university/">About the Clinical Embryology program</a></div></article>
+      <article class="card" data-cat="news"><picture><source type="image/webp" srcset="/assets/img/news.webp"><img class="pic r169" src="/assets/img/news.jpg" alt="Newspapers on a printing press" width="1400" height="935" loading="lazy" decoding="async"></picture><div class="body"><span class="tag">News · July 6, 2024</span><h3>Bahra University, Waknaghat (HP), in partnership with the Institute of Translational Health Science (ITHS) and EmbryoGenesis – Infertility Diagnostic &amp; Research, has announced the launch of Himachal Pradesh’s first comprehensive Clinical Embryology program.</h3><p class="core-src">Himachal Tonite</p><a class="core-ext" href="https://himachaltonite.com/himachal/bahra-university-launches-himachals-first-embryology-nutrigenetics-and-ai-programs/" rel="noopener" target="_blank">Read the story<span class="core-vh"> on Himachal Tonite (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><a class="core-more" href="/bsc-in-clinical-embryology-in-bahra-university/">About the Clinical Embryology program</a></div></article>
       <article class="card" data-cat="news"><picture><source type="image/webp" srcset="/assets/img/news.webp"><img class="pic r169" src="/assets/img/news.jpg" alt="Newspapers on a printing press" width="1400" height="935" loading="lazy" decoding="async"></picture><div class="body"><span class="tag">News · 27th July 2024</span><h3>Cutting-Edge Digital Biothesiometer Gains Design Patent, Enhancing Medical Diagnostics</h3><p class="core-src">News Nation</p><a class="core-ext" href="https://english.newsnationtv.com/brand-stories/brand-stories-english/cutting-edge-digital-biothesiometer-gains-design-patent-enhancing-medical-diagnostics-6706451" rel="noopener" target="_blank">Read the story<span class="core-vh"> on News Nation (opens in a new tab)</span> <span aria-hidden="true">↗</span></a></div></article>
       <article class="card" data-cat="award"><picture><source type="image/webp" srcset="/assets/img/award.webp"><img class="pic r169" src="/assets/img/award.jpg" alt="Glass award trophies on display at an awards ceremony" width="1400" height="933" loading="lazy" decoding="async"></picture><div class="body"><span class="tag">Award · 27th Nov 2024</span><h3>Best Innovator Award for Human Infertility Treatment at Research &amp; Innovation Park, New Delhi</h3><a class="core-more" href="/about/">About EmbryoGenesis</a></div></article>
       <article class="card" data-cat="mou"><picture><source type="image/webp" srcset="/assets/img/mou.webp"><img class="pic r169" src="/assets/img/mou.jpg" alt="Handshake marking a partnership agreement" width="1400" height="1051" loading="lazy" decoding="async"></picture><div class="body"><span class="tag">MOU · 23rd Nov 2024</span><h3>MOU with Guru Ghasidas Vishwavidyalaya, Bilaspur, Chhattisgarh</h3></div></article>

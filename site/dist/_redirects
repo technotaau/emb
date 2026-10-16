@@ -1,7 +1,47 @@
-# Netlify/Cloudflare Pages style. Old URLs that are merged or retired.
-/diagnostic-services/            /diagnostic/                   301
-/research-and-training/          /skill-development-training/   301
-/apply-now/                      /courses/                      301
-/clinical-embryology-scholarship/ /courses/                     301
-/cache/                          /                              410
-/home/                           /                              301
+# Netlify / Cloudflare Pages style (TechnoTaau Team, Oct 2026).
+# Every live URL of the old WordPress site keeps its path on the new site. The rules below cover only
+# old URLs that were merged, retired or broken (audit 15 Oct 2026, docs/research/03-current-site-audit.md).
+# One hop to a 200 page each. Cloudflare Pages does not support 410 here, so /cache/ is 301'd to the post
+# it embedded (the audit's alternative); the .htaccess version returns 410.
+
+# Retired / thin pages
+/diagnostic-services/                 /diagnostic/                 301
+/diagnostic-services                  /diagnostic/                 301
+/research-and-training/               /pulakes-purkait-profile/    301
+/research-and-training                /pulakes-purkait-profile/    301
+/apply-now/                           /courses/                    301
+/apply-now                            /courses/                    301
+/clinical-embryology-scholarship/     /courses/                    301
+/clinical-embryology-scholarship      /courses/                    301
+/home/                                /                            301
+/home                                 /                            301
+/cache/                               /endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/  301
+/cache                                /endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/  301
+
+# Broken canonical of the ERFA post (pointed to this 404 URL)
+/endometrial-receptivity-analysis/    /erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/  301
+/endometrial-receptivity-analysis     /erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/  301
+
+# WordPress category and author archives
+/category/erfa-the-soil-test/*                 /erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/  301
+/category/erfa-the-soil-test                   /erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/  301
+/category/fertility-testing-diagnostics/*      /diagnostic/   301
+/category/fertility-testing-diagnostics        /diagnostic/   301
+/category/reproductive-immunology/*            /endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/  301
+/category/reproductive-immunology              /endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/  301
+/category/*                                    /blog/         301
+/author/*                                      /blog/         301
+/blog/page/*                                   /blog/         301
+
+# Old brochure PDF (already a 404 on the old site)
+/Clinical_Embryology-Brochure-2025-2026-Bahra_University.pdf  /bsc-in-clinical-embryology-in-bahra-university/  301
+
+# Old Rank Math / WordPress sitemaps and feeds
+/sitemap_index.xml      /sitemap.xml   301
+/page-sitemap.xml       /sitemap.xml   301
+/post-sitemap.xml       /sitemap.xml   301
+/category-sitemap.xml   /sitemap.xml   301
+/wp-sitemap.xml         /sitemap.xml   301
+/feed/*                 /blog/         301
+/feed                   /blog/         301
+/comments/feed/*        /blog/         301

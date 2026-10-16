@@ -40,10 +40,15 @@
    "inLanguage": "en-IN",
    "mainEntityOfPage": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/",
    "url": "https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/",
-   "articleSection": "Uncategorized",
+   "articleSection": "Reproductive Immunology",
    "isPartOf": {
-    "@id": "https://embryogenesis.in/blog/#blog"
-   }
+    "@type": "Blog",
+    "@id": "https://embryogenesis.in/blog/#blog",
+    "name": "EmbryoGenesis Blog",
+    "url": "https://embryogenesis.in/blog/"
+   },
+   "keywords": "LIT therapy, lymphocyte immunization therapy, recurrent pregnancy loss, recurrent miscarriage"
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

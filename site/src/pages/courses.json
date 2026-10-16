@@ -1,7 +1,7 @@
 {
  "path": "/courses/",
- "title": "Clinical Embryology Courses, B.Sc. to Ph.D. | EmbryoGenesis",
- "description": "Admission open 2025-26: B.Sc., M.Sc., Ph.D. and PG Diploma in Clinical Embryology and ART with EmbryoGenesis, ITHS, Bahra and Rayat Bahra University.",
+ "title": "Clinical Embryology Courses in Punjab & HP | EmbryoGenesis",
+ "description": "Clinical embryology courses with EmbryoGenesis and ITHS: B.Sc., M.Sc., Ph.D. and PG Diploma at Rayat Bahra University, Mohali, and Bahra University, Himachal.",
  "nav": "courses",
  "og_image": "/assets/img/students-lab.jpg",
  "breadcrumbs": [
@@ -128,5 +128,6 @@
     }
    ]
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

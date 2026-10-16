@@ -42,9 +42,13 @@
    "url": "https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/",
    "articleSection": "Fertility Testing & Diagnostics; Reproductive Immunology",
    "isPartOf": {
-    "@id": "https://embryogenesis.in/blog/#blog"
+    "@type": "Blog",
+    "@id": "https://embryogenesis.in/blog/#blog",
+    "name": "EmbryoGenesis Blog",
+    "url": "https://embryogenesis.in/blog/"
    },
    "keywords": "endometrial immune profiling, recurrent pregnancy loss, IVF failure causes, reproductive immunology testing"
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

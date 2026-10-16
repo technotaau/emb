@@ -1,7 +1,23 @@
-# Apache equivalent of _redirects (use Rank Math Redirections in WordPress instead)
-Redirect 301 /diagnostic-services/ /diagnostic/
-Redirect 301 /research-and-training/ /skill-development-training/
-Redirect 301 /apply-now/ /courses/
-Redirect 301 /clinical-embryology-scholarship/ /courses/
-Redirect 410 /cache/
+# Apache / LiteSpeed equivalent of _redirects (TechnoTaau Team, Oct 2026).
+# In WordPress use Rank Math > Redirections instead, or place this ABOVE "# BEGIN WordPress".
+# Anchored patterns with an optional trailing slash; every rule reaches a 200 page in one hop.
+<IfModule mod_alias.c>
+RedirectMatch 301 ^/diagnostic-services/?$ /diagnostic/
+RedirectMatch 301 ^/research-and-training/?$ /pulakes-purkait-profile/
+RedirectMatch 301 ^/apply-now/?$ /courses/
+RedirectMatch 301 ^/clinical-embryology-scholarship/?$ /courses/
+RedirectMatch 301 ^/home/?$ /
+RedirectMatch 410 ^/cache/?$
+RedirectMatch 301 ^/endometrial-receptivity-analysis/?$ /erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/
+RedirectMatch 301 ^/category/erfa-the-soil-test(/.*)?$ /erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/
+RedirectMatch 301 ^/category/fertility-testing-diagnostics(/.*)?$ /diagnostic/
+RedirectMatch 301 ^/category/reproductive-immunology(/.*)?$ /endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/
+RedirectMatch 301 ^/category/.*$ /blog/
+RedirectMatch 301 ^/author/.*$ /blog/
+RedirectMatch 301 ^/blog/page/.*$ /blog/
+RedirectMatch 301 ^/Clinical_Embryology-Brochure-2025-2026-Bahra_University\.pdf$ /bsc-in-clinical-embryology-in-bahra-university/
+RedirectMatch 301 ^/(sitemap_index|page-sitemap|post-sitemap|category-sitemap|wp-sitemap)\.xml$ /sitemap.xml
+RedirectMatch 301 ^/(comments/)?feed(/.*)?$ /blog/
+</IfModule>
 ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html

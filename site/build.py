@@ -30,24 +30,36 @@ SITE = 'https://embryogenesis.in'
 TODAY = datetime.date.today().isoformat()
 
 ORG = {
-  "@type": ["MedicalOrganization", "DiagnosticLab"],
+  # DiagnosticLab (a MedicalOrganization) + MedicalBusiness (a LocalBusiness/Place) so geo, hasMap and
+  # local-business features are valid. Facts: brochures 2024 (address, PIN), old site (map link, phones).
+  "@type": ["DiagnosticLab", "MedicalBusiness"],
   "@id": SITE + "/#org",
   "name": "EmbryoGenesis",
-  "alternateName": ["EmbryoGenesis – Infertility Diagnostic & Research", "Embryogenesis Mohali"],
+  "alternateName": ["EmbryoGenesis – Infertility Diagnostic & Research", "EMBRYOGENESIS", "Embryogenesis Mohali"],
+  "slogan": "Redefining Fertility Evaluation",
   "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, India, offering endometrial diagnostic tests (ERFA – The Soil Test, Endo-Immune Test, Endometrial Infection Test), fertility therapies, and B.Sc./M.Sc. Clinical Embryology programmes with ITHS, Bahra University and Rayat Bahra University.",
   "disambiguatingDescription": "EmbryoGenesis (Mohali, India) is an infertility diagnostic and research centre. It is not the biological process of embryogenesis.",
   "url": SITE + "/",
-  "logo": SITE + "/assets/img/logo.png",
-  "image": SITE + "/assets/img/lab.jpg",
+  "logo": {"@type": "ImageObject", "@id": SITE + "/#logo", "url": SITE + "/assets/img/logo.png", "contentUrl": SITE + "/assets/img/logo.png", "width": 403, "height": 102, "caption": "EmbryoGenesis"},
+  "image": {"@id": SITE + "/#logo"},
   "foundingDate": "2023-11",
   "telephone": "+91-8146217196",
   "email": "info.embryogenesis@gmail.com",
-  "address": {"@type": "PostalAddress", "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, Kharar", "addressLocality": "Mohali", "addressRegion": "Punjab", "addressCountry": "IN"},
-  "geo": {"@type": "GeoCoordinates", "latitude": 30.7811558, "longitude": 76.6176566},
+  "address": {"@type": "PostalAddress", "streetAddress": "Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar", "addressLocality": "Mohali", "addressRegion": "Punjab", "postalCode": "140302", "addressCountry": "IN"},
+  # Pin of the client's own Google Maps place (old contact page link), resolved 16 Oct 2026.
+  "geo": {"@type": "GeoCoordinates", "latitude": 30.7809862, "longitude": 76.6193467},
+  "hasMap": "https://maps.app.goo.gl/C5ciaW6wBCrUkU9Q6",
+  "contactPoint": [
+    {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+91-8146217196", "email": "info.embryogenesis@gmail.com", "areaServed": "IN"},
+    {"@type": "ContactPoint", "contactType": "admissions", "telephone": "+91-9691736435", "areaServed": "IN"},
+    {"@type": "ContactPoint", "contactType": "admissions", "telephone": "+91-9815692195", "areaServed": "IN"}
+  ],
   "areaServed": {"@type": "Country", "name": "India"},
-  "medicalSpecialty": ["Gynecologic", "Pathology", "Laboratory"],
-  "founder": {"@id": SITE + "/pulakes-purkait-profile/#person"},
-  "sameAs": ["https://www.facebook.com/EmbryoGenesis", "https://www.instagram.com/embryo_genesis", "https://twitter.com/EmbryoGenesiss", "https://www.youtube.com/@Embryo-Genesis", "https://www.linkedin.com/company/embryogenesis"],
+  "medicalSpecialty": ["Gynecologic", "Pathology", "LaboratoryScience"],
+  "award": "Best Innovator Award for Human Infertility Treatment, Research & Innovation Park, New Delhi (27 Nov 2024)",
+  "founder": {"@type": "Person", "@id": SITE + "/pulakes-purkait-profile/#person", "name": "Prof. (Dr.) Pulakes Purkait", "url": SITE + "/pulakes-purkait-profile/"},
+  # Only handles linked from the old site. Add LinkedIn once the company page exists (brief: none yet).
+  "sameAs": ["https://www.facebook.com/EmbryoGenesis", "https://www.instagram.com/embryo_genesis", "https://twitter.com/EmbryoGenesiss", "https://www.youtube.com/@Embryo-Genesis"],
   "knowsAbout": ["Endometrial receptivity", "Recurrent implantation failure", "Recurrent pregnancy loss", "Chronic endometritis", "Reproductive immunology", "Clinical embryology"]
 }
 PERSON = {
@@ -56,7 +68,7 @@ PERSON = {
   "url": SITE + "/pulakes-purkait-profile/", "image": SITE + "/assets/img/founder.jpg",
   "sameAs": ["https://orcid.org/0000-0002-8814-9939", "https://in.linkedin.com/in/pulakes-purkait-aa634094", "https://www.researchgate.net/profile/Pulakes-Purkait"]
 }
-WEBSITE = {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": "EmbryoGenesis", "publisher": {"@id": SITE + "/#org"}, "inLanguage": "en-IN"}
+WEBSITE = {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": "EmbryoGenesis", "alternateName": "EmbryoGenesis – Infertility Diagnostic & Research", "publisher": {"@id": SITE + "/#org"}, "inLanguage": ["en-IN", "hi-IN"]}
 
 def read(p): return Path(p).read_text(encoding='utf-8')
 
@@ -125,7 +137,17 @@ def page_html(meta, main):
     url = SITE + meta['path']
     lang = meta.get('lang', 'en')
     title = html.escape(meta['title']); desc = html.escape(meta['description'])
-    og = SITE + meta.get('og_image', '/assets/img/hero-couple.jpg')
+    og_rel = meta.get('og_image', '/assets/img/hero-couple.jpg'); og = SITE + og_rel
+    og_dims = img_dims(ASSETS / og_rel[len('/assets/'):]) if og_rel.startswith('/assets/') else None
+    og_extra = f'\n<meta property="og:image:width" content="{og_dims[0]}">\n<meta property="og:image:height" content="{og_dims[1]}">' if og_dims else ''
+    og_extra += f'\n<meta property="og:image:alt" content="{title}">'
+    card = 'summary_large_image' if not og_dims or og_dims[0] >= 600 else 'summary'
+    art = next((n for n in meta.get('schema', []) if n.get('@type') in ('BlogPosting', 'Article')), None) if meta.get('article') else None
+    art_tags = ''
+    if art:
+        if art.get('datePublished'): art_tags += f'\n<meta property="article:published_time" content="{art["datePublished"]}">'
+        if art.get('dateModified'): art_tags += f'\n<meta property="article:modified_time" content="{art["dateModified"]}">'
+        art_tags += '\n<meta property="article:publisher" content="https://www.facebook.com/EmbryoGenesis">'
     robots = 'noindex, follow' if meta.get('noindex') else 'index, follow, max-image-preview:large, max-snippet:-1'
     header = read(SRC / 'partials/header.html'); footer = read(SRC / 'partials/footer.html'); sprite = read(SRC / 'partials/sprite.html')
     nav = meta.get('nav')
@@ -153,8 +175,8 @@ def page_html(meta, main):
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{og}">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="{og}">{og_extra}{art_tags}
+<meta name="twitter:card" content="{card}">
 <meta name="twitter:site" content="@EmbryoGenesiss">
 <link rel="icon" href="/assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/img/favicon.png">

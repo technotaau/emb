@@ -1,23 +1,48 @@
 # EmbryoGenesis
 
-> EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, India (established November 2023), located on the top floor of Rayat Bahra Dental College & Hospital, Rayat Bahra University campus. It offers endometrial diagnostic tests, fertility therapies, and B.Sc./M.Sc. Clinical Embryology programmes with ITHS and partner universities. Not to be confused with embryogenesis, the biological process.
+> EmbryoGenesis (EmbryoGenesis – Infertility Diagnostic & Research) is an infertility diagnostic and research centre in Mohali, Punjab, India, established in November 2023. It is located on the top floor of Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab 140302. It offers endometrial diagnostic tests, fertility therapies at the Mohali centre, and B.Sc./M.Sc. Clinical Embryology programmes and hands-on lab training with ITHS and partner universities. Tagline: "Redefining Fertility Evaluation". Not to be confused with embryogenesis, the biological process of embryo development.
 
 ## Key facts
-- Founder & Director: Prof. (Dr.) Pulakes Purkait (ORCID 0000-0002-8814-9939)
-- Consultant Pathologist & Quality Manager: Dr Vidhu Wadhwa, MBBS MD Pathology
-- Diagnostic tests: ERFA – The Soil Test (Endometrial Receptivity & Function Assay), Endo-Immune Test, Endometrial Infection Test (EIT)
+- Official name: EmbryoGenesis (also written EMBRYOGENESIS; full name "EmbryoGenesis – Infertility Diagnostic & Research")
+- Website: https://embryogenesis.in/
+- Founder & Director: Prof. (Dr.) Pulakes Purkait, reproductive geneticist (M.Sc., Ph.D.; ORCID 0000-0002-8814-9939)
+- Consultant Pathologist & Quality Manager: Dr Vidhu Wadhwa, MBBS, MD (Pathology)
+- Diagnostic tests: ERFA – The Soil Test (Endometrial Receptivity & Function Assay; patent application No. 202431001616 A), Endo-Immune Test, Endometrial Infection Test (EIT)
+- ERFA sample: endometrial biopsy (D&C or needle biopsy) on cycle day 21–23 (preferred day 21), natural cycle LH+7 to LH+9, or HRT cycle P+6 to P+8
+- Results: typically within 7–10 days, depending on the complexity of the test
 - Therapies (given at the Mohali centre): LIT Therapy, PBMC Therapy, PRP Therapy, Stem Cell Therapy, Molecular Hydrogen Therapy
-- Results: typically within 7-10 days, depending on the complexity of the test
-- Collection centres: Navi Mumbai, Udaipur, Jalandhar
-- Academic programmes: B.Sc./M.Sc. Clinical Embryology (with ITHS & Bahra University) and B.Sc./M.Sc./Ph.D./PG Diploma in ART & Clinical Embryology (with ITHS & Rayat Bahra University); hands-on lab training courses
-- Contact: +91 8146217196 · info.embryogenesis@gmail.com
+- Collection centres: Navi Mumbai (Nirmal Multi Speciality Hospital), Udaipur (Shree B.L. Jain Memorial Hospital), Jalandhar (Advance Fertility Services & IVF Centre)
+- Academic programmes: B.Sc./M.Sc. Clinical Embryology with ITHS & Bahra University (Shimla Hills, Himachal Pradesh); B.Sc./M.Sc./Ph.D./PG Diploma in ART & Clinical Embryology with ITHS & Rayat Bahra University (Mohali, Punjab); short hands-on skill development training (1 to 5 days, 10 seats a batch)
+- Recognition: Best Innovator Award for Human Infertility Treatment, Research & Innovation Park, New Delhi (27 Nov 2024)
+- Phone / WhatsApp: +91 8146217196 · Admissions: +91 9691736435, +91 9815692195
+- Email: info.embryogenesis@gmail.com
+- Map: https://maps.app.goo.gl/C5ciaW6wBCrUkU9Q6
+- Social: https://www.facebook.com/EmbryoGenesis · https://www.instagram.com/embryo_genesis · https://twitter.com/EmbryoGenesiss · https://www.youtube.com/@Embryo-Genesis
+- Medical information on this site is for information only; testing and treatment are ordered and interpreted by the patient's treating doctor.
 
-## Pages
-- [About EmbryoGenesis](https://embryogenesis.in/about/): vision, road map, leadership, scientific team, collection centres
-- [Diagnostic services](https://embryogenesis.in/diagnostic/): ERFA – The Soil Test, Endo-Immune Test, Endometrial Infection Test
+## Main pages
+- [Home](https://embryogenesis.in/): overview of diagnostic and therapeutic services, academic programmes and collection centres
+- [About EmbryoGenesis](https://embryogenesis.in/about/): vision, road map, leadership, scientific team, collection centres, partners
+- [Founder: Prof. (Dr.) Pulakes Purkait](https://embryogenesis.in/pulakes-purkait-profile/): biography, education, patent applications, awards, memberships
+- [Diagnostic services](https://embryogenesis.in/diagnostic/): ERFA – The Soil Test (endometrial receptivity), Endo-Immune Test and Endometrial Infection Test; who each test is for, sample timing, FAQs
 - [Therapeutic services](https://embryogenesis.in/advanced-fertility-therapies/): LIT, PBMC, PRP, Stem Cell and Molecular Hydrogen therapy
-- [Courses](https://embryogenesis.in/courses/): Clinical Embryology and ART programmes
-- [Lab training](https://embryogenesis.in/skill-development-training/): hands-on skill development courses
-- [Founder profile](https://embryogenesis.in/pulakes-purkait-profile/)
-- [Blog](https://embryogenesis.in/blog/)
-- [Contact](https://embryogenesis.in/contact-us/)
+- [Media & events](https://embryogenesis.in/media-event/): news coverage (Times of India, Himachal Tonite), awards and MoUs
+- [Contact](https://embryogenesis.in/contact-us/): phone, WhatsApp, email, address, map and collection centres
+
+## Courses and training
+- [Courses overview](https://embryogenesis.in/courses/): all Clinical Embryology and ART & Clinical Embryology programmes with eligibility, duration and fees
+- [B.Sc. & M.Sc. Clinical Embryology, Bahra University](https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/): with ITHS at Bahra University, Shimla Hills, Himachal Pradesh; eligibility, 4-year and 2-year duration, fee per semester
+- [ART & Clinical Embryology, Rayat Bahra University](https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/): B.Sc., M.Sc., Ph.D. and PG Diploma with ITHS at Rayat Bahra University, Mohali; eligibility, duration, curriculum
+- [Skill development lab training](https://embryogenesis.in/skill-development-training/): eight hands-on courses (biochemistry, molecular genetics & bioinformatics, tissue processing & microtomy, immunohistochemistry, therapy techniques, stem cell processing) with duration and fees
+
+## Blog
+- [Blog index](https://embryogenesis.in/blog/)
+- [ERFA – The Soil Test: Understanding Successful Pregnancy & Embryo Implantation](https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/): endometrial receptivity, the factors ERFA assesses and who it can help (7 Jun 2024)
+- [Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It](https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/): endometrial immune testing for repeated IVF failure and recurrent pregnancy loss, and its limitations (28 Jul 2025)
+- [Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss](https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/): Lymphocyte Immunization Therapy, considerations and side effects (21 May 2024)
+- [Unexplained Infertility](https://embryogenesis.in/unexplained-infertility/): meaning, possible causes, diagnosis and treatment options (1 Apr 2024)
+- [IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार](https://embryogenesis.in/tips-and-treatments-for-pregnancy-after-ivf-failure/) (Hindi): next steps and treatments after IVF failure (9 Jul 2024)
+
+## Optional
+- [Privacy Policy](https://embryogenesis.in/privacy-policy/)
+- [Sitemap](https://embryogenesis.in/sitemap.xml)

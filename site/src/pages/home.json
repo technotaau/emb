@@ -1,7 +1,7 @@
 {
  "path": "/",
  "title": "EmbryoGenesis Mohali | Infertility Diagnostics & Research",
- "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab: ERFA – The Soil Test, Endo-Immune and Endometrial Infection tests and courses.",
+ "description": "EmbryoGenesis, infertility diagnostic & research centre in Mohali, Punjab: ERFA endometrial receptivity test, Endo-Immune and EIT tests, and embryology courses.",
  "nav": "home",
  "og_image": "/assets/img/hero-couple.jpg",
  "priority": 1.0,
@@ -70,5 +70,6 @@
     }
    ]
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

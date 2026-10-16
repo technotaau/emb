@@ -65,7 +65,11 @@
       "name": "News Nation"
      }
     }
-   ]
+   ],
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/media-event/#breadcrumb"
+   }
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

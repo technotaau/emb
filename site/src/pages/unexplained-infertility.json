@@ -40,10 +40,15 @@
    "inLanguage": "en-IN",
    "mainEntityOfPage": "https://embryogenesis.in/unexplained-infertility/",
    "url": "https://embryogenesis.in/unexplained-infertility/",
-   "articleSection": "Uncategorized",
+   "articleSection": "Fertility Testing & Diagnostics",
    "isPartOf": {
-    "@id": "https://embryogenesis.in/blog/#blog"
-   }
+    "@type": "Blog",
+    "@id": "https://embryogenesis.in/blog/#blog",
+    "name": "EmbryoGenesis Blog",
+    "url": "https://embryogenesis.in/blog/"
+   },
+   "keywords": "unexplained infertility, unexplained infertility causes, unexplained infertility diagnosis, unexplained infertility treatment"
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

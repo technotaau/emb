@@ -1,7 +1,7 @@
 {
  "path": "/contact-us/",
  "title": "Contact EmbryoGenesis | Book a Test or Course, Mohali",
- "description": "Contact EmbryoGenesis, Mohali: call or WhatsApp +91 8146217196, email info.embryogenesis@gmail.com, or visit a collection centre in Mumbai, Udaipur, Jalandhar.",
+ "description": "Contact EmbryoGenesis, Rayat Bahra campus, Kharar, Mohali: call or WhatsApp +91 8146217196, email info.embryogenesis@gmail.com, or find a collection centre.",
  "nav": "contact",
  "og_image": "/assets/img/map-mohali.jpg",
  "breadcrumbs": [
@@ -30,7 +30,11 @@
    "mainEntity": {
     "@id": "https://embryogenesis.in/#org"
    },
-   "inLanguage": "en-IN"
+   "inLanguage": "en-IN",
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/contact-us/#breadcrumb"
+   }
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

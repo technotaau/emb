@@ -1,7 +1,7 @@
 {
  "path": "/pulakes-purkait-profile/",
  "title": "Prof. (Dr.) Pulakes Purkait, Founder | EmbryoGenesis Mohali",
- "description": "Prof. (Dr.) Pulakes Purkait, Founder & Director of EmbryoGenesis, Mohali: Reproductive Geneticist, biography, education, patent list, awards and memberships.",
+ "description": "Prof. (Dr.) Pulakes Purkait, Founder & Director of EmbryoGenesis, Mohali, reproductive geneticist: biography, education, patent applications and awards.",
  "nav": "about",
  "og_image": "/assets/img/founder.jpg",
  "breadcrumbs": [
@@ -126,5 +126,6 @@
     "value": "0000-0002-8814-9939"
    }
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

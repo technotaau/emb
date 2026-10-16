@@ -36,7 +36,11 @@
     {
      "@id": "https://embryogenesis.in/pulakes-purkait-profile/#person"
     }
-   ]
+   ],
+   "breadcrumb": {
+    "@id": "https://embryogenesis.in/about/#breadcrumb"
+   }
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }

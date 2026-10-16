@@ -1,7 +1,7 @@
 {
  "path": "/diagnostic/",
- "title": "Diagnostic Tests: ERFA, Endo-Immune & EIT | EmbryoGenesis",
- "description": "ERFA – The Soil Test, Endo-Immune Test and Endometrial Infection Test (EIT) at EmbryoGenesis, Mohali: who each test is for, sample timing and 7–10 day results.",
+ "title": "Endometrial Receptivity Test (ERFA), Mohali | EmbryoGenesis",
+ "description": "ERFA – The Soil Test for endometrial receptivity, Endo-Immune Test and Endometrial Infection Test at EmbryoGenesis, Mohali: who each is for, 7–10 day results.",
  "nav": "diagnostic",
  "og_image": "/assets/img/erfa.jpg",
  "breadcrumbs": [
@@ -84,5 +84,6 @@
     }
    ]
   }
- ]
+ ],
+ "date_modified": "2026-10-16"
 }
