@@ -11,20 +11,7 @@
    "/"
   ]
  ],
- "faq": [
-  {
-   "q": "What can I expect during these diagnostic tests?",
-   "a": "Each test includes a comprehensive consultation, a simple collection process, and a detailed explanation of results. Our specialists ensure you feel informed and supported throughout."
-  },
-  {
-   "q": "How soon will I get my results?",
-   "a": "Results are typically available within 7-10 days, depending on the complexity of the test. We prioritize accuracy and timely reporting to help you move forward confidently."
-  },
-  {
-   "q": "Will these tests help if I’ve already had IVF treatments?",
-   "a": "Absolutely. Our diagnostic tests are particularly beneficial for those who have faced IVF failures or unexplained fertility issues. They provide deeper insights that standard tests may miss."
-  }
- ],
+ "faq": [],
  "schema": [
   {
    "@type": "WebPage",
