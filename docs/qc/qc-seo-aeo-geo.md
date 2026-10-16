@@ -29,7 +29,7 @@
 - **hasMap** added. It uses the same link, which is in the sources.
 - **openingHours** was not added because no hours appear in any source.
 - **medicalSpecialty**: `"Laboratory"` is not a schema.org MedicalSpecialty value, so it was changed to `"LaboratoryScience"`.
-- **sameAs**: removed `linkedin.com/company/embryogenesis`. It is not in any source, and the brief says there is no LinkedIn page yet.
+- **sameAs**: removed `linkedin.com/company/embryogenesis`. It is not in any source, and the brief says there is no LinkedIn page yet. **Lead review (TechnoTaau Team): overruled.** The company page exists (verified 15 Oct 2026); it is restored in `ORG.sameAs` and the brief is corrected.
 - **founder** is now an inline Person (with `@id`, `name` and `url`). Before, it was a bare `@id` that was undefined on 16 of 19 pages (dangling reference).
 - **image**: this was the Unsplash stock lab photo (`lab.jpg`), which wrongly implied it showed the client's lab. It now points to the logo ImageObject (`#logo`, with width and height).
 - **Added from sources:**
@@ -173,7 +173,7 @@ I made no edits to `.html`. Each item gives the file, the current text and the n
 
 ### 4.2 Shared partials (owner: core)
 24. `site/src/partials/footer.html`:
-    - Remove the LinkedIn icon (`https://www.linkedin.com/company/embryogenesis`). The page does not exist (brief section 2), so the icon is a broken entity link on every page. I removed it from the schema.
+    - ~~Remove the LinkedIn icon~~ **Overruled by lead review: the page exists; icon kept.** (`https://www.linkedin.com/company/embryogenesis`). The page does not exist (brief section 2), so the icon is a broken entity link on every page. I removed it from the schema.
     - Address line: `Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab` → `Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Mohali, Punjab 140302`. One NAP sitewide.
     - "As the best fertility centre, we believe…": this sitewide superlative appears on all 19 pages (guardrail 1). It is the client's wording; flag it to Jakhar Singh.
 25. Header and footer: add `/pulakes-purkait-profile/` ("Our Founder") to the footer Quick Links. This lifts the founder page, the main E-E-A-T asset, from 3 inbound links to 19.

@@ -77,7 +77,7 @@ The client has changed the scope of the website work:
   - facebook.com/EmbryoGenesis
   - youtube.com/@Embryo-Genesis
   - twitter.com/EmbryoGenesiss
-  - No LinkedIn page yet.
+  - linkedin.com/company/embryogenesis (company page exists, about 240 followers, verified 15 Oct 2026; not linked from the old site). Used in the footer and Organization `sameAs`.
 
 ## 3. Brand identity (client-supplied)
 
