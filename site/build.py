@@ -181,8 +181,8 @@ def out_path(base, path, file=None):
     if file: return base / file
     return base / (path.strip('/') + '/index.html' if path != '/' else 'index.html')
 
-def relativize(markup, path):
-    depth = 0 if path == '/' else len(path.strip('/').split('/'))
+def relativize(markup, path, file=None):
+    depth = len(file.split('/')) - 1 if file else (0 if path == '/' else len(path.strip('/').split('/')))
     pre = '../' * depth or './'
     def fix(m):
         attr, val = m.group(1), m.group(2)
@@ -210,7 +210,7 @@ def main():
         doc = page_html(meta, body)
         for d in ('dist', 'preview'):
             p = out_path(ROOT / d, meta['path'], meta.get('file')); p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_text(relativize(doc, meta['path']) if d == 'preview' else doc, encoding='utf-8')
+            p.write_text(relativize(doc, meta['path'], meta.get('file')) if d == 'preview' else doc, encoding='utf-8')
     # sitemap
     urls = ''.join(f'<url><loc>{SITE}{m["path"]}</loc><lastmod>{m.get("date_modified", TODAY)}</lastmod><priority>{m.get("priority", 0.6)}</priority></url>\n' for m, _ in pages if not m.get('noindex') and not m.get('file'))
     sm = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'

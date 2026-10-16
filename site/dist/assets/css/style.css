@@ -436,6 +436,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .site-foot .socials a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:grid;place-items:center}
 .site-foot .socials a:hover{background:var(--gold)}
 .chipsbar button[aria-pressed="true"]{background:var(--deep);color:#fff;border-color:var(--deep)}
+.slidectl{min-width:44px;min-height:44px;font-size:.8rem;display:inline-grid;place-items:center;margin-left:6px}
 
 /* ---- add-academy.css ---- */
 /* EmbryoGenesis · Academy pages (courses hub, programme pages, lab training) · TechnoTaau Team
