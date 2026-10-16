@@ -65,3 +65,14 @@ html:not(.js) .core-hero .dots{display:none}
 .core-mcards .card{align-content:start;grid-template-rows:auto 1fr}
 .core-mcards .card .body{align-content:start}
 .core-top{align-items:start}
+/* phones: photo on top, text card overlapping below it, so the hero photo stays visible (lead QC) */
+@media (max-width:760px){
+  .core-hero{min-height:0}
+  .core-hero picture{display:block}
+  .core-hero .heroimg{position:relative;display:block;height:clamp(220px,62vw,320px)}
+  .core-hero .swoosh{display:none}
+  .hero.core-hero::after{background:none}
+  .core-hero .wrap{min-height:0;margin-top:-44px;padding-top:0;padding-bottom:60px}
+  .core-hero .panel{width:100%}
+  .core-hero .dots button::before{background:rgba(14,105,112,.35);box-shadow:none}
+}

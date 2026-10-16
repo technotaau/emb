@@ -25,7 +25,7 @@
 <link rel="apple-touch-icon" href="/assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Lato:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Lato:wght@400;700&display=swap"></noscript>
 <link rel="stylesheet" href="/assets/css/style.css">
 <script type="application/ld+json">
 {
@@ -268,7 +268,7 @@
 <main id="main">
 <section class="hero slides core-hero" aria-roledescription="carousel" aria-label="EmbryoGenesis highlights">
     <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
-      <picture><source type="image/webp" srcset="/assets/img/hero-couple.webp"><img class="heroimg" src="/assets/img/hero-couple.jpg" alt="Smiling expectant couple sitting together in a park" fetchpriority="high" width="1800" height="1200" decoding="async"></picture>
+      <picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/hero-couple-800.webp"><source type="image/webp" srcset="/assets/img/hero-couple.webp"><img class="heroimg" src="/assets/img/hero-couple.jpg" alt="Smiling expectant couple sitting together in a park" fetchpriority="high" width="1800" height="1200" decoding="async"></picture>
       <div class="swoosh" aria-hidden="true"></div>
       <div class="wrap"><div class="panel">
         <p>Personalized diagnostic and therapeutic care for your journey.</p>
@@ -277,7 +277,7 @@
       </div></div>
     </div>
     <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3" hidden>
-      <picture><source type="image/webp" srcset="/assets/img/training.webp"><img class="heroimg core-pos-c" src="/assets/img/training.jpg" alt="Trainees in lab coats working with a microscope during hands-on laboratory training" width="1400" height="935" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/training-800.webp"><source type="image/webp" srcset="/assets/img/training.webp"><img class="heroimg core-pos-c" src="/assets/img/training.jpg" alt="Trainees in lab coats working with a microscope during hands-on laboratory training" width="1400" height="935" loading="lazy" decoding="async"></picture>
       <div class="swoosh" aria-hidden="true"></div>
       <div class="wrap"><div class="panel">
         <p>Hands-on training in fertility and embryology.</p>
@@ -286,7 +286,7 @@
       </div></div>
     </div>
     <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3" hidden>
-      <picture><source type="image/webp" srcset="/assets/img/students-lab.webp"><img class="heroimg core-pos-c" src="/assets/img/students-lab.jpg" alt="Student working at a laboratory bench in a university lab" width="1400" height="934" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/students-lab-800.webp"><source type="image/webp" srcset="/assets/img/students-lab.webp"><img class="heroimg core-pos-c" src="/assets/img/students-lab.jpg" alt="Student working at a laboratory bench in a university lab" width="1400" height="934" loading="lazy" decoding="async"></picture>
       <div class="swoosh" aria-hidden="true"></div>
       <div class="wrap"><div class="panel">
         <p>Master Embryology and Assisted Reproductive Technology.</p>
@@ -367,8 +367,8 @@
   <div class="band tint"><div class="wrap stack center reveal">
     <h2>Our Patents &amp; Recognition</h2>
     <div class="ach">
-      <div><picture><source type="image/webp" srcset="/assets/img/award.webp"><img class="pic r43" src="/assets/img/award.jpg" alt="Glass award trophies on display at an awards ceremony" width="1400" height="933" loading="lazy" decoding="async"></picture><b>Best Innovation Award<small>for Human Infertility Treatment</small></b></div>
-      <div><picture><source type="image/webp" srcset="/assets/img/lab-bench.webp"><img class="pic r43" src="/assets/img/lab-bench.jpg" alt="Gloved hand pipetting a sample into test tubes in a laboratory" width="1400" height="1050" loading="lazy" decoding="async"></picture><b>Our Patents<small>ERFA – The Soil Test</small></b></div>
+      <div><picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/award-800.webp"><source type="image/webp" srcset="/assets/img/award.webp"><img class="pic r43" src="/assets/img/award.jpg" alt="Glass award trophies on display at an awards ceremony" width="1400" height="933" loading="lazy" decoding="async"></picture><b>Best Innovation Award<small>for Human Infertility Treatment</small></b></div>
+      <div><picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/lab-bench-800.webp"><source type="image/webp" srcset="/assets/img/lab-bench.webp"><img class="pic r43" src="/assets/img/lab-bench.jpg" alt="Gloved hand pipetting a sample into test tubes in a laboratory" width="1400" height="1050" loading="lazy" decoding="async"></picture><b>Our Patents<small>ERFA – The Soil Test</small></b></div>
       <div><picture><source type="image/webp" srcset="/assets/img/wadhwa.webp"><img class="pic r43" src="/assets/img/wadhwa.jpg" alt="Dr Vidhu Wadhwa, Consultant Pathologist, at the microscope" style="object-position:center 30%" width="308" height="309" loading="lazy" decoding="async"></picture><b>Scientific Team<small>MBBS MD Pathology</small></b></div>
     </div>
     <p><a href="/media-event/">See awards and media coverage</a> · <a href="/pulakes-purkait-profile/#patents">View the patent applications</a></p>
@@ -412,7 +412,7 @@
   </div></div>
 
   <div class="band"><div class="wrap stack center reveal">
-    <p><a href="/diagnostic/#faqs">Read our diagnostic test FAQs</a></p>
+    <p><a class="core-more" href="/diagnostic/#faqs">Read our diagnostic test FAQs</a></p>
   </div></div>
 
   <!-- Old site: Google Reviews widget ([grw id=1198]). Kept as a slot only: testimonials stay unpublished until legal review (project brief, section 5.6). -->
@@ -426,19 +426,19 @@
   <div class="band"><div class="wrap stack reveal">
     <h2 class="center">From Our Blog</h2>
     <div class="cards">
-      <article class="card"><picture><source type="image/webp" srcset="/assets/img/blog-eip.webp"><img class="pic r169" src="/assets/img/blog-eip.jpg" alt="Doctor consulting a patient" width="1400" height="788" loading="lazy" decoding="async"></picture><div class="body"><h3>Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It</h3><p>Discover Endometrial Immune Profiling - advanced fertility testing for IVF failures &amp; recurrent pregnancy loss.</p><a class="core-more" href="/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/">Read more<span class="core-vh">: Endometrial Immune Profiling</span></a></div></article>
-      <article class="card"><picture><source type="image/webp" srcset="/assets/img/blog-ivf.webp"><img class="pic r169" src="/assets/img/blog-ivf.jpg" alt="Couple with fertility doctor" width="1400" height="931" loading="lazy" decoding="async"></picture><div class="body"><h3 lang="hi">IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार</h3><p lang="hi">IVF, या इन-विट्रो फर्टिलाइजेशन, उन दंपत्तियों के लिए एक वरदान है जो प्राकृतिक रूप…</p><a class="core-more" href="/tips-and-treatments-for-pregnancy-after-ivf-failure/">Read more<span class="core-vh">: pregnancy after IVF failure (Hindi)</span></a></div></article>
-      <article class="card"><picture><source type="image/webp" srcset="/assets/img/blog-erfa.webp"><img class="pic r169" src="/assets/img/blog-erfa.jpg" alt="Seedling growing in soil" width="1400" height="933" loading="lazy" decoding="async"></picture><div class="body"><h3>ERFA -The Soil Test: Understanding Successful Pregnancy &amp; Embryo Implantation</h3><p>Starting the journey to becoming a parent can be really tough, especially for those having…</p><a class="core-more" href="/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/">Read more<span class="core-vh">: ERFA – The Soil Test</span></a></div></article>
+      <article class="card"><picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/blog-eip-800.webp"><source type="image/webp" srcset="/assets/img/blog-eip.webp"><img class="pic r169" src="/assets/img/blog-eip.jpg" alt="Doctor consulting a patient" width="1400" height="788" loading="lazy" decoding="async"></picture><div class="body"><h3>Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It</h3><p>Discover Endometrial Immune Profiling - advanced fertility testing for IVF failures &amp; recurrent pregnancy loss.</p><a class="core-more" href="/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/">Read more<span class="core-vh">: Endometrial Immune Profiling</span></a></div></article>
+      <article class="card"><picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/blog-ivf-800.webp"><source type="image/webp" srcset="/assets/img/blog-ivf.webp"><img class="pic r169" src="/assets/img/blog-ivf.jpg" alt="Couple with fertility doctor" width="1400" height="931" loading="lazy" decoding="async"></picture><div class="body"><h3 lang="hi">IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार</h3><p lang="hi">IVF, या इन-विट्रो फर्टिलाइजेशन, उन दंपत्तियों के लिए एक वरदान है जो प्राकृतिक रूप…</p><a class="core-more" href="/tips-and-treatments-for-pregnancy-after-ivf-failure/">Read more<span class="core-vh">: pregnancy after IVF failure (Hindi)</span></a></div></article>
+      <article class="card"><picture><source type="image/webp" media="(max-width: 800px)" srcset="/assets/img/blog-erfa-800.webp"><source type="image/webp" srcset="/assets/img/blog-erfa.webp"><img class="pic r169" src="/assets/img/blog-erfa.jpg" alt="Seedling growing in soil" width="1400" height="933" loading="lazy" decoding="async"></picture><div class="body"><h3>ERFA -The Soil Test: Understanding Successful Pregnancy &amp; Embryo Implantation</h3><p>Starting the journey to becoming a parent can be really tough, especially for those having…</p><a class="core-more" href="/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/">Read more<span class="core-vh">: ERFA – The Soil Test</span></a></div></article>
     </div>
     <a class="btn link" href="/blog/">View all blog posts</a>
   </div></div>
 </main>
 <footer class="site-foot"><div class="wrap">
   <div><h2 class="fh">About us</h2><p>Join us in your journey towards parenthood. As the best fertility centre, we believe that every dream of starting a family is worth pursuing, and we are here to turn those dreams into reality.</p></div>
-  <div><h2 class="fh">Quick Links</h2><p><a href="/about/">About Us</a><br><a href="/diagnostic/">Diagnostic</a><br><a href="/advanced-fertility-therapies/">Therapeutic</a><br><a href="/courses/">Courses</a><br><a href="/skill-development-training/">Lab Training</a><br><a href="/blog/">Blog</a></p></div>
+  <div><h2 class="fh">Quick Links</h2><p><a href="/about/">About Us</a><br><a href="/pulakes-purkait-profile/">Our Founder</a><br><a href="/diagnostic/">Diagnostic</a><br><a href="/advanced-fertility-therapies/">Therapeutic</a><br><a href="/courses/">Courses</a><br><a href="/skill-development-training/">Lab Training</a><br><a href="/blog/">Blog</a></p></div>
   <div><h2 class="fh">Useful Links</h2><p><a href="https://nutrigenetics.in/" rel="noopener" target="_blank">INNR</a><br><a href="https://www.translationalhealthscience.in/" rel="noopener" target="_blank">ITHS</a><br><a href="https://rayatbahrauniversity.edu.in/" rel="noopener" target="_blank">Rayat Bahra University</a><br><a href="https://bahrauniversity.edu.in/" rel="noopener" target="_blank">Bahra University</a></p></div>
   <div><h2 class="fh">Contact Us</h2>
-    <address style="font-style:normal">Mobile: <a href="tel:+918146217196">+91 8146217196</a> / <a href="tel:+919599877196">+91 9599877196</a><br><a href="mailto:info.embryogenesis@gmail.com">info.embryogenesis@gmail.com</a><br>Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab</address>
+    <address style="font-style:normal">Mobile: <a href="tel:+918146217196">+91 8146217196</a> / <a href="tel:+919599877196">+91 9599877196</a><br><a href="mailto:info.embryogenesis@gmail.com">info.embryogenesis@gmail.com</a><br>Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab 140302</address>
     <div class="socials" style="margin-top:12px">
       <a href="https://www.facebook.com/EmbryoGenesis" rel="noopener" target="_blank" aria-label="Facebook"><svg width="18" height="18" aria-hidden="true" style="stroke:#fff;fill:none;stroke-width:2"><use href="#i-fb"/></svg></a>
       <a href="https://www.instagram.com/embryo_genesis" rel="noopener" target="_blank" aria-label="Instagram"><svg width="18" height="18" aria-hidden="true" style="stroke:#fff;fill:none;stroke-width:2"><use href="#i-ig"/></svg></a>

@@ -90,6 +90,12 @@ def make_webp():
                 with Image.open(f) as im:
                     im = im.convert('RGBA' if f.suffix.lower() == '.png' else 'RGB')
                     im.save(out, 'WEBP', quality=72, method=6)
+            small = f.with_name(f.stem + '-800.webp')
+            if not small.exists() or small.stat().st_mtime < f.stat().st_mtime:
+                with Image.open(f) as im:
+                    if im.width > 1000:  # phones get an 800 px copy (front-end QC: hero 145 KB -> ~41 KB)
+                        im = im.convert('RGBA' if f.suffix.lower() == '.png' else 'RGB')
+                        im.thumbnail((800, 10000)); im.save(small, 'WEBP', quality=72, method=6)
 
 IMG_RE = re.compile(r'<img\b([^>]*?)\bsrc="(/assets/img/[^"]+?\.(?:jpe?g|png))"([^>]*)>', re.I)
 def enhance_imgs(markup):
@@ -106,7 +112,10 @@ def enhance_imgs(markup):
         tag = f'<img{before}src="{src}"{after}{extra}>'
         webp = local.with_suffix('.webp')
         if webp.exists() and not src.endswith('logo.png'):
-            return f'<picture><source type="image/webp" srcset="{src.rsplit(".",1)[0]}.webp">{tag}</picture>'
+            base = src.rsplit(".", 1)[0]
+            small = local.with_name(local.stem + '-800.webp')
+            mobile = f'<source type="image/webp" media="(max-width: 800px)" srcset="{base}-800.webp">' if small.exists() else ''
+            return f'<picture>{mobile}<source type="image/webp" srcset="{base}.webp">{tag}</picture>'
         return tag
     return IMG_RE.sub(rep, markup)
 
@@ -182,7 +191,7 @@ def page_html(meta, main):
 <link rel="apple-touch-icon" href="/assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Lato:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=Lato:wght@400;700&display=swap"></noscript>
 <link rel="stylesheet" href="/assets/css/style.css">
 <script type="application/ld+json">
 {jsonld(meta, url)}
