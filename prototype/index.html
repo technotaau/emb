@@ -20,6 +20,7 @@
   --rail-bg:#061211; --rail-fg:#D7E8E7; --rail-line:#1E3634; --note:#2A2410; --note-line:#5A4A1E; --warn:#E2B94B; color-scheme:dark}
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.65;margin:0}
 h1,h2,h3,h4{font-family:var(--head);line-height:1.2;text-wrap:balance;margin:0;font-weight:500}
 h1{font-size:clamp(1.9rem,4vw,2.9rem)}
@@ -224,6 +225,156 @@ a{color:var(--deep)}
 .visit b{font-family:var(--head);color:var(--deep);display:block}
 .visit span{font-size:.92rem;color:var(--ink-2)}
 
+/* v5: inner pages */
+.eyebrow{font-family:var(--head);font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-mid)}
+.just{text-align:justify}
+.ihero{background:linear-gradient(110deg,var(--deep) 0%,var(--teal-mid) 60%,var(--teal) 100%);color:#fff;position:relative;overflow:hidden}
+.ihero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border:40px solid rgba(195,159,78,.35);border-radius:50%}
+.ihero .wrap{position:relative;z-index:1}
+.ihero-grid{display:grid;gap:32px;grid-template-columns:1.2fr .8fr;align-items:center;padding-block:48px}
+.ihero-grid>*{min-width:0}
+.ihero h1{color:#fff;font-weight:500;font-size:clamp(2rem,4vw,2.8rem)}
+.ihero .lead{color:#F3E7C8;font-family:var(--head);font-size:1.15rem;margin-top:6px}
+.ihero-text{display:grid;gap:12px}
+.ihero.slim .wrap{padding-block:44px;display:grid;gap:8px}
+.crumb{font-size:.86rem;color:#CDE8EA}
+.crumb a{color:#fff}
+@media (max-width:860px){.ihero-grid{grid-template-columns:1fr}}
+.formcard{background:var(--paper);color:var(--ink);border-radius:14px;padding:24px;display:grid;gap:10px;box-shadow:0 18px 40px rgba(0,0,0,.18);border-top:6px solid var(--gold);min-width:0}
+.formcard h3{color:var(--deep);font-size:1.15rem}
+.formcard input,.formcard select{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);min-height:44px;width:100%}
+.formcard .consent{display:flex;gap:8px;align-items:flex-start;font-size:.8rem;color:var(--ink-2)}
+.formcard .consent input{width:auto;min-height:0;margin-top:3px}
+.formcard .btn{justify-self:start}
+.awardcard{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:26px;display:grid;gap:10px;justify-items:start}
+.awardcard .ico{background:rgba(255,255,255,.12);border-color:var(--gold)}
+.awardcard .ico svg{stroke:#F3E7C8}
+.awardcard .q{font-family:var(--head);font-size:1.3rem;color:#fff}
+.awardcard span{font-size:.88rem;color:#CDE8EA}
+.jump{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:calc(env(safe-area-inset-top,0px) + 54px);z-index:4}
+@media (max-width:900px){.jump{position:static}}
+#t-erfa,#t-ei,#t-eit,#th-lit,#th-pbmc,#th-prp,#th-stem,#th-h2{scroll-margin-top:130px}
+.jump .wrap{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;padding-block:12px}
+.jump span{font-family:var(--head);font-size:.74rem;font-weight:700;letter-spacing:.1em;color:var(--ink-2);margin-right:6px}
+.jump button{font:inherit;font-family:var(--head);font-weight:600;font-size:.86rem;color:var(--deep);background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;min-height:36px}
+.jump button:hover{background:var(--deep);color:#fff}
+.zig{display:grid;gap:40px;grid-template-columns:.9fr 1.1fr;align-items:center}
+.zig>*{min-width:0}
+.zig.rev>.zph{order:2}
+.zph{aspect-ratio:4/3;width:100%}
+@media (max-width:820px){.zig{grid-template-columns:1fr}.zig.rev>.zph{order:0}}
+h2.h3{font-size:1.5rem;color:var(--deep)}
+h3.sm{font-size:1rem;color:var(--deep);font-weight:600}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ticks li{position:relative;padding-left:28px}
+.ticks li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/12px no-repeat}
+.twolist{display:grid;gap:20px;grid-template-columns:1fr 1fr}
+.twolist>*{min-width:0}
+@media (max-width:560px){.twolist{grid-template-columns:1fr}}
+.duo2{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+.duo2>*{min-width:0}
+@media (max-width:760px){.duo2{grid-template-columns:1fr}}
+.vcard{background:var(--paper);border-radius:14px;padding:28px;display:grid;gap:12px;align-content:start;box-shadow:0 6px 18px rgba(14,105,112,.08);border-left:5px solid var(--teal)}
+.vcard:nth-child(2){border-left-color:var(--gold)}
+.vcard h3{color:var(--deep);font-size:1.3rem}
+.vcard p{text-align:justify}
+.htl{display:grid;gap:0;grid-template-columns:repeat(5,minmax(0,1fr));position:relative}
+.htl::before{content:"";position:absolute;left:0;right:0;top:19px;height:3px;background:var(--teal)}
+.htl>div{position:relative;padding:44px 14px 0;display:grid;gap:6px;align-content:start}
+.htl>div::before{content:"";position:absolute;left:14px;top:11px;width:19px;height:19px;border-radius:50%;background:var(--gold);border:4px solid var(--paper);box-shadow:0 0 0 2px var(--teal)}
+.htl b{font-family:var(--head);color:var(--deep)}
+.htl p{font-size:.9rem;color:var(--ink-2)}
+@media (max-width:860px){.htl{grid-template-columns:1fr}.htl::before{left:23px;right:auto;width:3px;top:0;bottom:0;height:auto}.htl>div{padding:6px 0 18px 54px}.htl>div::before{left:14px;top:8px}}
+.centres3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.loc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:10px;align-content:start;min-width:0}
+.loc h3{color:var(--deep)}
+.loc p{font-size:.94rem;color:var(--ink-2)}
+.tpanel[hidden]{display:none}
+.partners{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.partners>div{display:grid;gap:10px;min-width:0}
+.logos2{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.logos2 .ph{height:70px}
+.cards3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.cards4{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
+.icard{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:10px;align-content:start;min-width:0;transition:transform .2s,box-shadow .2s}
+.icard:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(14,105,112,.12)}
+.icard h3{color:var(--deep)}
+.icard p{font-size:.94rem;color:var(--ink-2)}
+.tint .icard{border-color:transparent}
+.cross{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:center;background:var(--paper);border-radius:14px;padding:24px 28px;box-shadow:0 6px 18px rgba(14,105,112,.08)}
+.cross>*{min-width:0}
+.cross h3{color:var(--deep);margin:4px 0}
+.cross p{color:var(--ink-2);font-size:.94rem}
+@media (max-width:700px){.cross{grid-template-columns:1fr}}
+.ctaband{background:var(--deep);color:#fff}
+.ctaband .wrap{padding-block:36px}
+.ctagrid{display:flex;flex-wrap:wrap;gap:18px 30px;align-items:center;justify-content:space-between}
+.ctagrid>div:first-child{max-width:680px;min-width:0}
+.ctaband h2{color:#fff}
+.ctaband p{color:#DCEEF0}
+.ctaband .q2{font-family:var(--head);font-size:1.1rem;color:#fff}
+.callpill{display:inline-flex;align-items:center;gap:8px;border:2px solid #fff;color:#fff;border-radius:999px;padding:9px 18px;font-family:var(--head);font-weight:600}
+.callpill svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+.callpill.dark{border-color:var(--deep);color:var(--deep)}
+.cathead{display:flex;gap:16px;align-items:center;border-bottom:2px solid var(--line);padding-bottom:14px;margin-bottom:10px}
+.cathead h2{font-size:clamp(1.3rem,2.4vw,1.75rem)}
+.zig+.zig{margin-top:30px}
+.pgrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.pgrid.four{grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))}
+.pcard{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:12px;align-content:start;min-width:0;border-top:5px solid var(--teal)}
+.pc-top{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center}
+.pcard h3{color:var(--deep)}
+.pcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.93rem}
+.pcard dt{font-weight:700;color:var(--deep)}
+.pcard dd{margin:0}
+.pcard .btn{justify-self:start}
+.office{display:grid;grid-template-columns:64px 1fr 1fr;gap:18px;align-items:center;background:var(--tint);border-radius:14px;padding:20px 24px}
+.office>*{min-width:0}
+.office b{font-family:var(--head);color:var(--deep);display:block}
+.office span{font-size:.92rem;color:var(--ink-2)}
+@media (max-width:760px){.office{grid-template-columns:1fr}}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.facts span{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 14px;font-size:.88rem}
+.facts svg{width:16px;height:16px;stroke:#F3E7C8;fill:none;stroke-width:2;flex:none}
+.tgrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))}
+.tcard{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:10px;align-content:start;min-width:0;transition:transform .2s,box-shadow .2s}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(14,105,112,.12)}
+.tcard h3{color:var(--deep);font-size:1.02rem}
+.tcard .btn{justify-self:start}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-family:var(--head);font-size:.74rem;font-weight:600;background:var(--tint);color:var(--deep);border-radius:999px;padding:4px 10px}
+.blogwrap{display:grid;gap:30px;grid-template-columns:1fr 300px;align-items:start}
+.blogwrap>*{min-width:0}
+@media (max-width:900px){.blogwrap{grid-template-columns:1fr}}
+.featured{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}
+.featured .ph{border-radius:0;border:0;min-height:240px}
+.featured .body{padding:24px;display:grid;gap:10px;align-content:center}
+.featured h2{font-size:1.4rem;color:var(--deep)}
+.featured .btn{justify-self:start}
+@media (max-width:700px){.featured{grid-template-columns:1fr}}
+.tag{font-family:var(--head);font-size:.7rem;font-weight:700;letter-spacing:.04em;background:var(--tint);color:var(--teal-mid);border-radius:999px;padding:4px 10px;justify-self:start;width:max-content;max-width:100%}
+.chipsbar{display:flex;flex-wrap:wrap;gap:8px}
+.chipsbar.center-chips{justify-content:center}
+.chipsbar button{font:inherit;font-family:var(--head);font-weight:600;font-size:.86rem;color:var(--deep);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer;min-height:38px}
+.chipsbar button[aria-selected="true"]{background:var(--deep);color:#fff;border-color:var(--deep)}
+.side{position:sticky;top:120px}
+.sidebox{background:var(--tint);border-radius:14px;padding:20px;display:grid;gap:10px}
+.sidebox h3{color:var(--deep)}
+.sidebox a:not(.btn){font-family:var(--head);font-weight:600;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.sidebox .btn{justify-self:start}
+.socials.sl span{background:var(--tint);color:var(--deep)}
+.menu-btn{display:none;background:none;border:2px solid var(--deep);color:var(--deep);border-radius:8px;font-family:var(--head);font-weight:700;padding:8px 14px;cursor:pointer;min-height:44px}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex;margin-left:auto}
+  .site-head .btn.primary{display:none}
+  .site-head .nav{display:none;flex-direction:column;width:100%;gap:0}
+  .site-head .nav.open{display:flex}
+  .site-head .nav a{padding:12px 0;border-bottom:1px solid var(--line)}
+}
+
+.stack>.btn,.stack>.row{justify-self:start}
+.center>.btn,.stack.center>.btn{justify-self:center}
+@media (max-width:900px){.site-head .wrap{gap:10px;flex-wrap:nowrap}.site-head .nav.open{position:absolute;left:0;right:0;top:100%;background:var(--paper);padding:0 16px 10px;box-shadow:0 10px 20px rgba(0,0,0,.08)}.logo .word b{font-size:1.02rem}.logo .mark{width:42px;height:42px}}
 .page{display:none}.page.active{display:block}
 @media (prefers-reduced-motion:no-preference){.page.active{animation:fade .25s ease}}
 @keyframes fade{from{opacity:.4}to{opacity:1}}
@@ -242,10 +393,15 @@ a{color:var(--deep)}
   <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.5-4A8 8 0 1 1 8 18.5z"/><path d="M9 9c0 4 2 6 6 6l1-2-2-1-1 1a5 5 0 0 1-2-2l1-1-1-2z"/></symbol>
   <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13l-2 8 5-3 5 3-2-8"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c3 .3 5.5 2.5 5.5 5.8"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M8 7h7"/></symbol>
 </svg>
 
 <div class="rail"><div class="wrap">
-  <span class="label">Prototype v4 · TechnoTaau Team</span>
+  <span class="label">Prototype v5 · TechnoTaau Team</span>
   <nav aria-label="Prototype pages" id="pages">
     <button data-page="home" aria-current="page">Home</button>
     <button data-page="about">About Us</button>
@@ -268,7 +424,7 @@ a{color:var(--deep)}
 </div></div>
 <header class="site-head"><div class="wrap">
   <a class="logo" href="#home" data-go="home"><span class="mark" aria-hidden="true"></span><span class="word"><b>EMBRYOGENESIS</b><span>Redefining Fertility Evaluation</span></span></a>
-  <nav class="nav" aria-label="Site">
+  <nav class="nav" id="siteNav" aria-label="Site">
     <a href="#home" data-go="home">Home</a>
     <a href="#about" data-go="about">About Us</a>
     <a href="#diagnostic" data-go="diagnostic">Services ▾</a>
@@ -279,6 +435,7 @@ a{color:var(--deep)}
     <a href="#contact" data-go="contact">Contact Us</a>
   </nav>
   <a class="btn primary" href="#contact" data-go="contact">Book Now</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">☰ Menu</button>
 </div></header>
 <div class="strip"><span class="new">ADMISSIONS OPEN</span>B.Sc. &amp; M.Sc. Clinical Embryology | 9691736435 / 9815692195 | <a href="#courses" data-go="courses">Apply Now</a></div>
 
@@ -417,47 +574,74 @@ a{color:var(--deep)}
 
 <!-- ================= ABOUT ================= -->
 <section class="page" id="page-about">
-  <div class="pagehead"><div class="wrap"><h1>About Us</h1><p class="quiet">Pioneering Hope and Innovation</p></div></div>
-  <div class="band"><div class="wrap two">
-    <div class="stack">
-      <p style="text-align:justify">We at EMBRYOGENESIS are committed to making the journey of people struggling with infertility a road of hope and achievement. Our infertility diagnostic centre is a leader in cutting-edge infertility research and diagnostics, driven by a dedication to offering individualized solutions to couples hoping to start or grow their families.</p>
-      <p class="quote">“Best Innovation Award for Human Infertility Treatment”</p>
-      <div class="feature"><div class="ico"><svg><use href="#i-heart"/></svg></div><div><h3>Our Vision</h3><p>To be the leading force in infertility diagnosis, where science, compassion, and innovation converge to empower individuals and couples on their path to parenthood. As the “Best Innovation Awardee” and best fertility diagnostic centre in India, we aspire to redefine possibilities, pioneer breakthroughs, and unite hearts, making dreams of the family a tangible reality for all.</p></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-micro"/></svg></div><div><h3>Who We Are</h3><p>EMBRYOGENESIS is more than just an infertility diagnostic &amp; research centre; we are a community of passionate scientists, and healthcare professionals who share a common mission: to make parenthood dreams a reality. With years of experience, a state-of-the-art facility, and an unwavering commitment to excellence, our diagnostic centre stands as a beacon of hope for those seeking answers in their fertility journey.</p></div></div>
+  <div class="ihero"><div class="wrap ihero-grid">
+    <div class="ihero-text">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>About Us</span></nav>
+      <h1>About Us</h1>
+      <p class="lead">Pioneering Hope and Innovation</p>
+      <div class="row"><a class="btn primary" href="#contact" data-go="contact">Book Now</a><a class="btn ghostw" href="#courses" data-go="courses">Courses</a></div>
     </div>
+    <div class="awardcard"><div class="ico"><svg><use href="#i-award"/></svg></div><p class="q">“Best Innovation Award for Human Infertility Treatment”</p><span>27th Nov 2024 · Research &amp; Innovation Park, New Delhi</span></div>
+  </div></div>
+
+  <div class="band"><div class="wrap zig">
+    <div class="ph zph">REAL PHOTO: EmbryoGenesis laboratory, Mohali</div>
     <div class="stack">
-      <div class="ph" style="aspect-ratio:4/3">REAL PHOTO: Mohali laboratory</div>
-      <h3 style="color:var(--deep)">Road Map of Embryogenesis</h3>
-      <div class="timeline">
-        <div><b>Nov 2023</b>Establishment of Embryogenesis</div>
-        <div><b>Feb 2024</b>ERFA - The Soil Test (Patent) · LIT -H2 Antioxidant Therapy (Patented) · LIT -H2 Anti-Oxidant Kit (Patent) · Receptivity PX test (Patent) · PJ Embryogenesis Health &amp; Education Foundation, Kolkata</div>
-        <div><b>May 2024</b>Department of Clinical Embryology (In association with ITHS and Bahra University, Shimla Hills, Himachal Pradesh)</div>
-        <div><b>23rd Nov 2024</b>MOU with Guru Ghasidas Vishwavidyalaya, Bilaspur, Chhattisgarh</div>
-        <div><b>27th Nov 2024</b>Best Innovator Award for Human Infertility Treatment at Research &amp; Innovation Park, New Delhi</div>
-      </div>
+      <span class="eyebrow">About EmbryoGenesis</span>
+      <h2>Pioneering Hope and Innovation</h2>
+      <p class="just">We at EMBRYOGENESIS are committed to making the journey of people struggling with infertility a road of hope and achievement. Our infertility diagnostic centre is a leader in cutting-edge infertility research and diagnostics, driven by a dedication to offering individualized solutions to couples hoping to start or grow their families.</p>
     </div>
   </div></div>
-  <div class="band tint"><div class="wrap stack center">
-    <h2>Leadership</h2>
-    <div class="person"><div class="ph">PHOTO</div><b>Prof. (Dr.) Pulakes Purkait</b><span>M.Sc. (VU), Ph.D. (AU), Postdoc (PU) · JRF (An.S.I., Govt. of India), SRF (An.S.I., Govt. of India), PDF (UGC) · Best Innovator Awardee: NBHC 2024 at IIT Delhi</span><span><b>FOUNDER &amp; DIRECTOR</b></span><a class="btn link" href="#about">Read More</a></div>
+
+  <div class="band tint"><div class="wrap duo2">
+    <div class="vcard"><div class="ico"><svg><use href="#i-heart"/></svg></div><h3>Our Vision</h3><p>To be the leading force in infertility diagnosis, where science, compassion, and innovation converge to empower individuals and couples on their path to parenthood. As the “Best Innovation Awardee” and best fertility diagnostic centre in India, we aspire to redefine possibilities, pioneer breakthroughs, and unite hearts, making dreams of the family a tangible reality for all.</p></div>
+    <div class="vcard"><div class="ico"><svg><use href="#i-users"/></svg></div><h3>Who We Are</h3><p>EMBRYOGENESIS is more than just an infertility diagnostic &amp; research centre; we are a community of passionate scientists, and healthcare professionals who share a common mission: to make parenthood dreams a reality. With years of experience, a state-of-the-art facility, and an unwavering commitment to excellence, our diagnostic centre stands as a beacon of hope for those seeking answers in their fertility journey.</p></div>
   </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <h2 class="center">Road Map of Embryogenesis</h2>
+    <div class="htl">
+      <div><b>Nov 2023</b><p>Establishment of Embryogenesis</p></div>
+      <div><b>Feb 2024</b><p>ERFA - The Soil Test (Patent) · LIT -H2 Antioxidant Therapy (Patented) · LIT -H2 Anti-Oxidant Kit (Patent) · Receptivity PX test ( Patent) · PJ Embryogenesis Health &amp; Education Foundation, Kolkata</p></div>
+      <div><b>May 2024</b><p>Department of Clinical Embryology (In association with ITHS and Bahra University, Shimla Hills, Himachal Pradesh)</p></div>
+      <div><b>23rd Nov 2024</b><p>MOU with Guru Ghasidas Vishwavidyalaya, Bilaspur, Chhattisgarh</p></div>
+      <div><b>27th Nov 2024</b><p>Best Innovator Award for Human Infertility Treatment at Research &amp; Innovation Park, New Delhi</p></div>
+    </div>
+  </div></div>
+
+  <div class="band tint"><div class="wrap zig">
+    <div class="ph zph" style="aspect-ratio:4/5">PHOTO: Prof. (Dr.) Pulakes Purkait (brochure portrait)</div>
+    <div class="stack">
+      <span class="eyebrow">Leadership</span>
+      <h2>Prof. (Dr.) Pulakes Purkait</h2>
+      <p><b>FOUNDER &amp; DIRECTOR</b></p>
+      <ul class="ticks"><li>M.Sc. (VU), Ph.D. (AU), Postdoc (PU)</li><li>JRF (An.S.I., Govt. of India), SRF (An.S.I., Govt. of India), PDF (UGC)</li><li>Best Innovator Awardee: NBHC 2024 at IIT Delhi</li></ul>
+      <a class="btn deep" href="#about">Read More</a>
+    </div>
+  </div></div>
+
   <div class="band"><div class="wrap stack">
     <h2 class="center">Our Collection Centre</h2>
-    <div class="cards">
-      <div class="card"><div class="body"><h3>Mumbai</h3><p>Nirmal Multi Speciality Hospital, Plot No. 34, Sector 5 Kopar Khairane Rd, Sector 5, Kopar Khairane, Navi Mumbai, Maharashtra 400709</p></div></div>
-      <div class="card"><div class="body"><h3>Udaipur</h3><p>Shree B.L.Jain Memorial Hospital, Savina, Near Railway Level Crossing, Udaipur</p></div></div>
-      <div class="card"><div class="body"><h3>Jalandhar</h3><p>ADVANCE FERTILITY SERVICES &amp; IVF CENTRE, Inside Shakuntala Devi VIG HOSPITAL, Main Kapurthala Road, Jalandhar city, Punjab</p></div></div>
+    <div class="centres3">
+      <div class="loc"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Mumbai</h3><p>Nirmal Multi Speciality Hospital, Plot No. 34, Sector 5 Kopar Khairane Rd, Sector 5, Kopar Khairane, Navi Mumbai, Maharashtra 400709</p></div>
+      <div class="loc"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Udaipur</h3><p>Shree B.L.Jain Memorial Hospital, Savina, Near Railway Level Crossing, Udaipur</p></div>
+      <div class="loc"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Jalandhar</h3><p>ADVANCE FERTILITY SERVICES &amp; IVF CENTRE, Inside Shakuntala Devi VIG HOSPITAL, Main Kapurthala Road, Jalandhar city, Punjab</p></div>
     </div>
   </div></div>
+
   <div class="band tint"><div class="wrap stack">
-    <h2 class="center">Board of Mentors</h2>
-    <div class="people">
+    <h2 class="center">Our Team</h2>
+    <div class="tabs" role="tablist" data-group="team">
+      <button class="tab" role="tab" aria-selected="true" data-tab="team-1">Board of Mentors</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="team-2">Scientific Team</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="team-3">Scientific Advisor</button>
+    </div>
+    <div class="tpanel" id="team-1" data-group="team"><div class="people">
       <div class="person"><div class="ph">PHOTO</div><b>Ms. Jyoti Garhewal</b><span>Founder &amp; Director, Institute of Nutrigenetics &amp; Nutrigenomics Research (INNR); Founder &amp; Director, Institute of Translational Health Science (ITHS)</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Prof. J. M. Naidu</b><span>Former Registrar, Andhra University, Visakhapatnam; Former Member, UPSC, New Delhi; Former Chairman, Board of Studies &amp; Head and Professor, Department of Anthropology, Andhra University</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Dr. Ramesh Sahani</b><span>Associate Professor, Department of Anthropology, Delhi University; Former Asst. Prof., Panjab University, Chandigarh; Former Scientist, Anthropological Survey of India</span></div>
-    </div>
-    <h2 class="center" style="margin-top:30px">Scientific Team</h2>
-    <div class="people">
+    </div></div>
+    <div class="tpanel" id="team-2" data-group="team" hidden><div class="people">
       <div class="person"><div class="ph">PHOTO</div><b>Dr Vidhu Wadhwa</b><span>MBBS MD Pathology Formerly, GMCH-32 Chd · Consultant Pathologist and Lab Director, Kureway Labs Sec-40C Chandigarh · Consultant Pathologist and Quality Manager, Embryogenesis</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Dr. Kumar Abhiram Jha</b><span>M. SC Biotech, CUSAT, Kochin · PhD, AIIMS, New Delhi · Post-doc, UTHSC, USA · Stem Cell Scientist</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Mr. Karan Negi</b><span>B.Sc. &amp; M.Sc. Microbiology · Asst. Scientist</span></div>
@@ -466,9 +650,8 @@ a{color:var(--deep)}
       <div class="person"><div class="ph">PHOTO</div><b>Dr. Meenu Bhanot</b><span>Ph.D. Clinical Embryology · Consultant Embryologist</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Mrs. Shivani</b><span>B.Sc. Biotech, PGDM (Marketing) · Scientific Operations Strategist</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Mr. Ankan Purkait</b><span>Junior Scientist (R&amp;D)</span></div>
-    </div>
-    <h2 class="center" style="margin-top:30px">Scientific Advisor</h2>
-    <div class="people">
+    </div></div>
+    <div class="tpanel" id="team-3" data-group="team" hidden><div class="people">
       <div class="person"><div class="ph">PHOTO</div><b>Prof. A.K. Saxena</b><span>Professor &amp; Head, Pathology &amp; Lab Medicine, All India Institute of Medical Science, (AIIMS), Patna, India</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Dr. Anand Shrivastava</b><span>Chairman, GIOSTAR-USA</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Vivek Neyar</b><span>Founder &amp; Director, DYET Nutrition</span></div>
@@ -477,185 +660,389 @@ a{color:var(--deep)}
       <div class="person"><div class="ph">PHOTO</div><b>Prof. (Dr.) Neena Mehta</b><span>Dean Academics, Rayat Bahra Dental College &amp; Hospital, Punjab</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Dr. Arunava Bandyopadhaya</b><span>Research Lead, Astellas Institute of Regenerative Medicine, Astellas Pharma US</span></div>
       <div class="person"><div class="ph">PHOTO</div><b>Dr. Naveen Chandra Suryadevara</b><span>Senior Staff Scientist at Vanderbilt Vaccine Center, Vanderbilt University Medical Center, Nashville Metropolitan Area, Tennessee, United States</span></div>
+    </div></div>
+  </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <div class="partners">
+      <div><span class="eyebrow">Academic Partner</span><div class="logos2"><div class="ph">LOGO: Rayat Bahra University</div><div class="ph">LOGO: Bahra University</div></div></div>
+      <div><span class="eyebrow">Knowledge Partner</span><div class="logos2"><div class="ph">LOGO: INNR</div><div class="ph">LOGO: ITHS</div></div></div>
+      <div><span class="eyebrow">Training &amp; Placement Partner</span><div class="logos2"><div class="ph">LOGO</div></div></div>
     </div>
   </div></div>
-  <div class="band"><div class="wrap stack center">
-    <h2>Academic Partner · Knowledge Partner · Training &amp; Placement Partner</h2>
-    <div class="cards"><div class="card"><div class="ph">LOGO: Rayat Bahra University</div></div><div class="card"><div class="ph">LOGO: Bahra University</div></div><div class="card"><div class="ph">LOGO: ITHS</div></div><div class="card"><div class="ph">LOGO: INNR</div></div></div>
-  </div></div>
+
+  <div class="ctaband"><div class="wrap ctagrid"><div><h2>Ready to take the next step?</h2><p>Let Embryogenesis guide you with the expertise and empathy you deserve.</p></div><div class="row"><a class="btn primary" href="#contact" data-go="contact">Book Now</a><span class="callpill"><svg><use href="#i-phone"/></svg> +91 8146217196</span></div></div></div>
 </section>
 
 <!-- ================= DIAGNOSTIC ================= -->
 <section class="page" id="page-diagnostic">
-  <div class="pagehead"><div class="wrap"><h1>Diagnostic</h1><p class="quiet">Comprehensive Diagnostic Services at Embryogenesis</p></div></div>
-  <div class="band"><div class="wrap two">
-    <div class="stack">
-      <p style="text-align:justify">At Embryogenesis, we know that understanding the root cause of fertility challenges is the first step toward successful treatment. Our state-of-the-art diagnostic services are designed to provide detailed insights into reproductive health, enabling personalized and effective care for individuals and couples seeking answers.</p>
-      <h2>OUR ADVANCED DIAGNOSTIC TESTS</h2>
-      <div class="feature"><div class="ico"><svg><use href="#i-micro"/></svg></div><div>
-        <h3>Endometrial Receptivity &amp; Function Assay (ERFA – The Soil Test)</h3>
-        <p><b>What is ERFA?</b> The ERFA, or Endometrial Soil Test, is a groundbreaking diagnostic tool that assesses the readiness of the uterine lining (endometrium) for successful embryo implantation. This comprehensive test analyzes multiple biomarkers to pinpoint factors affecting fertility and implantation success.</p>
-        <p><b>Who is it for?</b></p><ul class="list"><li>Individuals with unexplained infertility</li><li>Those who have experienced recurrent implantation failure (RIF)</li><li>Women facing repeated IVF failures or recurrent pregnancy loss (RPL)</li></ul>
-        <p><b>Benefits:</b></p><ul class="list"><li>Provides a full profile of endometrial receptivity</li><li>Explains hidden causes of implantation challenges</li><li>Guides personalized treatment strategies</li></ul>
-        <p class="quote">“Gain crucial insights into your fertility journey with ERFA – The SoiL Test.”</p>
-        <a class="btn primary" href="#contact" data-go="contact">Book Your Test Today</a>
-      </div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-shield"/></svg></div><div>
-        <h3>Endo-Immune Test</h3>
-        <p><b>What is the Endo-Immune Test?</b> This test delves into the immune landscape of the endometrium, essential for maintaining a balance between pro-inflammatory and anti-inflammatory responses. By evaluating cytokines and immune cells, we help identify potential immune-related issues causing recurrent miscarriages or failed implantation.</p>
-        <p><b>Key Highlights:</b></p><ul class="list"><li>Assesses immune competency to support healthy embryo implantation</li><li>Identifies imbalances in cytokine levels and uNK cell activity</li><li>Offers targeted insights for immune-modulatory treatments</li></ul>
-        <p class="quote">“Find answers to immune-related fertility challenges and explore tailored solutions.”</p>
-        <a class="btn primary" href="#contact" data-go="contact">Book your test today</a>
-      </div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-cell"/></svg></div><div>
-        <h3>Endometrial Infection Test (EIT)</h3>
-        <p>Endometrial infections can go unnoticed but may severely impact fertility by altering the environment needed for successful implantation. The Endometrial Infection Test detects hidden bacterial or viral infections and chronic endometritis.</p>
-        <p><b>Who Should Consider This Test?</b></p><ul class="list"><li>Women with recurrent pregnancy loss (RPL)</li><li>Those experiencing repeated IVF failures or unexplained infertility</li></ul>
-        <p><b>Advantages:</b></p><ul class="list"><li>Detects asymptomatic infections affecting fertility</li><li>Ensures a thorough assessment for a healthier endometrial environment</li></ul>
-        <p class="quote">“Ensure your endometrium is prepared for a healthy pregnancy with our EIT.”</p>
-        <a class="btn primary" href="#contact" data-go="contact">Book your test today</a>
-      </div></div>
+  <div class="ihero"><div class="wrap ihero-grid">
+    <div class="ihero-text">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Services</span> / <span>Diagnostic</span></nav>
+      <h1>Diagnostic</h1>
+      <p class="lead">Comprehensive Diagnostic Services at Embryogenesis</p>
+      <p class="just" style="color:#DCEEF0">At Embryogenesis, we know that understanding the root cause of fertility challenges is the first step toward successful treatment. Our state-of-the-art diagnostic services are designed to provide detailed insights into reproductive health, enabling personalized and effective care for individuals and couples seeking answers.</p>
     </div>
+    <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
+      <h3>Book Your Test Today</h3>
+      <select id="d-test" required><option value="">Select test *</option><option>ERFA – The Soil Test</option><option>Endo-Immune Test</option><option>Endometrial Infection Test (EIT)</option></select>
+      <input id="d-name" placeholder="Name *" required><input id="d-phone" type="tel" placeholder="Phone *" required><input id="d-city" placeholder="City *">
+      <label class="consent"><input id="d-consent" type="checkbox" required><span>I agree to the Privacy Policy.</span></label>
+      <button class="btn primary" type="submit">Book Now</button><span class="sent quiet" hidden>Thank you. We will contact you shortly.</span>
+    </form>
+  </div></div>
+
+  <div class="jump"><div class="wrap"><span>OUR ADVANCED DIAGNOSTIC TESTS</span><button data-jump="t-erfa">ERFA – The Soil Test</button><button data-jump="t-ei">Endo-Immune Test</button><button data-jump="t-eit">Endometrial Infection Test (EIT)</button></div></div>
+
+  <div class="band" id="t-erfa"><div class="wrap zig">
+    <div class="ph zph">PHOTO / ILLUSTRATION: endometrium, "soil and seed" (ERFA brochure artwork)</div>
     <div class="stack">
-      <form class="sideform" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false"><h3>Book Your Test</h3><select id="d-test"><option>Select test *</option><option>ERFA – The Soil Test</option><option>Endo-Immune Test</option><option>Endometrial Infection Test (EIT)</option></select><input id="d-name" placeholder="Name *" required><input id="d-email" type="email" placeholder="Email Address *" required><input id="d-phone" type="tel" placeholder="Phone *" required><input id="d-city" placeholder="City *"><button class="btn primary" type="submit">Book Now</button><span class="sent quiet" hidden>Thank you. We will contact you shortly.</span></form>
-      <div class="ph" style="aspect-ratio:4/3">REAL PHOTO: pathologist at microscope</div>
-      <h3 style="color:var(--deep)">Why Choose Embryogenesis for Your Diagnostic Needs?</h3>
-      <div class="feature"><div class="ico"><svg><use href="#i-heart"/></svg></div><div><h3>Personalized Care</h3><p>We understand that each fertility journey is unique. Our diagnostic services are tailored to meet your specific reproductive health needs, ensuring accurate, individualized results.</p></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-dna"/></svg></div><div><h3>Cutting-Edge Technology</h3><p>Utilizing advanced molecular biomarkers and state-of-the-art equipment, our diagnostics are at the forefront of reproductive science.</p></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-award"/></svg></div><div><h3>Experienced Specialists</h3><p>Our team of dedicated experts brings years of experience in reproductive health and diagnostics, guiding you with empathy and professionalism every step of the way.</p></div></div>
+      <span class="eyebrow">Test 1</span>
+      <h2>Endometrial Receptivity &amp; Function Assay (ERFA – The Soil Test)</h2>
+      <h3 class="sm">What is ERFA?</h3>
+      <p class="just">The ERFA, or Endometrial Soil Test, is a groundbreaking diagnostic tool that assesses the readiness of the uterine lining (endometrium) for successful embryo implantation. This comprehensive test analyzes multiple biomarkers to pinpoint factors affecting fertility and implantation success.</p>
+      <div class="twolist">
+        <div><h3 class="sm">Who is it for?</h3><ul class="ticks"><li>Individuals with unexplained infertility</li><li>Those who have experienced recurrent implantation failure (RIF)</li><li>Women facing repeated IVF failures or recurrent pregnancy loss (RPL</li></ul></div>
+        <div><h3 class="sm">Benefits:</h3><ul class="ticks"><li>Provides a full profile of endometrial receptivity</li><li>Explains hidden causes of implantation challenges</li><li>Guides personalized treatment strategies</li></ul></div>
+      </div>
+      <p class="quote">“Gain crucial insights into your fertility journey with ERFA – The SoiL Test.”</p>
+      <a class="btn primary" href="#contact" data-go="contact">Book Your Test Today</a>
     </div>
   </div></div>
-  <div class="band tint"><div class="wrap stack"><h2 class="center">FAQs</h2><div class="faq">
-    <details open><summary>What can I expect during these diagnostic tests?</summary><p>Each test includes a comprehensive consultation, a simple collection process, and a detailed explanation of results. Our specialists ensure you feel informed and supported throughout.</p></details>
-    <details><summary>How soon will I get my results?</summary><p>Results are typically available within 7-10 days, depending on the complexity of the test. We prioritize accuracy and timely reporting to help you move forward confidently.</p></details>
-    <details><summary>Will these tests help if I’ve already had IVF treatments?</summary><p>Absolutely. Our diagnostic tests are particularly beneficial for those who have faced IVF failures or unexplained fertility issues. They provide deeper insights that standard tests may miss.</p></details>
-  </div><p class="quote center" style="border:0">“Embryogenesis is committed to being your partner in uncovering answers and paving the way toward successful outcomes. Contact us today to learn more or schedule your consultation.”</p></div></div>
+
+  <div class="band tint" id="t-ei"><div class="wrap zig rev">
+    <div class="ph zph">PHOTO / ILLUSTRATION: immune cells in the endometrium</div>
+    <div class="stack">
+      <span class="eyebrow">Test 2</span>
+      <h2>Endo-Immune Test</h2>
+      <h3 class="sm">What is the Endo-Immune Test?</h3>
+      <p class="just">This test delves into the immune landscape of the endometrium, essential for maintaining a balance between pro-inflammatory and anti-inflammatory responses. By evaluating cytokines and immune cells, we help identify potential immune-related issues causing recurrent miscarriages or failed implantation.</p>
+      <h3 class="sm">Key Highlights:</h3>
+      <ul class="ticks"><li>Assesses immune competency to support healthy embryo implantation</li><li>Identifies imbalances in cytokine levels and uNK cell activity</li><li>Offers targeted insights for immune-modulatory treatments</li></ul>
+      <p class="quote">“Find answers to immune-related fertility challenges and explore tailored solutions.”</p>
+      <a class="btn primary" href="#contact" data-go="contact">Book your test today</a>
+    </div>
+  </div></div>
+
+  <div class="band" id="t-eit"><div class="wrap zig">
+    <div class="ph zph">PHOTO: pathologist at the microscope (brochure photo of Dr Vidhu Wadhwa)</div>
+    <div class="stack">
+      <span class="eyebrow">Test 3</span>
+      <h2>Endometrial Infection Test (EIT)</h2>
+      <p class="just">Endometrial infections can go unnoticed but may severely impact fertility by altering the environment needed for successful implantation. The Endometrial Infection Test detects hidden bacterial or viral infections and chronic endometritis.</p>
+      <div class="twolist">
+        <div><h3 class="sm">Who Should Consider This Test?</h3><ul class="ticks"><li>Women with recurrent pregnancy loss (RPL)</li><li>Those experiencing repeated IVF failures or unexplained infertility</li></ul></div>
+        <div><h3 class="sm">Advantages:</h3><ul class="ticks"><li>Detects asymptomatic infections affecting fertility</li><li>Ensures a thorough assessment for a healthier endometrial environment</li></ul></div>
+      </div>
+      <p class="quote">“Ensure your endometrium is prepared for a healthy pregnancy with our EIT.”</p>
+      <a class="btn primary" href="#contact" data-go="contact">Book your test today</a>
+    </div>
+  </div></div>
+
+  <div class="band tint"><div class="wrap stack">
+    <h2 class="center">Why Choose Embryogenesis for Your Diagnostic Needs?</h2>
+    <div class="cards3">
+      <div class="icard"><div class="ico"><svg><use href="#i-heart"/></svg></div><h3>Personalized Care</h3><p>We understand that each fertility journey is unique. Our diagnostic services are tailored to meet your specific reproductive health needs, ensuring accurate, individualized results.</p></div>
+      <div class="icard"><div class="ico"><svg><use href="#i-dna"/></svg></div><h3>Cutting-Edge Technology</h3><p>Utilizing advanced molecular biomarkers and state-of-the-art equipment, our diagnostics are at the forefront of reproductive science.</p></div>
+      <div class="icard"><div class="ico"><svg><use href="#i-users"/></svg></div><h3>Experienced Specialists</h3><p>Our team of dedicated experts brings years of experience in reproductive health and diagnostics, guiding you with empathy and professionalism every step of the way.</p></div>
+    </div>
+  </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <h2 class="center">FAQs</h2>
+    <div class="faq">
+      <details open><summary>What can I expect during these diagnostic tests?</summary><p>Each test includes a comprehensive consultation, a simple collection process, and a detailed explanation of results. Our specialists ensure you feel informed and supported throughout.</p></details>
+      <details><summary>How soon will I get my results?</summary><p>Results are typically available within 7-10 days, depending on the complexity of the test. We prioritize accuracy and timely reporting to help you move forward confidently.</p></details>
+      <details><summary>Will these tests help if I’ve already had IVF treatments?</summary><p>Absolutely. Our diagnostic tests are particularly beneficial for those who have faced IVF failures or unexplained fertility issues. They provide deeper insights that standard tests may miss.</p></details>
+    </div>
+  </div></div>
+
+  <div class="band tint"><div class="wrap cross">
+    <div class="ico"><svg><use href="#i-shield"/></svg></div>
+    <div><span class="eyebrow">Therapeutic Services</span><h3>Explore advanced therapies like LIT Therapy, Stem Cell Therapy, PRP, and Molecular Hydrogen Therapy.</h3><p>Our personalized treatments improve reproductive health and help couples achieve their dream of parenthood.</p></div>
+    <a class="btn deep" href="#therapeutic" data-go="therapeutic">Therapeutic →</a>
+  </div></div>
+
+  <div class="ctaband"><div class="wrap ctagrid"><div><p class="q2">“Embryogenesis is committed to being your partner in uncovering answers and paving the way toward successful outcomes. Contact us today to learn more or schedule your consultation.”</p></div><div class="row"><a class="btn primary" href="#contact" data-go="contact">Book Now</a><span class="callpill"><svg><use href="#i-phone"/></svg> +91 8146217196</span></div></div></div>
 </section>
 
 <!-- ================= THERAPEUTIC ================= -->
 <section class="page" id="page-therapeutic">
-  <div class="pagehead"><div class="wrap"><h1>Therapeutic</h1><p class="quiet">Explore Our Pioneering Therapeutic Solutions for Reproductive Health</p></div></div>
-  <div class="band"><div class="wrap two">
-    <div class="stack">
-      <p style="text-align:justify">At Embryogenesis, we believe that your path to parenthood should be supported by the most advanced medical science available. Our range of innovative therapies is designed to address complex fertility challenges, offering personalized, hope-filled solutions to individuals and couples on their journey to starting or growing their family.</p>
-      <h2>Immunotherapy: Balancing Your Immune Response</h2>
-      <div class="feature"><div class="ico"><svg><use href="#i-shield"/></svg></div><div><h3>LIT Therapy: Personalized Immune Support</h3><p><b>What is LIT Therapy?</b> Lymphocyte Immunization Therapy (LIT) helps manage immune-related fertility challenges. This therapy involves the careful extraction and processing of your white blood cells (leukocytes), which are then reintroduced to stimulate a balanced immune response. By fostering tolerance to your partner’s sperm or embryos, LIT Therapy can help overcome issues like sperm antibodies and recurrent miscarriages.</p><p><b>Key Benefits:</b></p><ul class="list"><li>Promotes immune tolerance to support embryo implantation</li><li>Personalized approach tailored to each patient’s needs</li><li>Increases the likelihood of successful conception</li></ul><p class="quote">“Discover the personalized care that empowers your journey to parenthood.”</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-cell"/></svg></div><div><h3>PBMC Therapy: Immune System Enhancement for Conception</h3><p><b>What is PBMC Therapy?</b> Peripheral Blood Mononuclear Cell (PBMC) Therapy leverages your body’s natural immune cells to create an environment conducive to successful conception. By adjusting immune responses, PBMC Therapy can help those experiencing repeated implantation failures or miscarriages.</p><p><b>Key Benefits:</b></p><ul class="list"><li>Regulates immune responses for better reproductive health</li><li>Supports the body in preventing immune-related fertility issues</li></ul><p>Want to find out if PBMC Therapy is right for you? Contact us today for more information.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div></div>
-      <h2>Regenerative Therapy: Rejuvenate Your Fertility Health</h2>
-      <div class="feature"><div class="ico"><svg><use href="#i-drop"/></svg></div><div><h3>PRP Therapy: Rejuvenating Fertility Health</h3><p><b>What is PRP Therapy?</b> Platelet-Rich Plasma (PRP) Therapy involves the extraction of a small sample of your blood, concentrating the platelets, and injecting them into the reproductive region. This innovative, non-invasive treatment stimulates tissue regeneration and enhances blood circulation to the reproductive organs.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-dna"/></svg></div><div><h3>Stem Cell Therapy</h3><p>Harness the regenerative power of stem cells to address fertility challenges and improve reproductive health. Our advanced therapy offers hope for couples seeking innovative solutions.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div></div>
-      <h2>Antioxidant for Reproductive Health and Oxidative Stress Management</h2>
-      <div class="feature"><div class="ico"><svg><use href="#i-flask"/></svg></div><div><h3>Molecular Hydrogen Therapy</h3><p>Boost your fertility with Molecular Hydrogen Therapy, designed to combat oxidative stress and enhance reproductive well-being naturally and effectively.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div></div>
+  <div class="ihero"><div class="wrap ihero-grid">
+    <div class="ihero-text">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Services</span> / <span>Therapeutic</span></nav>
+      <h1>Therapeutic</h1>
+      <p class="lead">Explore Our Pioneering Therapeutic Solutions for Reproductive Health</p>
+      <p class="just" style="color:#DCEEF0">At Embryogenesis, we believe that your path to parenthood should be supported by the most advanced medical science available. Our range of innovative therapies is designed to address complex fertility challenges, offering personalized, hope-filled solutions to individuals and couples on their journey to starting or growing their family.</p>
     </div>
-    <div class="stack">
-      <form class="sideform" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false"><h3>Book Now</h3><p class="quiet">Therapies are given at our Mohali centre.</p><select id="t-therapy"><option>Select therapy *</option><option>LIT Therapy</option><option>PBMC Therapy</option><option>PRP Therapy</option><option>Stem Cell Therapy</option><option>Molecular Hydrogen Therapy</option></select><input id="t-name" placeholder="Name *" required><input id="t-email" type="email" placeholder="Email Address *" required><input id="t-phone" type="tel" placeholder="Phone *" required><input id="t-city" placeholder="City *"><button class="btn primary" type="submit">Book Now</button><span class="sent quiet" hidden>Thank you. We will contact you shortly.</span></form>
-      <div class="ph" style="aspect-ratio:4/3">REAL PHOTO: therapy room / consultation</div>
+    <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
+      <h3>Schedule your consultation today!</h3>
+      <p class="quiet" style="margin:0">Therapies are given at our Mohali centre.</p>
+      <select id="t-therapy" required><option value="">Select therapy *</option><option>LIT Therapy</option><option>PBMC Therapy</option><option>PRP Therapy</option><option>Stem Cell Therapy</option><option>Molecular Hydrogen Therapy</option></select>
+      <input id="t-name" placeholder="Name *" required><input id="t-phone" type="tel" placeholder="Phone *" required><input id="t-city" placeholder="City *">
+      <label class="consent"><input id="t-consent" type="checkbox" required><span>I agree to the Privacy Policy.</span></label>
+      <button class="btn primary" type="submit">Book Now</button><span class="sent quiet" hidden>Thank you. We will contact you shortly.</span>
+    </form>
+  </div></div>
+
+  <div class="jump"><div class="wrap"><button data-jump="th-lit">LIT Therapy</button><button data-jump="th-pbmc">PBMC Therapy</button><button data-jump="th-prp">PRP Therapy</button><button data-jump="th-stem">Stem Cell Therapy</button><button data-jump="th-h2">Molecular Hydrogen Therapy</button></div></div>
+
+  <div class="band"><div class="wrap stack">
+    <div class="cathead"><div class="ico"><svg><use href="#i-shield"/></svg></div><h2>Immunotherapy: Balancing Your Immune Response</h2></div>
+    <div class="zig" id="th-lit">
+      <div class="ph zph">PHOTO / ILLUSTRATION: LIT Therapy</div>
+      <div class="stack"><h2 class="h3">LIT Therapy: Personalized Immune Support</h2><h3 class="sm">What is LIT Therapy?</h3><p class="just">Lymphocyte Immunization Therapy (LIT) helps manage immune-related fertility challenges. This therapy involves the careful extraction and processing of your white blood cells (leukocytes), which are then reintroduced to stimulate a balanced immune response. By fostering tolerance to your partner’s sperm or embryos, LIT Therapy can help overcome issues like sperm antibodies and recurrent miscarriages.</p><h3 class="sm">Key Benefits:</h3><ul class="ticks"><li>Promotes immune tolerance to support embryo implantation</li><li>Personalized approach tailored to each patient’s needs</li><li>Increases the likelihood of successful conception</li></ul><p class="quote">“Discover the personalized care that empowers your journey to parenthood.”</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div>
+    </div>
+    <div class="zig rev" id="th-pbmc">
+      <div class="ph zph">PHOTO / ILLUSTRATION: PBMC Therapy</div>
+      <div class="stack"><h2 class="h3">PBMC Therapy: Immune System Enhancement for Conception</h2><h3 class="sm">What is PBMC Therapy?</h3><p class="just">Peripheral Blood Mononuclear Cell (PBMC) Therapy leverages your body’s natural immune cells to create an environment conducive to successful conception. By adjusting immune responses, PBMC Therapy can help those experiencing repeated implantation failures or miscarriages.</p><h3 class="sm">Key Benefits:</h3><ul class="ticks"><li>Regulates immune responses for better reproductive health</li><li>Supports the body in preventing immune-related fertility issues</li></ul><p>Want to find out if PBMC Therapy is right for you? Contact us today for more information.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div>
     </div>
   </div></div>
+
+  <div class="band tint"><div class="wrap stack">
+    <div class="cathead"><div class="ico"><svg><use href="#i-drop"/></svg></div><h2>Regenerative Therapy: Rejuvenate Your Fertility Health</h2></div>
+    <div class="zig" id="th-prp">
+      <div class="ph zph">PHOTO / ILLUSTRATION: PRP Therapy</div>
+      <div class="stack"><h2 class="h3">PRP Therapy: Rejuvenating Fertility Health</h2><h3 class="sm">What is PRP Therapy?</h3><p class="just">Platelet-Rich Plasma (PRP) Therapy involves the extraction of a small sample of your blood, concentrating the platelets, and injecting them into the reproductive region. This innovative, non-invasive treatment stimulates tissue regeneration and enhances blood flow, revitalizing reproductive tissues and boosting fertility potential.</p><h3 class="sm">Key Benefits:</h3><ul class="ticks"><li>Stimulates natural tissue healing and regeneration</li><li>Enhances blood flow to reproductive organs</li><li>Non-invasive and safe, with minimal risk</li></ul><p class="quote">Embark on a journey filled with renewed hope. Schedule your consultation today!</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div>
+    </div>
+    <div class="zig rev" id="th-stem">
+      <div class="ph zph">PHOTO / ILLUSTRATION: Stem Cell Therapy</div>
+      <div class="stack"><h2 class="h3">Stem Cell Therapy: Advanced Regenerative Medicine</h2><h3 class="sm">What is Stem Cell Therapy?</h3><p class="just">Stem Cell Therapy is at the forefront of regenerative medicine, offering new hope for those facing gynecological disorders or infertility. Human mesenchymal stem cells (hMSCs) can differentiate and repair damaged tissues, making them invaluable for treating conditions like premature ovarian failure and primary ovarian insufficiency.</p><h3 class="sm">Key Benefits:</h3><ul class="ticks"><li>Repairs and rejuvenates reproductive tissues</li><li>Offers solutions for both male and female infertility</li><li>Represents cutting-edge care in reproductive health</li></ul><p class="quote">Find out how our revolutionary stem cell therapy can make a difference in your fertility journey.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div>
+    </div>
+  </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <div class="cathead"><div class="ico"><svg><use href="#i-flask"/></svg></div><h2>Antioxidant For Reproductive Health And Oxidative Stress Management</h2></div>
+    <div class="zig" id="th-h2">
+      <div class="ph zph">PHOTO / ILLUSTRATION: Molecular Hydrogen Therapy</div>
+      <div class="stack"><h2 class="h3">Molecular Hydrogen Therapy: Natural Antioxidant Support</h2><h3 class="sm">What is Molecular Hydrogen Therapy?</h3><p class="just">Hydrogen therapy harnesses the power of this non-toxic, odorless gas to reduce oxidative stress and inflammation. Recent studies have shown hydrogen’s significant benefits in reproductive health, including enhanced tissue support and improved embryo quality.</p><h3 class="sm">Key Benefits:</h3><ul class="ticks"><li>Acts as a powerful antioxidant and anti-inflammatory agent</li><li>Reduces oxidative stress, enhancing reproductive health</li><li>Supports overall wellness, contributing to successful conception</li></ul><p class="quote">Experience the transformative potential of hydrogen therapy for your reproductive health.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a></div>
+    </div>
+  </div></div>
+
+  <div class="band tint"><div class="wrap zig">
+    <div class="stack">
+      <h2>Why Choose Embryogenesis?</h2>
+      <p class="just">At Embryogenesis, our commitment goes beyond treatment—we offer a comprehensive, compassionate approach that addresses your unique reproductive needs. Our team of experts utilizes the latest scientific breakthroughs to provide personalized care, making your journey toward parenthood as supportive and effective as possible.</p>
+      <div class="visit"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><b>Visit our Mohali centre</b><span>Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab · +91 8146217196</span></div></div>
+    </div>
+    <div class="map">MAP: EmbryoGenesis, Mohali</div>
+  </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <h2 class="center">FAQs</h2>
+    <div class="faq">
+      <details open><summary>How do I know which therapy is right for me?</summary><p>Our fertility specialists will evaluate your medical history and current health to recommend the most suitable therapy for your needs.</p></details>
+      <details><summary>Are these therapies safe?</summary><p>Yes, all of our therapies are designed with safety and efficacy in mind. They are supported by extensive research and performed by experienced medical professionals.</p></details>
+      <details><summary>What should I expect during my therapy?</summary><p>Each therapy is tailored to your condition, and our team will provide detailed guidance before, during, and after treatment. Get started on your personalized fertility journey today! Contact us for more information or to schedule your consultation.</p></details>
+    </div>
+  </div></div>
+
+  <div class="band tint"><div class="wrap cross">
+    <div class="ico"><svg><use href="#i-micro"/></svg></div>
+    <div><span class="eyebrow">Diagnostic Services</span><h3>Our center leads in reproductive health diagnostics.</h3><p>Offering tailored solutions to help couples overcome challenges and achieve their parenthood dreams.</p></div>
+    <a class="btn deep" href="#diagnostic" data-go="diagnostic">Diagnostic →</a>
+  </div></div>
+
+  <div class="ctaband"><div class="wrap ctagrid"><div><h2>Ready to take the next step?</h2><p>Let Embryogenesis guide you with the expertise and empathy you deserve.</p></div><div class="row"><a class="btn primary" href="#contact" data-go="contact">Book Now</a><span class="callpill"><svg><use href="#i-phone"/></svg> +91 8146217196</span></div></div></div>
 </section>
 
 <!-- ================= COURSES ================= -->
 <section class="page" id="page-courses">
-  <div class="pagehead"><div class="wrap"><h1>Courses</h1><p class="quiet">Admission Open For Session 2025-26</p></div></div>
-  <div class="band"><div class="wrap two">
-    <div class="stack">
-      <h2>Shape the Future of Reproductive Science with a BSc &amp; MSc in Clinical Embryology</h2>
-      <p style="text-align:justify">Explore the rapidly growing field of Assisted Reproductive Technology (ART) with our BSc &amp; MSc in Clinical Embryology program at Bahra University. Designed to meet the increasing global demand for skilled embryologists, this program equips students with in-depth knowledge and practical skills to revolutionize reproductive healthcare.</p>
-      <div class="row"><a class="btn deep" href="#courses">Download Brochure</a></div>
-      <div class="cards">
-        <div class="course"><h3>BSc in Clinical Embryology</h3><dl><dt>Eligibility:</dt><dd>12th with Physics, Chemistry, and Biology.</dd><dt>Duration:</dt><dd>4 Years</dd><dt>Fee:</dt><dd>₹39,875 per semester</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>MSc in Clinical Embryology</h3><dl><dt>Duration:</dt><dd>2 Years (4 Semesters)</dd><dt>Eligibility:</dt><dd>Undergraduate / B.Sc. Life Sciences, Embryology, Nutrigenetics, Genetics, Microbiology, Biotechnology, Anthropology, Human Biology, MLT / MBBS, BDS, BVSc., and Allied Sciences</dd><dt>Course Fee:</dt><dd>INR 1,00,000/- Per Semester</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-      </div>
-      <h2>ART &amp; Clinical Embryology</h2>
-      <p style="text-align:justify">EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART &amp; Clinical Embryology. These programs are meticulously designed to provide cutting-edge education and hands-on training in the rapidly growing field of Assisted Reproductive Technology (ART) and Clinical Embryology. With a focus on academic excellence, practical exposure, and research-driven learning, these programs empower students to build successful careers in reproductive medicine and embryology.</p>
-      <div class="cards">
-        <div class="course"><h3>B.Sc. in ART &amp; Clinical Embryology</h3><dl><dt>Eligibility:</dt><dd>12th with Physics, Chemistry, and Biology/Math.</dd><dt>Duration:</dt><dd>4 Years</dd></dl><p><b>Curriculum Highlights:</b></p><ul class="list"><li>Reproductive Biology</li><li>Fundamentals of Andrology</li><li>Basics of Clinical Embryology</li><li>Laboratory Andrology Tools &amp; Techniques</li><li>Practical Training in ART Laboratory Processes</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>M.Sc. in ART &amp; Clinical Embryology</h3><dl><dt>Eligibility:</dt><dd>B.Sc./B.Tech in Life Sciences, MBBS, BDS etc.</dd><dt>Duration:</dt><dd>2 Years</dd></dl><p><b>Curriculum Highlights:</b></p><ul class="list"><li>Advanced Reproductive Genetics &amp; Genetic Testing in ART</li><li>Ethics and Regulation in ART</li><li>Advanced ART Laboratory Processes (Andrology and Embryology)</li><li>Research in ART Techniques and Laboratory Management</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>Ph.D. in ART &amp; Clinical Embryology</h3><dl><dt>Eligibility:</dt><dd>Post Graduation in relevant field</dd><dt>Duration:</dt><dd>3-4 Years</dd></dl><p><b>Research Focus Areas:</b></p><ul class="list"><li>Reproductive Genetics</li><li>Advanced Embryology Techniques</li><li>Assisted Reproductive Technologies (ART)</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>PG Diploma in ART &amp; Clinical Embryology</h3><dl><dt>Eligibility:</dt><dd>B.Sc./M.Sc. in Life Sciences, MBBS etc.</dd><dt>Duration:</dt><dd>1 Years</dd></dl><p><b>Curriculum Highlights:</b></p><ul class="list"><li>Fundamental Andrology and Clinical Embryology</li><li>ART Laboratory Processes and Techniques</li><li>Reproductive Genetics and Genetic Testing</li><li>Ethics and Regulation in ART</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-      </div>
-      <h2>Why Choose This Program?</h2>
-      <div class="cards">
-        <div class="feature"><div class="ico"><svg><use href="#i-doc"/></svg></div><div><h3>Cutting-Edge Curriculum</h3><p>Learn embryo culture, cryopreservation, and ART techniques essential for successful fertility treatments.</p></div></div>
-        <div class="feature"><div class="ico"><svg><use href="#i-flask"/></svg></div><div><h3>Hands-On Experience</h3><p>Train in state-of-the-art labs at Bahra University, equipped with the latest tools and technologies.</p></div></div>
-        <div class="feature"><div class="ico"><svg><use href="#i-cap"/></svg></div><div><h3>Global Career Opportunities</h3><p>Pursue roles in IVF labs, hospitals, research institutions, and academic organizations.</p></div></div>
-        <div class="feature"><div class="ico"><svg><use href="#i-award"/></svg></div><div><h3>Expert Guidance</h3><p>Mentorship from renowned faculty and scientists at EmbryoGenesis, a leader in infertility diagnostics and ART research.</p></div></div>
-      </div>
+  <div class="ihero"><div class="wrap ihero-grid">
+    <div class="ihero-text">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Courses</span></nav>
+      <h1>Courses</h1>
+      <p class="lead">Admission Open For Session 2025-26</p>
+      <p style="color:#DCEEF0">B.Sc. · M.Sc. · Ph.D. · PG Diploma in Clinical Embryology and ART &amp; Clinical Embryology</p>
+      <div class="row"><a class="btn ghostw" href="#courses">Download Brochure</a></div>
     </div>
-    <div class="stack">
-      <form class="sideform" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false"><h3>Admission Open For Session 2025-26</h3><input id="c-name" placeholder="Name *" required><input id="c-email" type="email" placeholder="Email Address *" required><input id="c-phone" type="tel" placeholder="Phone *" required><input id="c-city" placeholder="City *"><select id="c-course"><option>Select Course *</option><option>B.Sc. in Clinical Embryology</option><option>M.Sc. in Clinical Embryology</option><option>B.Sc. in ART &amp; Clinical Embryology</option><option>M.Sc. in ART &amp; Clinical Embryology</option><option>Ph.D. in ART &amp; Clinical Embryology</option><option>PG Diploma in ART &amp; Clinical Embryology</option></select><button class="btn primary" type="submit">SUBMIT</button><span class="sent quiet" hidden>Thank you. Our admissions team will call you.</span></form>
-      <div class="ph" style="aspect-ratio:4/3">REAL PHOTO: students in the embryology lab</div>
-      <div class="course"><h3>ADMISSION OPEN NOW!</h3><p><b>Admission Office</b><br>Department of Clinical Embryology, Bahra University, Shimla Hills, Himachal Pradesh</p><p><b>ADMISSION HELP LINE</b><br>+91 9691736435 · +91 9815692195 · +91 8146217196</p><a class="btn deep" href="#contact" data-go="contact">Call Now</a></div>
+    <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
+      <h3>Admission Open For Session 2025-26</h3>
+      <input id="c-name" placeholder="Name *" required><input id="c-email" type="email" placeholder="Email Address *" required><input id="c-phone" type="tel" placeholder="Phone *" required><input id="c-city" placeholder="City *" required>
+      <select id="c-course" required><option value="">Select Course *</option><option>B.Sc. in Clinical Embryology</option><option>M.Sc. in Clinical Embryology</option><option>B.Sc. in ART &amp; Clinical Embryology</option><option>M.Sc. in ART &amp; Clinical Embryology</option><option>Ph.D. in ART &amp; Clinical Embryology</option><option>PG Diploma in ART &amp; Clinical Embryology</option></select>
+      <button class="btn primary" type="submit">SUBMIT</button><span class="sent quiet" hidden>Thank you. Our admissions team will call you.</span>
+    </form>
+  </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <div class="tabs" role="tablist" data-group="prog">
+      <button class="tab" role="tab" aria-selected="true" data-tab="prog-1">Clinical Embryology · Bahra University</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="prog-2">ART &amp; Clinical Embryology · Rayat Bahra University</button>
+    </div>
+
+    <div class="tpanel stack" id="prog-1" data-group="prog">
+      <div class="zig">
+        <div class="stack"><h2>Shape the Future of Reproductive Science with a BSc &amp; MSc in Clinical Embryology</h2><p class="just">Explore the rapidly growing field of Assisted Reproductive Technology (ART) with our BSc &amp; MSc in Clinical Embryology program at Bahra University. Designed to meet the increasing global demand for skilled embryologists, this program equips students with in-depth knowledge and practical skills to revolutionize reproductive healthcare.</p><div class="row"><a class="btn deep" href="#courses">Download Brochure</a></div></div>
+        <div class="ph zph">PHOTO: students in the embryology lab</div>
+      </div>
+      <div class="pgrid">
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-cap"/></svg></div><h3>BSc in Clinical Embryology</h3></div><dl><dt>Eligibility</dt><dd>12th with Physics, Chemistry, and Biology.</dd><dt>Duration</dt><dd>4 Years</dd><dt>Fee</dt><dd>₹39,875 per semester</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-cap"/></svg></div><h3>MSc in Clinical Embryology</h3></div><dl><dt>Duration</dt><dd>2 Years (4 Semesters)</dd><dt>Eligibility</dt><dd>Undergraduate / B.Sc. Life Sciences, Embryology, Nutrigenetics, Genetics, Microbiology, Biotechnology, Anthropology, Human Biology, MLT / MBBS, BDS, BVSc., and Allied Sciences</dd><dt>Course Fee</dt><dd>INR 1,00,000/- Per Semester</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-users"/></svg></div><h3>Career Opportunities</h3></div><p>Graduates can pursue rewarding careers as:</p><ul class="ticks"><li>Clinical Embryologists</li><li>Reproductive Technologists</li><li>Academic Researchers</li><li>IVF Lab Specialists</li><li>ART Laboratory Managers</li></ul></div>
+      </div>
+      <h2 class="center">Why Choose This Program?</h2>
+      <div class="cards4">
+        <div class="icard"><div class="ico"><svg><use href="#i-doc"/></svg></div><h3>Cutting-Edge Curriculum</h3><p>Learn embryo culture, cryopreservation, and ART techniques essential for successful fertility treatments.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-flask"/></svg></div><h3>Hands-On Experience</h3><p>Train in state-of-the-art labs at Bahra University, equipped with the latest tools and technologies.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-cap"/></svg></div><h3>Global Career Opportunities</h3><p>Pursue roles in IVF labs, hospitals, research institutions, and academic organizations.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-award"/></svg></div><h3>Expert Guidance</h3><p>Mentorship from renowned faculty and scientists at EmbryoGenesis, a leader in infertility diagnostics and ART research.</p></div>
+      </div>
+      <div class="office"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><b>ADMISSION OPEN NOW! · Admission Office</b><span>Department of Clinical Embryology, Bahra University, Shimla Hills, Himachal Pradesh</span></div><div><b>ADMISSION HELP LINE</b><span>+91 9691736435 · +91 9815692195 · +91 8146217196</span></div></div>
+    </div>
+
+    <div class="tpanel stack" id="prog-2" data-group="prog" hidden>
+      <div class="zig">
+        <div class="stack"><h2>ART &amp; Clinical Embryology</h2><p class="just">EmbryoGenesis, in collaboration with Rayat Bahra University and the Institute of Translational Health Science (ITHS), offers comprehensive academic programs in ART &amp; Clinical Embryology. These programs are meticulously designed to provide cutting-edge education and hands-on training in the rapidly growing field of Assisted Reproductive Technology (ART) and Clinical Embryology.</p><p class="just">With a focus on academic excellence, practical exposure, and research-driven learning, these programs empower students to build successful careers in reproductive medicine and embryology.</p></div>
+        <div class="ph zph">PHOTO: Rayat Bahra University campus / ART lab</div>
+      </div>
+      <div class="pgrid four">
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-cap"/></svg></div><h3>B.Sc. in ART &amp; Clinical Embryology</h3></div><dl><dt>Eligibility</dt><dd>12th with Physics, Chemistry, and Biology/Math.</dd><dt>Duration</dt><dd>4 Years</dd></dl><p><b>Curriculum Highlights:</b></p><ul class="ticks"><li>Reproductive Biology</li><li>Fundamentals of Andrology</li><li>Basics of Clinical Embryology</li><li>Laboratory Andrology Tools &amp; Techniques</li><li>Practical Training in ART Laboratory Processes</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-cap"/></svg></div><h3>M.Sc. in ART &amp; Clinical Embryology</h3></div><dl><dt>Eligibility</dt><dd>B.Sc./B.Tech in Life Sciences, MBBS, BDS etc.</dd><dt>Duration</dt><dd>2 Years</dd></dl><p><b>Curriculum Highlights:</b></p><ul class="ticks"><li>Advanced Reproductive Genetics &amp; Genetic Testing in ART</li><li>Ethics and Regulation in ART</li><li>Advanced ART Laboratory Processes (Andrology and Embryology)</li><li>Research in ART Techniques and Laboratory Management</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-book"/></svg></div><h3>Ph.D. in ART &amp; Clinical Embryology</h3></div><dl><dt>Eligibility</dt><dd>Post Graduation in relevant field</dd><dt>Duration</dt><dd>3-4 Years</dd></dl><p><b>Research Focus Areas:</b></p><ul class="ticks"><li>Reproductive Genetics</li><li>Advanced Embryology Techniques</li><li>Assisted Reproductive Technologies (ART)</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+        <div class="pcard"><div class="pc-top"><div class="ico"><svg><use href="#i-doc"/></svg></div><h3>PG Diploma in ART &amp; Clinical Embryology</h3></div><dl><dt>Eligibility</dt><dd>B.Sc./M.Sc. in Life Sciences, MBBS etc.</dd><dt>Duration</dt><dd>1 Years</dd></dl><p><b>Curriculum Highlights:</b></p><ul class="ticks"><li>Fundamental Andrology and Clinical Embryology</li><li>ART Laboratory Processes and Techniques</li><li>Reproductive Genetics and Genetic Testing</li><li>Ethics and Regulation in ART</li></ul><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      </div>
+      <h2 class="center">Why Choose EMBRYOGENESIS?</h2>
+      <div class="cards3">
+        <div class="icard"><div class="ico"><svg><use href="#i-doc"/></svg></div><h3>World-Class Curriculum</h3><p>Industry-aligned programs with the latest advancements in ART and Embryology.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-flask"/></svg></div><h3>Hands-On Training</h3><p>Intensive lab sessions in state-of-the-art facilities with advanced equipment.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-users"/></svg></div><h3>Expert Faculty</h3><p>Guidance from globally renowned embryologists, researchers, and clinicians.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-dna"/></svg></div><h3>Research-Driven Approach</h3><p>Opportunity to engage in cutting-edge research projects and patented technologies.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-heart"/></svg></div><h3>Strong Collaborations</h3><p>Partnerships with top fertility clinics, IVF centers, and research institutes worldwide.</p></div>
+        <div class="icard"><div class="ico"><svg><use href="#i-cap"/></svg></div><h3>Global Career Pathways</h3><p>Career support for placements in IVF labs, research organizations, and hospitals globally.</p></div>
+      </div>
+      <p class="quote center" style="border:0">Embark on your journey to revolutionize reproductive medicine with EMBRYOGENESIS, Rayat Bahra University, and ITHS – where knowledge, innovation, and technology unite to transform futures!</p>
+      <div class="office"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><b>ADMISSION OPEN NOW! · Admission Office</b><span>Institute of Translational Health Science, Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University, Mohali, Punjab, India</span></div><div><b>ADMISSION HELP LINE</b><span>+91 9691736435 · +91 9815692195 · +91 8146217196</span></div></div>
     </div>
   </div></div>
+
+  <div class="band tint"><div class="wrap cross">
+    <div class="ico"><svg><use href="#i-flask"/></svg></div>
+    <div><span class="eyebrow">Lab Training</span><h3>Gain hands-on experience with state-of-the-art laboratory techniques in reproductive sciences.</h3><p>Our training programs ensure real-world expertise for future professionals.</p></div>
+    <a class="btn deep" href="#training" data-go="training">View Course →</a>
+  </div></div>
+
+  <div class="ctaband"><div class="wrap ctagrid"><div><h2>ADMISSION OPEN NOW!</h2><p>ADMISSION HELP LINE: +91 9691736435 / 9815692195</p></div><div class="row"><a class="btn primary" href="#contact" data-go="contact">Apply Now</a><span class="callpill"><svg><use href="#i-phone"/></svg> Call Now</span></div></div></div>
 </section>
 
 <!-- ================= LAB TRAINING ================= -->
 <section class="page" id="page-training">
-  <div class="pagehead"><div class="wrap"><h1>Skill Development Training</h1><p class="quiet">Hands-on Training</p></div></div>
-  <div class="band"><div class="wrap two">
-    <div class="stack">
-      <div class="cards">
-        <div class="course"><h3>Biochemistry (Semi Auto Analyser)</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>1 Days</dd><dt>Fee:</dt><dd>1000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>Molecular Genetics &amp; Bioinformatics</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>5 Days</dd><dt>Fee:</dt><dd>7000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>Tissue Processing &amp; Microtomy</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>2 Days</dd><dt>Fee:</dt><dd>5000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>Immunohistochemistry</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>3 Days</dd><dt>Fee:</dt><dd>20,000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>PRP Therapy &amp; LIT Therapy</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>1 Days</dd><dt>Fee:</dt><dd>20,000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>LIT Therapy &amp; Molecular Hydrogen Therapy</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>1 Days</dd><dt>Fee:</dt><dd>25,000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>Molecular Hydrogen Therapy in Health Management</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>1 Days</dd><dt>Fee:</dt><dd>15,000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-        <div class="course"><h3>Stem Cell Processing &amp; Cryopreservation</h3><dl><dt>Eligibility:</dt><dd>B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</dd><dt>Duration:</dt><dd>1 Days</dd><dt>Fee:</dt><dd>35,000/-</dd><dt>Seat in Batch:</dt><dd>10</dd></dl><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
-      </div>
+  <div class="ihero"><div class="wrap ihero-grid">
+    <div class="ihero-text">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Lab Training</span></nav>
+      <h1>Skill Development Training</h1>
+      <p class="lead">Hands-on Training</p>
+      <div class="facts"><span><svg><use href="#i-users"/></svg> Seat in Batch: 10</span><span><svg><use href="#i-clock"/></svg> 1 to 5 Days</span><span><svg><use href="#i-cap"/></svg> B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</span></div>
     </div>
-    <div class="stack">
-      <form class="sideform" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false"><h3>Apply Now for Skill Development Training</h3><input id="s-name" placeholder="Name *" required><input id="s-email" type="email" placeholder="Email Address *" required><input id="s-phone" type="tel" placeholder="Phone *" required><input id="s-city" placeholder="City *"><select id="s-prog"><option>Select a training programme *</option><option>Biochemistry (Semi Auto Analyser)</option><option>Molecular Genetics &amp; Bioinformatics</option><option>Tissue Processing &amp; Microtomy</option><option>Immunohistochemistry</option><option>PRP Therapy &amp; LIT Therapy</option><option>LIT Therapy &amp; Molecular Hydrogen Therapy</option><option>Molecular Hydrogen Therapy in Health Management</option><option>Stem Cell Processing &amp; Cryopreservation</option></select><button class="btn primary" type="submit">SUBMIT</button><span class="sent quiet" hidden>Thank you.</span></form>
-      <div class="ph" style="aspect-ratio:4/3">REAL PHOTO: hands-on training session</div>
-      <div class="course"><h3>ADMISSION OPEN NOW!</h3><p><b>Admission Office</b><br>Institute of Translational Health Science, Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University, Mohali, Punjab, India</p><p><b>ADMISSION HELP LINE</b><br>+91 9691736435 / 9815692195</p></div>
+    <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
+      <h3>Apply Now for Skill Development Training</h3>
+      <input id="s-name" placeholder="Name *" required><input id="s-email" type="email" placeholder="Email Address *" required><input id="s-phone" type="tel" placeholder="Phone *" required><input id="s-city" placeholder="City *" required>
+      <select id="s-prog" required><option value="">Select a training programme *</option><option>Biochemistry (Semi Auto Analyser)</option><option>Molecular Genetics &amp; Bioinformatics</option><option>Tissue Processing &amp; Microtomy</option><option>Immunohistochemistry</option><option>PRP Therapy &amp; LIT Therapy</option><option>LIT Therapy &amp; Molecular Hydrogen Therapy</option><option>Molecular Hydrogen Therapy in Health Management</option><option>Stem Cell Processing &amp; Cryopreservation</option></select>
+      <button class="btn primary" type="submit">SUBMIT</button><span class="sent quiet" hidden>Thank you.</span>
+    </form>
+  </div></div>
+
+  <div class="band"><div class="wrap stack">
+    <h2 class="center">Hands-on Training on</h2>
+    <div class="tgrid">
+      <div class="tcard"><div class="ico"><svg><use href="#i-flask"/></svg></div><h3>Biochemistry (Semi Auto Analyser)</h3><div class="chips"><span>1 Days</span><span>Fee: 1000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-dna"/></svg></div><h3>Molecular Genetics &amp; Bioinformatics</h3><div class="chips"><span>5 Days</span><span>Fee: 7000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-micro"/></svg></div><h3>Tissue Processing &amp; Microtomy</h3><div class="chips"><span>2 Days</span><span>Fee: 5000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-cell"/></svg></div><h3>Immunohistochemistry</h3><div class="chips"><span>3 Days</span><span>Fee: 20,000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-drop"/></svg></div><h3>PRP Therapy &amp; LIT Therapy</h3><div class="chips"><span>1 Days</span><span>Fee: 20,000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-shield"/></svg></div><h3>LIT Therapy &amp; Molecular Hydrogen Therapy</h3><div class="chips"><span>1 Days</span><span>Fee: 25,000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-flask"/></svg></div><h3>Molecular Hydrogen Therapy in Health Management</h3><div class="chips"><span>1 Days</span><span>Fee: 15,000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
+      <div class="tcard"><div class="ico"><svg><use href="#i-cell"/></svg></div><h3>Stem Cell Processing &amp; Cryopreservation</h3><div class="chips"><span>1 Days</span><span>Fee: 35,000/-</span><span>Seat in Batch: 10</span></div><p class="quiet">Eligibility: B.Sc. MLT, M.Sc., Ph.D., MBBS, MD, Faculty of Life Science, Allied Health Science</p><a class="btn primary" href="#contact" data-go="contact">Apply Now</a></div>
     </div>
+    <div class="office"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><b>ADMISSION OPEN NOW! · Admission Office</b><span>Institute of Translational Health Science, Top Floor, Rayat Bahra Dental College &amp; Hospital, Rayat Bahra University, Mohali, Punjab, India</span></div><div><b>ADMISSION HELP LINE</b><span>+91 9691736435 / 9815692195</span></div></div>
+  </div></div>
+
+  <div class="band tint"><div class="wrap cross">
+    <div class="ico"><svg><use href="#i-cap"/></svg></div>
+    <div><span class="eyebrow">Courses</span><h3>B.Sc. &amp; M.Sc. in Clinical Embryology and ART &amp; Clinical Embryology</h3><p>Build a thriving career in reproductive sciences with advanced programs in Clinical Embryology.</p></div>
+    <a class="btn deep" href="#courses" data-go="courses">View Course →</a>
   </div></div>
 </section>
 
 <!-- ================= BLOG ================= -->
 <section class="page" id="page-blog">
-  <div class="pagehead"><div class="wrap"><h1>Blog</h1><p class="quiet">Infertility Research Centre - Get Informed</p></div></div>
-  <div class="band"><div class="wrap cards">
-    <div class="card"><div class="ph">Blog image</div><div class="body"><h3>Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It</h3><p>Discover Endometrial Immune Profiling - advanced fertility testing for IVF failures &amp; recurrent pregnancy loss. Uncover…</p><a href="#blog">Read more</a></div></div>
-    <div class="card"><div class="ph">Blog image</div><div class="body"><h3>IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार</h3><p>परिचय (Introduction) IVF, या इन-विट्रो फर्टिलाइजेशन, उन दंपत्तियों के लिए एक वरदान है जो प्राकृतिक रूप…</p><a href="#blog">Read more</a></div></div>
-    <div class="card"><div class="ph">Blog image</div><div class="body"><h3>ERFA -The Soil Test: Understanding Successful Pregnancy &amp; Embryo Implantation</h3><p>Introduction: Starting the journey to becoming a parent can be really tough, especially for those having…</p><a href="#blog">Read more</a></div></div>
-    <div class="card"><div class="ph">Blog image</div><div class="body"><h3>Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss</h3><p>…</p><a href="#blog">Read more</a></div></div>
-    <div class="card"><div class="ph">Blog image</div><div class="body"><h3>Unexplained Infertility</h3><p>Unlocking the Mystery: Exploring Personalized Solutions…</p><a href="#blog">Read more</a></div></div>
+  <div class="ihero slim"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Blog</span></nav>
+    <h1>Blog</h1><p class="lead">Infertility Research Centre - Get Informed</p>
+  </div></div>
+  <div class="band"><div class="wrap blogwrap">
+    <div class="stack">
+      <div class="chipsbar" role="tablist" data-filter-group="blog"><button aria-selected="true" data-filter="all">All</button><button aria-selected="false" data-filter="erfa">ERFA The Soil Test</button><button aria-selected="false" data-filter="dx">Fertility Testing &amp; Diagnostics</button><button aria-selected="false" data-filter="ri">Reproductive Immunology</button></div>
+      <article class="featured" data-cat="ri dx"><div class="ph">Blog image</div><div class="body"><span class="tag">Reproductive Immunology</span><h2>Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It</h2><p>Discover Endometrial Immune Profiling - advanced fertility testing for IVF failures &amp; recurrent pregnancy loss. Uncover…</p><a class="btn deep" href="#blog">Read more</a></div></article>
+      <div class="cards">
+        <div class="card" data-cat="dx"><div class="ph">Blog image</div><div class="body"><span class="tag">Fertility Testing &amp; Diagnostics</span><h3>IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार</h3><p>परिचय (Introduction) IVF, या इन-विट्रो फर्टिलाइजेशन, उन दंपत्तियों के लिए एक वरदान है जो प्राकृतिक रूप…</p><a href="#blog">Read more</a></div></div>
+        <div class="card" data-cat="erfa dx"><div class="ph">Blog image</div><div class="body"><span class="tag">ERFA The Soil Test</span><h3>ERFA -The Soil Test: Understanding Successful Pregnancy &amp; Embryo Implantation</h3><p>Introduction: Starting the journey to becoming a parent can be really tough, especially for those having…</p><a href="#blog">Read more</a></div></div>
+        <div class="card" data-cat="ri"><div class="ph">Blog image</div><div class="body"><span class="tag">Reproductive Immunology</span><h3>Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss</h3><p>Read more about LIT therapy and recurrent pregnancy loss.</p><a href="#blog">Read more</a></div></div>
+        <div class="card" data-cat="dx"><div class="ph">Blog image</div><div class="body"><span class="tag">Fertility Testing &amp; Diagnostics</span><h3>Unexplained Infertility</h3><p>Unlocking the Mystery: Exploring Personalized Solutions…</p><a href="#blog">Read more</a></div></div>
+      </div>
+    </div>
+    <aside class="side stack">
+      <div class="sidebox"><h3>Book Now</h3><p class="quiet">Personalized diagnostic and therapeutic care for your journey.</p><a class="btn primary" href="#contact" data-go="contact">Book Now</a><span class="callpill dark"><svg><use href="#i-phone"/></svg> +91 8146217196</span></div>
+      <div class="sidebox"><h3>Our Services</h3><a href="#diagnostic" data-go="diagnostic">Diagnostic →</a><a href="#therapeutic" data-go="therapeutic">Therapeutic →</a><a href="#courses" data-go="courses">Courses →</a><a href="#training" data-go="training">Lab Training →</a></div>
+    </aside>
   </div></div>
 </section>
 
 <!-- ================= MEDIA ================= -->
 <section class="page" id="page-media">
-  <div class="pagehead"><div class="wrap"><h1>Media &amp; Event</h1></div></div>
+  <div class="ihero slim"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Media &amp; Event</span></nav>
+    <h1>Media &amp; Event</h1>
+  </div></div>
   <div class="band"><div class="wrap stack">
-    <div class="tabs" role="tablist"><button class="tab" aria-selected="true">All</button><button class="tab" aria-selected="false">Appreciation</button><button class="tab" aria-selected="false">Award</button><button class="tab" aria-selected="false">MOU</button><button class="tab" aria-selected="false">News</button></div>
+    <div class="chipsbar center-chips" role="tablist" data-filter-group="media"><button aria-selected="true" data-filter="all">All</button><button aria-selected="false" data-filter="app">Appreciation</button><button aria-selected="false" data-filter="award">Award</button><button aria-selected="false" data-filter="mou">MOU</button><button aria-selected="false" data-filter="news">News</button></div>
     <div class="cards">
-      <div class="card"><div class="ph">PHOTO / press clipping</div><div class="body"><h3>Jul 3, 2024: ERFA – The Soil Test &amp; LIT- H2 Therapy kit to check IVF failure launched</h3><p>Times of India, Chandigarh</p></div></div>
-      <div class="card"><div class="ph">PHOTO / press clipping</div><div class="body"><h3>July 6, 2024: Bahra University, Waknaghat (HP), launches Himachal Pradesh’s first comprehensive Clinical Embryology program</h3><p>Himachal Tonite</p></div></div>
-      <div class="card"><div class="ph">PHOTO / press clipping</div><div class="body"><h3>27th July 2024: Cutting-Edge Digital Biothesiometer Gains Design Patent, Enhancing Medical Diagnostics</h3><p>News Nation</p></div></div>
-      <div class="card"><div class="ph">PHOTO</div><div class="body"><h3>MOU with GIOSTAR, USA</h3></div></div>
-      <div class="card"><div class="ph">PHOTO</div><div class="body"><h3>MOU With Indira IVF, Udaipur</h3></div></div>
-      <div class="card"><div class="ph">PHOTO</div><div class="body"><h3>MOU with Batsalya IVF, Bikaner</h3></div></div>
-      <div class="card"><div class="ph">PHOTO</div><div class="body"><h3>MOU with Parul IVF, Ahmedabad</h3></div></div>
-      <div class="card"><div class="ph">PHOTO</div><div class="body"><h3>Appreciation of EMBRYOGENESIS</h3><p>Photo gallery from the 2024 brochure</p></div></div>
+      <div class="card" data-cat="news"><div class="ph">PRESS CLIPPING</div><div class="body"><span class="tag">News · Jul 3, 2024</span><h3>ERFA – The Soil Test &amp; LIT- H2 Therapy kit to check IVF failure launched</h3><p>Times of India, Chandigarh</p></div></div>
+      <div class="card" data-cat="news"><div class="ph">PRESS CLIPPING</div><div class="body"><span class="tag">News · July 6, 2024</span><h3>Bahra University, Waknaghat (HP), in partnership with ITHS and EmbryoGenesis, launches Himachal Pradesh’s first comprehensive Clinical Embryology program</h3><p>Himachal Tonite</p></div></div>
+      <div class="card" data-cat="news"><div class="ph">PRESS CLIPPING</div><div class="body"><span class="tag">News · 27th July 2024</span><h3>Cutting-Edge Digital Biothesiometer Gains Design Patent, Enhancing Medical Diagnostics</h3><p>News Nation</p></div></div>
+      <div class="card" data-cat="award"><div class="ph">PHOTO: award ceremony</div><div class="body"><span class="tag">Award · 27th Nov 2024</span><h3>Best Innovator Award for Human Infertility Treatment at Research &amp; Innovation Park, New Delhi</h3></div></div>
+      <div class="card" data-cat="mou"><div class="ph">PHOTO</div><div class="body"><span class="tag">MOU · 23rd Nov 2024</span><h3>MOU with Guru Ghasidas Vishwavidyalaya, Bilaspur, Chhattisgarh</h3></div></div>
+      <div class="card" data-cat="mou"><div class="ph">PHOTO</div><div class="body"><span class="tag">MOU</span><h3>MOU with GIOSTAR, USA</h3></div></div>
+      <div class="card" data-cat="mou"><div class="ph">PHOTO</div><div class="body"><span class="tag">MOU</span><h3>MOU With Indira IVF, Udaipur</h3></div></div>
+      <div class="card" data-cat="mou"><div class="ph">PHOTO</div><div class="body"><span class="tag">MOU</span><h3>MOU with Batsalya IVF, Bikaner</h3></div></div>
+      <div class="card" data-cat="mou"><div class="ph">PHOTO</div><div class="body"><span class="tag">MOU</span><h3>MOU with Parul IVF, Ahmedabad</h3></div></div>
+      <div class="card" data-cat="app"><div class="ph">PHOTO GALLERY (14 photos, 2024 brochure)</div><div class="body"><span class="tag">Appreciation</span><h3>Appreciation of EMBRYOGENESIS</h3></div></div>
     </div>
   </div></div>
 </section>
 
 <!-- ================= CONTACT ================= -->
 <section class="page" id="page-contact">
-  <div class="pagehead"><div class="wrap"><h1>Contact-Us</h1><p class="quiet">Get in Touch</p></div></div>
-  <div class="band"><div class="wrap two">
-    <div class="stack">
-      <div class="feature"><div class="ico"><svg><use href="#i-phone"/></svg></div><div><h3>Phone</h3><p>+91 8146217196</p></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-doc"/></svg></div><div><h3>Email</h3><p>info.embryogenesis@gmail.com<br>embryogenesis.laboratory@gmail.com</p></div></div>
-      <div class="feature"><div class="ico"><svg><use href="#i-heart"/></svg></div><div><h3>Address</h3><p>Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab</p></div></div>
-      <div class="map">MAP: Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali</div>
-      <p><b>Follow us-</b></p><div class="socials" style="color:var(--deep)"><span style="background:var(--tint)">FB</span><span style="background:var(--tint)">IG</span><span style="background:var(--tint)">X</span><span style="background:var(--tint)">YT</span></div>
+  <div class="ihero slim"><div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="#home" data-go="home">Home</a> / <span>Contact Us</span></nav>
+    <h1>Contact-Us</h1><p class="lead">Get in Touch</p>
+  </div></div>
+  <div class="band"><div class="wrap stack">
+    <div class="cards3">
+      <div class="icard"><div class="ico"><svg><use href="#i-phone"/></svg></div><h3>Call Us</h3><p>+91 8146217196</p></div>
+      <div class="icard"><div class="ico"><svg><use href="#i-mail"/></svg></div><h3>Email</h3><p>info.embryogenesis@gmail.com<br>embryogenesis.laboratory@gmail.com</p></div>
+      <div class="icard"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Visit</h3><p>Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali, Punjab</p></div>
     </div>
-    <form class="sideform" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false"><h3>Get in Touch</h3><input id="k-name" placeholder="Name *" required><input id="k-email" type="email" placeholder="Email Address *" required><input id="k-phone" type="tel" placeholder="Phone *" required><input id="k-city" placeholder="City *" required><input id="k-state" placeholder="State/Province *" required><select id="k-country"><option>India</option><option>Other country</option></select><button class="btn primary" type="submit">SUBMIT</button><span class="sent quiet" hidden>Thank you. We will contact you shortly.</span></form>
+  </div></div>
+  <div class="band tint"><div class="wrap bandgrid">
+    <form class="formcard" onsubmit="event.preventDefault();this.querySelector('.sent').hidden=false">
+      <h3>Get in Touch</h3>
+      <select id="k-interest" required><option value="">I am interested in *</option><option>Diagnostic test</option><option>Therapy (at Mohali)</option><option>Course admission</option><option>Lab training</option></select>
+      <input id="k-name" placeholder="Name *" required><input id="k-email" type="email" placeholder="Email Address *" required><input id="k-phone" type="tel" placeholder="Phone *" required><input id="k-city" placeholder="City *" required><input id="k-state" placeholder="State/Province *" required>
+      <select id="k-country"><option>India</option><option>Other country</option></select>
+      <label class="consent"><input id="k-consent" type="checkbox" required><span>I agree to the Privacy Policy.</span></label>
+      <button class="btn primary" type="submit">SUBMIT</button><span class="sent quiet" hidden>Thank you. We will contact you shortly.</span>
+    </form>
+    <div class="stack"><div class="map">MAP: Top Floor, Rayat Bahra Dental College &amp; Hospital, Mohali</div>
+      <div><b>Follow us-</b></div><div class="socials sl"><span>FB</span><span>IG</span><span>X</span><span>YT</span></div>
+    </div>
+  </div></div>
+  <div class="band"><div class="wrap stack">
+    <h2 class="center">Our Collection Centre</h2>
+    <div class="centres3">
+      <div class="loc"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Mumbai</h3><p>Nirmal Multi Speciality Hospital, Plot No. 34, Sector 5 Kopar Khairane Rd, Sector 5, Kopar Khairane, Navi Mumbai, Maharashtra 400709</p></div>
+      <div class="loc"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Udaipur</h3><p>Shree B.L.Jain Memorial Hospital, Savina, Near Railway Level Crossing, Udaipur</p></div>
+      <div class="loc"><div class="ico"><svg><use href="#i-pin"/></svg></div><h3>Jalandhar</h3><p>ADVANCE FERTILITY SERVICES &amp; IVF CENTRE, Inside Shakuntala Devi VIG HOSPITAL, Main Kapurthala Road, Jalandhar city, Punjab</p></div>
+    </div>
   </div></div>
 </section>
 
@@ -677,14 +1064,14 @@ const NOTES={
   "Hero adds Diagnostic and Therapeutic buttons next to Book Now. All other copy is the old website's text, unchanged. Indira IVF visual pattern, new logo and palette as in v3.",
   "FIX: client to confirm what happens after 'Book Now' (sample at Mohali, at a collection centre, or by the couple's own IVF doctor). Step 2 of the pathway shows a placeholder until then.",
   "FIX: real photographs for the hero, award, lab and team slots; reconnect the Google Reviews widget."],
- about:["Inner-page pattern: gradient page header, two columns (text with icon features on the left, photo + roadmap timeline on the right), then Leadership, Collection Centres, Board of Mentors, Scientific Team and Advisors as circular photo cards, partner logos at the end. Text unchanged."],
- diagnostic:["Three tests as icon features with the original What/Who/Benefits lists, a sticky-style booking form on the right (Indira pattern), 'Why Choose' as icon features, FAQ in the filled-answer style."],
- therapeutic:["Same inner-page pattern. Five therapies with line icons and the original text.","FIX (recommendation only): this page carries the legal risk flagged earlier (stem cell promotion, 'increases the likelihood of conception'). We have kept it as instructed; please have your legal adviser confirm before go-live."],
- courses:["Courses and the ART & Clinical Embryology programmes on one page as course cards (eligibility, duration, fee, curriculum), with the admissions form and helpline on the right. Text unchanged."],
- training:["Eight hands-on training courses as cards; the original application form with programme dropdown on the right."],
- blog:["Blog cards with image slots; the five existing posts."],
- media:["Media & Event page with the original filter tabs, now filled with the media coverage and MOU items from your 2024 content document."],
- contact:["Contact details as icon features, map slot, social links, and the original form (Name, Email, Phone, City, State, Country)."]
+ about:["Indira-style inner page: banner with breadcrumb and the award card; About text beside a lab photo; Vision and Who We Are as two cards; Road Map as a horizontal timeline; founder feature with large photo; Collection Centres as location cards; team in tabs (Board of Mentors / Scientific Team / Scientific Advisor) so the page stays short; partner logo rows; closing call band. Text unchanged."],
+ diagnostic:["Banner with the intro and a booking form beside it (test selector routes the lead). Sticky jump bar to the three tests. Each test is an alternating photo/text block with 'Who is it for' and 'Benefits' as tick lists. Why Choose as icon cards, FAQ, then a cross-link to Therapeutic because test-then-therapy is the business loop. Old closing quote in the call band."],
+ therapeutic:["Same pattern as Diagnostic. Form says therapies are given at the Mohali centre and has a therapy selector. Jump bar to all five therapies, grouped under the old category headings (Immunotherapy / Regenerative / Antioxidant). Why Choose sits beside the Mohali map, then FAQ and a cross-link back to Diagnostic. Full old text restored, including Key Benefits and FAQs.","FIX: wording kept as on the old site; our earlier legal-review recommendation still applies before go-live."],
+ courses:["Banner with the admissions form (EmbryoGenesis team handles admissions). Programmes split into two tabs by university so a student sees one set at a time: Clinical Embryology (Bahra University) and ART & Clinical Embryology (Rayat Bahra University). Course cards with eligibility, duration, fee and curriculum; Career Opportunities; both 'Why Choose' lists as icon cards; admission office and helpline strip; cross-link to Lab Training."],
+ training:["Banner with quick facts (10 seats, 1 to 5 days, eligibility) and the application form with programme selector. Eight courses as cards with duration, fee and seat chips. Admission office strip and cross-link to Courses."],
+ blog:["Category chips taken from the old blog categories (they filter the posts), one featured post, a card grid and a sidebar with Book Now and service links."],
+ media:["Filter chips (All, Appreciation, Award, MOU, News) now work. Filled with the press, MOU and award items from the old content document and road map; the live page was empty."],
+ contact:["Three contact cards (call, email, visit), the form with the 'I am interested in' routing field, map with social links, and the collection centres."]
 };
 const pages=[...document.querySelectorAll('.page')],buttons=[...document.querySelectorAll('#pages button')],list=document.getElementById('notesList');
 function show(id){
@@ -697,6 +1084,12 @@ function show(id){
 buttons.forEach(b=>b.addEventListener('click',()=>show(b.dataset.page)));
 document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();show(a.dataset.go)}));
 document.querySelectorAll('#page-home .tab').forEach(t=>t.addEventListener('click',()=>{document.querySelectorAll('#page-home .tab').forEach(x=>x.setAttribute('aria-selected',String(x===t)));document.querySelectorAll('#page-home .panel').forEach(p=>p.hidden=p.id!==t.dataset.tab)}));
+document.querySelectorAll('[role="tablist"][data-group]').forEach(list=>{const g=list.dataset.group;list.querySelectorAll('[data-tab]').forEach(t=>t.addEventListener('click',()=>{list.querySelectorAll('[data-tab]').forEach(x=>x.setAttribute('aria-selected',String(x===t)));document.querySelectorAll('.tpanel[data-group="'+g+'"]').forEach(p=>p.hidden=p.id!==t.dataset.tab)}))});
+document.querySelectorAll('[data-filter-group]').forEach(bar=>{const page=bar.closest('.page');bar.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{bar.querySelectorAll('button').forEach(x=>x.setAttribute('aria-selected',String(x===b)));const f=b.dataset.filter;page.querySelectorAll('[data-cat]').forEach(c=>{c.hidden=!(f==='all'||c.dataset.cat.split(' ').includes(f))})}))});
+document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>{const t=document.getElementById(b.dataset.jump);if(t)t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}));
+const mb=document.getElementById('menuBtn'),sn=document.getElementById('siteNav');
+mb.addEventListener('click',()=>{const o=sn.classList.toggle('open');mb.setAttribute('aria-expanded',String(o))});
+sn.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{sn.classList.remove('open');mb.setAttribute('aria-expanded','false')}));
 const tn=document.getElementById('toggleNotes'),notes=document.getElementById('notes');
 tn.addEventListener('click',()=>{const open=notes.hidden;notes.hidden=!open;tn.textContent=open?'Hide design notes':'Show design notes';tn.setAttribute('aria-expanded',String(open))});
 const start=(location.hash||'#home').slice(1);show(NOTES[start]?start:'home');
