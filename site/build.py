@@ -58,8 +58,8 @@ ORG = {
   "medicalSpecialty": ["Gynecologic", "Pathology", "LaboratoryScience"],
   "award": "Best Innovator Award for Human Infertility Treatment, Research & Innovation Park, New Delhi (27 Nov 2024)",
   "founder": {"@type": "Person", "@id": SITE + "/pulakes-purkait-profile/#person", "name": "Prof. (Dr.) Pulakes Purkait", "url": SITE + "/pulakes-purkait-profile/"},
-  # Only handles linked from the old site. Add LinkedIn once the company page exists (brief: none yet).
-  "sameAs": ["https://www.facebook.com/EmbryoGenesis", "https://www.instagram.com/embryo_genesis", "https://twitter.com/EmbryoGenesiss", "https://www.youtube.com/@Embryo-Genesis"],
+  # Official handles (old site + verified LinkedIn company page).
+  "sameAs": ["https://www.linkedin.com/company/embryogenesis", "https://www.facebook.com/EmbryoGenesis", "https://www.instagram.com/embryo_genesis", "https://twitter.com/EmbryoGenesiss", "https://www.youtube.com/@Embryo-Genesis"],
   "knowsAbout": ["Endometrial receptivity", "Recurrent implantation failure", "Recurrent pregnancy loss", "Chronic endometritis", "Reproductive immunology", "Clinical embryology"]
 }
 PERSON = {
@@ -236,7 +236,9 @@ def main():
     # sitemap
     urls = ''.join(f'<url><loc>{SITE}{m["path"]}</loc><lastmod>{m.get("date_modified", TODAY)}</lastmod><priority>{m.get("priority", 0.6)}</priority></url>\n' for m, _ in pages if not m.get('noindex') and not m.get('file'))
     sm = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
-    robots = f'User-agent: *\nAllow: /\nDisallow: /wp-admin/\n\n# AI crawlers welcome (GEO)\nUser-agent: GPTBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n'
+    ai = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended']
+    robots = ('User-agent: *\nAllow: /\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-admin/\nDisallow: /?s=\n\n# AI search and answer engines welcome (GEO)\n'
+              + ''.join(f'User-agent: {b}\n' for b in ai) + 'Allow: /\nDisallow: /wp-admin/\n\n' + f'Sitemap: {SITE}/sitemap.xml\n')
     for d in ('dist', 'preview'):
         (ROOT / d / 'sitemap.xml').write_text(sm); (ROOT / d / 'robots.txt').write_text(robots)
         if (SRC / 'llms.txt').exists(): shutil.copy(SRC / 'llms.txt', ROOT / d / 'llms.txt')
