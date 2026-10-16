@@ -1,0 +1,17 @@
+# Lab and science placeholder photos: credits
+
+All images are free photos under the Unsplash License (none are Unsplash+). They are placeholders for the EmbryoGenesis prototype only and must be replaced with the client's own photography before launch. Each CDN URL was downloaded with `?w=1400&h=1050&fit=crop&q=68&fm=jpg` (4:3); exceptions are noted.
+
+| File | Unsplash page | CDN URL | Description |
+|---|---|---|---|
+| lab.jpg | https://unsplash.com/photos/laboratory-workbench-with-microscope-and-equipment-_9xRHrMOjeg | https://images.unsplash.com/photo-1602052577122-f73b9710adba | Bright white diagnostic lab bench with microscopes, incubators and green trim (Trnava University) |
+| lab-bench.jpg | https://unsplash.com/photos/person-using-pipette-in-laboratory-wDxFn_dBEC0 | https://images.unsplash.com/photo-1582560475093-ba66accbc424 | Mint-gloved hands pipetting into sample vials in a green tube rack (CDC). Cropped from portrait with `crop=focalpoint&fp-y=0.45` |
+| microscope.jpg | https://unsplash.com/photos/6q5QG8iIgRo | https://images.unsplash.com/photo-1562789233-495f52b583dd | South Asian woman scientist in lab coat and blue gloves looking into a microscope (Trust "Tru" Katsande) |
+| erfa.jpg | https://unsplash.com/photos/y7mLAsTztQs | https://images.unsplash.com/photo-1715766911065-83723bc00d2f | Close-up of young seedlings sprouting from rich dark soil (Elly M) |
+| immune.jpg | https://unsplash.com/photos/a-close-up-of-a-white-substance-on-a-blue-background-5v0UyRolNwg | https://images.unsplash.com/photo-1706639996436-3c90695c7dd2 | Electron micrograph of a single cream-coloured white blood cell on a teal background (NIAID) |
+| eit.jpg | https://unsplash.com/photos/epithelial-tissues-stratified-squamous-epithelium-4FBoRjXrQ3k | https://images.unsplash.com/photo-1716833322987-bfef9f913822 | H&E histology slide of a stratified squamous epithelial lining, pink and purple on white (Bioscience Image Library; Public Domain and Unsplash License). Downloaded at `w=1200&h=900&q=60` to stay under 300 KB |
+| lit.jpg | https://unsplash.com/photos/a-gloved-hand-holding-a-test-tube-filled-with-blood-sZO8ILzGKcg | https://images.unsplash.com/photo-1697192156499-d85cfe1452c0 | Gloved hand picking a blood sample tube from a rack; some tubes show separated yellow plasma (Adrian Sulyok) |
+| pbmc.jpg | https://unsplash.com/photos/person-holding-clear-plastic-container-i7Irnuho8Xc | https://images.unsplash.com/photo-1581091018783-a79a8863e4d6 | Blue-gloved hand holding a cell-culture tube with red medium in a lab (ThisisEngineering) |
+| prp.jpg | https://unsplash.com/photos/centrifuge-with-tubes-inside-ready-to-be-spun-kqlzdRilVaY | https://images.unsplash.com/photo-1752842350533-083d99531cab | Open laboratory centrifuge rotor with colour-coded tube slots and red-capped tubes (camera obscura). Cropped from portrait with `crop=focalpoint&fp-y=0.6` |
+| stem.jpg | https://unsplash.com/photos/microscope-with-petri-dish-in-laboratory-bcqDxjddPGk | https://images.unsplash.com/photo-1581091007718-0c50d599bfd0 | Blue-gloved hand placing a culture petri dish under an inverted microscope (ThisisEngineering). Cropped from portrait with `crop=focalpoint&fp-y=0.5` |
+| h2.jpg | https://unsplash.com/photos/underwater-photography-of-water-bubbles-BRkikoNP0KQ | https://images.unsplash.com/photo-1483004406427-6acb078d1f2d | Clear teal water full of rising bubbles (Sime Basioli) |
