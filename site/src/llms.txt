@@ -1,6 +1,6 @@
 # EmbryoGenesis
 
-> EmbryoGenesis (EmbryoGenesis – Infertility Diagnostic & Research) is an infertility diagnostic and research centre in Mohali, Punjab, India, established in November 2023. It is located on the top floor of Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab 140302. It offers endometrial diagnostic tests, fertility therapies at the Mohali centre, and B.Sc./M.Sc. Clinical Embryology programmes and hands-on lab training with ITHS and partner universities. Tagline: "Redefining Fertility Evaluation". Not to be confused with embryogenesis, the biological process of embryo development.
+> EmbryoGenesis (EmbryoGenesis – Infertility Diagnostic & Research) is an infertility diagnostic and research centre in Mohali, Punjab, India, established in November 2023. It is located on the top floor of Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab 140302. It offers endometrial diagnostic tests, and B.Sc./M.Sc. Clinical Embryology programmes and hands-on lab training with ITHS and partner universities. Tagline: "Redefining Fertility Evaluation". Not to be confused with embryogenesis, the biological process of embryo development.
 
 ## Key facts
 - Official name: EmbryoGenesis (also written EMBRYOGENESIS; full name "EmbryoGenesis – Infertility Diagnostic & Research")
@@ -10,7 +10,6 @@
 - Diagnostic tests: ERFA – The Soil Test (Endometrial Receptivity & Function Assay; patent application No. 202431001616 A), Endo-Immune Test, Endometrial Infection Test (EIT)
 - ERFA sample: endometrial biopsy (D&C or needle biopsy) on cycle day 21–23 (preferred day 21), natural cycle LH+7 to LH+9, or HRT cycle P+6 to P+8
 - Results: typically within 7–10 days, depending on the complexity of the test
-- Therapies (given at the Mohali centre): LIT Therapy, PBMC Therapy, PRP Therapy, Stem Cell Therapy, Molecular Hydrogen Therapy
 - Collection centres: Navi Mumbai (Nirmal Multi Speciality Hospital), Udaipur (Shree B.L. Jain Memorial Hospital), Jalandhar (Advance Fertility Services & IVF Centre)
 - Academic programmes: B.Sc./M.Sc. Clinical Embryology with ITHS & Bahra University (Shimla Hills, Himachal Pradesh); B.Sc./M.Sc./Ph.D./PG Diploma in ART & Clinical Embryology with ITHS & Rayat Bahra University (Mohali, Punjab); short hands-on skill development training (1 to 5 days, 10 seats a batch)
 - Recognition: Best Innovator Award for Human Infertility Treatment, Research & Innovation Park, New Delhi (27 Nov 2024)
@@ -25,7 +24,6 @@
 - [About EmbryoGenesis](https://embryogenesis.in/about/): vision, road map, leadership, scientific team, collection centres, partners
 - [Founder: Prof. (Dr.) Pulakes Purkait](https://embryogenesis.in/pulakes-purkait-profile/): biography, education, patent applications, awards, memberships
 - [Diagnostic services](https://embryogenesis.in/diagnostic/): ERFA – The Soil Test (endometrial receptivity), Endo-Immune Test and Endometrial Infection Test; who each test is for, sample timing, FAQs
-- [Therapeutic services](https://embryogenesis.in/advanced-fertility-therapies/): LIT, PBMC, PRP, Stem Cell and Molecular Hydrogen therapy
 - [Media & events](https://embryogenesis.in/media-event/): news coverage (Times of India, Himachal Tonite), awards and MoUs
 - [Contact](https://embryogenesis.in/contact-us/): phone, WhatsApp, email, address, map and collection centres
 
@@ -39,9 +37,7 @@
 - [Blog index](https://embryogenesis.in/blog/)
 - [ERFA – The Soil Test: Understanding Successful Pregnancy & Embryo Implantation](https://embryogenesis.in/erfa-the-soil-test-endometrial-receptivity-analysis-optimize-fertility-success/): endometrial receptivity, the factors ERFA assesses and who it can help (7 Jun 2024)
 - [Endometrial Immune Profiling: What It Is, Why It Matters, and Who Should Consider It](https://embryogenesis.in/endometrial-immune-profiling-what-it-is-why-it-matters-and-who-should-consider-it/): endometrial immune testing for repeated IVF failure and recurrent pregnancy loss, and its limitations (28 Jul 2025)
-- [Exploring LIT Therapy: A Promising Treatment for Recurrent Pregnancy Loss](https://embryogenesis.in/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/): Lymphocyte Immunization Therapy, considerations and side effects (21 May 2024)
 - [Unexplained Infertility](https://embryogenesis.in/unexplained-infertility/): meaning, possible causes, diagnosis and treatment options (1 Apr 2024)
-- [IVF फेलियर के बाद गर्भावस्था के लिए आवश्यक उपाय और उपचार](https://embryogenesis.in/tips-and-treatments-for-pregnancy-after-ivf-failure/) (Hindi): next steps and treatments after IVF failure (9 Jul 2024)
 
 ## Optional
 - [Privacy Policy](https://embryogenesis.in/privacy-policy/)
