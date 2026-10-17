@@ -2,8 +2,9 @@
 
 **Prepared by:** TechnoTaau Team (SEO strategy lead, planner). Team lead and sign-off: Jakhar Singh.
 **Client:** EmbryoGenesis, Mohali, Punjab (https://embryogenesis.in)
-**Date:** 17 October 2026 | **Version:** 1.0 (for client review)
+**Date:** 17 October 2026 | **Version:** 1.1 (QC fixes applied)
 **Status:** plan for approval. It replaces the parts of `docs/strategy/02-seo-strategy.md` listed in section 9.
+**Change history:** v1.0, 17 Oct 2026 (first issue); v1.1, 17 Oct 2026 (QC fixes C1–C20 and lead decisions J1–J16, `docs/qc/qc-seo-plan.md`).
 
 **Read with**
 - `docs/00-project-brief.md` (section 0 decisions; section 5 guardrails).
@@ -53,45 +54,47 @@
 
 ## 0. Summary for the client (one page)
 
+Three terms: **SEO** is being found in Google and Bing; **AEO** (answer engine optimisation) is being the direct answer to a question; **GEO** (generative engine optimisation) is being cited by AI assistants.
+
 **Where we are**
-- Your new 19-page website is built as a reference for your WordPress developer. It keeps your old pages, wording and web addresses, and it passes our checks: no errors in our automated QC, valid structured data, and 100/100 for accessibility (QC-SEO, QC-FE, QC-DES).
-- Search results still show the old site. In our search checks, the Diagnostic page was still listed with the title "Best Infertility Diagnostics in India" (R08 §7).
-- Search engines and AI assistants know very little about EmbryoGenesis. In our first test of 25 typical questions (a proxy run with one AI search tool), AI search cited you **0 times** (R08 §6). We repeat it in ChatGPT, Google AI Mode, Perplexity and Copilot this month. Your Google Maps listing exists, but your PIN code appears three different ways online, and the only university page that named you has gone (R08 §7).
+- Your new 19-page website is built as a reference for your WordPress developer: the same pages, wording and web addresses, no errors in our quality-control (QC) checks, valid search labels (structured data) and 100/100 for accessibility.
+- Search results still show the old site; in our search checks, the Diagnostic page was still listed with the title "Best Infertility Diagnostics in India".
+- AI assistants barely know you. A first check of 25 typical questions with one AI search tool cited you 0 times; we repeat it in four assistants this month. Your PIN code appears three ways online, and the only university page that named you has gone.
 
 **The goal for the 12 months after launch**
-- More **test enquiries** and more **academy enquiries and applications** from search. Therapy enquiries are counted, but therapies are not promoted while they are under legal review.
-- Become the source that Google and AI assistants quote on endometrial testing, IVF failure, recurrent implantation failure (RIF), recurrent miscarriage (RPL) and embryology careers in India. Clinic chains, journals and education portals answer most of these questions today. Our research found five open gaps that no one owns yet, such as ERA versus ERFA, the endometrial biopsy explained for patients and north-India embryology admissions (R08 §1).
-- Do all of this inside India's medical-advertising rules, which became stricter on 6 October 2026 (R07 §4.1).
+- More test enquiries and more academy enquiries and applications from your website and Google (search and Maps). Therapy enquiries are counted, but therapies are not promoted during the legal review.
+- Be the source Google and AI assistants quote on endometrial testing, IVF failure, recurrent implantation failure (RIF), recurrent miscarriage (RPL) and embryology careers. Clinic chains, journals and education portals answer most of these today, but five gaps are still open, such as ERA versus ERFA and the endometrial biopsy explained for patients.
+- All of it inside India's medical-advertising rules, which became stricter on 6 October 2026.
 
 **The eight biggest moves**
-1. **Launch cleanly on WordPress:** same web addresses, one-step redirects for retired pages, structured data carried over, privacy-safe analytics, and Google Search Console and Bing set up on launch day (§3.1).
-2. **Decide the therapy pages before launch.** We recommend taking the therapy page, the LIT post and the Hindi post offline until your lawyer and reviewers approve evidence-based versions (§3.7.1, decision D1).
-3. **Fix the minimum compliance lines** in the kept content: "best", "leading", "India's trusted", "patented", the testimonials block, unsourced statistics and the "Source: chat GPT" line (§3.7.2, decision D2).
-4. **One identity everywhere:** one name, one address with a confirmed PIN code and one phone number, used on the site, Google Business Profile, Bing Places, directories, ITHS and the universities (§3.2).
-5. **About two new reviewed articles a month**, first on the open gaps (the endometrial biopsy, receptivity tests including ERA versus ERFA), then on topics others answer today: chronic endometritis, RIF and RPL tests, and embryology careers. Academy articles go live before the April admission season (§3.4).
-6. **Make every medical page trustworthy and quotable:** a named author, Prof. Purkait's dated review, Dr. Wadhwa's registration number for clinical claims, references, a disclaimer and a public editorial policy (§3.7).
-7. **Earn mentions from places AI systems trust:** universities, ITHS, the Indian Fertility Society, journals and YouTube. A published ERFA validation paper would be the single strongest asset (§3.6, §3.8, §3.9).
-8. **Measure every month:** Search Console (including its AI report), Bing's AI Performance report, Google Analytics, your enquiry log and a 25-question AI panel run three times per assistant (§2, §5).
+1. **A clean WordPress launch:** the same web addresses, one-step redirects, search labels carried over, privacy-safe analytics, and Search Console and Bing from launch day (§3.1).
+2. **Therapy pages decided before launch:** we recommend taking the therapy page, the LIT (lymphocyte immunisation therapy) post and the Hindi post offline until your lawyer and reviewers approve evidence-based versions (decision D1, §3.7.1).
+3. **Minimum compliance fixes:** "best", "leading", "India's trusted", "patented", the testimonials block, unsourced statistics and the "Source: chat GPT" line (decision D2, §3.7.2).
+4. **One identity:** one name, one address with a confirmed PIN code and one phone number everywhere, including your Google Business Profile, directories, ITHS and the universities (§3.2).
+5. **Two new reviewed articles a month until April 2027, then one to two a month** (about 19 in 12 months, including reserve and conditional posts): open gaps first, and academy articles live before the April admission season (§3.4).
+6. **Trustworthy medical pages:** a named author, Prof. Purkait's dated review, Dr. Wadhwa's registration number for clinical claims, references, a disclaimer and a public editorial policy (§3.7).
+7. **Mentions from sources AI systems trust:** universities, ITHS, the Indian Fertility Society, journals and YouTube. A published ERFA validation paper would help most (§3.6, §3.8, §3.9).
+8. **Monthly measurement:** Search Console, Bing and Analytics reports, your enquiry log and 25 set questions asked three times in each AI assistant (§2, §5).
 
 **What we need from you** (full list in §8)
-- Eight decisions (D1 to D8) between **23 October and 13 November 2026** (each date in §8.1): therapy content, compliance minimum, refresh pack, address and phone, privacy and consent, launch date, AI crawlers and AI-use policy.
+- Eight decisions (D1 to D8) between **23 October and 13 November 2026**: therapy content, compliance minimum, refresh pack, address and phone, privacy and consent, launch date, AI crawlers and AI use.
 - Your lawyer's review of the therapy content, the privacy policy and forms, AI-made videos and any partner terms.
-- Facts: PIN code, one public phone and WhatsApp number, opening hours, the name on the lab's signage, Dr. Wadhwa's registration number and the 2027–28 course session details.
-- Access: Search Console (if one exists), your Google Business Profile and the WordPress staging site.
-- **Review time:** one 90-minute slot a week with Prof. Purkait and one 60-minute slot a fortnight with Dr. Wadhwa.
+- Facts: PIN code, one public phone and WhatsApp number, opening hours, the name on your signage, Dr. Wadhwa's registration number and the 2027–28 course details.
+- Access: Search Console (if one exists), your Google Business Profile and the staging site.
+- **Review time:** from 9 to 27 November, three 90-minute slots a week with Prof. Purkait and a weekly 60-minute slot with Dr. Wadhwa; after launch, one 90-minute slot a week and one 60-minute slot a fortnight.
 
 **How we control quality**
-- Every page and article passes seven gates, from brief to post-publication checks (G0 to G6, §5).
-- Nothing goes live without Prof. Purkait's dated review, a compliance check and your written approval.
-- We audit monthly and quarterly, and we have playbooks for ranking drops, wrong AI answers, negative reviews, complaints and outages.
+Every page passes seven checks, and nothing goes live without Prof. Purkait's dated review, a compliance check and your written approval. We audit monthly and quarterly, with a set response for ranking drops, wrong AI answers, negative reviews, complaints and outages (§5).
 
-**What realistic progress looks like** (targets, estimates, reset 30 days after launch; §2)
+**What realistic progress looks like** (target, with the minimum in brackets; our estimates, reset 30 days after launch; §2)
 
-| By | Test enquiries a month from the website | Academy enquiries a month | AI panel (of 25 questions) | New quality links |
+| By | Test enquiries a month from the website | Academy enquiries a month | AI questions where you appear (of 25) | New quality links |
 |---|---|---|---|---|
-| Month 3 | 15 (floor 8) | 30 (floor 15) | 4 (floor 2) | 6 (floor 3) |
-| Month 6 | 30 (floor 15) | 80 in season (floor 40) | 8 (floor 5) | 12 (floor 6) |
-| Month 12 | 50 (floor 25) | 40 off-season (floor 20) | 12 (floor 8) | 20 (floor 12) |
+| Month 3 | 15 (8) | 30 (15) | 4 (2) | 6 (3) |
+| Month 6 | 30 (15) | 80 in season (40) | 8 (5) | 12 (6) |
+| Month 12 | 50 (25) | 40 off-season (20) | 12 (8) | 20 (12) |
+
+Sources: our research reports 07 and 08 (17 October 2026), the site audit (15 October 2026) and our QC reports; sections 1 to 3 give the reference for each point.
 
 ---
 
@@ -141,7 +144,7 @@
 ### 1.4 AI-visibility baseline
 - **0 of 25** prompts cited EmbryoGenesis in the proxy test (R08 §6.1).
   - It appeared only in a search restricted to its own domain (P6), in one directory (P24), and indirectly through the 2024 Himachal Tonite article (P19).
-- **This is a proxy**, not a reading of ChatGPT, Gemini, Perplexity, Copilot or Google AI Mode. It used an AI search tool with a US-based index (R08 §0). We run the real panel in Phase 0 (§4.2, item 6).
+- **This is a proxy**, not a reading of ChatGPT, Gemini, Perplexity, Copilot or Google AI Mode. It used an AI search tool with a US-based index (R08 §0). We run the real panel in Phase 0 (§4.2, item 7).
 - The biggest exposure in AI answers: the only EmbryoGenesis pages an assistant could cite for recurrent miscarriage or IVF failure in Hindi are the LIT post and the Hindi post. The Hindi post says LIT "increases the chance of successful conception" and promotes PRP and stem cell therapy (R08 §1.5).
 
 ### 1.5 What is not yet measurable
@@ -163,16 +166,16 @@
 
 | # | Issue | Fix | Owner | By |
 |---|---|---|---|---|
-| 1 | Old title "Best Infertility Diagnostics in India" still indexed for `/diagnostic/`; `/contact-us/` title also says "Best" (R08 §7; R03) | Change both titles on the live site now (Rank Math); new titles ship at launch | Client developer | 23 Oct 2026 |
+| 1 | Old title "Best Infertility Diagnostics in India" still indexed for `/diagnostic/`; `/contact-us/` title also says "Best" (R08 §7; R03) | With the client's go-ahead by email, change both titles on the live site now (Rank Math); new titles ship at launch | Client developer | 23 Oct 2026 |
 | 2 | PIN code shown as 140302, 140103 and 140104 (R08 §7) | Client confirms with India Post (D4); one PIN everywhere | Client | 23 Oct 2026 |
 | 3 | Bahra University citation lost (R08 §7) | Ask the university to restore a programme page that names EmbryoGenesis and links to `/bsc-in-clinical-embryology-in-bahra-university/`; update the footer link to the university's current domain | Client + TechnoTaau | M2 |
 | 4 | ITHS site says "15+ patents" (R08 §7, §8.5) | ITHS changes it to "patent applications published" and links to embryogenesis.in | Client (group site) | Before L |
-| 5 | ERFA post canonical points to a 404 on the live site (R03 C1) | Fix in Rank Math now; correct in the new build | Client developer | 23 Oct 2026 |
+| 5 | ERFA post canonical points to a 404 on the live site (R03 C1) | With the client's go-ahead by email, fix in Rank Math now; correct in the new build | Client developer | 23 Oct 2026 |
 | 6 | Address shown in two forms (short visible form vs full schema form) and several phone numbers (QC-CF §8.3; R07 §5.2) | One master NAP record (D4, §3.2) | Client + TechnoTaau | Before L |
 | 7 | Residual therapy facts in `llms.txt` and in `ORG.description` (R07 §4.2) | **Done 17 Oct 2026** (lead). Revisit only if D1 approves evidence-based therapy content | TechnoTaau | Done |
 | 8 | Privacy policy is a placeholder while 8 forms collect data (QC-CF §8.6) | Real policy and itemised notices (D5) | Counsel + client | 13 Nov 2026 |
-| 9 | Kept content contains superlatives, "patented", a testimonials block, unsourced statistics and an AI source line (QC-CF §7) | Compliance minimum (D2, §3.7.2) | Client approval | 9 Nov 2026 |
-| 10 | Therapy page, LIT post and Hindi post (R08 §1.5; R07 §1 implication 6) | Decision D1 (§3.7.1) | Client + counsel | 9 Nov 2026 |
+| 9 | Kept content contains superlatives, "patented", a testimonials block, unsourced statistics and an AI source line (QC-CF §7) | Compliance minimum (D2, §3.7.2) | Client approval | 10 Nov 2026 |
+| 10 | Therapy page, LIT post and Hindi post (R08 §1.5; R07 §1 implication 6) | Decision D1 (§3.7.1) | Client + counsel | 10 Nov 2026 |
 | 11 | Course pages say "Admission Open For Session 2025-26" (QC-SEO §4.1 item 12) | Current session and dates (refresh R5) | Client admissions | Before L |
 | 12 | Award named two ways: "Best Innovator Award" and "Best Innovation Award" (QC-CF §4) | Client confirms the exact name on the certificate; one form everywhere | Client | 30 Oct 2026 |
 | 13 | Organization logo is 403×102, not square (QC-SEO §6.3) | Supply a 512×512 emblem logo | Client designer | Before L |
@@ -193,6 +196,7 @@
 - **Floor and target:** above the target = ahead of plan. Between floor and target = on track. Below the floor = we review the causes and agree a corrective plan.
 - **Checkpoints:** 3, 6 and 12 months after launch (about early March, early June and early December 2027 if launch is 8 or 9 December 2026). Each checkpoint uses the 4 weeks before it.
 - **Consent caveat:** GA4 counts only visitors who accept analytics, so its traffic and AI-referral figures are floors (R07 §3.1). Search traffic KPIs therefore use Search Console clicks, and business outcomes use the client's enquiry log.
+- **What B1 and B2 count (assumption):** every website-sourced enquiry, whether the visit came from branded or non-branded search, the Google Business Profile and Maps, or direct, referral and social visits. In year 1 most enquiries come from branded, direct, GBP and referral visits; non-branded search adds a growing share. The B1 and B2 numbers are placeholders until the client shares 3 to 6 months of enquiry history (§8.2 #21), and they are reset at L+30.
 
 ### 2.3 KPI table
 All numbers marked (E) are estimates for a small, new entity in a YMYL niche; definitions are in Appendix A.
@@ -223,7 +227,9 @@ All numbers marked (E) are estimates for a small, new entity in a YMYL niche; de
 | T1 | Core Web Vitals, mobile, 5 key templates | Old site 20/100 (R03); reference build about 89 (QC-FE) | Pass (lab) | Pass | Pass (field data when it exists) | PageSpeed Insights; Search Console CWV | Developer; TechnoTaau QA |
 | T2 | Technical errors (5xx, redirect chains, broken canonicals, internal 404s, links to held pages) | Many on old site (R03) | 0 | 0 | 0 | Monthly crawl; Search Console | TechnoTaau QA |
 | C1 | Compliance incidents (ASCI, NMC, platform, consumer) | None logged | 0 | 0 | 0 (R07 §3.3) | Incident log | JS |
-| C2 | Median medical-review turnaround (gate G3) | n/a | ≤ 5 working days | ≤ 5 | ≤ 5 | Content tracker | JS |
+| C2 | Median medical-review turnaround (gate G3), reported per reviewer | n/a | ≤ 5 working days for items reviewed by Prof. Purkait only; ≤ 10 working days where Dr. Wadhwa's clinical review is needed | Same | Same | Content tracker | JS |
+
+**A2 is deliberately conservative.** R07 §3.3 aims for brand prompts to be visible by month 3, but the brand name collides with the biology term (R08 §1.6) and the founder's name with other public figures (R08 §1.1), so we plan for 2 of the 3 brand prompts by then.
 
 **Not used as KPIs:** "rank in ChatGPT" (answers rarely repeat), "share of traffic from AI" on its own (undercounted) and raw AI Overview impression totals without page context (R07 §3.3).
 
@@ -233,7 +239,7 @@ All numbers marked (E) are estimates for a small, new entity in a YMYL niche; de
 |---|---|---|
 | Google Search Console | Clicks, impressions, queries, indexing, CWV, Generative AI performance report | Keep the "Search generative AI features" control on **Include** (R07 §1.1, G3). The AI report shows impressions only, no clicks or queries (R07 §3.1) |
 | Bing Webmaster Tools | Indexing, IndexNow, **AI Performance** (citations, grounding queries, citation share in preview) | The only first-party view of Copilot citations (R07 §2.5, §3.1) |
-| GA4 via Google Tag Manager | Sessions, key events, AI referrals | Consent Mode v2, default denied. Native "AI Assistant" channel since 13 May 2026 **[SECONDARY]**; custom AI channel group as backstop (R07 §3.1) |
+| GA4 via Google Tag Manager | Sessions, key events, AI referrals | Consent Mode v2, default denied. Native "AI Assistant" channel since 13 May 2026, confirmed in Google's Analytics Help release notes of that date (https://support.google.com/analytics/answer/9164320); custom AI channel group as backstop (R07 §3.1) |
 | Looker Studio | One monthly dashboard | Sources: Search Console, GA4, enquiry log sheet, panel sheet |
 | PageSpeed Insights and CrUX | Core Web Vitals | Lab runs until field data exists |
 | Rich Results Test and Schema.org validator | Structured data | The Rich Results Test no longer supports FAQ (R07 §1.2); use the Schema.org validator for MedicalWebPage, MedicalTest and DiagnosticLab |
@@ -272,7 +278,7 @@ Each pillar states its objective, actions, owner, timing and the QC check that p
 | 14 | Embeds | YouTube with a click-to-load facade; static map image linking to the Maps place (02 §5.2) | Developer | Build | No iframe on first load |
 | 15 | Search Console | Domain property (DNS) plus URL-prefix property. Generative AI control on **Include** (R07 §1.1, G3). Submit the sitemap. Inspect the key URLs on launch day | TechnoTaau SEO lead | L | Sitemap "Success"; inspection results saved |
 | 16 | Bing | Import from Search Console, submit the sitemap, IndexNow on, AI Performance report read monthly, Bing Places with the same NAP (R07 §2.5, §5.1) | TechnoTaau SEO lead | L | Bing shows the sitemap processed |
-| 17 | GA4 and consent | GTM with Consent Mode v2, basic mode, default denied (02 §5.7). Google signals off, no ad links, no ad pixels on any page, never on academy pages (applicants may be minors) (R07 §4.7). Events: `generate_lead` (form ID and page section only), `whatsapp_click`, `tel_click`, `brochure_download`, `page_not_found`. **No field values or "interest" choices sent to GA4**; the enquiry type is recorded in the client's enquiry log. Custom channel group "AI search" above Referral with the regex in R07 §3.1. Internal-traffic filter | Developer; TechnoTaau | Build | GA4 DebugView: no events before consent; events after consent |
+| 17 | GA4 and consent | GTM with Consent Mode v2, basic mode, default denied (02 §5.7). Google signals off, no ad links, no ad pixels on any page, never on academy pages (applicants may be minors) (R07 §4.7). Events: `generate_lead` (form ID and page section only), `whatsapp_click`, `tel_click`, `brochure_download`, `page_not_found`. **No field values or "interest" choices sent to GA4**; the enquiry type is recorded in the client's enquiry log. GA4's native "AI Assistant" channel (13 May 2026, Google Analytics Help release notes: https://support.google.com/analytics/answer/9164320) counts visits from AI assistants; the custom channel group "AI search" above Referral, with the regex in R07 §3.1, is the backstop. Internal-traffic filter | Developer; TechnoTaau | Build | GA4 DebugView: no events before consent; events after consent |
 | 18 | Forms (DPDP) | Itemised notice above the submit button; required, unticked consent box; separate optional marketing box; withdrawal as easy as consent; academy forms ask "Are you 18 or older?" and route under-18s to parental consent; consent log; "please do not include medical reports" line (04 §5.6; R07 §4.7). Substantive DPDP duties start about 13–14 May 2027; check the Gazette, because an earlier date was proposed but not notified as of September 2026 (R07 §4.7) | Developer; counsel approves text | Build | Test submission per form; consent log entry |
 | 19 | 404 and security | Real 404 status with helpful links; never redirect all 404s to the home page; HSTS and basic security headers (02 §5.2, §5.9) | Developer | Build | `curl -I` on a random URL returns 404 |
 
@@ -296,7 +302,7 @@ Staging sits behind HTTP basic authentication and "Discourage search engines" (0
 
 Launch rules: no new articles on launch day (they follow from week 2, so migration effects can be read on their own), and launch on a Tuesday or Wednesday so working days follow.
 
-**QC check for pillar 3.1:** two staging QA passes by TechnoTaau (16 Nov and 27 Nov 2026), a signed go-live runbook, and the go/no-go meeting (4 Dec 2026) chaired by JS with the client.
+**QC check for pillar 3.1:** two staging QA passes by TechnoTaau (16 Nov 2026, and 25 Nov, two working days before the 27 Nov freeze), a signed go-live runbook, and the go/no-go meeting (4 Dec 2026) chaired by JS with the client.
 
 ### 3.2 Entity, local search and NAP
 
@@ -308,7 +314,7 @@ Launch rules: no new articles on launch day (they follow from week 2, so migrati
 |---|---|---|
 | Name | EmbryoGenesis. Alternate: "EmbryoGenesis – Infertility Diagnostic & Research" (R07 §5.2) | Agreed |
 | Address | Top Floor, Rayat Bahra Dental College & Hospital, Rayat Bahra University Campus, VPO Sahauran, Tehsil Kharar, Dist. Mohali, Punjab **[PIN to confirm]** | PIN: 140302 vs 140103 vs 140104 (R08 §7). Client confirms with India Post |
-| Phone | One public number for the lab and WhatsApp. Proposed +91 81462 17196 (brief §2). Admissions numbers labelled as "Admissions" | Client to confirm |
+| Phone | One public number for the lab and WhatsApp. Proposed +91 81462 17196 (brief §2). Admissions numbers labelled as "Admissions" | Client to confirm, including whether +91 98156 92195 is the admissions line (site) or the Delhi regional centre (brief §2) |
 | Email | Public email; we recommend a domain address over Gmail (02 §7.3) | Client to decide |
 | Hours | Not in any source (R07 §5.1) | Client to supply |
 | Map pin | The client's own Maps place (KG `/g/11y4zwq7dd`; about 30.78099, 76.61935) (R08 §7) | Agreed |
@@ -386,7 +392,7 @@ Launch rules: no new articles on launch day (they follow from week 2, so migrati
 
 | Cluster | Pillar page | Spokes (existing and NEW) | Audiences | R08 clusters |
 |---|---|---|---|---|
-| A. Endometrial testing | `/diagnostic/` (service) and NEW N3 `/endometrial-receptivity-tests-explained/` (explainer) | ERFA post, EIP post, NEW N4 biopsy, NEW N5 chronic endometritis, NEW N13 immunohistochemistry, NEW N8 genital TB (conditional) | Couples; treating doctors | K4, K6, K7, K8, K9, K12 |
+| A. Endometrial testing | `/diagnostic/` (service) and NEW N3 `/endometrial-receptivity-tests-explained/` (explainer; slug provisional) | ERFA post, EIP post, NEW N4 biopsy, NEW N5 chronic endometritis, NEW N13 immunohistochemistry, NEW N8 genital TB (conditional) | Couples; treating doctors | K4, K6, K7, K8, K9, K12 |
 | B. IVF failure, RIF and RPL patient education | NEW N1 `/ivf-failed-what-next/` | NEW N2 RIF tests, NEW N6 RPL tests, NEW N7 thin endometrium, `/unexplained-infertility/`; Hindi post per D1 | Couples (doctors for N2) | K1, K2, K3, K10, K11, K13 |
 | C. Embryology careers and admissions | `/courses/` | Both university course pages, `/skill-development-training/`, NEW N9, N10, N11, N12 | Students, parents, trainees | K15 to K20 |
 
@@ -396,11 +402,12 @@ Internal linking (adapted from 02 §1.5): each spoke links to its pillar in the 
 
 Prof. Purkait's review time is the bottleneck, so the cadence is set by review slots, not by writing capacity.
 
-- **Review slot:** one 90-minute slot a week with PP on a fixed weekday, and one 60-minute slot a fortnight with VW for clinical claims (E; we time the first two posts in Phase 0 and recalibrate).
+- **Review slot:** one 90-minute slot a week with PP on a fixed weekday, and one 60-minute slot a fortnight with VW for clinical claims (E; we time the first reviews in Phase 0 and recalibrate).
 - **What one slot covers (E):** one new medical post (two review rounds), or one refresh or re-review of a medical page, or two academy posts or small updates.
-- **Starting cadence (M1 to M4): 2 new posts a month** (normally one medical and one academy), plus at least one refresh or re-review a month. The one-off refresh pack (R1 to R5) is reviewed in Phase 0.
-- **Steady cadence (M5 to M12): about 2 new posts a month**, plus scheduled re-reviews (test page every 6 months, articles every 12 months, sooner when a guideline changes; 04 §5.4).
-- **Step-up, from M4 at the earliest:** up to **1 new post a week**, the level first discussed, only if all of these hold for 8 weeks: median G3 turnaround ≤ 5 working days; no more than 2 posts waiting for review; no repeated G4 failures; at least 4 approved topics with sources in the backlog; and PP confirms a second weekly slot. Step-up posts come from the reserve list W1 to W5 or from new questions found in Search Console.
+- **Pre-launch review surge (9 to 27 Nov 2026):** the Phase 0 review set (the D2 replacement text, R1 to R5, T1 and T2) needs about 7 of PP's slot-equivalents in three weeks, against 3 normal slots (QC estimate, `docs/qc/qc-seo-plan.md` §5.3). We ask the client for three 90-minute slots a week with PP and a weekly 60-minute slot with VW in that window. N4 and N9 are reviewed from 1 to 11 Dec 2026, after the freeze; they publish from week 2 of M1 anyway.
+- **If the surge is not granted:** the minimum pre-launch review set is the D2 replacement text, R1, T1, T2 and the R5 facts (the admissions team checks the facts; PP approves the wording only). R2 to R4 move to M1, and their pages launch with only the D2 minimum edits.
+- **Cadence: 2 new posts a month until April 2027 (M1 to M5), then 1 to 2 a month; about 19 in 12 months including reserve and conditional posts.** M1 to M4 normally pair one medical and one academy post. M11 has no new post, because its review time goes to the academy refresh (R8b). Refreshes and re-reviews follow the calendar in §3.4.5: the test page every 6 months, articles every 12 months, sooner when a guideline changes (04 §5.4).
+- **Step-up, from M4 at the earliest:** up to **1 new post a week**, the level first discussed, only if all of these hold for 8 weeks: median G3 turnaround within the C2 targets (§2.3); no more than 2 posts waiting for review; no repeated G4 failures; at least 4 approved topics with sources in the backlog; and PP confirms a second weekly slot. Step-up posts come from the reserve list W1 to W5 or from new questions found in Search Console.
 - **Step-down:** if more than 3 items wait for review or turnaround exceeds 10 working days, drop to 1 new post a month and protect corrections and re-reviews first.
 - **Social review is separate.** Reels and posts (03 §4.4) need their own review time; the web slot is not shared.
 
@@ -412,7 +419,7 @@ Prof. Purkait's review time is the bottleneck, so the cadence is set by review s
 
 #### 3.4.3 Refresh of existing pages (refresh pack, subject to client approval under D2 and D3)
 
-Original publish dates stay. Each refreshed page gains "Reviewed on" and "Next review due" dates; dates never change without a real content change (R07 §2 implication 4).
+Original publish dates stay. Each refreshed page gains "Reviewed on" and "Next review due" dates; dates never change without a real content change (R07 §2 implication 4). If the pre-launch review surge is not granted, R2 to R4 move to M1 (their pages launch with only the D2 minimum edits), and R5 is checked for facts by the admissions team with PP approving the wording only (§3.4.2).
 
 | ID | Page | Current issues | Proposed refresh | Reviewer | Approval |
 |---|---|---|---|---|---|
@@ -429,11 +436,11 @@ All NEW posts follow the blog template in 02 §4.5 (kept), the rules in §3.5 an
 
 | ID | NEW slug | Title tag (≤ 60) | Cluster | Audience | Questions answered (R08 §5) | Priority (R08 §1.10) | Month |
 |---|---|---|---|---|---|---|---|
-| N4 | `/endometrial-biopsy-for-fertility-tests/` | Endometrial Biopsy for Fertility Tests: What to Expect | K7 | Couples | 8, 34 | 1 | M1 |
+| N4 | `/endometrial-biopsy-for-fertility-tests/` (provisional) | Endometrial Biopsy for Fertility Tests: What to Expect (provisional) | K7 | Couples | 8, 34 | 1 | M1 |
 | N9 | `/how-to-become-a-clinical-embryologist/` | How to Become a Clinical Embryologist in India | K19 | Students, parents | 35, 36, 37 | 1 | M1 |
-| N3 | `/endometrial-receptivity-tests-explained/` | Endometrial Receptivity Tests Explained \| EmbryoGenesis | K4, K6 | Couples, doctors | 9, 10, 11 | 1 | M2 |
+| N3 | `/endometrial-receptivity-tests-explained/` (provisional) | Endometrial Receptivity Tests Explained \| EmbryoGenesis (provisional) | K4, K6 | Couples, doctors | 9, 10, 11 | 1 | M2 |
 | N10 | `/clinical-embryology-career-and-salary-india/` | Clinical Embryologist Career and Salary in India | K18 | Students | 39 | 1 | M2 |
-| N5 | `/chronic-endometritis-cd138-test/` | Chronic Endometritis and the CD138 Test, Explained | K8 | Couples, doctors | 15 to 20 | 1 | M3 |
+| N5 | `/chronic-endometritis-testing/` (provisional) | Chronic Endometritis Testing, Explained \| EmbryoGenesis (55 characters; provisional) | K8 | Couples, doctors | 15 to 20 | 1 | M3 |
 | N11 | `/bsc-vs-msc-clinical-embryology/` | BSc or MSc in Clinical Embryology? The Routes Compared | K15 | Students, parents | – (K15 hub topic, R08 §3) | Added (pre-season) | M3 |
 | N2 | `/recurrent-implantation-failure-tests/` | Recurrent Implantation Failure: Tests and What ESHRE Says | K3 | Doctors, couples | 2, 4 | 2 | M4 |
 | N12 | `/msc-clinical-embryology-eligibility/` | MSc Clinical Embryology Eligibility: Which Degrees Qualify | K17 | Students | 38 | Added (pre-season) | M4 |
@@ -442,6 +449,8 @@ All NEW posts follow the blog template in 02 §4.5 (kept), the rules in §3.5 an
 | N7 | `/thin-endometrium-causes-and-evaluation/` | Thin Endometrium: Causes and How Doctors Evaluate It | K11 | Couples | 28 to 31 | 2 | M7 |
 | N13 | `/immunohistochemistry-endometrial-testing/` | Immunohistochemistry in Endometrial Testing, Explained | K6 (P16) | Doctors | – (prompt P16) | Added (GEO asset) | M7 |
 | N8 | `/genital-tuberculosis-and-infertility/` | Genital Tuberculosis and Infertility: How It Is Tested | K12 | Couples, doctors | 32 | 3, conditional | M8 |
+
+The N3, N4 and N5 titles and slugs are provisional until the reviewers' decisions of 28 Oct 2026 on biopsy timing and CD138 framing (R08 §8.1, §8.3). N5 uses a neutral slug and title so that the page does not pre-empt how chronic endometritis testing is described.
 
 N11, N12 and N13 are our additions to R08's list. R08 assigns the B.Sc. vs M.Sc. comparison (K15) to the `/courses/` hub and the eligibility question (K17) to a course-page FAQ that needs client approval (R08 §3); a new post covers both without changing the client's kept course pages, and is timed before the admission season. N13 is the clinician-level source for "Are there IHC-based endometrial receptivity tests developed in India?" (R08 §6.1, P16), where no Indian source surfaced.
 
@@ -462,17 +471,17 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 | Month | ID | Type | Working title | Cluster | Audience | Target URL | Reviewer | Dependency |
 |---|---|---|---|---|---|---|---|---|
 | Phase 0 (Nov 2026) | R1 | Refresh | Diagnostic page: evidence status, references, review lines, FAQ | K4, K6, K8, K9 | Couples, doctors | `/diagnostic/` | PP + VW | D2, D3; reviewer decisions (R08 §8.1–8.3) |
-| Phase 0 | R2 | Refresh | ERFA post: patent wording, references, headings | K4, K6 | Couples | ERFA post | PP | D2, D3 |
-| Phase 0 | R3 | Refresh | EIP post: ESHRE uNK status, references | K9 | Couples, doctors | EIP post | PP + VW | D2, D3; R08 §8.2 |
-| Phase 0 | R4 | Refresh | Unexplained infertility: statistic and AI source line, references | K13 | Couples | `/unexplained-infertility/` | PP + VW | D2, D3 |
-| Phase 0 | R5 | Update | Course and training pages: session, fees, eligibility | K15–K17, K20 | Students, parents | `/courses/`, both university pages, `/skill-development-training/` | PP + Adm | Client academy data |
+| Phase 0 | R2 | Refresh | ERFA post: patent wording, references, headings | K4, K6 | Couples | ERFA post | PP | D2, D3; moves to M1 if the review surge is not granted (§3.4.2) |
+| Phase 0 | R3 | Refresh | EIP post: ESHRE uNK status, references | K9 | Couples, doctors | EIP post | PP + VW | D2, D3; R08 §8.2; moves to M1 if the review surge is not granted |
+| Phase 0 | R4 | Refresh | Unexplained infertility: statistic and AI source line, references | K13 | Couples | `/unexplained-infertility/` | PP + VW | D2, D3; moves to M1 if the review surge is not granted |
+| Phase 0 | R5 | Update | Course and training pages: session, fees, eligibility | K15–K17, K20 | Students, parents | `/courses/`, both university pages, `/skill-development-training/` | PP + Adm | Academy facts by 30 Oct (§8.2 #15); without the surge, Adm checks the facts and PP approves the wording only |
 | Phase 0 | T1 | NEW trust page | Editorial policy | E-E-A-T | All | NEW `/editorial-policy/` | PP; Counsel (AI-use wording) | D3, D8 |
-| Phase 0 | T2 | NEW trust page | Clinical reviewer profile | E-E-A-T | All | NEW `/vidhu-wadhwa-profile/` | VW | Registration number; VW consent |
-| M1 Dec 2026 | N9 | New | How to become a clinical embryologist in India | K19 | Students, parents | NEW `/how-to-become-a-clinical-embryologist/` | PP + Adm | IFS certification requirements; each university's eligibility |
-| M1 | N4 | New | Endometrial biopsy for fertility tests: what to expect | K7 | Couples | NEW `/endometrial-biopsy-for-fertility-tests/` | PP + VW | Timing wording (R08 §8.3); VW's procedure notes |
-| M2 Jan 2027 | N3 | New | Endometrial receptivity tests explained | K4, K6 | Couples, doctors | NEW `/endometrial-receptivity-tests-explained/` | PP + VW | ERFA method facts; R08 §8.3; ERA named only as Igenomix's test; no superiority claim |
+| Phase 0 | T2 | NEW trust page | Clinical reviewer profile | E-E-A-T | All | NEW `/vidhu-wadhwa-profile/` | VW | Drafted only after VW's registration number and consent arrive (§8.1 #11, due 6 Nov) |
+| M1 Dec 2026 | N9 | New | How to become a clinical embryologist in India | K19 | Students, parents | NEW `/how-to-become-a-clinical-embryologist/` | PP + Adm | IFS certification requirements; each university's eligibility; reviewed 1–11 Dec 2026 |
+| M1 | N4 | New | Endometrial biopsy for fertility tests: what to expect | K7 | Couples | NEW `/endometrial-biopsy-for-fertility-tests/` (provisional) | PP + VW | Timing wording (R08 §8.3); VW's procedure notes; reviewed 1–11 Dec 2026 |
+| M2 Jan 2027 | N3 | New | Endometrial receptivity tests explained | K4, K6 | Couples, doctors | NEW `/endometrial-receptivity-tests-explained/` (provisional) | PP + VW | ERFA method facts; R08 §8.3; ERA named only as Igenomix's test; no superiority claim |
 | M2 | N10 | New | Clinical embryologist career and salary in India | K18 | Students | NEW `/clinical-embryology-career-and-salary-india/` | PP + Adm | Dated, sourced salary ranges; no placement promises |
-| M3 Feb 2027 | N5 | New | Chronic endometritis and the CD138 test | K8 | Couples, doctors | NEW `/chronic-endometritis-cd138-test/` | PP + VW | **CD138 decision** (R08 §8.1) |
+| M3 Feb 2027 | N5 | New | Chronic endometritis testing, explained | K8 | Couples, doctors | NEW `/chronic-endometritis-testing/` (provisional) | PP + VW | **CD138 decision** (R08 §8.1) |
 | M3 | N11 | New | BSc or MSc in clinical embryology: the routes compared | K15 | Students, parents | NEW `/bsc-vs-msc-clinical-embryology/` | PP + Adm | 2027–28 programme facts |
 | M4 Mar 2027 | N2 | New | Recurrent implantation failure: tests and what ESHRE says | K3 | Doctors, couples | NEW `/recurrent-implantation-failure-tests/` | PP + VW | ESHRE 2023 wording verbatim, in a table |
 | M4 | N12 | New | MSc Clinical Embryology eligibility | K17 | Students | NEW `/msc-clinical-embryology-eligibility/` | PP + Adm | Each university's published eligibility |
@@ -489,11 +498,19 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 | M9 | X1 | Expansion | Add sections to the 3 posts with most impressions, for questions seen in Search Console and People Also Ask | By post | By post | Existing URLs | PP (+ VW) | Search Console data |
 | M10 Sep 2027 | W3 | New (reserve) | Bad obstetric history: meaning and tests | K10 | Couples | NEW `/bad-obstetric-history-meaning/` | PP + VW | G0 check against N6 |
 | M10 | H1 | New (conditional) | Hindi version of N1 | K2 | Couples (Hindi) | NEW `/ivf-fail-hone-ke-baad-kya-kare/` | Hindi-fluent medical reviewer + PP | Client lifts "English only"; D1 outcome for the existing Hindi post; hreflang pair with N1 |
-| M11 Oct 2027 | W4 | New (reserve) | Chronic endometritis: biopsy or hysteroscopy? | K8 | Doctors | NEW `/chronic-endometritis-biopsy-or-hysteroscopy/` | PP + VW | G0 check against N5 |
-| M11 | R8 | Refresh | Academy refresh for the 2028 cycle | K15–K19 | Students | N9–N12, course pages | PP + Adm | New university data |
-| M12 Nov 2027 | R9 | Re-review | 12-month review of N4 and N9; annual content audit; year-2 plan | All | – | N4, N9 | PP + VW | – |
+| M10 | R8a | Refresh | Academy refresh for the 2028 cycle: course and training pages | K15–K17, K20 | Students, parents | `/courses/`, both university pages, `/skill-development-training/` | PP + Adm | New university data |
+| M11 Oct 2027 | R8b | Refresh | Academy refresh for the 2028 cycle: posts N9 to N12 | K15, K17–K19 | Students | N9–N12 | PP + Adm | New university and salary data |
+| M12 Nov 2027 | W4 | New (reserve) | Chronic endometritis: biopsy or hysteroscopy? | K8 | Doctors | NEW `/chronic-endometritis-biopsy-or-hysteroscopy/` | PP + VW | G0 check against N5 |
+| M12 | R9 | Re-review | 12-month review of N4 and N9; annual content audit; year-2 plan | All | – | N4, N9 | PP + VW | – |
+| M12 | R10 | Re-review | 12-month review of the diagnostic page (6 months after R7) | K4–K9 | Couples, doctors | `/diagnostic/` | PP + VW | Guideline watch |
 
-**Totals:** 13 core new posts (N1 to N13), up to 5 reserve posts and 1 conditional Hindi post in 12 months, plus 9 refresh, check or re-review items. That is about 1.6 new posts a month on average (19 in 12 months, or 18 without the conditional Hindi post): 2 a month from M1 to M5, then 0 to 2 a month. A step-up adds reserve or data-led topics, never more than one new post a week.
+The 12-month re-reviews of R2 to R4 fall in M13 (December 2027, 12 months after the refreshed pages go live) and open the year-2 plan.
+
+**Totals:** about 19 new posts in 12 months including reserve and conditional posts (13 core posts, N1 to N13, with N8 conditional; up to 5 reserve posts, W1 to W5; and 1 conditional Hindi post, H1), or about 1.6 a month on average; 18 without H1 (1.5 a month). The cadence is 2 new posts a month until April 2027 (M1 to M5), then 1 to 2 a month; M11 has none, because its review time goes to the academy refresh (R8b). Alongside them run 11 refresh, check or re-review items (R1 to R10, with R8 split into R8a and R8b), the trust pages T1 and T2 and the expansion X1. A step-up adds reserve or data-led topics, never more than one new post a week.
+
+| New posts | M1 | M2 | M3 | M4 | M5 | M6 | M7 | M8 | M9 | M10 | M11 | M12 | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Count | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 2 (incl. H1, conditional) | 0 | 1 | 19 (18 without H1) |
 
 **QC check for pillar 3.4:** every item passes gates G0 to G6 (§5); the content tracker shows the review date and the next review due date for every medical page; the quarterly content audit confirms no two URLs compete for the same main query.
 
@@ -507,11 +524,11 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 |---|---|---|
 | NEW N1 `/ivf-failed-what-next/` | 1, 3, 5 | M5 |
 | NEW N2 `/recurrent-implantation-failure-tests/` | 2, 4 | M4 |
-| NEW N3 `/endometrial-receptivity-tests-explained/` | 9, 10, 11 | M2 |
+| NEW N3 `/endometrial-receptivity-tests-explained/` (provisional) | 9, 10, 11 | M2 |
 | `/diagnostic/` | 10, 12, 13, 14 (no figures), 20 | Refresh R1 (approval) |
 | ERFA post | 7 | Refresh R2 |
-| NEW N4 `/endometrial-biopsy-for-fertility-tests/` | 8, 34 | M1 |
-| NEW N5 `/chronic-endometritis-cd138-test/` | 15 to 20 | M3 |
+| NEW N4 `/endometrial-biopsy-for-fertility-tests/` (provisional) | 8, 34 | M1 |
+| NEW N5 `/chronic-endometritis-testing/` (provisional) | 15 to 20 | M3 |
 | EIP post | 21, 22, 23 | Refresh R3 |
 | NEW N6 `/recurrent-pregnancy-loss-tests/` | 24 to 27 (27 answered in English) | M6 |
 | NEW N7 `/thin-endometrium-causes-and-evaluation/` | 28 to 31 (31 answered in English) | M7 |
@@ -615,7 +632,7 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 
 #### 3.7.1 Pre-launch legal decision on therapy content (D1)
 
-**In scope:** `/advanced-fertility-therapies/`; the LIT post `/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/`; the Hindi post `/tips-and-treatments-for-pregnancy-after-ivf-failure/`; the therapy cards and "Book Now" therapy links on the home page; the therapy line on `/diagnostic/`; the "Therapeutic" item in the header and footer; the builder-added "Personalized therapy" care-pathway step on the home page; the builder-added therapy links in the "Related at EmbryoGenesis" boxes; the therapy option in forms; and the four therapy-related lab-training modules (PRP & LIT; LIT & molecular hydrogen; molecular hydrogen in health management; stem cell processing & cryopreservation).
+**In scope:** `/advanced-fertility-therapies/`; the LIT post `/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/`; the Hindi post `/tips-and-treatments-for-pregnancy-after-ivf-failure/`; the therapy cards and "Book Now" therapy links on the home page; the therapy line on `/diagnostic/`; the "Therapeutic" item in the header and footer; the builder-added "Personalized therapy" care-pathway step on the home page; the builder-added therapy links in the "Related at EmbryoGenesis" boxes; the therapy mentions and links our builders added or placed on `/about/` (the answer-box sentence naming "therapeutic services" and the "Explore our … therapeutic services" link), `/contact-us/` (the "ask about therapies" link), `/blog/` (the LIT and Hindi post cards and the sidebar "Therapeutic" link) and the 404 page (the "Therapeutic" link); the therapy option in forms; and the four therapy-related lab-training modules (PRP & LIT; LIT & molecular hydrogen; molecular hydrogen in health management; stem cell processing & cryopreservation).
 
 **Why a decision is needed before launch**
 - The NMC advisory of 5 Sep 2026: promoting stem cell therapy beyond approved indications is professional misconduct (R07 §4.2).
@@ -756,7 +773,7 @@ Research 07 proposes four additions to brief section 5: (a) the RMP's name, qual
 | 6 | YouTube health source features for registered healthcare professionals in India: Dr. Wadhwa may apply once eligible. India thresholds **[UNVERIFIED]** | R07 §2.2 (G21) | VW; TechnoTaau | M6 review |
 | 7 | **AI-produced reels** (03 §4): educational only, labelled "AI-generated visuals", no synthetic doctors, patients or outcomes, no therapy topics, **legal sign-off before the first reel**, plus the RMP credential line on clinical reels (an update to 03 §4.1's end card, which names only Prof. Purkait) | NMC 7.2 [VERIFY with counsel]; ASCI synthetic-content guidelines from 29 Dec 2026 [SECONDARY]; IT Rules labelling [SECONDARY] (R07 §0 item 6, §4.1, §4.6) | TechnoTaau social; counsel | After D8 |
 | 8 | Every social post and video description links to the matching page; consistent naming | Branded mentions correlate with AI visibility (R07 §2.2, R4) | TechnoTaau social | Ongoing |
-| 9 | Re-align `03-social-media-strategy.md` to this plan: its partner-recruitment goals and "Become a collection partner" calls to action are superseded by the client's decision | Lead decision; brief §0 | TechnoTaau social | Separate update |
+| 9 | Re-align `03-social-media-strategy.md` to this plan. Its status note of 17 Oct 2026 pauses the AI reels and all partner-facing posts and outreach until D8 and counsel's view on NMC clause 8.1(vii); non-AI educational posts continue through G4. Its partner-recruitment goals and "Become a collection partner" calls to action are superseded by the client's decision | Lead decision; brief §0; §4.2 item 2 | TechnoTaau social (JS accountable) | Pause from 19 Oct 2026; 03 §7 calendar re-issued after 13 Nov 2026 |
 
 **QC check for pillar 3.9:** the reel QC checklist in 03 §4.7 plus gate G4; a video log showing the review date, the RMP line, the AI label (if any) and the page it supports.
 
@@ -768,35 +785,40 @@ Research 07 proposes four additions to brief section 5: (a) the RMP's name, qual
 
 | Phase | Window (indicative) | Deliverables | Owner | Exit criteria |
 |---|---|---|---|---|
-| **0. Pre-launch** | Now to L (17 Oct to about 8 Dec 2026) | Decisions D1 to D8; live-site quick fixes; real AI-panel baseline and SERP checks; Keyword Planner volumes; reviewer decision session; WordPress SEO handover pack; reference-build fixes in our remit; GBP ownership; master NAP record; privacy policy and consent; refresh pack R1 to R5, trust pages T1 and T2 and posts N9 and N4 reviewed; two staging QA passes (16 and 27 Nov); code and content freeze 27 Nov; go/no-go 4 Dec | JS (coordination); client (decisions); developer (build); TechnoTaau (spec, QA, content) | D1 to D8 in writing and implemented on staging; NAP confirmed; privacy policy and forms approved by counsel; redirect test passes; schema validator 0 errors; PageSpeed within budget on 5 templates; GA4 fires nothing before consent; go/no-go signed |
-| **1. Launch month** | M1 (Dec 2026) | Go-live runbook; Search Console and Bing submissions; Bing Places; GBP live; 48-hour and 7-day checks; N9 and N4 published from week 2; 404 monitoring; NAP clean-up starts; first monthly report | Developer; TechnoTaau | Runbook complete; no critical errors in Search Console or Bing; GBP verified; at least 80% of sitemap URLs indexed by L+30 (E); re-baseline done and new targets approved |
+| **0. Pre-launch** | Now to L (17 Oct to about 8 Dec 2026) | Decisions D1 to D8; pause of AI reels and partner-facing posts (§4.2 item 2); live-site quick fixes; real AI-panel baseline and SERP checks; Keyword Planner volumes; reviewer decision session; WordPress SEO handover pack v1 (30 Oct) and v2 (11 Nov); reference-build fixes in our remit; GBP ownership; master NAP record; privacy policy and consent; the D2 replacement text, refresh pack R1 to R5 and trust pages T1 and T2 reviewed during the review surge of 9 to 27 Nov. Fallback without the surge: only the minimum set (D2 text, R1, T1, T2 and the R5 facts) is reviewed before launch, and R2 to R4 move to M1 (§3.4.2). N9 and N4 drafted for review from 1 to 11 Dec; two staging QA passes (16 and 25 Nov); code and content freeze 27 Nov; go/no-go 4 Dec | JS (coordination); client (decisions); developer (build); TechnoTaau (spec, QA, content) | D1 to D8 in writing and implemented on staging; NAP confirmed; privacy policy and forms approved by counsel; the agreed pre-launch review set signed off; redirect test passes; schema validator 0 errors; PageSpeed within budget on 5 templates; GA4 fires nothing before consent; go/no-go signed |
+| **1. Launch month** | M1 (Dec 2026) | Go-live runbook; Search Console and Bing submissions; Bing Places; GBP live; 48-hour and 7-day checks; N9 and N4 reviewed 1 to 11 Dec and published from week 2; R2 to R4 if they moved from Phase 0; 404 monitoring; NAP clean-up starts; first monthly report | Developer; TechnoTaau | Runbook complete; no critical errors in Search Console or Bing; GBP verified; at least 80% of sitemap URLs indexed by L+30 (E); re-baseline done and new targets approved |
 | **2. Foundation** | M2–M3 (Jan–Feb 2027) | N3, N10, N5, N11; university and ITHS fixes; directories; Wikidata; ORCID and Scholar; course pages ready for 2027–28; first videos; monthly panel; quarterly deep audit at the end of M3 | TechnoTaau; client; PP | 3-month KPIs at or above floor, or a corrective plan agreed; at least 2 of 4 institutional pages corrected and linking; step-up decision recorded |
 | **3. Growth and admission season** | M4–M6 (Mar–May 2027) | N2, N12, N1, W1, N6; pre-season academy check (R6); regional academy PR; ERFA paper submission target; DPDP readiness check before mid-May 2027; 6-month re-review of `/diagnostic/` (R7); quarterly deep audit at the end of M6 | TechnoTaau; client; PP | 6-month KPIs at or above floor; DPDP readiness confirmed; decision on the Hindi phase; therapy content outcome (Option A) known |
-| **4. Scale and consolidate** | M7–M12 (Jun–Nov 2027) | N7, N13, N8 (conditional), W5, W2, W3, W4; expansion X1; Hindi N1 (conditional); academy refresh for 2028 (R8); 12-month re-reviews (R9); quarterly audits at M9 and M12; year-2 plan | TechnoTaau; client; PP; VW | 12-month KPIs reviewed; every medical page within its review cycle; year-2 plan approved |
+| **4. Scale and consolidate** | M7–M12 (Jun–Nov 2027) | N7, N13, N8 (conditional), W5, W2, W3 and W4 (M12); expansion X1; Hindi N1 (conditional); academy refresh for 2028 (R8a, course and training pages, in M10; R8b, posts N9 to N12, in M11); 12-month re-reviews (R9 for N4 and N9; R10 for `/diagnostic/`); quarterly audits at M9 and M12; year-2 plan, opened in M13 by the 12-month re-reviews of R2 to R4 | TechnoTaau; client; PP; VW | 12-month KPIs reviewed; every medical page within its review cycle; year-2 plan approved |
 
 ### 4.2 Next 30 days (19 Oct to 16 Nov 2026)
 
 | # | Date (2026) | Action | Owner | Done when |
 |---|---|---|---|---|
 | 1 | Mon 19 Oct | Send this plan and the decision sheet (D1 to D8) to the client; book a 60-minute decision call for the week of 26 Oct | JS | Call booked |
-| 2 | Tue 20 Oct | Request access: existing Search Console property (if any), Google Business Profile (owner or manager), WordPress staging, LinkedIn page and YouTube channel | TechnoTaau SEO lead; client grants | Access granted, or "does not exist" confirmed |
-| 3 | Wed 21 Oct | Book legal counsel for D1, D5, D8 and the NMC clause 8.1(vii) partner note | Client | Counsel engaged; dates agreed |
-| 4 | Fri 23 Oct | Confirm the master NAP record (D4): PIN with India Post, address form, one public phone and WhatsApp, hours, signage name, legal entity name, public email | Client; TechnoTaau compiles | Signed record |
-| 5 | Fri 23 Oct | Old live site, about one hour: remove "Best" from the `/diagnostic/` and `/contact-us/` titles and the `/about/` meta in Rank Math; fix the ERFA post canonical; delete `/cache/` with a 410; resubmit the sitemap if Search Console exists (R03 C1; R08 §7) | Client developer | TechnoTaau checks the live titles |
-| 6 | Mon 26 Oct | Real AI-panel baseline: 25 prompts × 4 surfaces × 3 runs, plus AI Overviews and Gemini where possible; manual SERP-feature check of the 22 cluster head terms (R07 §3.2; R08 §6.2) | TechnoTaau QA | Baseline sheet and screenshots saved |
-| 7 | Wed 28 Oct | Reviewer decision session (90 min): EIT and CD138 framing and biopsy day; uNK status wording; ERFA vs ERA timing wording; founder descriptions; approved claims bank (R08 §8; 03 §4.4) | PP and VW decide; JS facilitates | Written decisions |
-| 8 | Fri 30 Oct | WordPress SEO handover pack to the developer: URL and redirect list, schema port spec, robots, sitemap, GA4 and consent spec, CWV budget, go-live runbook (§3.1) | TechnoTaau SEO lead | Developer confirms receipt and questions |
-| 9 | Fri 30 Oct | Keyword Planner volumes (India; English and Hindi) for the 22 clusters, added to the keyword map | TechnoTaau SEO lead | Map updated |
-| 10 | Fri 30 Oct | Reference-build fixes in our remit (no client wording changed): therapy names out of the "Related at EmbryoGenesis" boxes; builder headings "Our Patents" changed to "Patent applications"; blog and 404 meta without therapy terms. (`ORG.description` and llms.txt were already fixed on 17 Oct 2026.) | TechnoTaau builder + QA | `qc.py` 0 errors; schema validator 0 problems |
-| 11 | Fri 30 Oct | Confirm the launch week (D6), the AI crawler policy (D7) and the exact award name | Client | Written confirmation |
-| 12 | Mon 2 Nov | Google Business Profile: claim or confirm ownership of the existing place; check name, category and NAP against D4; prepare Bing Places for launch (R07 §5.1; R08 §7) | Client (owner) + TechnoTaau | Owner access confirmed |
-| 13 | Fri 6 Nov | Drafts to the reviewers: refresh pack R1 to R5, trust pages T1 and T2 (if D3 is approved in principle), new posts N9 and N4 (through G0 to G2) | TechnoTaau content writer | Drafts in the review queue |
-| 14 | Mon 9 Nov | Written decisions D1, D2 and D3, with counsel's view | Client + counsel | Decision record signed |
-| 15 | Fri 13 Nov | Privacy policy, form notices and consent text final (D5); AI-use wording (D8) | Counsel; client | Texts approved |
-| 16 | Fri 13 Nov | Staging ready for SEO QA pass 1 | Client developer | Staging URL shared behind basic authentication |
-| 17 | Mon 16 Nov | QA pass 1 on staging: crawl, redirect test, canonicals, schema, robots, sitemap, PageSpeed mobile, consent and GA4 DebugView | TechnoTaau QA | Issue list sent |
+| 2 | Mon 19 Oct | Pause the AI reels and all partner-facing posts and outreach in 03 §7 until D8 and counsel's view on NMC 8.1(vii); non-AI educational posts continue through G4; re-issue the 03 calendar after 13 Nov | TechnoTaau social (JS accountable) | Pause in place and recorded in 03; calendar re-issued after 13 Nov |
+| 3 | Wed 21 Oct | Request access: existing Search Console property (if any), Google Business Profile (owner or manager), WordPress staging, LinkedIn page and YouTube channel | TechnoTaau SEO lead; client grants | Access granted, or "does not exist" confirmed |
+| 4 | Wed 21 Oct | Book legal counsel for D1, D5, D8 and the NMC clause 8.1(vii) partner note | Client | Counsel engaged; dates agreed |
+| 5 | Fri 23 Oct | Confirm the master NAP record (D4): PIN with India Post, address form, one public phone and WhatsApp, hours, signage name, legal entity name, public email; and whether +91 98156 92195 is the admissions line or the Delhi regional centre (the brief and the site disagree) | Client; TechnoTaau compiles | Signed record |
+| 6 | Fri 23 Oct | With the client's go-ahead by email, on the old live site (about one hour): remove "Best" from the `/diagnostic/` and `/contact-us/` titles and the `/about/` meta in Rank Math; fix the ERFA post canonical; delete `/cache/` with a 410; resubmit the sitemap if Search Console exists (R03 C1; R08 §7) | Client developer | Go-ahead email on file; TechnoTaau checks the live titles |
+| 7 | Mon 26 Oct | Real AI-panel baseline: 25 prompts × 4 surfaces × 3 runs, plus AI Overviews and Gemini where possible; manual SERP-feature check of the 22 cluster head terms (R07 §3.2; R08 §6.2) | TechnoTaau QA | Baseline sheet and screenshots saved |
+| 8 | Wed 28 Oct | Reviewer decision session (90 min): EIT and CD138 framing and biopsy day; uNK status wording; ERFA vs ERA timing wording; founder descriptions; approved claims bank (R08 §8; 03 §4.4). These decisions settle the provisional N3, N4 and N5 titles and slugs (§3.4.4) | PP and VW decide; JS facilitates | Written decisions |
+| 9 | Fri 30 Oct | WordPress SEO handover pack v1 to the developer: URL and redirect list, schema port spec, robots, sitemap, GA4 and consent spec, CWV budget, go-live runbook (§3.1). The rules that depend on D1 are written for both options (unpublish or noindex), and robots.txt follows the D7 default (allow all) | TechnoTaau SEO lead | Developer confirms receipt and questions |
+| 10 | Fri 30 Oct | Keyword Planner volumes (India; English and Hindi) for the 22 clusters, added to the keyword map | TechnoTaau SEO lead | Map updated |
+| 11 | Fri 30 Oct | Reference-build fixes in our remit (no client wording changed): therapy names out of the "Related at EmbryoGenesis" boxes; the therapy mentions and links our builders added on `/about/`, `/contact-us/`, `/blog/` and the 404 page taken out (§3.7.1), with the blog cards for the LIT and Hindi posts following D1; builder headings "Our Patents" changed to "Patent applications"; blog and 404 meta without therapy terms. (`ORG.description` and llms.txt were already fixed on 17 Oct 2026.) | TechnoTaau front-end builder + QA | `qc.py` 0 errors; schema validator 0 problems |
+| 12 | Fri 30 Oct | Confirm the launch week (D6) once the developer has given a written build estimate (if the estimate does not fit, the launch moves, not the QA passes); the AI crawler policy (D7); the exact award name; the academy facts for R5 (§8.2 #15) | Client; developer (estimate) | Written confirmation |
+| 13 | Mon 2 Nov | Google Business Profile: claim or confirm ownership of the existing place; check name, category and NAP against D4; prepare Bing Places for launch (R07 §5.1; R08 §7) | Client (owner) + TechnoTaau | Owner access confirmed |
+| 14 | Fri 6 Nov | Drafts to the reviewers: the D2 replacement text, the refresh pack R1 to R5 and trust page T1 (if D3 is approved in principle); new posts N9 and N4 (through G0 to G2), queued for review from 1 to 11 Dec | TechnoTaau content writer | Drafts in the review queue |
+| 15 | Tue 10 Nov | Written decisions D1, D2 and D3, with counsel's view | Client + counsel | Decision record signed |
+| 16 | Wed 11 Nov | WordPress SEO handover pack v2, updated for the D1 to D3 decisions (and for D7 if the client chose other than the default) | TechnoTaau SEO lead | Developer confirms receipt and questions |
+| 17 | Fri 13 Nov | Trust page T2 to the reviewers, drafted only after Dr. Wadhwa's registration number and consent arrive (§8.1 #11, due 6 Nov) | TechnoTaau content writer | Draft in the review queue |
+| 18 | Fri 13 Nov | Privacy policy, form notices and consent text final (D5); AI-use wording (D8) | Counsel; client | Texts approved |
+| 19 | Fri 13 Nov | Staging ready for SEO QA pass 1 | Client developer | Staging URL shared behind basic authentication |
+| 20 | Mon 16 Nov | QA pass 1 on staging: crawl, redirect test, canonicals, schema, robots, sitemap, PageSpeed mobile, consent and GA4 DebugView | TechnoTaau QA | Issue list sent |
 
-After this window: QA pass 2 and reviewer sign-off by Fri 27 Nov (code and content freeze); go/no-go Fri 4 Dec; launch Tue 8 or Wed 9 Dec 2026 (to be confirmed).
+Dates avoid Dussehra (20 Oct), Diwali (8 Nov), Vishwakarma Day (9 Nov) and Gurpurab (24 Nov); review slots in the surge of 9 to 27 Nov are booked around them.
+
+After this window: the review surge runs to Fri 27 Nov (§3.4.2); QA pass 2 on Wed 25 Nov, two working days before the code and content freeze and reviewer sign-off on Fri 27 Nov (Gurpurab is Tue 24 Nov); go/no-go Fri 4 Dec; launch Tue 8 or Wed 9 Dec 2026 (to be confirmed); N9 and N4 reviewed from Tue 1 to Fri 11 Dec and published from week 2 of M1.
 
 ---
 
@@ -868,13 +890,14 @@ After this window: QA pass 2 and reviewer sign-off by Fri 27 Nov (code and conte
 - **QA:** TechnoTaau technical SEO and QA analyst (staging and launch QA, crawls, schema, AI panel).
 - **CW:** TechnoTaau content writer and editor (drafts, sources, first compliance pass).
 - **SV:** TechnoTaau social and video producer.
+- **Builder:** TechnoTaau front-end builder (reference build).
 - **PP:** Prof. (Dr.) Pulakes Purkait, scientific reviewer.
 - **VW:** Dr. Vidhu Wadhwa, clinical reviewer (registered medical practitioner).
 - **CL:** Client management, front desk and admissions team (decisions, approvals, enquiry log, GBP replies).
 - **DEV:** Client's WordPress developer and host.
 - **LC:** Legal counsel.
 
-R = does the work; A = accountable, signs off (one per row); C = consulted; I = informed.
+R = does the work; A = accountable, signs off (one per row; for incident response, one per incident type, as in §5.5); C = consulted; I = informed.
 
 | Activity | JS | SEO | QA | CW | SV | PP | VW | CL | DEV | LC |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -902,9 +925,9 @@ R = does the work; A = accountable, signs off (one per row); C = consulted; I = 
 | Video and reels | A | C | – | C | R | C | C | I | – | C |
 | Digital PR | A | R | – | C | – | C | – | C | – | C |
 | Journal publication (ERFA validation) | I | C | – | – | – | A/R | C | I | – | – |
-| Incident response | A | R | R | – | – | C | C | I | C | C |
+| Incident response (A and R per §5.5) | A: I1, I2 | R: I1, I2 | C | – | – | C | C | A: I3 to I5; R: I3 | R: I5 | R: I4; C: I2, I3 |
 
-Notes: the client's front desk keeps the enquiry log (R and A sit with CL). Prof. Purkait is both a client principal and the scientific reviewer; we keep the two roles separate so a review is never skipped to meet a date.
+Notes: the client's front desk keeps the enquiry log (R and A sit with CL). Incident response follows §5.5: JS is accountable for I1 and I2, the client for I3 to I5. The builder makes the reference-build fixes (§4.2 item 11), checked by QA. Prof. Purkait is both a client principal and the scientific reviewer; we keep the two roles separate so a review is never skipped to meet a date.
 
 ---
 
@@ -912,7 +935,7 @@ Notes: the client's front desk keeps the enquiry log (R and A sit with CL). Prof
 
 | # | Risk | Likelihood | Impact | Mitigation | Owner |
 |---|---|---|---|---|---|
-| 1 | Review bottleneck: Prof. Purkait's time | High | High | Weekly slot; batching; approved claims bank (03 §4.4); step-up and step-down rules (§3.4.2); hold publication rather than skip review | JS, PP |
+| 1 | Review bottleneck: Prof. Purkait's time | High | High | Pre-launch review surge 9 to 27 Nov, or the minimum pre-launch review set if it is not granted (§3.4.2); N4 and N9 reviewed 1 to 11 Dec; weekly slot after launch; batching; approved claims bank (03 §4.4); step-up and step-down rules (§3.4.2); hold publication rather than skip review | JS, PP |
 | 2 | Therapy content stays live as it is | Medium | High | D1 with counsel; panel watch on P1, P2 and P10 for therapy mentions | Client, counsel |
 | 3 | Superlatives and "patented" stay in kept content | Medium | High | D2 minimum edits with exact replacement text | Client |
 | 4 | Migration errors (noindex left on, sitemap loop, lost pagination, broken redirects) | Medium | High | Go-live runbook; two QA passes; the three redirect rules not ported; no new content on launch day; rollback plan | Developer, QA |
@@ -943,18 +966,18 @@ Items marked "02 §11" carry over from the earlier strategy and are still releva
 
 | # | Input | Why | Needed by |
 |---|---|---|---|
-| 1 | D1 therapy decision (§3.7.1), with counsel | Legal and AI exposure; site structure | 9 Nov 2026 |
-| 2 | D2 compliance minimum (§3.7.2) | NMC and brief guardrails | 9 Nov 2026 |
-| 3 | D3 refresh pack and trust pages (§3.4.3, §3.7.4, §3.7.5) | E-E-A-T at launch | 9 Nov 2026 |
-| 4 | D4 master NAP: PIN confirmed with India Post, locality, phone and WhatsApp, admissions labels, hours, signage name, legal entity name (02 §11) | Schema, GBP, directories | 23 Oct 2026 |
+| 1 | D1 therapy decision (§3.7.1), with counsel | Legal and AI exposure; site structure | 10 Nov 2026 |
+| 2 | D2 compliance minimum (§3.7.2) | NMC and brief guardrails | 10 Nov 2026 |
+| 3 | D3 refresh pack and trust pages (§3.4.3, §3.7.4, §3.7.5) | E-E-A-T at launch | 10 Nov 2026 |
+| 4 | D4 master NAP: PIN confirmed with India Post, locality, phone and WhatsApp, admissions labels, hours, signage name, legal entity name (02 §11); whether +91 98156 92195 is the admissions line or the Delhi regional centre (the brief and the site disagree) | Schema, GBP, directories | 23 Oct 2026 |
 | 5 | D5 privacy policy, grievance officer, retention period, consent texts; consent banner choice (02 §11) | DPDP; forms | 13 Nov 2026 |
 | 6 | D6 launch week and code freeze | Planning | 30 Oct 2026 |
 | 7 | D7 AI crawler policy (allow all recommended; 02 §11 `{{AI_TRAINING_OPT_OUT}}`) | robots.txt | 30 Oct 2026 |
 | 8 | D8 AI-use policy (counsel) | Editorial policy; reels | 13 Nov 2026 |
-| 9 | Access: existing Search Console, GBP owner, Bing (if any), GA4 and GTM IDs or permission to create them (02 §11) | Baseline and launch | 20 Oct 2026 |
-| 10 | WordPress staging access; Rank Math Free or Pro; WordPress port status (02 §11) | Build | 30 Oct 2026 |
+| 9 | Access: existing Search Console, GBP owner, Bing (if any), GA4 and GTM IDs or permission to create them (02 §11) | Baseline and launch | 21 Oct 2026 |
+| 10 | WordPress staging access; Rank Math Free or Pro; WordPress port status (02 §11); the developer's written build estimate before D6 is confirmed (if the estimate does not fit, the launch moves, not the QA passes) | Build; launch date | 30 Oct 2026 |
 | 11 | Dr. Wadhwa's SMR/NMR registration number and consent to be the clinical reviewer (02 §11) | Clinical review lines; NMC Explanations III–IV | 6 Nov 2026 |
-| 12 | Review time: a weekly 90-minute slot (PP) and a fortnightly 60-minute slot (VW) | Cadence | 23 Oct 2026 |
+| 12 | Review time: a pre-launch review surge from 9 to 27 Nov (PP three 90-minute slots a week; VW a weekly 60-minute slot), then a weekly 90-minute slot (PP) and a fortnightly 60-minute slot (VW). If the surge is not granted, only the minimum pre-launch review set is reviewed before launch (§3.4.2) | Pre-launch review set; cadence | 23 Oct 2026 |
 
 ### 8.2 High
 
@@ -962,7 +985,7 @@ Items marked "02 §11" carry over from the earlier strategy and are still releva
 |---|---|---|---|
 | 13 | Exact award name as printed on the certificate | Entity consistency | 30 Oct 2026 |
 | 14 | Which collection centres are active (website vs brochure lists) | Factual consistency | 30 Oct 2026 |
-| 15 | Academy: 2027–28 session dates; fees and eligibility per university; ITHS and EmbryoGenesis role; whether the Ph.D. and PG Diploma are still offered; the "Origin LIFE" programme (02 §11; R08 §1.9) | R5, N9 to N12 | 13 Nov 2026 |
+| 15 | Academy: 2027–28 session dates; fees and eligibility per university; ITHS and EmbryoGenesis role; whether the Ph.D. and PG Diploma are still offered; the "Origin LIFE" programme (02 §11; R08 §1.9) | R5, N9 to N12 | 30 Oct 2026 |
 | 16 | Test facts: ERFA method description, Receptivity PX method and spelling, sample and transport details (02 §11) | N3, N4, N13 | 6 Nov 2026 |
 | 17 | Whether TB-PCR is offered | N8 | M6 |
 | 18 | Patent status: any grant certificates (02 §11) | Wording | 30 Oct 2026 |
@@ -1013,7 +1036,7 @@ Superseded from 02 §11 and no longer needed: partner details per city for city 
 | §5.4 Sitemaps | **Updated** | Use what WordPress serves and align robots.txt (R07 §6.1) |
 | §5.5 Noindex rules | **Updated** | 02's proposed research-programme and city pages were never built; held pages per D1; the therapy training modules per D1 |
 | §5.6 robots.txt | **Updated** | Bot list as in the built file (adds Claude-SearchBot, Claude-User, ChatGPT-User, Perplexity-User); Google-Extended also controls Gemini app grounding; Search Console AI control on Include (R07 §6.1) |
-| §5.7 GA4, GTM and Consent Mode | **Updated** | Native "AI Assistant" channel [SECONDARY], custom group kept (R07 §6.1); `partner_enquiry` and B2B form types removed; enquiry type kept out of GA4 |
+| §5.7 GA4, GTM and Consent Mode | **Updated** | Native "AI Assistant" channel (13 May 2026, confirmed in Google's Analytics Help release notes, https://support.google.com/analytics/answer/9164320), custom group kept (R07 §6.1); `partner_enquiry` and B2B form types removed; enquiry type kept out of GA4 |
 | §5.8 Search Console and Bing | **Kept and extended** | Generative AI performance report; Bing AI Performance report (R07 §3.1) |
 | §5.9 Breadcrumbs and 404 | **Kept** | 404 links point to the existing navigation |
 | §5.10 Image restore list | **Kept in part** | Items tied to dropped pages are void |
@@ -1067,7 +1090,7 @@ Superseded from 02 §11 and no longer needed: partner details per city for city 
 | T1 Core Web Vitals | LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1 on 5 templates | PageSpeed lab; field data when available | Monthly | – |
 | T2 Technical errors | 5xx, redirect chains, broken canonicals, internal links to 404s or held pages | Crawl; Search Console | Monthly | Target 0 |
 | C1 Compliance incidents | Complaints or notices received | Incident log | Monthly | Target 0 |
-| C2 Review turnaround | Working days from "sent to G3" to written approval, median | Content tracker | Monthly | ≤ 5 |
+| C2 Review turnaround | Working days from "sent to G3" to written approval, median, reported per reviewer | Content tracker | Monthly | ≤ 5 working days for items reviewed by Prof. Purkait only; ≤ 10 working days where Dr. Wadhwa's clinical review is needed |
 
 ## Appendix B: Monthly report template
 
