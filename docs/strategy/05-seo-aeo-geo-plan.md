@@ -13,7 +13,7 @@
 - The QC reports in `docs/qc/`.
 
 **How to read references and labels**
-- (R07 §x) = research 07, section x. (R08 §x) = research 08. (02 §x), (03 §x), (04 §x) = strategy documents. (R03) = `docs/research/03-current-site-audit.md`.
+- (R07 §x) = research 07, section x. (R08 §x) = research 08; (R08 §1.6) means research 08, section 1, finding 6. (02 §x), (03 §x), (04 §x) = strategy documents. (R03) = `docs/research/03-current-site-audit.md`.
 - (QC-SEO), (QC-FE), (QC-DES), (QC-CF) = `docs/qc/qc-seo-aeo-geo.md`, `qc-frontend.md`, `qc-design.md`, `qc-content-fidelity.md`.
 - Labels carried over from research 07: **[SECONDARY]** (from a news or vendor report, not the primary text), **[UNVERIFIED]**, **[VERIFY with counsel]**.
 - **(E)** = a TechnoTaau Team estimate. Every estimate is re-checked 30 days after launch.
@@ -55,26 +55,26 @@
 
 **Where we are**
 - Your new 19-page website is built as a reference for your WordPress developer. It keeps your old pages, wording and web addresses, and it passes our checks: no errors in our automated QC, valid structured data, and 100/100 for accessibility (QC-SEO, QC-FE, QC-DES).
-- Google still shows the old site. Its listing for the Diagnostic page still carries the title "Best Infertility Diagnostics in India" (R08 §7).
+- Search results still show the old site. In our search checks, the Diagnostic page was still listed with the title "Best Infertility Diagnostics in India" (R08 §7).
 - Search engines and AI assistants know very little about EmbryoGenesis. In our first test of 25 typical questions (a proxy run with one AI search tool), AI search cited you **0 times** (R08 §6). We repeat it in ChatGPT, Google AI Mode, Perplexity and Copilot this month. Your Google Maps listing exists, but your PIN code appears three different ways online, and the only university page that named you has gone (R08 §7).
 
 **The goal for the 12 months after launch**
 - More **test enquiries** and more **academy enquiries and applications** from search. Therapy enquiries are counted, but therapies are not promoted while they are under legal review.
-- Become the source that Google and AI assistants quote on endometrial testing, IVF failure, recurrent implantation failure (RIF), recurrent miscarriage (RPL) and embryology careers in India. These are topics no one owns today (R08 §1).
+- Become the source that Google and AI assistants quote on endometrial testing, IVF failure, recurrent implantation failure (RIF), recurrent miscarriage (RPL) and embryology careers in India. Clinic chains, journals and education portals answer most of these questions today. Our research found five open gaps that no one owns yet, such as ERA versus ERFA, the endometrial biopsy explained for patients and north-India embryology admissions (R08 §1).
 - Do all of this inside India's medical-advertising rules, which became stricter on 6 October 2026 (R07 §4.1).
 
 **The eight biggest moves**
 1. **Launch cleanly on WordPress:** same web addresses, one-step redirects for retired pages, structured data carried over, privacy-safe analytics, and Google Search Console and Bing set up on launch day (§3.1).
 2. **Decide the therapy pages before launch.** We recommend taking the therapy page, the LIT post and the Hindi post offline until your lawyer and reviewers approve evidence-based versions (§3.7.1, decision D1).
-3. **Fix the minimum compliance lines** in the kept content: "best", "leading", "India's trusted", "patented", the testimonials block, two unsourced statistics and the "Source: chat GPT" line (§3.7.2, decision D2).
+3. **Fix the minimum compliance lines** in the kept content: "best", "leading", "India's trusted", "patented", the testimonials block, unsourced statistics and the "Source: chat GPT" line (§3.7.2, decision D2).
 4. **One identity everywhere:** one name, one address with a confirmed PIN code and one phone number, used on the site, Google Business Profile, Bing Places, directories, ITHS and the universities (§3.2).
-5. **About two new reviewed articles a month** on gaps nobody owns: endometrial biopsy, receptivity tests, chronic endometritis, RIF and RPL tests, and embryology careers. Academy articles go live before the April admission season (§3.4).
+5. **About two new reviewed articles a month**, first on the open gaps (the endometrial biopsy, receptivity tests including ERA versus ERFA), then on topics others answer today: chronic endometritis, RIF and RPL tests, and embryology careers. Academy articles go live before the April admission season (§3.4).
 6. **Make every medical page trustworthy and quotable:** a named author, Prof. Purkait's dated review, Dr. Wadhwa's registration number for clinical claims, references, a disclaimer and a public editorial policy (§3.7).
 7. **Earn mentions from places AI systems trust:** universities, ITHS, the Indian Fertility Society, journals and YouTube. A published ERFA validation paper would be the single strongest asset (§3.6, §3.8, §3.9).
 8. **Measure every month:** Search Console (including its AI report), Bing's AI Performance report, Google Analytics, your enquiry log and a 25-question AI panel run three times per assistant (§2, §5).
 
 **What we need from you** (full list in §8)
-- Eight decisions (D1 to D8) by **9 November 2026**: therapy content, compliance minimum, refresh pack, address and phone, privacy and consent, launch date, AI crawlers and AI-use policy.
+- Eight decisions (D1 to D8) between **23 October and 13 November 2026** (each date in §8.1): therapy content, compliance minimum, refresh pack, address and phone, privacy and consent, launch date, AI crawlers and AI-use policy.
 - Your lawyer's review of the therapy content, the privacy policy and forms, AI-made videos and any partner terms.
 - Facts: PIN code, one public phone and WhatsApp number, opening hours, the name on the lab's signage, Dr. Wadhwa's registration number and the 2027–28 course session details.
 - Access: Search Console (if one exists), your Google Business Profile and the WordPress staging site.
@@ -102,7 +102,7 @@
 | Area | Status on 17 Oct 2026 | Source |
 |---|---|---|
 | Old live site | WordPress 7.0.4 with Elementor, Astra, Rank Math, Forminator and LiteSpeed Cache. Audit score 38/100; performance 20/100; 14 pages without an H1; homepage images about 21.6 MB | R03 |
-| Old site defects that still affect Google | ERFA post canonical points to a 404 URL, so the post is missing from the sitemap; junk `/cache/` post indexed; no analytics; Search Console verification unknown | R03 (C1, C7) |
+| Old site defects that still affect Google | ERFA post canonical points to a 404 URL, so the post is missing from the sitemap; junk `/cache/` post indexed; no analytics; Search Console verification unknown | R03 (C1, H6, C7) |
 | Old titles still indexed | `/diagnostic/` shows "Best Infertility Diagnostics in India"; `/unexplained-infertility/` shows "Unraveling unexplained infertility in embryogenesis" | R08 §7 |
 | New reference build (`site/`) | 19 pages: 17 indexable pages, a placeholder privacy policy (noindex) and a 404 page. Same URLs as the old site. Old content kept as the client decided (brief §0) | `site/src/llms.txt`, QC-CF |
 | Build quality | `qc.py`: 0 errors, 0 warnings. Schema.org validator: 0 problems (59 before fixes). Lighthouse mobile: accessibility 100 on every page; performance about 89 average; 98 to 100 with non-blocking fonts and gzip. axe-core: 0 violations | QC-SEO, QC-FE, QC-DES |
@@ -134,7 +134,7 @@
 | Rayat Bahra University | Programme pages exist; whether they name EmbryoGenesis could not be checked (site returned HTTP 522) | R08 §7 |
 | Bahra University | **Citation lost.** The page that named "ITHS, INNR & EMBRYOGENESIS" now redirects (301) to bushimla.in, which does not mention EmbryoGenesis | R08 §7 |
 | News | Times of India (3 Jul 2024), Himachal Tonite (6 Jul 2024, verified, names EmbryoGenesis, no link), NewsNation (27 Jul 2024, labelled "brand story") | R08 §7 |
-| Aggregators | ivf.net lists the ITHS–Bahra programme; one listing spells the founder "Pulakesh". Careers360, Zollege and CollegeSearch disagree on fees and durations | R08 §4, §7 |
+| Aggregators | ivf.net lists the ITHS–Bahra programme; one listing reportedly spells the founder "Pulakesh" (seen in a search summary; not confirmed). Careers360, Zollege and CollegeSearch disagree on fees and durations | R08 §4, §7 |
 | YouTube `@Embryo-Genesis` | Did not surface in search | R08 §7 |
 | Autocomplete | "pulakes purkait" and "erfa test" appear as suggestions; "embryogenesis mohali" returns none | R08 §7 |
 
@@ -176,7 +176,7 @@
 | 11 | Course pages say "Admission Open For Session 2025-26" (QC-SEO §4.1 item 12) | Current session and dates (refresh R5) | Client admissions | Before L |
 | 12 | Award named two ways: "Best Innovator Award" and "Best Innovation Award" (QC-CF §4) | Client confirms the exact name on the certificate; one form everywhere | Client | 30 Oct 2026 |
 | 13 | Organization logo is 403×102, not square (QC-SEO §6.3) | Supply a 512×512 emblem logo | Client designer | Before L |
-| 14 | Two ResearchGate URLs; "Pulakesh" spelling on ivf.net (R08 §7) | Use the URL that resolves; ask ivf.net to correct the spelling | PP; TechnoTaau | M2 |
+| 14 | Two ResearchGate URLs; "Pulakesh" spelling reported on ivf.net, not confirmed (R08 §7) | Use the URL that resolves; check the ivf.net listing and ask for a correction if the spelling is confirmed | PP; TechnoTaau | M2 |
 | 15 | Fonts load from Google Fonts in the reference build (QC-FE §5) | Self-host in WordPress (§3.1) | Developer | Before L |
 
 ---
@@ -208,13 +208,13 @@ All numbers marked (E) are estimates for a small, new entity in a YMYL niche; de
 | S1 | Non-branded clicks per month | About 0 (R08 §1.1) | 40 / 80 (E) | 120 / 250 (E) | 300 / 600 (E) | Search Console | TechnoTaau SEO lead |
 | S2 | Non-branded impressions per month | Unknown | 3,000 / 6,000 (E) | 8,000 / 15,000 (E) | 20,000 / 35,000 (E) | Search Console | TechnoTaau SEO lead |
 | S3 | Branded impressions and clicks (brand filter, Appendix A) | Unknown | Upward trend. Numeric target set at L+30 (R07 §3.3) | Set at L+30 | Set at L+30 | Search Console | TechnoTaau SEO lead |
-| S4 | Sitemap URLs indexed | New sitemap at L | 85% / 95% | 90% / 100% | 90% / 100% | Search Console Pages report | TechnoTaau QA |
+| S4 | Sitemap URLs indexed | New sitemap at L | 85% / 95% (E) | 90% / 100% (E) | 90% / 100% (E) | Search Console Pages report | TechnoTaau QA |
 | S5 | Pages with impressions | Unknown | 15 / 20 (E) | 22 / 27 (E) | 30 / 35 (E) | Search Console | TechnoTaau SEO lead |
 | S6 | AEO wins (of the 40 questions in R08 §5) | 0 (R08 §1.1) | 1 / 3 (E) | 3 / 6 (E) | 6 / 12 (E) | Quarterly manual check | TechnoTaau QA |
 | **AI visibility** | | | | | | | |
 | A1 | AI panel score (of 25 prompts; method §3.6.3) | 0/25 proxy (R08 §6.1); real baseline in Phase 0 | 2 / 4 (E) | 5 / 8 (E) | 8 / 12 (E) | Monthly panel | TechnoTaau QA |
-| A2 | Brand prompts (P6, P24, P25) visible with correct facts | 0 of 3 | 1 / 2 of 3 (R07 §3.3) | 2 / 3 of 3 | 3 / 3 of 3 | Monthly panel | TechnoTaau QA |
-| A3 | Pages cited in Bing AI Performance | Not set up | 1 / 2 (R07 §3.3 proposes at least 1) | 2 / 4 (E) | 4 / 8 (E) | Bing Webmaster Tools | TechnoTaau SEO lead |
+| A2 | Brand prompts (P6, P24, P25) visible with correct facts | 0 of 3 | 1 / 2 of 3 (E; R07 §3.3 aims for brand prompts visible by month 3) | 2 / 3 of 3 (E) | 3 / 3 of 3 (E) | Monthly panel | TechnoTaau QA |
+| A3 | Pages cited in Bing AI Performance | Not set up | 1 / 2 (E; R07 §3.3 proposes at least 1) | 2 / 4 (E) | 4 / 8 (E) | Bing Webmaster Tools | TechnoTaau SEO lead |
 | A4 | AI referrals (GA4 AI Assistant channel and custom AI group) and Google AI impressions | Not set up | Track only, reported as a floor (R07 §3.1, §3.3) | Track only | Track only | GA4; Search Console Generative AI report | TechnoTaau SEO lead |
 | A5 | AI factual errors traced and fixed at source within 30 days | n/a | 100% | 100% | 100% (R07 §3.3) | Panel error log | TechnoTaau SEO lead |
 | **Local, links, technical, compliance** | | | | | | | |
@@ -340,7 +340,7 @@ Launch rules: no new articles on launch day (they follow from week 2, so migrati
 | URL | Job | Clusters (R08 §2) | Query focus: primary; secondary | Title (current → proposed) | H1 (current → proposed) | Notes and guardrails |
 |---|---|---|---|---|---|---|
 | `/` | Brand and entity hub; routes three audiences | K22 | EmbryoGenesis Mohali; infertility diagnostic centre Mohali, endometrial tests | Keep "EmbryoGenesis Mohali \| Infertility Diagnostics & Research" (57) | Keep "Advanced Fertility Solutions at EmbryoGenesis, Mohali" | D1 and D2 removals (therapy cards, testimonials block, "India's trusted"). FAQ already de-duplicated |
-| `/about/` | Entity facts, team | K22 | about EmbryoGenesis; EmbryoGenesis lab Mohali | Keep "About EmbryoGenesis \| Infertility Diagnostic Centre, Mohali" (59) | "About Us" → "About EmbryoGenesis" | Add the 51-word entity answer and the disambiguation line (QC-SEO §4.1 item 4; client approval). D2 superlatives |
+| `/about/` | Entity facts, team | K22 | about EmbryoGenesis; EmbryoGenesis lab Mohali | Keep "About EmbryoGenesis \| Infertility Diagnostic Centre, Mohali" (59) | "About Us" → "About EmbryoGenesis" | The entity answer box (QC-SEO §4.1 item 4) is already in the build: take "therapeutic services" out of it while D1 is open, because answer boxes are written to be quoted and therapy facts stay out of machine-readable summaries (R07 §4.2). Add the disambiguation line (client approval). D2 superlatives |
 | `/pulakes-purkait-profile/` | Founder E-E-A-T page; fixes the "Who is Prof. Pulakes Purkait?" gap (P25) | K22 | pulakes purkait; prof pulakes purkait, pulakes purkait embryogenesis | "Prof. (Dr.) Pulakes Purkait, Founder \| EmbryoGenesis Mohali" → "Prof. (Dr.) Pulakes Purkait, PhD \| Founder, EmbryoGenesis" (57) | Keep | Add "reproductive scientist; not a medical practitioner" from the approved bio (04 §6), ORCID and Scholar links, and "patent applications published" wording |
 | `/diagnostic/` | Main page for the three tests | K4, K6, K8, K9; K5 only as a no-figure FAQ | endometrial receptivity test (ERFA); chronic endometritis test, endometrial immune profile, ERFA test, ERFA soil test | Keep "Endometrial Receptivity Test (ERFA), Mohali \| EmbryoGenesis" (59) | "Diagnostic Services" → "Diagnostic Services: Endometrial Tests (ERFA, Endo-Immune, EIT)" | Refresh R1: evidence status per test (reviewer decisions, R08 §8), reviewer lines, references, the FAQ "What affects the cost of endometrial testing?" answered without figures (R08 §3, K5). Links to N3, N4, N5 when live |
 | `/advanced-fertility-therapies/` | **Held** | K14 | None | No optimisation | – | Decision D1. Therapy keywords excluded during the legal hold |
@@ -434,7 +434,7 @@ All NEW posts follow the blog template in 02 §4.5 (kept), the rules in §3.5 an
 | N3 | `/endometrial-receptivity-tests-explained/` | Endometrial Receptivity Tests Explained \| EmbryoGenesis | K4, K6 | Couples, doctors | 9, 10, 11 | 1 | M2 |
 | N10 | `/clinical-embryology-career-and-salary-india/` | Clinical Embryologist Career and Salary in India | K18 | Students | 39 | 1 | M2 |
 | N5 | `/chronic-endometritis-cd138-test/` | Chronic Endometritis and the CD138 Test, Explained | K8 | Couples, doctors | 15 to 20 | 1 | M3 |
-| N11 | `/bsc-vs-msc-clinical-embryology/` | BSc or MSc in Clinical Embryology? The Routes Compared | K15 | Students, parents | 35 | Added (pre-season) | M3 |
+| N11 | `/bsc-vs-msc-clinical-embryology/` | BSc or MSc in Clinical Embryology? The Routes Compared | K15 | Students, parents | – (K15 hub topic, R08 §3) | Added (pre-season) | M3 |
 | N2 | `/recurrent-implantation-failure-tests/` | Recurrent Implantation Failure: Tests and What ESHRE Says | K3 | Doctors, couples | 2, 4 | 2 | M4 |
 | N12 | `/msc-clinical-embryology-eligibility/` | MSc Clinical Embryology Eligibility: Which Degrees Qualify | K17 | Students | 38 | Added (pre-season) | M4 |
 | N1 | `/ivf-failed-what-next/` | IVF Failed? What to Discuss With Your Doctor Next | K1 | Couples | 1, 3, 5 | 2 | M5 |
@@ -493,7 +493,7 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 | M11 | R8 | Refresh | Academy refresh for the 2028 cycle | K15–K19 | Students | N9–N12, course pages | PP + Adm | New university data |
 | M12 Nov 2027 | R9 | Re-review | 12-month review of N4 and N9; annual content audit; year-2 plan | All | – | N4, N9 | PP + VW | – |
 
-**Totals:** 13 core new posts (N1 to N13), up to 5 reserve posts and 1 conditional Hindi post in 12 months, plus 9 refresh, check or re-review items. That is about 2 new posts a month on average. A step-up adds reserve or data-led topics, never more than one new post a week.
+**Totals:** 13 core new posts (N1 to N13), up to 5 reserve posts and 1 conditional Hindi post in 12 months, plus 9 refresh, check or re-review items. That is about 1.6 new posts a month on average (19 in 12 months, or 18 without the conditional Hindi post): 2 a month from M1 to M5, then 0 to 2 a month. A step-up adds reserve or data-led topics, never more than one new post a week.
 
 **QC check for pillar 3.4:** every item passes gates G0 to G6 (§5); the content tracker shows the review date and the next review due date for every medical page; the quarterly content audit confirms no two URLs compete for the same main query.
 
@@ -501,7 +501,7 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 
 **Objective:** make each target page the clearest direct answer to the real questions in R08 §5, so it can be shown in People Also Ask, featured answers and AI answers, without fragmenting the site into thin pages.
 
-**Question bank usage.** Each of the 40 questions in R08 §5 has one target URL. A question is answered on that page only; other pages link to it.
+**Question bank usage.** Each of the 40 questions in R08 §5 has one main target URL. Where the table names a second page (questions 10, 20, 35 to 38 and 40), that page gives only a short answer and links to the main one; all other pages link to it.
 
 | Target URL | Questions (R08 §5) | When |
 |---|---|---|
@@ -611,7 +611,7 @@ Reviewer codes: PP, VW, Adm = client admissions team (facts), Counsel = legal co
 
 ### 3.7 E-E-A-T, YMYL and compliance
 
-**Objective:** meet Google's standard for "Your Money or Your Life" health content, where trust is the most important part of E-E-A-T (R07 §1.3, G9), and India's medical-advertising rules, which treat search-engine and AI-assisted communication as advertising (R07 §4.1, clause 3.2). Whether the NMC guidelines formally cover a standalone diagnostic lab is **[VERIFY with counsel]**; we treat them as binding on everything EmbryoGenesis publishes (R07 §4.1, §6.2 item 9).
+**Objective:** meet Google's standard for "Your Money or Your Life" health content, where trust is the most important part of E-E-A-T (R07 §1.3, G9), and India's medical-advertising rules, which treat promotional search-engine and AI-assisted communication as advertising (R07 §4.1, clause 3.2). Whether the NMC guidelines formally cover a standalone diagnostic lab is **[VERIFY with counsel]**; we treat them as binding on everything EmbryoGenesis publishes (R07 §4.1, §6.2 item 9).
 
 #### 3.7.1 Pre-launch legal decision on therapy content (D1)
 
@@ -671,7 +671,7 @@ These are the client's own words, kept under brief section 0. Each item conflict
 | Page | Status | Contents |
 |---|---|---|
 | `/pulakes-purkait-profile/` | Exists | Approved founder bio (04 §6), "reproductive scientist; not a medical practitioner", ORCID, Scholar, publications, awards by exact name, issuer and date, patent applications with numbers |
-| NEW `/vidhu-wadhwa-profile/` | Proposed (title tag: "Dr. Vidhu Wadhwa, MD (Pathology) \| EmbryoGenesis, Mohali", 56) | Qualifications, registration status and number, role (Consultant Pathologist & Quality Manager), reviewer role. A website doctor directory with registration details is patient information, not advertising (NMC 9.1); the photo is a directory image, not self-promotion (NMC 9.2) (R07 §4.1). Needs VW's consent |
+| NEW `/vidhu-wadhwa-profile/` | Proposed (title tag: "Dr. Vidhu Wadhwa, MD (Pathology) \| EmbryoGenesis, Mohali", 56) | Qualifications, registration status and number, role (Consultant Pathologist & Quality Manager), reviewer role. A website doctor directory with registration details is patient information, not advertising (NMC 9.1). NMC 9.2 bars RMP photos used as self-advertisement; in our reading a plain directory photo is not self-promotion (R07 §4.1). Needs VW's consent |
 | Other authors (for example Dr. Meenu Bhanot for academy posts) | Optional | Same pattern, only if they author content |
 
 The slugs follow the existing `/pulakes-purkait-profile/` pattern.
@@ -1001,7 +1001,7 @@ Superseded from 02 §11 and no longer needed: partner details per city for city 
 | §1.3 Sitemap tree and §1.4 page table | **Superseded** | The site keeps the old URLs (`site/src/llms.txt`). The sections 02 proposed (Diagnostics, For Clinicians, Partner With Us, Collection Centres, Patients, Academy and Research hubs, and city pages) were never built and are not used |
 | §1.5 Internal linking rules | **Updated** | New hubs and clusters (§3.4.1); never link to held pages |
 | §2 301 redirect map | **Superseded** | Replaced by `site/src/_redirects` and `.htaccess`, minus three rules for WordPress (§3.1 item 2). Kept: one hop to a 200 page; 410 for `/cache/`; never redirect broken images to pages |
-| §3.1–3.2 Keyword map | **Superseded** | By R08 §2–3 and §3.3 of this plan, including its 50% clinician and B2B mix |
+| §3.1–3.2 Keyword map | **Superseded** | By R08 §2–3 and §3.3 of this plan, including its B2B keyword focus |
 | §3.3 Excluded keywords | **Kept and extended** | With R08's traps (§3.3 table) |
 | §3.4 Hindi and Hinglish list | **Kept as parked input** | For a possible Hindi phase (§3.5) |
 | §4 On-page template rules; §4.1 test page; §4.5 blog article | **Kept** | URL formulas updated to root slugs; the test-page template applies to sections of `/diagnostic/` |
@@ -1032,9 +1032,9 @@ Superseded from 02 §11 and no longer needed: partner details per city for city 
 | §8 intro statistic ("44% to 88%") | **Updated** | Only verified figure: more than 82% of German health searches (SE Ranking); no India data (R07 §1.1, §6.1) |
 | §8.1 Quotable content rules | **Kept** | Extended in §3.5 |
 | §8.2 Third-party corroboration | **Updated** | Partner hospital pages on hold until counsel |
-| §8.3 llms.txt | **Updated** | Google does not use it; 97% of files never requested; reviewed subset only; residual lines 23 and 34 to fix (R07 §2.3, §6.1) |
+| §8.3 llms.txt | **Updated** | Google does not use it; 97% of files never requested; reviewed subset only; the residual therapy wording in lines 23 and 34 was removed on 17 Oct 2026 (R07 §2.3, §6.1) |
 | §8.4 20-prompt panel | **Superseded** | R08's 25 prompts with 3 runs per surface and the 2-of-3 rule (R07 §3.2, §6.1) |
-| §9 90-day calendar (24 articles) | **Superseded** | By §3.4.5 |
+| §9 90-day calendar (24 articles) | **Superseded** | By §3.4.5, including its 50% clinician and B2B mix |
 | §10.1 Off-page principles | **Kept** | – |
 | §10.2 Tactics | **Updated** | Partner outreach on hold; universities, journals and press kept; CME optional |
 | §10.3 KPIs | **Superseded** | Partner KPIs removed; new table in §2.3. The floor-and-target format is kept |
