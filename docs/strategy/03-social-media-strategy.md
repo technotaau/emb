@@ -6,6 +6,12 @@
 **Scientific sign-off:** Prof. (Dr.) Pulakes Purkait, Founder & Director
 **Read with:** `docs/00-project-brief.md` (binding), `docs/strategy/01-project-blueprint.md`, `docs/research/01-industry-research.md`, `docs/research/02-competitor-keyword-social.md`
 
+> **Status note (17 October 2026, TechnoTaau Team lead review).** Parts of this document are paused until the client's decisions in `docs/strategy/05-seo-aeo-geo-plan.md`:
+> - **AI-produced reels (section 4 and the reels in the section 7 calendar) are paused** until decision D8 (AI-use policy) and counsel's sign-off. The NMC guidelines of 6 Oct 2026 prohibit AI-generated promotional campaigns and require AI content to be labelled (`docs/research/07-seo-aeo-geo-landscape-2026.md` §4.1).
+> - **All partner-facing and collection-centre posts and outreach are paused.** The client dropped the partner pages (brief section 0), and counsel must first review NMC clause 8.1(vii) on referral or lead fees for patients or specimens.
+> - Non-AI educational posts may continue if each one passes gate G4 (compliance) in plan 05 §5.1, carries no therapy topic and links to a live, approved page.
+> - The section 7 calendar will be re-issued after 13 November 2026, aligned with plan 05.
+
 ---
 
 ## 0. At a glance
