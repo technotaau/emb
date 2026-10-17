@@ -36,7 +36,7 @@
 
 /* ---------- 2. Home slider ---------- */
 /* the pause/play control lives inside .dots but is not a dot */
-.core-hero .dots .slidectl{width:44px;height:44px;background:rgba(14,105,112,.6);border:1px solid rgba(255,255,255,.85);border-radius:50%;margin-left:8px}
+.core-hero .dots .slidectl{width:44px;height:44px;background:rgba(11,92,98,.92);border:1px solid rgba(255,255,255,.85);border-radius:50%;margin-left:8px}
 .core-hero .dots .slidectl::before{content:none}
 .core-hero .dots .slidectl:hover{background:var(--deep)}
 @media (prefers-reduced-motion:no-preference){
@@ -95,4 +95,96 @@ main a:not(.btn):not(.callpill):hover{color:var(--deeper)}
 /* tighter vertical rhythm on phones */
 @media (max-width:760px){
   .band{padding-block:44px}
+}
+
+/* ---------- 7. Design pass (alignment, equal heights, contrast) · TechnoTaau Team, 17 Oct 2026 ---------- */
+/* Root fixes live in style.css (no justified text, split band, road map, footer grid, programme band,
+   tiles, achievements, care badges, inner-hero ring). This block handles page components. */
+
+/* home hero: wider panel so the H1 does not leave "Mohali" alone on desktop; tidy button grid on phones */
+.core-hero .panel{max-width:580px}
+.core-hero .panel h1,.core-hero .panel .h1like{font-size:clamp(1.9rem,3.6vw,2.6rem)}
+@media (max-width:480px){
+  .core-hero .panel .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .core-hero .panel .row .btn{padding-inline:12px;width:100%}
+  .core-hero .panel .row .btn.primary{grid-column:1/-1}
+}
+
+/* home services: equal-height columns, icon centred on the column title, description and items on one
+   left edge, "Book Now" as a clear outlined pill */
+.core-duo{align-items:stretch}
+.core-duo .col{display:flex;flex-direction:column;gap:14px}
+.core-duo .colhead{grid-template-columns:64px minmax(0,1fr);align-items:center;gap:14px 16px}
+.core-duo .colhead>div:not(.ico){display:contents}
+.core-duo .colhead h3{margin:0;line-height:1.25}
+.core-duo .colhead p{grid-column:1/-1}
+.core-duo .item{gap:6px;padding:14px 0}
+/* the shorter (diagnostic) card fills its spare height with a lab photo, so both cards end on one line
+   and both "View all" buttons sit on the same baseline; nothing extra is downloaded on phones */
+@media (min-width:821px){
+  .core-duo .col:first-child::after{content:"";order:1;flex:1 1 0;min-height:0;border-radius:12px;background:var(--tint) url("../img/microscope.jpg") center 30%/cover no-repeat;background-image:image-set(url("../img/microscope-800.webp") type("image/webp"),url("../img/microscope.jpg") type("image/jpeg"))}
+  .core-duo .col:first-child>.btn{order:2}
+}
+.core-duo .item h4{line-height:1.3}
+.core-duo .col>.btn{align-self:flex-start;margin-top:4px}
+.core-duo .col .item a{display:inline-flex;align-items:center;gap:8px;justify-self:start;min-height:44px;margin-top:6px;padding:8px 18px;border:2px solid var(--deep);border-radius:999px;background:var(--paper);color:var(--deep);font-family:var(--head);font-weight:600;font-size:.92rem;line-height:1.2;text-decoration:none;transition:background-color .2s,color .2s}
+.core-duo .col .item a:hover{background:var(--deep);color:#fff}
+
+/* home key facts (6 items) and about key facts (7 items): full rows, no lonely card */
+@media (min-width:900px){
+  .core-facts .keyfacts:has(>div:nth-child(6):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}
+  .core-facts .keyfacts:has(>div:nth-child(7):last-child){grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (min-width:561px) and (max-width:899px){
+  .core-facts .keyfacts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .core-facts .keyfacts>div:last-child:nth-child(odd),.aca-kf .keyfacts>div:last-child:nth-child(odd){grid-column:1/-1}
+}
+
+/* care pathway: 1 / 2 / 4 columns (never 3 + 1) */
+@media (min-width:520px) and (max-width:999px){.care{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.care{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.care>div{align-content:start}
+
+/* three-card rows on tablets: photo cards stay three across; text cards go two across with the third full width */
+@media (min-width:600px){
+  .cards:has(>.card:nth-child(3):last-child),.ach,.partners:has(>div:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:600px) and (max-width:899px){
+  .centres3,.cards3,.aca-admit{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .centres3>:last-child:nth-child(3),.cards3>:last-child:nth-child(3),.aca-admit>:last-child:nth-child(3){grid-column:1/-1}
+}
+
+/* cards with photos: image row keeps its size, the link sits on the bottom edge of every card in a row */
+.card{grid-template-rows:auto 1fr}
+.card .body{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.card .body>a:first-of-type{margin-top:auto}
+/* four-card rows: 2 x 2 on tablets instead of 3 + 1 */
+@media (min-width:600px) and (max-width:999px){.cards4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* media page: 4 / 2 / 1 columns for its 10 cards */
+@media (min-width:600px) and (max-width:999px){.core-mcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.core-mcards{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* related-reading boxes on posts: four links as 2 x 2 */
+@media (min-width:561px){.med-relgrid:has(>a:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* course "why choose" cards: the read-more link aligns at the bottom of both cards */
+.aca-why>*{display:flex;flex-direction:column;gap:12px}
+.aca-why>*>a:last-child{margin-top:auto;align-self:flex-start}
+
+/* a link-style button under a centred section heading is centred too */
+.stack:has(>h2.center)>.btn.link{justify-self:center}
+
+/* single-link band (home FAQ link): less empty space */
+.band:has(>.wrap>p:only-child>.core-more:only-child){padding-block:28px}
+
+/* inner heroes: pale text on the gradient keeps 4.5:1 where the gold ring passes behind it */
+.ihero .med-prof-cred{color:#FAF1DA}
+.ihero .lead,.ihero .med-ihero-p,.ihero .aca-hero-p,.ihero p{position:relative;z-index:1}
+
+/* Chrome "force dark" (desktop flag, Android "darken websites") ignores color-scheme: only light. It keeps the
+   gold fill but lightens the dark gold-ink text (2.5:1). Those users also match prefers-color-scheme: dark, so
+   there gold surfaces switch to Gold Dark #7A5C1B with white text: 6.2:1 both with and without forced darkening. */
+@media (prefers-color-scheme:dark){
+  .btn.primary,.strip .new,.care .n,.mbar a.gold{background:#7A5C1B;color:#fff}
+  .btn.primary:hover{filter:brightness(1.12)}
 }
