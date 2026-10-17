@@ -37,7 +37,7 @@ ORG = {
   "name": "EmbryoGenesis",
   "alternateName": ["EmbryoGenesis – Infertility Diagnostic & Research", "EMBRYOGENESIS", "Embryogenesis Mohali"],
   "slogan": "Redefining Fertility Evaluation",
-  "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, India, offering endometrial diagnostic tests (ERFA – The Soil Test, Endo-Immune Test, Endometrial Infection Test), fertility therapies, and B.Sc./M.Sc. Clinical Embryology programmes with ITHS, Bahra University and Rayat Bahra University.",
+  "description": "EmbryoGenesis is an infertility diagnostic and research centre in Mohali, Punjab, India, offering endometrial diagnostic tests (ERFA – The Soil Test, Endo-Immune Test, Endometrial Infection Test) and B.Sc./M.Sc. Clinical Embryology programmes with ITHS, Bahra University and Rayat Bahra University.",
   "disambiguatingDescription": "EmbryoGenesis (Mohali, India) is an infertility diagnostic and research centre. It is not the biological process of embryogenesis.",
   "url": SITE + "/",
   "logo": {"@type": "ImageObject", "@id": SITE + "/#logo", "url": SITE + "/assets/img/logo.png", "contentUrl": SITE + "/assets/img/logo.png", "width": 403, "height": 102, "caption": "EmbryoGenesis"},

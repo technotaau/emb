@@ -20,7 +20,7 @@
 - Medical information on this site is for information only; testing and treatment are ordered and interpreted by the patient's treating doctor.
 
 ## Main pages
-- [Home](https://embryogenesis.in/): overview of diagnostic and therapeutic services, academic programmes and collection centres
+- [Home](https://embryogenesis.in/): overview of diagnostic tests, academic programmes and collection centres
 - [About EmbryoGenesis](https://embryogenesis.in/about/): vision, road map, leadership, scientific team, collection centres, partners
 - [Founder: Prof. (Dr.) Pulakes Purkait](https://embryogenesis.in/pulakes-purkait-profile/): biography, education, patent applications, awards, memberships
 - [Diagnostic services](https://embryogenesis.in/diagnostic/): ERFA – The Soil Test (endometrial receptivity), Endo-Immune Test and Endometrial Infection Test; who each test is for, sample timing, FAQs
@@ -31,7 +31,7 @@
 - [Courses overview](https://embryogenesis.in/courses/): all Clinical Embryology and ART & Clinical Embryology programmes with eligibility, duration and fees
 - [B.Sc. & M.Sc. Clinical Embryology, Bahra University](https://embryogenesis.in/bsc-in-clinical-embryology-in-bahra-university/): with ITHS at Bahra University, Shimla Hills, Himachal Pradesh; eligibility, 4-year and 2-year duration, fee per semester
 - [ART & Clinical Embryology, Rayat Bahra University](https://embryogenesis.in/art-and-clinical-embryology-in-rayat-bahra-university/): B.Sc., M.Sc., Ph.D. and PG Diploma with ITHS at Rayat Bahra University, Mohali; eligibility, duration, curriculum
-- [Skill development lab training](https://embryogenesis.in/skill-development-training/): eight hands-on courses (biochemistry, molecular genetics & bioinformatics, tissue processing & microtomy, immunohistochemistry, therapy techniques, stem cell processing) with duration and fees
+- [Skill development lab training](https://embryogenesis.in/skill-development-training/): hands-on laboratory courses (including biochemistry, molecular genetics & bioinformatics, tissue processing & microtomy and immunohistochemistry) with duration and fees
 
 ## Blog
 - [Blog index](https://embryogenesis.in/blog/)
