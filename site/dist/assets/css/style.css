@@ -974,3 +974,25 @@ main a:not(.btn):not(.callpill):hover{color:var(--deeper)}
   .btn.primary,.strip .new,.care .n,.mbar a.gold{background:#7A5C1B;color:#fff}
   .btn.primary:hover{filter:brightness(1.12)}
 }
+
+/* ---------- 8. Review fixes · TechnoTaau Team design QC review, 17 Oct 2026 ---------- */
+/* Link hover on dark surfaces: the generic main-link hover (deeper teal, section 6) made links vanish
+   on the inner-hero breadcrumb (1.04:1), the diagnostic/therapy jump bar and the contact "Follow us"
+   chips (1.2:1, deep fill). White there; the white form card inside the inner hero keeps deeper teal. */
+main .ihero a:not(.btn):not(.callpill):hover,main .band.deep a:not(.btn):not(.callpill):hover,main .ctaband a:not(.btn):not(.callpill):hover{color:#fff}
+main .ihero .formcard a:not(.btn):not(.callpill):hover{color:var(--deeper)}
+main .jump .wrap>a:not(.btn):hover,main .core-social a:not(.btn):not(.callpill):hover{color:#fff}
+/* footer social icons: white icon on the gold hover fill was 2.5:1; gold ink instead */
+.site-foot .socials a:hover{color:var(--gold-ink)}
+@media (prefers-color-scheme:dark){.site-foot .socials a:hover{background:#7A5C1B;color:#fff}}
+/* blog sidebar call pill picked up the sidebox link rule (no side padding, 1px underline border):
+   the number touched the pill outline. Restore the pill. */
+.sidebox a.callpill.dark{display:inline-flex;padding:9px 18px;border:2px solid var(--deep);justify-self:start}
+/* hero slider dots: a firm ring so the inactive dots show on light photos (slide 3) and on the light
+   band under the photo on phones, where the focus ring is also switched to the dark colour */
+.core-hero .dots button:not(.slidectl)::before{box-shadow:0 0 0 2px rgba(11,92,98,.9)}
+@media (max-width:760px){
+  .core-hero .dots{--focus:#0B5C62}
+  .core-hero .dots button:not(.slidectl)::before{background:#fff;box-shadow:0 0 0 2px var(--deep)}
+  .core-hero .dots button[aria-current="true"]:not(.slidectl)::before{background:var(--gold)}
+}
