@@ -309,3 +309,65 @@ These are strategic or scheduling choices we did not change. Each has our reason
 - The Vishwakarma Day date comes from one secondary list; please confirm against punjab.gov.in.
 
 TechnoTaau Team (QC)
+
+---
+
+## 9. Re-check of v1.1 (17 October 2026)
+
+**Verdict: READY AFTER FIXES.** Plan v1.1 is ready. All 16 lead decisions are applied, all 20 earlier fixes are intact, and every mechanical check passes after five small fixes made in this re-check (RC1 to RC5). One fix remains before the client sees anything: the client page `docs/strategy/05-seo-aeo-geo-plan.html` repeats the plan's text and must be re-synced with RC1 to RC5. We did not edit the HTML.
+
+**Counts:** Blocker 0 · Major 0 · Minor 5 (all open; the 5 mechanical errors found are fixed as RC1 to RC5).
+
+### 9.1 Results
+
+| Check | Result |
+|---|---|
+| J1 to J16 applied | **Yes, all 16**, as suggested or as the lead's variant. J1: surge 9 to 27 Nov, N4 and N9 reviewed 1 to 11 Dec, fallback minimum set (§0, §3.4.2, §3.4.3, §3.4.5, §4.1, §4.2, §7 risk 1, §8.1 #12). J2: §4.2 item 2 on 19 Oct; the `03` status note exists. J3: handover v1 on 30 Oct and v2 on 11 Nov, academy facts by 30 Oct, T2 after §8.1 #11. J4: §2.2 assumption, §0 "website and Google (search and Maps)", A2 note. J5: cadence wording. J6: R8a in M10, R8b in M11, W4 and R10 in M12, M13 note. J7: C2 per reviewer (5 and 10 days). J8: D1 to D3 on Tue 10 Nov, access 21 Oct, QA pass 2 Wed 25 Nov, holiday line. J9 to J16 as suggested. Two small gaps were left in J9 and J15; both are fixed (RC4, RC5). |
+| C1 to C20 intact | **Yes, 20 of 20.** The lead reworded C2, C3, C5 and C6 inside the new §0; all four remain accurate against R08 §1 and §8.1. |
+| Weekday and date pairs | **31 of 31 correct**, including Tue 10 Nov, Wed 11 Nov, Wed 25 Nov, Tue 24 Nov and Tue 1 to Fri 11 Dec. |
+| Posts-per-month row vs calendar and totals | **Consistent:** 2, 2, 2, 2, 2, 1, 2, 2, 1, 2 (with H1), 0, 1 = 19 (18 without H1), about 1.6 a month; 11 refresh, check or re-review items (R1 to R10, R8 split). The §0 phrase "then one to two a month" was wrong for M11 (0) and is fixed (RC1). |
+| Capacity, Phase 0 | **With the surge, Prof. Purkait fits:** about 7.5 to 8 slot-equivalents (R1 to R5 and T1 = 7, plus the D2 text) against 9 slots. RC2 corrects the plan's "about 7", which left out the D2 text. **Without the surge, he fits tightly:** D2 text, R1, T1 and R5 wording come to about 3 to 3.5 against 3. **Dr. Wadhwa is not covered:** with the surge Dr. Wadhwa has R1, R3, R4 and T2 (four items) in three weekly slots, and T2 cannot start before 13 Nov. The plan gives no allocation and no fallback for Dr. Wadhwa (n1). |
+| D-numbering and due dates | **Consistent** across §0, §1.6, §3.7, §4.2, §7 and §8.1: D4 23 Oct; D6, D7 30 Oct; D1 to D3 10 Nov; D5, D8 13 Nov. |
+| Em dashes | **0.** |
+| URLs | **47 paths:** 19 exist, 21 are new (every occurrence labelled NEW or in a NEW-slug column), 7 technical. The old N5 slug is gone. |
+| Guardrails in new text | **No breach.** "best" and "patented" appear only as text to remove. The new N5 title "Chronic Endometritis Testing, Explained \| EmbryoGenesis" is neutral and 55 characters. Therapy mentions appear only in hold and decision contexts. |
+| Tables | **All consistent** (cell counts checked by script). §0 is now 764 words; the only technical term left there, "structured data", is explained. |
+
+### 9.2 Findings (open, all Minor)
+
+| ID | Finding | Suggested resolution |
+|---|---|---|
+| n1 | Dr. Wadhwa's surge load (R1, R3, R4, T2) is four items in three weekly slots, with no allocation and no fallback. The plan's fallback only covers a refused surge. | Add one line to §3.4.2: R1 in the week of 9 Nov, R3 and R4 together in the week of 16 Nov (each needs one ESHRE sentence or one statistic check), T2 in the week of 23 Nov; if a slot is lost, R4 moves to M1 as in the fallback. |
+| n2 | If the surge is refused, M1 (December, with launch and Christmas) carries N4, N9 and R2 to R4. That is about 4.5 slot-equivalents for Prof. Purkait against about 5 weekly slots, and three items for Dr. Wadhwa (N4, R3, R4) against 2 or 3 fortnightly slots. There is no slack. | In the fallback, move R4 to M2, or ask Dr. Wadhwa for weekly slots in December. |
+| n3 | The client page differs from v1.1 even before this re-check. Its summary tile says "Dr. Wadhwa 60 min a fortnight", omitting Dr. Wadhwa's weekly slot during the surge, and "then one or two", which is wrong for M11. It says "Become a source" where the plan says "Be the source". After RC1 to RC5 it also lacks those five edits. | Re-sync the HTML with v1.1 including RC1 to RC5, then re-run the page check. |
+| n4 | `03` has paused the reels since its status note of 17 Oct, while §3.9 item 9 and §4.2 item 2 say "from 19 Oct". This is harmless, since both dates precede the first reel planned for 22 Oct. | Optional: "in force since 17 Oct (03 status note); confirmed with the client on 19 Oct". |
+| n5 | Wed 11 Nov (handover v2, §4.2 item 16) is Bhai Duj on the AG Punjab holiday list (https://cag.gov.in/ag2/punjab/en/page-ag2-punjab-holiday-list), which also gives 9 Nov as Govardhan Puja. The handover runs from TechnoTaau to the developer, so the risk is low. | None needed; keep in mind if the developer is off that day. |
+
+### 9.3 Change log (re-check fixes applied to the plan)
+
+| # | Section | Old → new | Reason |
+|---|---|---|---|
+| RC1 | §0, move 5 | "then one to two a month" → "then up to two a month" | M11 has no new post (calendar, §3.4.2, Totals). |
+| RC2 | §3.4.2, surge bullet | "needs about 7 of PP's slot-equivalents … (QC estimate, `docs/qc/qc-seo-plan.md` §5.3)" → "needs about 7 to 8 … (QC estimate: 7 for R1 to R5 and T1, `docs/qc/qc-seo-plan.md` §5.3, plus the D2 replacement text)" | The QC figure of 7 excluded the D2 replacement text, which the plan's review set now includes. |
+| RC3 | §3.1, go-live runbook step 11 | "the three refreshed posts" → "the three kept blog posts (ERFA, endometrial immune profiling and unexplained infertility)" | Under the fallback, R2 to R4 move to M1, so the posts may not be refreshed at launch. |
+| RC4 | §3.7.1, "In scope" | Added "the links to the Hindi post from `/diagnostic/` (the recurrent pregnancy loss line) and from the home page's blog card" | Completes the J9 list. `grep` of `site/src/pages`: `diagnostic.html` line 32 and `home.html` line 162 link to the held Hindi post. |
+| RC5 | §6, RACI row "Incident response" (JS column) | "A: I1, I2" → "A: I1, I2; C: I3; coordinates I4" | Matches §5.5: I3 lists JS as consulted, I4 as coordinator. |
+| (log) | Header, change history | Added "QC re-check fixes RC1–RC5, same report" | Provenance. |
+
+Nothing is committed. The client page HTML was not edited (outside our remit): see n3.
+
+TechnoTaau Team (QC)
+
+### 9.4 Lead resolution (TechnoTaau Team lead, 17 Oct 2026)
+
+| ID | Resolution |
+|---|---|
+| n1 | Applied in plan §3.4.2: Dr. Wadhwa's surge schedule (R1 week of 9 Nov; R3 and R4 week of 16 Nov; T2 week of 23 Nov) with a fallback (R4 moves to M1 if a slot is lost). |
+| n2 | Applied in plan §3.4.2: if the surge is refused, N4 and N9 may publish in late December or January; the launch does not wait for them. |
+| n3 | Client page regenerated from v1.1; its summary tiles now show the surge and "then up to two a month". |
+| n4 | Accepted as is: the earlier pause date is harmless. |
+| n5 | Accepted as is: handover v2 is a document sent to the developer; low risk. |
+
+Also corrected by the lead in this round: Dr. Wadhwa is referred to by name, not by pronoun, in this report, research 06 and 07, and strategy 03 (no source states the pronouns to use).
+
+**Final status: v1.1 READY.**

@@ -4,7 +4,7 @@
 **Client:** EmbryoGenesis, Mohali, Punjab (https://embryogenesis.in)
 **Date:** 17 October 2026 | **Version:** 1.1 (QC fixes applied)
 **Status:** plan for approval. It replaces the parts of `docs/strategy/02-seo-strategy.md` listed in section 9.
-**Change history:** v1.0, 17 Oct 2026 (first issue); v1.1, 17 Oct 2026 (QC fixes C1–C20 and lead decisions J1–J16, `docs/qc/qc-seo-plan.md`).
+**Change history:** v1.0, 17 Oct 2026 (first issue); v1.1, 17 Oct 2026 (QC fixes C1–C20 and lead decisions J1–J16, `docs/qc/qc-seo-plan.md`; QC re-check fixes RC1–RC5, same report).
 
 **Read with**
 - `docs/00-project-brief.md` (section 0 decisions; section 5 guardrails).
@@ -71,7 +71,7 @@ Three terms: **SEO** is being found in Google and Bing; **AEO** (answer engine o
 2. **Therapy pages decided before launch:** we recommend taking the therapy page, the LIT (lymphocyte immunisation therapy) post and the Hindi post offline until your lawyer and reviewers approve evidence-based versions (decision D1, §3.7.1).
 3. **Minimum compliance fixes:** "best", "leading", "India's trusted", "patented", the testimonials block, unsourced statistics and the "Source: chat GPT" line (decision D2, §3.7.2).
 4. **One identity:** one name, one address with a confirmed PIN code and one phone number everywhere, including your Google Business Profile, directories, ITHS and the universities (§3.2).
-5. **Two new reviewed articles a month until April 2027, then one to two a month** (about 19 in 12 months, including reserve and conditional posts): open gaps first, and academy articles live before the April admission season (§3.4).
+5. **Two new reviewed articles a month until April 2027, then up to two a month** (about 19 in 12 months, including reserve and conditional posts): open gaps first, and academy articles live before the April admission season (§3.4).
 6. **Trustworthy medical pages:** a named author, Prof. Purkait's dated review, Dr. Wadhwa's registration number for clinical claims, references, a disclaimer and a public editorial policy (§3.7).
 7. **Mentions from sources AI systems trust:** universities, ITHS, the Indian Fertility Society, journals and YouTube. A published ERFA validation paper would help most (§3.6, §3.8, §3.9).
 8. **Monthly measurement:** Search Console, Bing and Analytics reports, your enquiry log and 25 set questions asked three times in each AI assistant (§2, §5).
@@ -295,7 +295,7 @@ Staging sits behind HTTP basic authentication and "Discourage search engines" (0
 8. Run the redirect test file. `/cache/` returns 410. Held pages behave as decided in D1.
 9. Crawl the site: no broken internal links, no links to held pages, canonicals self and 200.
 10. GA4: production stream, internal-traffic filter on, consent default denied, events only after consent.
-11. Submit sitemaps to Search Console and Bing; inspect the home page, `/diagnostic/`, `/courses/`, both university course pages, the founder profile and the three refreshed posts.
+11. Submit sitemaps to Search Console and Bing; inspect the home page, `/diagnostic/`, `/courses/`, both university course pages, the founder profile and the three kept blog posts (ERFA, endometrial immune profiling and unexplained infertility).
 12. Test every form end to end, including the consent log and the enquiry routing by "I am interested in".
 13. Spot-check structured data on 5 templates and PageSpeed mobile on the same 5.
 14. Post-launch checks at 48 hours and 7 days (gate G6, §5).
@@ -404,8 +404,10 @@ Prof. Purkait's review time is the bottleneck, so the cadence is set by review s
 
 - **Review slot:** one 90-minute slot a week with PP on a fixed weekday, and one 60-minute slot a fortnight with VW for clinical claims (E; we time the first reviews in Phase 0 and recalibrate).
 - **What one slot covers (E):** one new medical post (two review rounds), or one refresh or re-review of a medical page, or two academy posts or small updates.
-- **Pre-launch review surge (9 to 27 Nov 2026):** the Phase 0 review set (the D2 replacement text, R1 to R5, T1 and T2) needs about 7 of PP's slot-equivalents in three weeks, against 3 normal slots (QC estimate, `docs/qc/qc-seo-plan.md` §5.3). We ask the client for three 90-minute slots a week with PP and a weekly 60-minute slot with VW in that window. N4 and N9 are reviewed from 1 to 11 Dec 2026, after the freeze; they publish from week 2 of M1 anyway.
+- **Pre-launch review surge (9 to 27 Nov 2026):** the Phase 0 review set (the D2 replacement text, R1 to R5, T1 and T2) needs about 7 to 8 of PP's slot-equivalents in three weeks, against 3 normal slots (QC estimate: 7 for R1 to R5 and T1, `docs/qc/qc-seo-plan.md` §5.3, plus the D2 replacement text). We ask the client for three 90-minute slots a week with PP and a weekly 60-minute slot with VW in that window. N4 and N9 are reviewed from 1 to 11 Dec 2026, after the freeze; they publish from week 2 of M1 anyway.
 - **If the surge is not granted:** the minimum pre-launch review set is the D2 replacement text, R1, T1, T2 and the R5 facts (the admissions team checks the facts; PP approves the wording only). R2 to R4 move to M1, and their pages launch with only the D2 minimum edits.
+- **Dr. Wadhwa during the surge (weekly 60-minute slots):** R1 in the week of 9 Nov, R3 and R4 in the week of 16 Nov, T2 in the week of 23 Nov (T2 cannot start before 13 Nov). If a slot is lost, R4 moves to M1 and its page launches with only the D2 minimum edits.
+- **If the surge is refused, December has no slack for either reviewer:** N4 and N9 may then publish in late December or January instead of week 2 of M1. The launch does not wait for them.
 - **Cadence: 2 new posts a month until April 2027 (M1 to M5), then 1 to 2 a month; about 19 in 12 months including reserve and conditional posts.** M1 to M4 normally pair one medical and one academy post. M11 has no new post, because its review time goes to the academy refresh (R8b). Refreshes and re-reviews follow the calendar in §3.4.5: the test page every 6 months, articles every 12 months, sooner when a guideline changes (04 §5.4).
 - **Step-up, from M4 at the earliest:** up to **1 new post a week**, the level first discussed, only if all of these hold for 8 weeks: median G3 turnaround within the C2 targets (§2.3); no more than 2 posts waiting for review; no repeated G4 failures; at least 4 approved topics with sources in the backlog; and PP confirms a second weekly slot. Step-up posts come from the reserve list W1 to W5 or from new questions found in Search Console.
 - **Step-down:** if more than 3 items wait for review or turnaround exceeds 10 working days, drop to 1 new post a month and protect corrections and re-reviews first.
@@ -632,7 +634,7 @@ The 12-month re-reviews of R2 to R4 fall in M13 (December 2027, 12 months after 
 
 #### 3.7.1 Pre-launch legal decision on therapy content (D1)
 
-**In scope:** `/advanced-fertility-therapies/`; the LIT post `/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/`; the Hindi post `/tips-and-treatments-for-pregnancy-after-ivf-failure/`; the therapy cards and "Book Now" therapy links on the home page; the therapy line on `/diagnostic/`; the "Therapeutic" item in the header and footer; the builder-added "Personalized therapy" care-pathway step on the home page; the builder-added therapy links in the "Related at EmbryoGenesis" boxes; the therapy mentions and links our builders added or placed on `/about/` (the answer-box sentence naming "therapeutic services" and the "Explore our … therapeutic services" link), `/contact-us/` (the "ask about therapies" link), `/blog/` (the LIT and Hindi post cards and the sidebar "Therapeutic" link) and the 404 page (the "Therapeutic" link); the therapy option in forms; and the four therapy-related lab-training modules (PRP & LIT; LIT & molecular hydrogen; molecular hydrogen in health management; stem cell processing & cryopreservation).
+**In scope:** `/advanced-fertility-therapies/`; the LIT post `/exploring-lit-therapy-treatment-for-recurrent-pregnancy-loss/`; the Hindi post `/tips-and-treatments-for-pregnancy-after-ivf-failure/`; the therapy cards and "Book Now" therapy links on the home page; the therapy line on `/diagnostic/`; the "Therapeutic" item in the header and footer; the builder-added "Personalized therapy" care-pathway step on the home page; the builder-added therapy links in the "Related at EmbryoGenesis" boxes; the therapy mentions and links our builders added or placed on `/about/` (the answer-box sentence naming "therapeutic services" and the "Explore our … therapeutic services" link), `/contact-us/` (the "ask about therapies" link), `/blog/` (the LIT and Hindi post cards and the sidebar "Therapeutic" link) and the 404 page (the "Therapeutic" link); the links to the Hindi post from `/diagnostic/` (the recurrent pregnancy loss line) and from the home page's blog card; the therapy option in forms; and the four therapy-related lab-training modules (PRP & LIT; LIT & molecular hydrogen; molecular hydrogen in health management; stem cell processing & cryopreservation).
 
 **Why a decision is needed before launch**
 - The NMC advisory of 5 Sep 2026: promoting stem cell therapy beyond approved indications is professional misconduct (R07 §4.2).
@@ -925,7 +927,7 @@ R = does the work; A = accountable, signs off (one per row; for incident respons
 | Video and reels | A | C | – | C | R | C | C | I | – | C |
 | Digital PR | A | R | – | C | – | C | – | C | – | C |
 | Journal publication (ERFA validation) | I | C | – | – | – | A/R | C | I | – | – |
-| Incident response (A and R per §5.5) | A: I1, I2 | R: I1, I2 | C | – | – | C | C | A: I3 to I5; R: I3 | R: I5 | R: I4; C: I2, I3 |
+| Incident response (A and R per §5.5) | A: I1, I2; C: I3; coordinates I4 | R: I1, I2 | C | – | – | C | C | A: I3 to I5; R: I3 | R: I5 | R: I4; C: I2, I3 |
 
 Notes: the client's front desk keeps the enquiry log (R and A sit with CL). Incident response follows §5.5: JS is accountable for I1 and I2, the client for I3 to I5. The builder makes the reference-build fixes (§4.2 item 11), checked by QA. Prof. Purkait is both a client principal and the scientific reviewer; we keep the two roles separate so a review is never skipped to meet a date.
 

@@ -246,7 +246,7 @@ No "Reviews" or "Success stories" highlight (NMC guidelines of 6 Oct 2026; brief
 
 ### Pillar 3: Inside the Lab
 - **What:** Real footage and photos of the lab, sample receipt, QC steps, people at work.
-- **Examples:** "From sample receipt to report: 6 quality checkpoints" (carousel); "Meet our Quality Manager, Dr. Vidhu Wadhwa" (photo + short quote, with consent; add registration number if she is a registered medical practitioner); "What our lab trainees learn in week one" (reel).
+- **Examples:** "From sample receipt to report: 6 quality checkpoints" (carousel); "Meet our Quality Manager, Dr. Vidhu Wadhwa" (photo + short quote, with consent; add registration number if Dr. Wadhwa is a registered medical practitioner); "What our lab trainees learn in week one" (reel).
 - **Rules:** **never AI-generated**; staff consent forms on file; no patient names, faces, sample labels or screens visible.
 
 ### Pillar 4: Academy & Careers
@@ -478,7 +478,7 @@ Each script needs Prof. Purkait's approval before production (Gate 4). Word coun
 
 **On-screen beats:** 1 LAB TERM: CD138 · 2 = syndecan-1, on plasma cells · 3 Immunohistochemistry (IHC) · 4 Antibody binds → stain shows it · 5 Plasma cells in the stroma → chronic endometritis · 6 No single agreed cut-off · 7 Reports should state method + criteria · end card
 
-**Visual direction:** **real footage** in our pathology lab: microtome sectioning, slide staining rack, microscope focus pull (hands and equipment only, no labels or screens). Overlay animated labels. If the voice is a staff member (preferred: Dr. Vidhu Wadhwa), show her name and qualifications on screen; add registration number if she is a registered medical practitioner [confirm].
+**Visual direction:** **real footage** in our pathology lab: microtome sectioning, slide staining rack, microscope focus pull (hands and equipment only, no labels or screens). Overlay animated labels. If the voice is a staff member (preferred: Dr. Vidhu Wadhwa), show the speaker's name and qualifications on screen; add the registration number if the speaker is a registered medical practitioner [confirm].
 
 **Caption:**
 > CD138 appears on many endometrial biopsy reports. Here's what it marks, how it's stained, and why reporting criteria matter.

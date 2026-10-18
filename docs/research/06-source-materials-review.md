@@ -58,7 +58,7 @@ The brochures contain **more, and better, information than the website**. The we
 
 ### 2.3 Team
 
-- **Dr. Vidhu Wadhwa, MBBS, MD (Pathology), Consultant Pathologist** (ERFA brochure, with photo). The website calls her "Consultant Pathologist & Quality Manager" with no degree. This matters: she is a **registered medical practitioner** and can be the clinical reviewer for every medical page, which the NMC norms and Google's medical-content standards expect. We need her NMC/State Medical Council registration number.
+- **Dr. Vidhu Wadhwa, MBBS, MD (Pathology), Consultant Pathologist** (ERFA brochure, with photo). The website calls Dr. Wadhwa "Consultant Pathologist & Quality Manager" with no degree. This matters: Dr. Wadhwa is a **registered medical practitioner** and can be the clinical reviewer for every medical page, which the NMC norms and Google's medical-content standards expect. We need Dr. Wadhwa's NMC/State Medical Council registration number.
 - Founder profile adds: LinkedIn (`in.linkedin.com/in/pulakes-purkait-aa634094`), ResearchGate, Global Andrology Forum membership, IFS life membership, five renin-gene variants accepted by NCBI, and departmental headships at both universities. All usable on the About page and in Person schema.
 - The founder's patent list has **14 entries**, of which **4 relate to this business** (ERFA, ERMA, LIT-H2, a method of improving implantation); the rest cover a biothesiometer, waste management, water filtration, cardiology, student stress and nutrigenetics. The website's "14 patent" claim should become "four published patent applications in reproductive diagnostics" on EmbryoGenesis pages, with the full list on the founder's profile only.
 
@@ -143,7 +143,7 @@ The brochure markets LIT-H2 ("Patented"), PBMC, PRP, stem cell and molecular hyd
 
 1. **Primary phone and WhatsApp:** confirm +91 81462 17196 as the single public number.
 2. **Active collection centres today**, with address, contact and written consent to be named. Is the Delhi regional centre still running?
-3. **Dr. Vidhu Wadhwa's registration number** and her agreement to be named as clinical reviewer.
+3. **Dr. Vidhu Wadhwa's registration number** and Dr. Wadhwa's agreement to be named as clinical reviewer.
 4. **ERFA method** (confirm immunohistochemistry / which markers) so we can state it in clinician terms.
 5. **Current fee table** and whether tuition fees may be shown (the brief bans only test prices; both the site and the brochure show fees today).
 6. **Scope of the Academy on embryogenesis.in:** embryology programmes only (our recommendation) or the full ITHS catalogue.

@@ -663,7 +663,7 @@ This section updates and extends `01-industry-research.md` section 3. Where that
 | Primary category | The most precise "IS a" category for a diagnostic lab, likely **"Medical laboratory"** **[check the exact category list in the GBP interface]**. Do **not** use "Fertility clinic" or "IVF clinic": EmbryoGenesis does not provide IVF | G14 "IS a" test; brief section 4 |
 | Academy | A separate profile **only** if the academy is a distinct public-facing entity with its own signage and staffed hours at an address. Otherwise list courses on the website and leave the academy to the universities' own profiles | G14 (one profile per location; departments rule) |
 | Collection centres | **Never** create profiles at partner hospital addresses. They are not EmbryoGenesis locations | G14 (precise address; one page per location) |
-| Practitioner profiles | Not needed. If Dr. Wadhwa ever has one, it must be under her name only and must not be used promotionally | G14; NMC 9.2 |
+| Practitioner profiles | Not needed. If Dr. Wadhwa ever has one, it must be under Dr. Wadhwa's own name only and must not be used promotionally | G14; NMC 9.2 |
 | Phone | The single confirmed public number, under EmbryoGenesis's direct control, with the same number on the site, schema and directories | G14; brief section 2 (to confirm) |
 | Hours | Accurate hours, including holiday hours. "Open at time of search" is a top factor. Hours are not yet in any source document (`{{HOURS}}`) | R14; 02-seo-strategy placeholders |
 | GBP posts | Treat as advertising under NMC clause 3.2: factual updates (CME, new partner centre, publication) with the RMP credential line where clinical | I1 |
