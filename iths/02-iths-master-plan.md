@@ -49,7 +49,7 @@
 
 **Fix first (this week):** the admission form shows a Bhopal university bank account for Punjab and Himachal campuses (A1), a link points to a TechnoTaau staging site (A2), a public "note for build" says the Shimla photos are stock (A3), and placement, "first" and patent claims need correcting (A5–A7).
 
-**What we need from you:** twelve decisions (section 12; the biggest is D1, what happens to the existing social accounts), Search Console and GA4 access (or the export from `03-gsc-ga4-data-request-chrome-prompt.md`), and the facts in section 5.3.
+**What we need from you:** thirteen decisions (section 12; the biggest is D1, what happens to the existing social accounts), the facts in section 5.3.
 
 **Timeline:** data and decisions by 13 December 2026, ithsedu.in designed and written by 31 January 2027, launch target **9 February 2027** (to be confirmed), 2027–28 admission pages live by 1 March 2027, campaign peak May to August 2027.
 
@@ -111,11 +111,11 @@ Keep the current 302 redirect (ithsedu.in → translationalhealthscience.in) unt
 | `/apply-now/` | Admissions | Keep as the enquiry form. Add an H1; fix the `#` buttons |
 | `/iths-admission-form-2026-27/`, `/iths-sgsu-admission-form/` | Admissions | `noindex`. Move to evergreen `/admission-form/` and `/admission-form-sgsu/` with 301s (B1). Fix bank details (A1) |
 | `/iths-set/` | Admissions | Keep. Add an H1, test dates, eligibility and scholarship rules in text |
-| `/clinical-embryology-shimla/`, `/nutrigenetics-admissions/` | Admissions (ad landing pages) | If they get little organic traffic: `noindex`, remove from the sitemap, use only for ads. If they rank: keep indexed and remove the overlap with the campus or programme page [DATA] |
+| `/clinical-embryology-shimla/`, `/nutrigenetics-admissions/` | Admissions (ad landing pages) | Data: 2 and 0 organic clicks in 16 months. `noindex`, remove from the sitemap, use only for ads |
 | `/art-and-clinical-embryology-program/` | Admissions (paid landing page) | **Protected.** The top lead page on the site (339 key events in 12 months). Keep `noindex`, out of the sitemap, and use it for the 2027 search ads |
 | `/thank-you/` ×3 | Admissions | `noindex`; remove from the sitemap (B2) |
 | `/campus-life/` | Admissions | Keep. Monthly curated photos from the campus accounts, with captions and alt text |
-| `/news-events/` | Changes at ithsedu.in launch | Keep the URL with the existing items and a banner "Latest news is now on ithsedu.in/news/". After 3 months, if it has few clicks, 301 to `https://ithsedu.in/news/` [DATA] |
+| `/news-events/` | Changes at ithsedu.in launch | Data: 0 clicks in 16 months. At launch, move the items to ithsedu.in and 301 to `https://ithsedu.in/news/` |
 | `/careers/` | **ithsedu.in** | Move at launch: publish `https://ithsedu.in/careers/`, then 301 the old URL to it |
 | `/contact-us/` | Admissions | Keep, as the admissions contact page (per-campus numbers, WhatsApp, map). Institutional and media contacts live on ithsedu.in |
 | `/blog/` | Admissions | Keep for admission and career guides only |
@@ -124,8 +124,8 @@ Keep the current 302 redirect (ithsedu.in → translationalhealthscience.in) unt
 
 | Group | Action |
 |---|---|
-| 19 admission and career guides | Stay on the admissions site. Refresh for 2027–28. Merge overlapping posts by cluster (4.3) [DATA]. Fix "India's leading", "India's 1st", "2025" in titles and body |
-| 2 anthropology posts | Confirm whether anthropology is offered (B7). If not, 301 to the closest current page |
+| 19 admission and career guides | Stay on the admissions site. Refresh for 2027–28. **Merge six low-value posts into their programme pages** (content first, then 301): two nutrigenetics posts, two B.Tech posts, `exploring-the-possibilities…` and `transform-your-career…` (baseline §4.2). Fix "India's leading", "India's 1st", "2025" in titles and body |
+| 2 anthropology posts (already 301 to the homepage; the 2025 admission post had 206 clicks) | If anthropology is offered: publish `/programs/anthropology/` and point both old URLs to it. If not: 410 and remove from the sitemap (B7, D13) |
 | 5 news posts (Aashakiran visit, Teachers' Day, Orientation, Talent Hunt, Nutrition Week) | Stay where they are (no copy on ithsedu.in). New institutional news goes to ithsedu.in from launch |
 | 31 category archives (25 indexed), plus 15 date and 2 author archives | `noindex, follow` all except about 5 topic hubs that get written introductions; turn off date archives (baseline §2.8) |
 | 17 workshop certificate PDFs with participants' names (indexed) | **P0:** `noindex` (X-Robots-Tag), remove from search, and rebuild `/certificate/` as a verification page (audit C1) |
@@ -473,7 +473,7 @@ Targets are set 30 days after the data export (E). Until then these are the meas
 
 | Phase | Dates | Work | Exit gate |
 |---|---|---|---|
-| **0. Data and decisions** | 30 Nov – 13 Dec 2026 | GSC/GA4 export; P0 fixes A1–A8; decisions D1–D12; fact sheet; reserve social handles; ithsedu.in redirect fix (2.3) | Export received; A1–A4 fixed; D1–D4 decided |
+| **0. Data and decisions** | 30 Nov – 13 Dec 2026 | GSC/GA4 export; P0 fixes A1–A8; decisions D1–D13; fact sheet; reserve social handles; ithsedu.in redirect fix (2.3) | Export received; A1–A4 fixed; D1–D4 decided |
 | **1. Build ithsedu.in, clean the admissions site** | 14 Dec 2026 – 31 Jan 2027 | ithsedu.in wireframes, design and copy; developer build on staging; admissions-site P1 fixes B1–B14; cluster decisions (4.3); schema; GA4 cross-domain; social accounts created and playbook issued | Staging approved by the client |
 | **2. Launch** | Target Tue 9 Feb 2027 (TBC) | ithsedu.in live; 301 `/careers/`; "Official website" links; Search Console; social bios updated; launch announcement | Launch checklist (5.5) passed |
 | **3. Admissions season** | Mar – Aug 2027 | 2027–28 pages live by 1 Mar; content calendar (4.5); ads (8.3); weekly lead review; monthly SEO, social and AI reports | Monthly KPI review |
@@ -530,6 +530,7 @@ R = responsible, A = accountable, C = consulted, I = informed.
 | D10 | Apply the new design to the admissions site too, or leave it as is | Leave it for the 2027 season; revisit in September 2027 | 31 Jan 2027 |
 | D11 | Domain email addresses instead of Gmail | Yes, on ithsedu.in | 31 Jan 2027 |
 | D12 | AI training crawlers (GPTBot, Google-Extended, ClaudeBot): allow or block | Allow search crawlers; client decides on training crawlers | 31 Jan 2027 |
+| D13 | Is anthropology still offered? (The 2025 anthropology post earned 206 clicks; "bsc anthropology" still gets 4,179 impressions) | If yes, restore a programme page; if no, 410 | 13 Dec 2026 |
 
 ### 12.2 Inputs
 

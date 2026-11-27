@@ -1,7 +1,7 @@
 # ITHS: Search and Analytics Baseline (translationalhealthscience.in)
 
 **Prepared by:** TechnoTaau Team (lead: Jakhar Singh)
-**Date:** 27 November 2026 | **Version:** 1.0 (all files received so far reviewed: 5 GA4 reports, 7 top-page Performance exports, 8 not-indexed drilldowns, the indexed-pages list, Core Web Vitals, and 4 link reports; §8 lists the files still missing)
+**Date:** 27 November 2026 | **Version:** 1.1 (all uploaded files reviewed, including the 16-month all-pages export from the URL-prefix property; 5 GA4 reports, 7 top-page Performance exports, 8 not-indexed drilldowns, the indexed-pages list, Core Web Vitals, and 4 link reports; §8 lists the files still missing)
 **Sources:** Claude in Chrome read-only export of Search Console (Domain property `translationalhealthscience.in`) and GA4 (property ITHS, 443162610) on 27 Nov 2026; GA4 CSV files 40, 41, 42, 43 and 45 in `iths/data/raw/`; our `curl` checks of live URLs on 27 Nov 2026.
 **Data range:** the Domain property has data only from **29 April 2026**. The **URL-prefix property** (`https://www.translationalhealthscience.in/`) has data from **26 July 2025**, so year-on-year comparison is possible there (§2.0). GA4 covers 27 Nov 2025 to 26 Nov 2026.
 
@@ -49,6 +49,17 @@ Losses are mostly old URLs that now redirect (the 2025 site structure):
 - the genetic counselling, stem cell and anthropology URLs under `/rayat-bahra-university/`;
 - `/apply-now-in-bahra-university/`;
 - the "leading" nutrigenetics post (35 → 4).
+
+**Monthly clicks, all pages (URL-prefix, 16 months; 7,331 clicks, 708,107 impressions in total):**
+
+| Month | 2025 | 2026 | Change |
+|---|---|---|---|
+| August | 354 | 662 | +87% |
+| September | 359 | 593 | +65% |
+| October | 261 | 509 | +95% |
+| November | 294 | 547 (to the 25th) | about +100% |
+
+2026 season: May 519, June 582, **July 807 (the peak)**, August 662. No 2025 season data exists, because the property starts on 26 July 2025.
 
 **The 2026 restructure worked.** The site nearly doubled its search clicks year on year.
 
@@ -335,6 +346,24 @@ Also: `/anthropology/` 301s to the B.Tech stem cell page, and the two anthropolo
 - **Social:** YouTube 1 — channel **@InstituteofTranslationalHealth**, a different handle from the site footer's @TranslationalHealthScience (confirm which is real); Facebook 1.
 - **Reading:** almost no independent links. Off-page priorities: links from the four universities, education portals (via the universities), and regional press (plan §6.6). Correct the directory listings' phone and name to the fact sheet.
 
+### 4.2 Page-level decisions from the 16-month all-pages export
+
+| Page (16-month clicks, URL-prefix) | Decision |
+|---|---|
+| `/ba-bsc-and-ma-msc-anthropology-admission-2025/` (**206 clicks, 49,115 impressions**, now 301 to the homepage) and `/rayat-bahra-university/msc-and-bsc-anthropology/` (54) | The biggest lost asset. "bsc anthropology" still gets 4,179 impressions. **If anthropology is still offered**, publish `/programs/anthropology/` and 301 both old URLs to it. If not, 410 them and remove them from the sitemap (B7). Client decision |
+| `/join-indias-leading-program-in-nutrigenetics…` (127) and `/bsc-and-msc-nutrigenetics-admission-2025/` (41) | Merge into `/programs/nutrigenetics-personalized-nutrition/` (83, position 10.9). Move their useful content (careers, eligibility, FAQs) into the programme page first, then 301. The combined signals should lift the programme page |
+| `/study-stem-cell-tissue-engineering…` (71, position 12.1) and `/indias-1st-b-tech…` (21) | Merge into `/programs/b-tech-stem-cell-tissue-engineering/` (74) the same way |
+| `/exploring-the-possibilities-of-an-msc-and-bsc-in-clinical-embryology/` (48, 17,945 impressions) | Merge into `/programs/clinical-embryology/bsc/` (36). This also gives the BSc page the "bsc embryology" signals |
+| `/transform-your-career-with-advanced-health-science-courses-at-iths/` (29) | Merge into `/programs/` |
+| `/what-is-translational-health-science-courses-careers-india/` (0) | Keep only if rewritten for ithsedu.in's About page; otherwise move it to ithsedu.in with a 301 after launch (it is an institute topic) |
+| `/clinical-embryology-shimla/` (2), `/nutrigenetics-admissions/` (0) | Confirmed ads-only: `noindex`, out of the sitemap |
+| `/news-events/` (0 clicks, 208 impressions), `/careers/` (2) | Confirmed: move to ithsedu.in with 301s after launch |
+| `/Brochure-of-translational-health-science-2024.pdf` (**84 clicks**) and the 2025 prospectus PDFs (47 and 34) | PDFs get real search traffic. Replace the content at the **same URL** with the current, compliant brochure (don't delete it), and link from each PDF's first page to the admission page |
+| `/campuses/shimla/` (46), `/campuses/mohali/` (50), `/campuses/hoshiarpur/` (10) | Campus pages are under-performing compared with Bhopal (249). This confirms the campus-visibility priority |
+| `/iths-set/` (3 clicks, position 28) | Weak. Add real content (test dates, syllabus, scholarship slabs, past results) before the March campaign |
+
+102 of 201 pages with impressions got 0 clicks in 16 months; most are categories, tags, PDFs and old redirected URLs.
+
 ## 5. What changes in the plan (applied in `02-iths-master-plan.md` v1.1)
 
 1. **Brand searches and ithsedu.in.** The homepage takes the brand searches and many leads. When ithsedu.in launches, Google may rank it first for "ITHS". That is the goal (§6.1), but it must not cost admissions leads. So:
@@ -349,7 +378,7 @@ Also: `/anthropology/` 301s to the B.Tech stem cell page, and the two anthropolo
    - `transform-your-career…` → `/programs/`;
    - anthropology posts: after B7.
 
-   Each merge is a 301 after checking the post's own clicks in file 01 (Pages tab).
+   File 01 (16 months, §4.2) confirms the list and the click numbers. Content first, then the 301.
 4. **Campus visibility for Shimla and Hoshiarpur becomes a priority:**
    - Google Business Profiles (if signage exists);
    - deeper campus pages (programmes, labs, hostel, travel, fees, FAQs, real photos);
@@ -413,8 +442,10 @@ Targets (E) are set after the files arrive and after the client shares 2025–26
 - URL-prefix Performance exports: last 3 months, last 3 months vs last year, season 2026, brand and non-brand (16 months), the clusters embryology, nutrigenetics, cancer, Shimla, Hoshiarpur, after-12th and fees (16 months), and the page exports for the homepage and the PhD page. Sample links (the same 61).
 - URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals; all eight indexing drilldowns; the indexed-pages list (122 URLs, the same as the Domain property); latest links (the same 61 links). They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
 
-**Still missing:**
+**Received later (URL-prefix property):** the 16-month all-pages export (file 01); page exports for the ART guide, the cancer scientist post, the stem cell programme and MSc Neuroscience. File 01 settles the merge list (§4.2).
+
+**No longer needed / still missing:**
 - The Performance exports 01–16: all-pages, 3-month, season, brand and non-brand, and the ten clusters. The cluster numbers in §2.5 come from the Chrome summary.
 - The top-page exports for the home page, the embryologist post and `/msc-neuroscience/`.
 
-File 01 (Pages tab, 16 months) confirms the clicks of each post before the merges in §5 item 3. Until it arrives, those merges stay on hold.
+The Domain-property versions of 01–16 are not needed: the URL-prefix exports cover the same pages with a longer history. Still missing, with low impact: the page export for the embryologist post (its queries appear in the embryology and after-12th clusters).
