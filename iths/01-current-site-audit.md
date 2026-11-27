@@ -50,6 +50,19 @@
 | A7 | "15+ Patents Filed", "8+ Patents", "15+ Research Patents" | Home, about, programme pages | Must be "patent applications filed/published" with a verifiable list | Reword and publish the list of application numbers on ithsedu.in `/research/` |
 | A8 | The admission form makes **Aadhaar** mandatory and collects religion, income and family data | Both admission forms | DPDP data minimisation; restrictions on Aadhaar collection by private bodies | Counsel review; make Aadhaar optional unless a university rule requires it; add consent and a notice **[VERIFY with counsel]** |
 
+### 2.1a P0 found in the Search Console and GA4 data (27 Nov 2026; details in `04-baseline-report.md`)
+
+| # | Finding | Fix |
+|---|---|---|
+| C1 | 17 workshop certificates (`/wp-content/uploads/2025/03/ITHSINNRRBU2025104.pdf` … `130.pdf`) are **indexed in Google with participants' full names**. Their QR code points to `/certificate/`, which returns 404 | `noindex` the PDFs (X-Robots-Tag), request removal in Search Console, and rebuild `/certificate/` as a lookup by certificate number |
+| C2 | **iths.rbuchd.in** serves an indexable ITHS "Apply Now in Bahra University" page (no canonical) | Find the owner; `noindex` it or 301 it to `/campuses/shimla/` |
+| C3 | **demo.ithsedu.in** (staging) is public; its title says "Top Private Institute in India" | Password-protect it; correct the wording before go-live |
+| C4 | Old subdomains **bu.** and **rbu.translationalhealthscience.in**: robots.txt not fetchable, 404s and duplicate `?xx` URLs in Search Console | Retire the DNS records or 301 each host to the matching campus page |
+| C5 | Old URLs with visits now 404: `/art-clinical-embryology-chandigarh/` (50 sessions), `/document-library/` (38), `/media/`, `/event-media/`, `/research-and-development/` and others; `/anthropology/` 301s to the B.Tech page | 301 to the closest page (baseline §3.4); check that no ad points to them |
+| C6 | GA4: event data kept only 2 months; "Form Submit" counted about twice per user; phone and WhatsApp key events only for RBU; test traffic (localhost, Tag Assistant) not filtered | Fix before 1 March 2027 (master plan §6.2) |
+| C7 | `/programs/clinical-embryology/msc/` is "crawled, not indexed", and level pages have 0–3 internal links (PhD page: 2) | Unique MSc content; level pages in the Courses menu (master plan §4.3a) |
+| C8 | 25 category, 15 date and 2 author archives are indexed | `noindex, follow`; turn off date archives |
+
 ### 2.2 P1: before the 2027–28 campaign
 
 | # | Finding | Fix |

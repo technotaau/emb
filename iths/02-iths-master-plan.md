@@ -3,8 +3,8 @@
 **Prepared by:** TechnoTaau Team. Team lead and sign-off: Jakhar Singh.
 **Client:** Institute of Translational Health Science (ITHS)
 **Domains:** translationalhealthscience.in (admissions and ads) and ithsedu.in (official institute site)
-**Date:** 27 November 2026 | **Version:** 1.0 (for client review)
-**Read with:** `iths/00-iths-brief.md` (direction, facts, guardrails), `iths/01-current-site-audit.md` (audit findings A1–A8, B1–B14), `iths/03-gsc-ga4-data-request-chrome-prompt.md` (data we still need).
+**Date:** 27 November 2026 | **Version:** 1.1 (Search Console and GA4 data applied; see `04-baseline-report.md` §5)
+**Read with:** `iths/00-iths-brief.md` (direction, facts, guardrails), `iths/01-current-site-audit.md` (audit findings A1–A8, B1–B14, C1–C8), `iths/04-baseline-report.md` (search and analytics baseline), `iths/03-gsc-ga4-data-request-chrome-prompt.md` (data we still need).
 **Labels:** **D#** = a decision the client needs to make (section 12). **(E)** = a TechnoTaau Team estimate, re-set once Search Console data arrives. **[VERIFY with counsel]** = needs the client's lawyer. **[DATA]** = waits for the Search Console and GA4 export.
 
 ---
@@ -39,6 +39,13 @@
 - **ithsedu.in becomes the official ITHS website**: who ITHS is, leadership, research, partner universities, achievements and announcements. It does **not** copy programme or campus pages. Its "Programmes" and "Apply" buttons go to the admissions site.
 - **Social media:** a new official @ithsedu set of accounts for achievements and announcements, and one account set per campus for daily activity. Instagram **Collab posts** put one post on both accounts without duplicating it. We recommend **one** YouTube channel and **one** LinkedIn page (with campus showcase pages), not five of each.
 - **Google sees one organisation with two websites**, linked by structured data. A search for "ITHS" should then show both sites at the top: ithsedu.in as the official site and the admissions site for courses.
+
+**What the data says (`04-baseline-report.md`):**
+- Organic search brings 44% of visits and 46% of leads.
+- Paid search converted at 17.7% in the 2026 season.
+- AI assistants already send visitors who convert at 23.6%.
+- Bhopal is the strongest campus in search; Shimla and Hoshiarpur barely appear.
+- Workshop certificates with participants' names are indexed in Google.
 
 **Fix first (this week):** the admission form shows a Bhopal university bank account for Punjab and Himachal campuses (A1), a link points to a TechnoTaau staging site (A2), a public "note for build" says the Shimla photos are stock (A3), and placement, "first" and patent claims need correcting (A5–A7).
 
@@ -105,6 +112,7 @@ Keep the current 302 redirect (ithsedu.in → translationalhealthscience.in) unt
 | `/iths-admission-form-2026-27/`, `/iths-sgsu-admission-form/` | Admissions | `noindex`. Move to evergreen `/admission-form/` and `/admission-form-sgsu/` with 301s (B1). Fix bank details (A1) |
 | `/iths-set/` | Admissions | Keep. Add an H1, test dates, eligibility and scholarship rules in text |
 | `/clinical-embryology-shimla/`, `/nutrigenetics-admissions/` | Admissions (ad landing pages) | If they get little organic traffic: `noindex`, remove from the sitemap, use only for ads. If they rank: keep indexed and remove the overlap with the campus or programme page [DATA] |
+| `/art-and-clinical-embryology-program/` | Admissions (paid landing page) | **Protected.** The top lead page on the site (339 key events in 12 months). Keep `noindex`, out of the sitemap, and use it for the 2027 search ads |
 | `/thank-you/` ×3 | Admissions | `noindex`; remove from the sitemap (B2) |
 | `/campus-life/` | Admissions | Keep. Monthly curated photos from the campus accounts, with captions and alt text |
 | `/news-events/` | Changes at ithsedu.in launch | Keep the URL with the existing items and a banner "Latest news is now on ithsedu.in/news/". After 3 months, if it has few clicks, 301 to `https://ithsedu.in/news/` [DATA] |
@@ -119,7 +127,8 @@ Keep the current 302 redirect (ithsedu.in → translationalhealthscience.in) unt
 | 19 admission and career guides | Stay on the admissions site. Refresh for 2027–28. Merge overlapping posts by cluster (4.3) [DATA]. Fix "India's leading", "India's 1st", "2025" in titles and body |
 | 2 anthropology posts | Confirm whether anthropology is offered (B7). If not, 301 to the closest current page |
 | 5 news posts (Aashakiran visit, Teachers' Day, Orientation, Talent Hunt, Nutrition Week) | Stay where they are (no copy on ithsedu.in). New institutional news goes to ithsedu.in from launch |
-| 31 category archives | `noindex` the thin ones (fewer than 3 posts) and keep them out of the sitemap [DATA] |
+| 31 category archives (25 indexed), plus 15 date and 2 author archives | `noindex, follow` all except about 5 topic hubs that get written introductions; turn off date archives (baseline §2.8) |
+| 17 workshop certificate PDFs with participants' names (indexed) | **P0:** `noindex` (X-Robots-Tag), remove from search, and rebuild `/certificate/` as a verification page (audit C1) |
 
 ### 3.3 ithsedu.in pages: see section 5.1.
 
@@ -140,6 +149,8 @@ Audit items A1–A8 (now) and B1–B14 (before the campaign) in `01-current-site
 
 ### 4.3 Cannibalisation: one primary page per search intent
 
+**Data result (baseline §2.5):** the overlaps are mostly healthy. Posts and programme pages answer different questions, so **nothing with clicks is merged**. Only posts with almost no clicks are merged, after file 01 confirms their numbers.
+
 Method, per cluster:
 1. In Search Console, filter queries for the cluster term (for example "shimla") and check the Pages tab: which URLs get impressions and clicks for the same queries.
 2. Choose the **primary page** (usually the one with the most clicks and the right intent: programme page for "bsc clinical embryology", campus page for "embryology course in shimla").
@@ -148,11 +159,18 @@ Method, per cluster:
 
 | Cluster | Candidate pages | Likely primary (to confirm with data) |
 |---|---|---|
-| Shimla / Bahra University | `/campuses/shimla/`, `/clinical-embryology-shimla/`, `/bahra-university-shimla-courses-fees-admission/` | `/campuses/shimla/` for campus searches; the post can keep "Bahra University courses and fees" if it ranks for those |
-| BSc clinical embryology | `/programs/clinical-embryology/bsc/`, `bsc-clinical-embryology-scope…`, `exploring-the-possibilities…`, `want-to-become-an-embryologist…`, `bsc-embryology-colleges-in-india…` | Programme page for the course; "colleges in India" guide for comparison searches; merge the two older 2024–25 posts |
-| Nutrigenetics | `/programs/nutrigenetics-personalized-nutrition/` (+bsc, msc), `/nutrigenetics-admissions/`, `bsc-and-msc-nutrigenetics-admission-2025`, `join-indias-leading-program…` | Programme page; merge the 2025 admission post and the "leading" post |
+| Shimla / Bahra University | `/campuses/shimla/`, `/clinical-embryology-shimla/`, `/bahra-university-shimla-courses-fees-admission/` | `/campuses/shimla/`. Data: 0 clicks from 335 impressions, so this is a visibility problem, not cannibalisation. Deepen the page, add a Google Business Profile, get a Bahra University link |
+| BSc clinical embryology | `/programs/clinical-embryology/bsc/`, `bsc-clinical-embryology-scope…`, `exploring-the-possibilities…`, `want-to-become-an-embryologist…`, `bsc-embryology-colleges-in-india…` | Keep the embryologist post (220 clicks in 3 months), the colleges guide and the PhD page. BSc programme page takes "bsc embryology". Merge only `exploring-the-possibilities…` |
+| Nutrigenetics | `/programs/nutrigenetics-personalized-nutrition/` (+bsc, msc), `/nutrigenetics-admissions/`, `bsc-and-msc-nutrigenetics-admission-2025`, `join-indias-leading-program…` | Programme page (now position 10–19: strengthen it); merge the 2025 admission post and the "leading" post |
 | B.Tech stem cell | `/programs/b-tech-stem-cell-tissue-engineering/`, `study-stem-cell-tissue-engineering…`, `indias-1st-b-tech…`, `stem-cell-tissue-engineering-…-course-india-guide` | Programme page plus the 2026 guide; merge the two older posts |
-| Cancer biology | `/programs/cancer-biology/` (+bsc, msc), `want-to-become-a-cancer-research-scientist…`, `bsc-cancer-biology-colleges-in-india…` | Programme page plus the colleges guide |
+| Cancer biology | `/programs/cancer-biology/` (+bsc, msc), `want-to-become-a-cancer-research-scientist…`, `bsc-cancer-biology-colleges-in-india…` | Programme page plus the colleges guide; the BSc page takes "bsc cancer biology" and "bsc oncology" queries |
+
+### 4.3a Internal links to level pages (baseline §2.9)
+
+The PhD page (5th-best organic page) has 2 internal links. The MSc embryology page has almost none and is "crawled, not indexed". Several BSc and MSc pages have 0–3 links. Before 1 March 2027:
+- add the BSc, MSc, PhD and PG Diploma pages under each programme in the Courses menu;
+- add a "Choose your level" block on each programme hub;
+- link from each guide to the right level page with descriptive anchors.
 
 ### 4.4 Ad landing pages
 
@@ -166,8 +184,8 @@ Two guides a month from December to April, then refreshes during the season. Eac
 
 | Month | Publish or refresh | Primary page it supports |
 |---|---|---|
-| Dec 2026 | Refresh: "Health science courses after 12th PCB" (2027 edition); NEW: "How to check whether a degree is UGC-recognised" (with ugc.gov.in steps) | `/programs/`, `/admission/` |
-| Jan 2027 | NEW: "Clinical embryology course in Punjab: Mohali and Hoshiarpur campuses"; refresh: "BSc embryology colleges in India" | Campus pages; BSc programme page |
+| Dec 2026 | NEW: "Clinical embryology course in Punjab: Mohali and Hoshiarpur campuses" ("bsc embryology colleges in punjab" has impressions and no clicks); titles and meta descriptions rewritten on the 6 highest-impression pages (baseline §2.10) | Campus pages; BSc programme page |
+| Jan 2027 | Refresh: "Health science courses after 12th PCB" (2027 edition); NEW: "How to check whether a degree is UGC-recognised"; refresh: "BSc embryology colleges in India" | `/programs/`, `/admission/`, BSc page |
 | Feb 2027 | NEW: "Clinical embryology course in Bhopal (Madhya Pradesh)"; refresh: Bahra University Shimla guide (2027) | `/campuses/bhopal/`, `/campuses/shimla/` |
 | Mar 2027 | NEW: "PG Diploma in Clinical Embryology for MBBS, BDS and BAMS graduates"; NEW: "Nutrigenetics vs nutrition and dietetics: which BSc?" | PGD page; nutrigenetics programme page |
 | Apr 2027 | NEW: "PhD in clinical embryology in India: eligibility and process"; ITHS-SET 2027 page update | PhD page; `/iths-set/` |
@@ -185,7 +203,7 @@ Paths reuse the admissions site's paths where the meaning is the same, so a futu
 
 | Path | Page | Purpose |
 |---|---|---|
-| `/` | Home | Mission in one line; latest 3 announcements; partner universities; research highlights; leadership; "Programmes & Admissions" button |
+| `/` | Home | Mission in one line; **an "Admissions 2027–28" band above the fold linking to the admissions site** (brand searches will move to ithsedu.in, and they bring leads today: baseline §5); latest 3 announcements; partner universities; research highlights; leadership; "Programmes & Admissions" button |
 | `/about/` | About ITHS | Story, founding year (one value), mission and vision, how the collaboration model works (in words approved by counsel), governance |
 | `/leadership/` | Leadership | Founder, Director and the programme heads |
 | `/leadership/jyoti-garhewal/`, `/leadership/pulakes-purkait/` | Profiles | Qualifications, ORCID, publications, patent applications (with numbers), awards (exact name, issuer, year) |
@@ -255,6 +273,13 @@ For "ITHS", "Institute of Translational Health Science" and "ITHS Mohali/Shimla/
 - **Search Console:** a Domain property for each domain (`translationalhealthscience.in`, `ithsedu.in`), verified by DNS. Same owners on both. TechnoTaau Team gets Full user access.
 - **Bing Webmaster Tools:** import both from Search Console. Turn on IndexNow if the SEO plugin supports it.
 - **GA4:** one property with one web data stream per site, or one stream covering both, with **cross-domain measurement** set for both domains, so a visitor who goes from ithsedu.in to an admissions form is counted as one journey. Consent Mode v2, default denied. Key events: `generate_lead` (form name and campus only, no personal data), `tel_click`, `whatsapp_click`, `brochure_download`, `iths_set_register`. GA4's "AI Assistant" channel shows visits from AI tools.
+- **Fix the current GA4 before 1 March 2027 (baseline §3.3, §3.5):**
+  - set event data retention from 2 to 14 months;
+  - de-duplicate "Form Submit" (it fires about twice per user);
+  - replace the RBU-only phone and WhatsApp events with campus-tagged events;
+  - remove the empty `purchase` key event;
+  - filter internal and developer traffic (localhost, Tag Assistant);
+  - put UTM tags on every link we control.
 - **Looker Studio** dashboard with both domains, leads by campus and programme, and ads (section 9).
 
 ### 6.3 Internal and cross-domain linking
@@ -328,6 +353,9 @@ Persons (`Person` with `@id` on the leadership profiles, `sameAs` ORCID and Link
 Each answer: a direct 40–60 word answer under a question heading, then detail, with the date of the information.
 
 ### 6.8 AI assistants (GEO)
+
+AI assistants sent 195 sessions in 12 months with a 23.6% key-event rate, the best of any channel (baseline §3.1). This work therefore starts in December 2026, not after launch.
+
 
 - **llms.txt** on both domains: ithsedu.in lists the institute, leadership, partners and research pages; the admissions site lists programmes, campuses, admission and ITHS-SET pages. Facts only, no claims.
 - **robots.txt:** allow AI search crawlers (OAI-SearchBot, PerplexityBot, Claude-SearchBot, Bingbot); decide on training crawlers (GPTBot, Google-Extended, ClaudeBot) with the client (D12).
@@ -427,14 +455,14 @@ Targets are set 30 days after the data export (E). Until then these are the meas
 
 | KPI | Measure | Source | Floor or target |
 |---|---|---|---|
-| K1 Protect organic traffic | Admissions-site organic clicks vs the same period last year | Search Console | No more than 10% below the same month last year, for the 3 months after each change batch and after ithsedu.in launches |
+| K1 Protect organic traffic | Admissions-site **non-brand** organic clicks, and **total leads** (brand clicks are expected to shift to ithsedu.in) | Search Console, CRM | Non-brand clicks no more than 10% below the previous comparable period (no year-on-year data exists before 29 Apr 2026); leads not below the 2026 season |
 | K2 Non-brand growth | Non-brand clicks (regex excludes ITHS and translational) | Search Console | Target set from baseline (E) |
 | K3 Brand ownership | ithsedu.in and the admissions site in the top 3 for "ITHS" and "Institute of Translational Health Science" | Manual check, Search Console | Within 3 months of launch |
 | K4 Leads | Enquiries per campus and programme, per source | CRM, GA4 | Baseline from 2026–27 (D7) |
 | K5 Lead quality | Applied ÷ leads; enrolled ÷ applied | CRM | Baseline (D7) |
 | K6 Cost | Cost per lead and per admission, by channel | Google Ads, Meta, CRM | Set with budget |
 | K7 Social | Followers, reach, link clicks, leads per account | Platform insights, UTM | Monthly trend |
-| K8 AI answers | Prompts (of 15) where ITHS is named correctly | AI panel | Baseline in December 2026 |
+| K8 AI answers | Prompts (of 15) where ITHS is named correctly; GA4 AI Assistant sessions | AI panel; GA4 | Panel baseline in December 2026; sessions above 195 a year |
 | K9 Fact consistency | Fact-sheet items that match across sites, bios, profiles and top aggregators | Monthly check | 100% of our own channels; aggregators fixed where the university allows |
 | K10 Compliance | Claims outside Appendix B found in the monthly check | Checklist | Zero |
 
@@ -454,8 +482,9 @@ Targets are set 30 days after the data export (E). Until then these are the meas
 
 | # | Task | Owner | Due |
 |---|---|---|---|
-| 1 | Run the Chrome export prompt (`03-…`) and upload the files | Jakhar Singh / client with GSC access | 4 Dec |
-| 2 | Fix A1 (bank details), A2 (staging link), A3 (build note), A4 (NAAC badge) | Client developer; client confirms facts | 4 Dec |
+| 1 | Upload the missing Performance exports 01–16 and top pages 01, 02 and 10 (baseline §8) | Jakhar Singh | 2 Dec |
+| 2 | Fix A1 (bank details), A2 (staging link), A3 (build note), A4 (NAAC badge), C1 (certificate PDFs), C2 (iths.rbuchd.in), C3 (demo.ithsedu.in password) | Client developer; client confirms facts | 4 Dec |
+| 2a | GA4: retention 14 months, de-duplicate Form Submit, internal-traffic filter (C6) | Client developer with TechnoTaau Team | 6 Dec |
 | 3 | Decisions D1–D4 and the fact sheet (5.3) | Client | 11 Dec |
 | 4 | Reserve all handles (Appendix A) | Client social lead | 6 Dec |
 | 5 | Claims rewrite (A5–A7, B9–B11): replacement text for every instance | TechnoTaau Team drafts; client approves | 13 Dec |
