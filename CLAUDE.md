@@ -1,6 +1,6 @@
 # EmbryoGenesis Digital Rebuild: Knowledge Base
 
-This repository holds the strategy, design direction, content and SEO specification that TechnoTaau Team is preparing for EmbryoGenesis (https://embryogenesis.in).
+This repository holds the strategy, design direction, content and SEO specification that TechnoTaau Team is preparing for EmbryoGenesis (https://embryogenesis.in), and (in `iths/`) the plan for its sister institute ITHS.
 
 ## Working preferences
 - Address the client and sign all documents and proposals as **TechnoTaau Team** or **Jakhar Singh**.
@@ -18,3 +18,8 @@ This repository holds the strategy, design direction, content and SEO specificat
 - `docs/qc/`: QC reports (content fidelity, SEO/AEO/GEO, front-end, design, plan).
 - `site/`: the multi-page reference build (`python3 site/build.py`, then `python3 site/qc.py`); `prototype/`: the single-page prototype.
 - `content/`: page copy drafts and source extracts.
+
+## ITHS (separate client work, `iths/`)
+- ITHS = Institute of Translational Health Science, the sister academic institute (degrees awarded by partner universities RBU Mohali, RBPU Hoshiarpur, BU Shimla, SGSU Bhopal). Read `iths/00-iths-brief.md` before any ITHS task; the EmbryoGenesis brief and NMC rules do not apply to ITHS except where that brief says so.
+- Direction (27 Nov 2026): translationalhealthscience.in stays the admissions and ads site (keep every ranking URL); ithsedu.in becomes the official institute site for achievements and announcements; campus social accounts carry daily activity and @ithsedu carries important news. Rule: every topic has one home (`iths/02-iths-master-plan.md` section 1).
+- ITHS guardrails: no unproven firsts or superlatives, no "100% placement", "patent applications" not "patents", the degree-awarding university named prominently, ITHS never called a university until it is one, DPDP consent and parental consent for minors.
