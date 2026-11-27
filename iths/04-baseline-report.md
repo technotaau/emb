@@ -59,6 +59,21 @@ Losses are mostly old URLs that now redirect (the 2025 site structure):
 - "…kurali reviews": 147 impressions, which shows people look for reviews.
 
 
+### 2.0a 16-month trends by topic (URL-prefix property, July 2025 – November 2026)
+
+| Segment | Clicks (visible queries) | Monthly clicks, late 2025 | Monthly clicks, 2026 | Reading |
+|---|---|---|---|---|
+| Non-brand (all) | 1,084 | 29–53 | 83–128 (May–Oct) | Non-brand demand grew about 2.5 times after the 2026 restructure |
+| Embryology | 368 | 3–18 | 37–56 (Jul–Oct) | The strongest topic. The embryologist post takes 240 of 370 page clicks. "bsc embryology" (5,107 impressions, position 11.3) and "embryologist" (6,640, position 7.5) are the biggest gaps |
+| Cancer | 202 | 5–11 | 14–36 (Apr–Aug) | Seasonal. The old `/rayat-bahra-university/bsc-in-cancer-biology/` (56 clicks) now 301s to the BSc page, so its value carried over. "bsc cancer biology" and "bsc in cancer biology" rank at position 3.6–3.9 |
+| Nutrigenetics and nutrition | 110 | 0–8 | 2–15 | The dietetics salary guide takes 70 clicks. The "India's leading" nutrigenetics post (23 clicks) out-earned the programme page (17, position 14.8): **merge the post into the programme page with a 301**, and rewrite the page for "nutrigenetics course" and "nutrigenomics course in India" |
+| Shimla and Bahra University | 25 | 1–7 | **0 since April 2026** | `/apply-now-in-bahra-university/` ranked at position 4.2 for "bahra university" (10,202 impressions, 7 clicks) until it was 301'd to `/campuses/shimla/`. The campus page has not taken over: Shimla visibility was lost in the restructure. Mostly navigational searches for the university itself, so few clicks are at stake, but "bahra university shimla" (787 impressions) and "bu shimla" (157) are winnable with a stronger campus page |
+
+Other demand seen in non-brand queries:
+- "bsc anthropology": 4,179 impressions. Is anthropology still offered? (audit B7).
+- "india first undergraduate engineering biology": 2,850 impressions, the B.Tech.
+- "embryologist course": 3,154 impressions at position 3.6.
+
 ### 2.1 Totals (Web search)
 
 | Period | Clicks | Impressions | CTR | Avg position |
@@ -389,7 +404,7 @@ Targets (E) are set after the files arrive and after the client shares 2025–26
   - discovered not indexed (7: thin categories and the two admission forms).
 - The indexed-pages list (122); Core Web Vitals (mobile, no failing URLs); top linking sites, latest links, sample links, top target pages (internal).
 
-- URL-prefix Performance exports: last 3 months, last 3 months vs last year, season 2026, and brand (16 months). Sample links (the same 61).
+- URL-prefix Performance exports: last 3 months, last 3 months vs last year, season 2026, brand and non-brand (16 months), and the clusters embryology, nutrigenetics, cancer and Shimla (16 months). Sample links (the same 61).
 - URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals; all eight indexing drilldowns; the indexed-pages list (122 URLs, the same as the Domain property); latest links (the same 61 links). They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
 
 **Still missing:**
