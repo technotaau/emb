@@ -357,7 +357,7 @@ Targets (E) are set after the files arrive and after the client shares 2025–26
   - discovered not indexed (7: thin categories and the two admission forms).
 - The indexed-pages list (122); Core Web Vitals (mobile, no failing URLs); top linking sites, latest links, sample links, top target pages (internal).
 
-- URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals and the 404, alternate-canonical, noindex and other-4xx drilldowns. They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
+- URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals; all eight indexing drilldowns; the indexed-pages list (122 URLs, the same as the Domain property); latest links (the same 61 links). They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
 
 **Still missing:**
 - The Performance exports 01–16: all-pages, 3-month, season, brand and non-brand, and the ten clusters. The cluster numbers in §2.5 come from the Chrome summary.
