@@ -69,6 +69,12 @@ Losses are mostly old URLs that now redirect (the 2025 site structure):
 | Nutrigenetics and nutrition | 110 | 0–8 | 2–15 | The dietetics salary guide takes 70 clicks. The "India's leading" nutrigenetics post (23 clicks) out-earned the programme page (17, position 14.8): **merge the post into the programme page with a 301**, and rewrite the page for "nutrigenetics course" and "nutrigenomics course in India" |
 | Shimla and Bahra University | 25 | 1–7 | **0 since April 2026** | `/apply-now-in-bahra-university/` ranked at position 4.2 for "bahra university" (10,202 impressions, 7 clicks) until it was 301'd to `/campuses/shimla/`. The campus page has not taken over: Shimla visibility was lost in the restructure. Mostly navigational searches for the university itself, so few clicks are at stake, but "bahra university shimla" (787 impressions) and "bu shimla" (157) are winnable with a stronger campus page |
 
+| Hoshiarpur and RBPU | **0** (48 impressions in 16 months) | 0 | 0 | Never visible. Searches are mostly "rbpu hoshiarpur" (36 impressions, position 7.4). The campus needs a Google Business Profile, an RBPU link and a fuller page before it can show in search. An old URL `/rayat-bahra-professional-university-hoshiarpur/` also appears; check that it 301s to the campus page |
+| After 12th and NEET | 140 | 0–6 | 5–26 (strong May–Sep) | Ranks at positions 1.7–2.6: "ivf courses after 12th" 56 clicks, "how to become an embryologist after 12th" 29. Two posts carry it (embryologist post 74, ART guide 47). **Refresh both before April 2027**; they are season engines |
+| Fees, scholarship, admission | 9 | 0 | 0–3 | "embryology course fees" (99 impressions, position 11), "ivf course fees", "bsc embryology course fees": there is demand, but the site has no fee page. Supports D8 (publish fees) |
+
+The homepage drew 232 clicks in November to the 25th, against 91 in September and 65 in October. 152 of them came from "…(iths) kurali", which confirms a new or more prominent Google Business Profile in November.
+
 Other demand seen in non-brand queries:
 - "bsc anthropology": 4,179 impressions. Is anthropology still offered? (audit B7).
 - "india first undergraduate engineering biology": 2,850 impressions, the B.Tech.
@@ -404,7 +410,7 @@ Targets (E) are set after the files arrive and after the client shares 2025–26
   - discovered not indexed (7: thin categories and the two admission forms).
 - The indexed-pages list (122); Core Web Vitals (mobile, no failing URLs); top linking sites, latest links, sample links, top target pages (internal).
 
-- URL-prefix Performance exports: last 3 months, last 3 months vs last year, season 2026, brand and non-brand (16 months), and the clusters embryology, nutrigenetics, cancer and Shimla (16 months). Sample links (the same 61).
+- URL-prefix Performance exports: last 3 months, last 3 months vs last year, season 2026, brand and non-brand (16 months), the clusters embryology, nutrigenetics, cancer, Shimla, Hoshiarpur, after-12th and fees (16 months), and the page exports for the homepage and the PhD page. Sample links (the same 61).
 - URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals; all eight indexing drilldowns; the indexed-pages list (122 URLs, the same as the Domain property); latest links (the same 61 links). They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
 
 **Still missing:**
