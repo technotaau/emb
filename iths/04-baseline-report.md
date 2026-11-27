@@ -2,17 +2,17 @@
 
 **Prepared by:** TechnoTaau Team (lead: Jakhar Singh)
 **Date:** 27 November 2026 | **Version:** 1.1 (all uploaded files reviewed, including the 16-month all-pages export from the URL-prefix property; 5 GA4 reports, 7 top-page Performance exports, 8 not-indexed drilldowns, the indexed-pages list, Core Web Vitals, and 4 link reports; §8 lists the files still missing)
-**Sources:** Claude in Chrome read-only export of Search Console (Domain property `translationalhealthscience.in`) and GA4 (property ITHS, 443162610) on 27 Nov 2026; GA4 CSV files 40, 41, 42, 43 and 45 in `iths/data/raw/`; our `curl` checks of live URLs on 27 Nov 2026.
+**Sources:** Claude in Chrome read-only exports of Search Console (Domain property `translationalhealthscience.in` and URL-prefix property `https://www.translationalhealthscience.in/`; each file identified by its contents in `iths/data/file-inventory.md`) and GA4 (property ITHS, 443162610) on 27 Nov 2026; GA4 CSV files 40, 41, 42, 43 and 45 in `iths/data/raw/`; our `curl` checks of live URLs on 27 Nov 2026.
 **Data range:** the Domain property has data only from **29 April 2026**. The **URL-prefix property** (`https://www.translationalhealthscience.in/`) has data from **26 July 2025**, so year-on-year comparison is possible there (§2.0). GA4 covers 27 Nov 2025 to 26 Nov 2026.
 
 ---
 
 ## 1. Headline findings
 
-1. **Search clicks nearly doubled year on year** (+91% for Aug–Nov, URL-prefix property, §2.0). **Organic search is the main source of visits and leads.** It brings 44% of GA4 sessions (5,366 of 12,196) and 46% of key events (665 of 1,448) over 12 months. Search Console shows 4,271 clicks and 291,324 impressions since 29 April 2026, average position 6.6.
+1. **Search clicks nearly doubled year on year** (+91% for Aug–Nov, URL-prefix property, §2.0). **Organic search is the main source of visits and leads.** It brings 44% of GA4 sessions (5,366 of 12,196) and 46% of key events (665 of 1,448) over 12 months. Search Console (URL-prefix property) shows 7,196 clicks in 16 months (26 Jul 2025 – 25 Nov 2026).
 2. **Paid search ran only in the 2026 season and converted best among large channels.** 985 of its 992 yearly sessions came between 1 May and 31 August, with a 17.7% key-event rate. Its landing page `/art-and-clinical-embryology-program/` (correctly `noindex`) is the **top lead page on the site**: 1,085 sessions and 339 key events.
 3. **AI assistants already send leads.** 195 sessions (mostly ChatGPT) with a 23.6% key-event rate, the highest of any channel. GEO work (master plan §6.8) moves up in priority.
-4. **The brand is searched, and the homepage takes those searches.** Brand queries got 609 clicks at 21.5% CTR. The top query is "institute of translational health science (iths) kurali" (162 clicks in 3 months, position 1), which looks like the name of a Google Business Profile. The homepage gets 398 clicks in 3 months and 278 GA4 key events in 12 months.
+4. **The brand is searched, and the homepage takes those searches.** Brand queries got 904 clicks in 16 months (URL-prefix). The top query is "institute of translational health science (iths) kurali" (162 clicks in 3 months, position 1), which looks like the name of a Google Business Profile. The homepage gets 398 clicks in 3 months and 278 GA4 key events in 12 months.
 5. **Guides and programme pages bring the non-brand traffic**, and they mostly answer different questions. "Want to become an embryologist" (220 clicks, 25,221 impressions in 3 months) and "BSc embryology colleges in India" (168 clicks) are the strongest non-brand pages.
 6. **Bhopal leads the campuses; Shimla and Hoshiarpur barely appear in search.** `/campuses/bhopal/`: 110 clicks in 3 months, 471 sessions and 194 key events in 12 months. `/campuses/shimla/`: 0 clicks from 335 impressions. `/campuses/hoshiarpur/`: 0 clicks from 42 impressions.
 7. **Measurement has gaps that will distort the 2027 season** unless they are fixed now:
@@ -93,23 +93,32 @@ Other demand seen in non-brand queries:
 
 ### 2.1 Totals (Web search)
 
-| Period | Clicks | Impressions | CTR | Avg position |
-|---|---|---|---|---|
-| Since 29 Apr 2026 (shown as "last 16 months") | 4,271 | 291,324 | 1.47% | 6.6 |
-| Last 3 months (26 Aug – 25 Nov 2026) | 1,759 | 107,465 | 1.64% | 6.4 |
-| Season 2026 (1 May – 31 Aug) | 2,583 | 187,764 | 1.38% | 6.9 |
+**Two Search Console properties are in play.** File names alone don't say which property each file came from, so each file was identified by its contents (`iths/data/file-inventory.md`):
+- the **URL-prefix property** `https://www.translationalhealthscience.in/` has data from **26 July 2025**, and all the uploaded Performance totals come from it;
+- the **Domain property** `translationalhealthscience.in` has data only from **29 April 2026**, and the Chrome summary's 16-month figures come from it.
+
+For www pages, the two agree exactly over the same dates. **This report uses the URL-prefix figures as the baseline.** The Domain figures are shown for reference only.
+
+| Period | Clicks | Impressions | CTR | Avg position | Source |
+|---|---|---|---|---|---|
+| Last 16 months (26 Jul 2025 – 25 Nov 2026) | **7,196** (by page: 7,331) | 708,107 (by page) | – | – | URL-prefix file (no number) |
+| Last 3 months (26 Aug – 25 Nov 2026) | 1,759 | 107,465 | 1.64% | 6.4 | URL-prefix `_1`; the Domain property gives the same figures |
+| Season 2026 (1 May – 31 Aug) | 2,570 (by page: 2,628) | 212,706 (by page) | – | – | URL-prefix `_3`. The Domain property gave 2,583 / 187,764 in the Chrome summary |
+| Since 29 Apr 2026 (Domain, reference only) | 4,271 | 291,324 | 1.47% | 6.6 | Chrome summary |
+
+"By page" totals are a little higher than property totals because Search Console counts a click on each page that appears for a search.
 
 The season produced 60% of all clicks in under 60% of the days. Interest peaks with results and counselling, as the plan assumed.
 
-### 2.2 Brand and non-brand (since 29 Apr 2026)
+### 2.2 Brand and non-brand
 
-| Segment | Clicks | Impressions | CTR | Position |
-|---|---|---|---|---|
-| Brand (iths, translational, ithsset, ithsedu) | 609 | 2,831 | 21.5% | 3.9 |
-| Non-brand | 706 | 81,487 | 0.87% | 8.3 |
-| Anonymised queries (Google hides them) | about 2,956 | – | – | – |
+| Segment | URL-prefix, 16 months (baseline) | Domain, since 29 Apr 2026 (reference) |
+|---|---|---|
+| Brand (iths, translational, ithsset, ithsedu) | **904 clicks**, 6,376 impressions (`_4`) | 609 clicks, 2,831 impressions, CTR 21.5%, position 3.9 |
+| Non-brand (visible queries) | **1,084 clicks**, 148,046 impressions (`_5`) | 706 clicks, 81,487 impressions, CTR 0.87%, position 8.3 |
+| Anonymised queries (Google hides them) | about 5,200 clicks (7,196 − 904 − 1,084) | about 2,956 |
 
-69% of clicks come from queries Google does not show, so query-level conclusions rest on the 31% that are visible. Page-level data (§2.4) is complete.
+About 70% of clicks come from queries Google does not show, so query-level conclusions rest on the visible 30%. Page-level data (§2.4, §4.2) is complete.
 
 ### 2.3 Top queries (last 3 months)
 
@@ -160,18 +169,20 @@ The season produced 60% of all clicks in under 60% of the days. Interest peaks w
 
 Flag ⚑ = two or more pages each with more than 10% of a cluster's clicks.
 
-| Cluster (since 29 Apr) | Clicks | Pages sharing clicks | Verdict |
+Source: URL-prefix, 16 months, where the file was uploaded (`_6` to `_12`). For stem cell, Bhopal and Chandigarh, the URL-prefix files were not among the uploads, so those rows use the Domain figures from the Chrome summary (since 29 Apr 2026).
+
+| Cluster | Clicks | Pages sharing clicks | Verdict |
 |---|---|---|---|
-| Embryology ⚑ | 267 | Embryologist post 56%, colleges guide 18%, PhD page 15% | **Healthy.** Each answers a different question (become one / which college / PhD). Keep all three; link them to each other and to the BSc and MSc pages |
-| Nutrigenetics ⚑ | 59 | Nutrition and dietetics guide 63%, nutrigenetics programme 29% | Healthy split, but the programme ranks on page 2 for "nutrigenomics course". Strengthen the programme page; merge the 2025 admission post and the "leading" post into it (both under 5 clicks) |
-| Stem cell ⚑ | 45 | Programme 69%, its BSc page 24% | Healthy (parent and child). The B.Tech page gets 2 clicks; merge the two older B.Tech posts into it |
-| Cancer ⚑ | 119 | Programme 40%, BSc 36%, scientist post 21% | Healthy. Watch "bsc cancer biology", where the programme and BSc pages may swap; make the BSc page the target for "bsc" queries |
-| After 12th ⚑ | 116 | Embryologist post 44%, ART guide 39% | Healthy. Different angles (embryologist vs ART course) |
-| Shimla | 1 | – | **Not ranking.** Visibility problem, not cannibalisation |
-| Hoshiarpur | 0 | – | **Not ranking** |
-| Bhopal | 10 | Campus page 70% | Fine. The regex picked up general "scope" searches |
-| Chandigarh/Mohali | 13 | Homepage 85% | Brand-driven. "bsc embryology colleges in punjab" has 89 impressions and 0 clicks: the planned Punjab guide (plan §4.5, January) fills this |
-| Admission/fees | 9 | – | Too small to judge. People search fees ("ivf course fees", "embryology course fees"); supports publishing fees (D8) |
+| Embryology ⚑ (URL-prefix) | 368 | Embryologist post 65%, colleges guide 13%, PhD page 11% | **Healthy.** Each answers a different question (become one / which college / PhD). Keep all three; link them to each other and to the BSc and MSc pages |
+| Nutrigenetics ⚑ (URL-prefix) | 110 | Nutrition and dietetics guide 64%, "India's leading" post 21%, programme 15% | The programme ranks at position 14.8. Merge the "leading" post and the 2025 admission post into it (§4.2) |
+| Stem cell ⚑ (Domain, since 29 Apr) | 45 | Programme 69%, its BSc page 24% | Healthy (parent and child). The B.Tech page gets 2 clicks; merge the two older B.Tech posts into it |
+| Cancer ⚑ (URL-prefix) | 202 | Old RBU URL 28% (now 301 to the BSc page), programme 25%, BSc 25%, scientist post 21% | Healthy. Watch "bsc cancer biology", where the programme and BSc pages may swap; make the BSc page the target for "bsc" queries |
+| After 12th ⚑ (URL-prefix) | 140 | Embryologist post 52%, ART guide 33% | Healthy. Different angles (embryologist vs ART course) |
+| Shimla (URL-prefix) | 25 (0 since April 2026) | Old `/apply-now-in-bahra-university/` page | **Visibility lost in the restructure** (§2.0a) |
+| Hoshiarpur (URL-prefix) | 0 | – | **Never ranked** |
+| Bhopal (Domain, since 29 Apr) | 10 | Campus page 70% | Fine. The regex picked up general "scope" searches |
+| Chandigarh/Mohali (Domain, since 29 Apr) | 13 | Homepage 85% | Brand-driven. "bsc embryology colleges in punjab" has 89 impressions and 0 clicks: the planned Punjab guide (plan §4.5, January) fills this |
+| Admission/fees (URL-prefix) | 9 | – | Too small to judge. People search fees ("ivf course fees", "embryology course fees"); supports publishing fees (D8) |
 
 **Conclusion:** the overlaps are mostly healthy. Merge only posts with almost no clicks (§5, item 3). Keep every page listed in §2.4.
 
@@ -403,7 +414,8 @@ Also: `/anthropology/` 301s to the B.Tech stem cell page, and the two anthropolo
 |---|---|---|
 | Organic clicks, year on year (URL-prefix) | 1,797 vs 941 (+91%) | 26 Aug – 25 Nov 2026 vs 2025 |
 | Organic clicks (GSC) | 1,759 a quarter (about 586 a month) off-season; 2,583 in the 4-month season (about 646 a month) | Aug–Nov 2026; May–Aug 2026 |
-| Non-brand clicks (visible queries) | 706 since 29 Apr 2026 | – |
+| Brand / non-brand clicks (visible queries, URL-prefix) | 904 / 1,084 | 16 months to 25 Nov 2026 |
+| All clicks (URL-prefix) | 7,196 | 16 months to 25 Nov 2026 |
 | Brand CTR and position | 21.5%, 3.9 | Since 29 Apr 2026 |
 | GA4 sessions | 12,196 a year; 5,712 in season | Nov 2025 – Nov 2026 |
 | GA4 key events | 1,448 a year; 1,022 in season (inflated by double-counting; reset after the fix) | Same |
