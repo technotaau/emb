@@ -3,13 +3,13 @@
 **Prepared by:** TechnoTaau Team (lead: Jakhar Singh)
 **Date:** 27 November 2026 | **Version:** 1.0 (all files received so far reviewed: 5 GA4 reports, 7 top-page Performance exports, 8 not-indexed drilldowns, the indexed-pages list, Core Web Vitals, and 4 link reports; §8 lists the files still missing)
 **Sources:** Claude in Chrome read-only export of Search Console (Domain property `translationalhealthscience.in`) and GA4 (property ITHS, 443162610) on 27 Nov 2026; GA4 CSV files 40, 41, 42, 43 and 45 in `iths/data/raw/`; our `curl` checks of live URLs on 27 Nov 2026.
-**Important limit:** Search Console has data only from **29 April 2026** (the Domain property was added on 1 May 2026). "Last 16 months" therefore means about 7 months, and no year-on-year comparison is possible. GA4 covers 27 Nov 2025 to 26 Nov 2026.
+**Data range:** the Domain property has data only from **29 April 2026**. The **URL-prefix property** (`https://www.translationalhealthscience.in/`) has data from **26 July 2025**, so year-on-year comparison is possible there (§2.0). GA4 covers 27 Nov 2025 to 26 Nov 2026.
 
 ---
 
 ## 1. Headline findings
 
-1. **Organic search is the main source of visits and leads.** It brings 44% of GA4 sessions (5,366 of 12,196) and 46% of key events (665 of 1,448) over 12 months. Search Console shows 4,271 clicks and 291,324 impressions since 29 April 2026, average position 6.6.
+1. **Search clicks nearly doubled year on year** (+91% for Aug–Nov, URL-prefix property, §2.0). **Organic search is the main source of visits and leads.** It brings 44% of GA4 sessions (5,366 of 12,196) and 46% of key events (665 of 1,448) over 12 months. Search Console shows 4,271 clicks and 291,324 impressions since 29 April 2026, average position 6.6.
 2. **Paid search ran only in the 2026 season and converted best among large channels.** 985 of its 992 yearly sessions came between 1 May and 31 August, with a 17.7% key-event rate. Its landing page `/art-and-clinical-embryology-program/` (correctly `noindex`) is the **top lead page on the site**: 1,085 sessions and 339 key events.
 3. **AI assistants already send leads.** 195 sessions (mostly ChatGPT) with a 23.6% key-event rate, the highest of any channel. GEO work (master plan §6.8) moves up in priority.
 4. **The brand is searched, and the homepage takes those searches.** Brand queries got 609 clicks at 21.5% CTR. The top query is "institute of translational health science (iths) kurali" (162 clicks in 3 months, position 1), which looks like the name of a Google Business Profile. The homepage gets 398 clicks in 3 months and 278 GA4 key events in 12 months.
@@ -27,6 +27,37 @@
    - Several old URLs that still get visits return 404.
 
 ## 2. Search Console
+
+### 2.0 Year on year (URL-prefix property, last 3 months vs the same period in 2025)
+
+| | 26 Aug – 25 Nov 2026 | Same period 2025 | Change |
+|---|---|---|---|
+| Clicks (pages report) | 1,797 | 941 | **+91%** |
+| Impressions | 125,448 | 95,780 | +31% |
+| Clicks from visible queries | 624 | 210 | +197% |
+
+Gains came from:
+- the homepage (398 vs 173 clicks; position 4.7 vs 6.3);
+- the embryologist post (220 vs 109; position 6.1 vs 9.1);
+- the cancer scientist post (75 vs 37; position 5.7 vs 12.7);
+- the ART guide (83 vs 7);
+- pages that did not exist a year ago: the colleges guide (168), Bhopal (110), PhD (90), stem cell (65), MSc Neuroscience (58), the cancer programme pages (103).
+
+Losses are mostly old URLs that now redirect (the 2025 site structure):
+- `/ba-bsc-and-ma-msc-anthropology-admission-2025/` (101 → 0);
+- `/rayat-bahra-university/bsc-in-cancer-biology/` (89 → 0);
+- the genetic counselling, stem cell and anthropology URLs under `/rayat-bahra-university/`;
+- `/apply-now-in-bahra-university/`;
+- the "leading" nutrigenetics post (35 → 4).
+
+**The 2026 restructure worked.** The site nearly doubled its search clicks year on year.
+
+**Brand trend (URL-prefix, brand regex):** 904 clicks and 6,376 impressions since July 2025. Monthly clicks rose from 15–42 in late 2025 to 58–101 in the 2026 season, and **222 in November 2026 so far** (a jump, mostly the "…(iths) kurali" query, so probably the Google Business Profile). Top brand queries:
+- "iths": 439 clicks, position 3.5;
+- "institute of translational health sciences": 186;
+- "institute of translational health science (iths) kurali": 162;
+- "…kurali reviews": 147 impressions, which shows people look for reviews.
+
 
 ### 2.1 Totals (Web search)
 
@@ -252,7 +283,7 @@ Guides bring many visits but few leads (1–4%). Campus, programme and ads pages
 | /art-clinical-embryology-mohali/, /bsc-msc-clinical-embryology/, /iths-embryology-landing/ | 5, 4, 1 | `/programs/clinical-embryology/` (also check that no live ad points here) |
 | /certificate/ | 4 | Ask the client |
 
-Also: `/anthropology/` 301s to the B.Tech stem cell page, which is the wrong topic. Point it to the closest correct page once B7 (is anthropology offered?) is answered.
+Also: `/anthropology/` 301s to the B.Tech stem cell page, and the two anthropology posts 301 to the homepage. Both are the wrong targets (redirects to the homepage are treated as soft 404s), and the two posts are **still listed in `post-sitemap.xml`**. If anthropology is not offered: remove them from the sitemap and return 410 (gone), or point them to `/programs/`.
 
 ### 3.5 Settings
 
@@ -320,6 +351,7 @@ Also: `/anthropology/` 301s to the B.Tech stem cell page, which is the wrong top
 
 | KPI | Baseline | Period |
 |---|---|---|
+| Organic clicks, year on year (URL-prefix) | 1,797 vs 941 (+91%) | 26 Aug – 25 Nov 2026 vs 2025 |
 | Organic clicks (GSC) | 1,759 a quarter (about 586 a month) off-season; 2,583 in the 4-month season (about 646 a month) | Aug–Nov 2026; May–Aug 2026 |
 | Non-brand clicks (visible queries) | 706 since 29 Apr 2026 | – |
 | Brand CTR and position | 21.5%, 3.9 | Since 29 Apr 2026 |
@@ -357,6 +389,7 @@ Targets (E) are set after the files arrive and after the client shares 2025–26
   - discovered not indexed (7: thin categories and the two admission forms).
 - The indexed-pages list (122); Core Web Vitals (mobile, no failing URLs); top linking sites, latest links, sample links, top target pages (internal).
 
+- URL-prefix Performance exports: last 3 months, last 3 months vs last year, season 2026, and brand (16 months). Sample links (the same 61).
 - URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals; all eight indexing drilldowns; the indexed-pages list (122 URLs, the same as the Domain property); latest links (the same 61 links). They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
 
 **Still missing:**

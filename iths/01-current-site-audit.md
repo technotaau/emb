@@ -73,7 +73,7 @@
 | B4 | `/apply-now/` and `/iths-set/` have no H1; campus "Apply Now" buttons and "Download Prospectus" link to `#` | Add H1s and working links |
 | B5 | Inconsistent facts: 3 vs 4 campuses (home stats vs FAQ); founded 2015 vs 2023; Shimla 60 km vs about 80 km from Chandigarh; Stem Cell MSc at Shimla yes/no; RBU called Chandigarh and Mohali | One fact sheet (master plan §5.3), applied everywhere |
 | B6 | **Possible keyword cannibalisation** (several URLs for one intent): Shimla (campus page, Shimla landing page, Bahra University post); BSc embryology (programme page and 4 posts); nutrigenetics (programme pages, landing page, 2025 admission post, "leading" post); B.Tech stem cell (programme page and 3 posts); cancer biology (programme pages and 2 posts) | Decide per cluster with Search Console data (master plan §4.3) |
-| B7 | Anthropology posts (2), while no anthropology programme appears in the menus | Confirm whether it is offered; update, or 301 to the closest current page |
+| B7 | Anthropology posts (2) already 301 to the homepage but are still in `post-sitemap.xml`; `/anthropology/` 301s to the B.Tech page | Confirm whether anthropology is offered. If not: remove from the sitemap and return 410 or point to `/programs/` |
 | B8 | Internal links on plain `http://` (Apply Now slides, BSc embryology post) | Change to `https://www.` |
 | B9 | Third-party names: "200+ graduates working at … Nova IVF, Indira IVF, Cloudnine & Apollo Fertility"; "Work with Giostar, Stempeutics" | Remove unless written permission and evidence exist |
 | B10 | Salary figures ("₹4–8 LPA", "₹8–12 LPA", "₹15–25 LPA", "$40–80K") | Present as industry ranges with a cited, dated source, not as ITHS outcomes; or remove |

@@ -455,7 +455,7 @@ Targets are set 30 days after the data export (E). Until then these are the meas
 
 | KPI | Measure | Source | Floor or target |
 |---|---|---|---|
-| K1 Protect organic traffic | Admissions-site **non-brand** organic clicks, and **total leads** (brand clicks are expected to shift to ithsedu.in) | Search Console, CRM | Non-brand clicks no more than 10% below the previous comparable period (no year-on-year data exists before 29 Apr 2026); leads not below the 2026 season |
+| K1 Protect organic traffic | Admissions-site **non-brand** organic clicks, and **total leads** (brand clicks are expected to shift to ithsedu.in) | Search Console, CRM | Non-brand clicks no more than 10% below the same month last year (URL-prefix property has data from July 2025; current trend +91% year on year); leads not below the 2026 season |
 | K2 Non-brand growth | Non-brand clicks (regex excludes ITHS and translational) | Search Console | Target set from baseline (E) |
 | K3 Brand ownership | ithsedu.in and the admissions site in the top 3 for "ITHS" and "Institute of Translational Health Science" | Manual check, Search Console | Within 3 months of launch |
 | K4 Leads | Enquiries per campus and programme, per source | CRM, GA4 | Baseline from 2026–27 (D7) |
