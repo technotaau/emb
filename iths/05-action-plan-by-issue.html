@@ -1,0 +1,411 @@
+<title>ITHS Digital Plan 2027</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: an advisory brief for an institute's leadership. Contents rail on wide screens, one reading sheet,
+   prose near 70ch; tables, the chart and the roadmap scroll inside their own frames. Palette: academic indigo with a saffron marker. */
+:root{
+  --bg:#F2F3F8; --paper:#FFFFFF; --ink:#1B2033; --ink-2:#4F5670; --line:#DADDEA; --tint:#ECEEF8;
+  --indigo:#2F3F8F; --indigo-2:#5A6BC4; --saffron:#B76E00; --saffron-tint:#FBF0DD;
+  --ok:#22683F; --ok-bg:#E1F1E7; --warn:#8A5A00; --warn-bg:#FBEFD5; --risk:#A3302A; --risk-bg:#FBE5E3;
+  --bar25:#A9B1D6; --bar26:#2F3F8F;
+  --display:"Manrope","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1120; --paper:#151A2E; --ink:#E4E7F4; --ink-2:#A8AEC8; --line:#2A3150; --tint:#1D2440;
+  --indigo:#9AA8F0; --indigo-2:#7C8BE0; --saffron:#F0B055; --saffron-tint:#33260E;
+  --ok:#8FD6A8; --ok-bg:#16301F; --warn:#F2C66C; --warn-bg:#33270C; --risk:#F29A92; --risk-bg:#3A1A18;
+  --bar25:#46507E; --bar26:#9AA8F0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1120; --paper:#151A2E; --ink:#E4E7F4; --ink-2:#A8AEC8; --line:#2A3150; --tint:#1D2440;
+  --indigo:#9AA8F0; --indigo-2:#7C8BE0; --saffron:#F0B055; --saffron-tint:#33260E;
+  --ok:#8FD6A8; --ok-bg:#16301F; --warn:#F2C66C; --warn-bg:#33270C; --risk:#F29A92; --risk-bg:#3A1A18;
+  --bar25:#46507E; --bar26:#9AA8F0; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);margin:0;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:28px 56px}
+a{color:var(--indigo);text-underline-offset:2px}
+a:focus-visible{outline:3px solid var(--indigo-2);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);text-wrap:balance;line-height:1.2;margin:0}
+p{margin:0}
+code{font-family:var(--mono);font-size:.82em;background:var(--tint);padding:.06em .34em;border-radius:4px;overflow-wrap:anywhere}
+
+.frame{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;align-items:start}
+.rail{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 20px);font-size:.92rem}
+.rail p{font:700 .74rem/1.3 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px}
+.rail ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.rail a{display:block;padding:6px 10px;border-radius:8px;color:var(--ink-2);text-decoration:none}
+.rail a:hover{background:var(--tint);color:var(--ink)}
+.sheet{background:var(--paper);border:1px solid var(--line);border-radius:14px;min-width:0}
+
+.mast{padding:40px 44px 32px;border-bottom:1px solid var(--line);display:grid;gap:14px}
+.kicker{font:700 .76rem/1.3 var(--display);letter-spacing:.13em;text-transform:uppercase;color:var(--saffron)}
+h1{font-size:clamp(2rem,4.4vw,2.9rem);font-weight:800;letter-spacing:-.015em}
+.lede{max-width:68ch;font-size:1.1rem;color:var(--ink-2)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.92rem;color:var(--ink-2);margin:4px 0 0;padding:0;list-style:none}
+.meta b{color:var(--ink);font-weight:700}
+
+.sec{padding:36px 44px;border-bottom:1px solid var(--line);display:grid;gap:18px}
+.sec:last-of-type{border-bottom:0}
+.sec > *{min-width:0}
+h2{font-size:1.55rem;font-weight:800;letter-spacing:-.01em}
+h2 .q{display:block;font:600 .8rem/1.4 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--saffron);margin-bottom:6px}
+h3{font-size:1.08rem;font-weight:700}
+.prose{max-width:70ch;display:grid;gap:12px}
+.prose ul,.prose ol{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.answer{border-left:4px solid var(--indigo);background:var(--tint);padding:14px 18px;border-radius:0 10px 10px 0;max-width:74ch}
+.answer b{color:var(--indigo)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{font:700 .78rem/1.3 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:var(--tint);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num{text-align:right;white-space:nowrap}
+.chip{display:inline-block;font:700 .74rem/1.5 var(--display);letter-spacing:.03em;padding:.1em .6em;border-radius:999px;white-space:nowrap}
+.chip.ok{color:var(--ok);background:var(--ok-bg)} .chip.warn{color:var(--warn);background:var(--warn-bg)} .chip.risk{color:var(--risk);background:var(--risk-bg)}
+
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.stat{border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:4px;align-content:start}
+.stat b{font:800 1.7rem/1.1 var(--display);color:var(--indigo);font-variant-numeric:tabular-nums}
+.stat span{font-size:.9rem;color:var(--ink-2)}
+
+.chart{border:1px solid var(--line);border-radius:10px;padding:14px 12px 8px;overflow-x:auto}
+.chart svg{display:block;min-width:620px;width:100%;height:auto}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .ax{fill:var(--ink-2);font:500 11px var(--body)}
+.chart .yr{font-weight:700;fill:var(--ink)}
+.chart .val{fill:var(--ink);font:700 11px var(--body)}
+.chart .sep{stroke:var(--line);stroke-dasharray:3 3}
+.chart .bar{fill:var(--bar25)} .chart .bar.y26{fill:var(--bar26)} .chart .bar.partial{opacity:.55}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.86rem;color:var(--ink-2);margin:6px 4px 4px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.site{border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:10px;align-content:start}
+.site h3{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.site h3 small{font:600 .8rem/1.3 var(--display);color:var(--saffron);letter-spacing:.06em;text-transform:uppercase}
+.site ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:.96rem}
+.site .never{font-size:.92rem;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:10px}
+
+.urgent{border:1px solid var(--risk-bg);background:var(--risk-bg);border-radius:12px;padding:18px 22px;display:grid;gap:10px}
+.urgent h3{color:var(--risk)}
+.urgent ol{margin:0;padding-left:1.2em;display:grid;gap:6px}
+
+.foot{padding:26px 44px 32px;font-size:.88rem;color:var(--ink-2);display:grid;gap:8px}
+
+@media (max-width: 980px){
+  .frame{grid-template-columns:minmax(0,1fr)}
+  .rail{display:none}
+}
+@media (max-width: 720px){
+  .mast,.sec,.foot{padding-left:20px;padding-right:20px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .split{grid-template-columns:1fr}
+}
+</style>
+
+<div class="frame">
+<nav class="rail" aria-label="Contents">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#glance">At a glance</a></li>
+    <li><a href="#data">What the data says</a></li>
+    <li><a href="#urgent">Fix this week</a></li>
+    <li><a href="#old-site">1. The old website</a></li>
+    <li><a href="#campuses">2. The four campuses</a></li>
+    <li><a href="#ithsedu">3. ithsedu.in</a></li>
+    <li><a href="#social">4. Social media</a></li>
+    <li><a href="#duplication">5. Duplication</a></li>
+    <li><a href="#roadmap">6. Roadmap</a></li>
+    <li><a href="#decisions">Your decisions</a></li>
+  </ol>
+</nav>
+
+<main class="sheet">
+<header class="mast">
+  <p class="kicker">Institute of Translational Health Science (ITHS)</p>
+  <h1>ITHS Digital Plan 2027</h1>
+  <p class="lede">Our answer to each point you raised: two websites, four campuses, the social media accounts and duplication. It is based on your Search Console and Google Analytics data, and ends with the decisions we need from you by 11 December 2026.</p>
+  <ul class="meta">
+    <li>Prepared by <b>TechnoTaau Team</b></li>
+    <li>Sign-off <b>Jakhar Singh</b></li>
+    <li>Date <b>27 November 2026</b></li>
+    <li>Status <span class="chip warn">For your decision</span></li>
+  </ul>
+</header>
+
+<section class="sec" id="glance" aria-labelledby="glance-h">
+  <h2 id="glance-h">At a glance</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Your point</th><th>Our answer</th><th>First step</th></tr></thead>
+    <tbody>
+      <tr><td>translationalhealthscience.in ranks well; use it for admissions and ads</td><td><span class="chip ok">Agree</span> It is growing fast. Keep every page that earns clicks; fix the risks</td><td>Urgent fixes this week</td></tr>
+      <tr><td>Four campuses: ITHS at RBU, and Clinical Embryology by ITHS at RBPU, BU and SGSU</td><td><span class="chip ok">Agree</span> Use one naming pattern, and let the old website serve all four campuses. Three campus pages can't be found in search yet</td><td>Confirm programmes and names per campus</td></tr>
+      <tr><td>ithsedu.in is the new website and the future university site</td><td><span class="chip ok">Agree</span> The official site for achievements and announcements. It never copies admission pages, and it is built so the old site can move into it later</td><td>Launch target 9 February 2027</td></tr>
+      <tr><td>Old social accounts for RBU; new accounts for the other campuses and for ithsedu</td><td><span class="chip warn">One change</span> Keep the split, but turn the old accounts (with all their followers) into the official @ithsedu, and open a new RBU account</td><td>Your decision D1</td></tr>
+      <tr><td>Will this cause duplication?</td><td><span class="chip ok">No</span> Not if every topic has one home. The duplication we found today comes from site copies and leftovers, not from the two-website plan</td><td>Remove the copies</td></tr>
+      <tr><td>How should we proceed?</td><td>Data and fixes in December, ithsedu.in in January and February, 2027–28 admission pages by 1 March, peak season May to August</td><td>Decisions by 11 December</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec" id="data" aria-labelledby="data-h">
+  <h2 id="data-h">What the data says</h2>
+  <div class="stats">
+    <div class="stat"><b>+91%</b><span>Google search clicks, Aug–Nov 2026 vs 2025 (1,797 vs 941)</span></div>
+    <div class="stat"><b>46%</b><span>of website enquiries and calls come from Google search</span></div>
+    <div class="stat"><b>17.7%</b><span>of paid-search visits became an enquiry or call (May–Aug 2026)</span></div>
+    <div class="stat"><b>23.6%</b><span>of visits from AI assistants such as ChatGPT became an enquiry</span></div>
+  </div>
+  <figure class="chart" style="margin:0" aria-labelledby="chart-cap">
+    <svg viewBox="0 0 744 244" role="img" aria-label="Monthly Google search clicks from July 2025 to November 2026. Clicks rose from about 300 a month in late 2025 to a peak of 807 in July 2026, and stayed above 500 a month through November 2026.">
+<line x1="44" x2="736" y1="196.0" y2="196.0" class="grid"/><text x="38" y="200.0" class="ax" text-anchor="end">0</text>
+<line x1="44" x2="736" y1="136.0" y2="136.0" class="grid"/><text x="38" y="140.0" class="ax" text-anchor="end">300</text>
+<line x1="44" x2="736" y1="76.0" y2="76.0" class="grid"/><text x="38" y="80.0" class="ax" text-anchor="end">600</text>
+<line x1="44" x2="736" y1="16.0" y2="16.0" class="grid"/><text x="38" y="20.0" class="ax" text-anchor="end">900</text>
+<rect x="52" y="179.6" width="26" height="16.4" rx="3" class="bar partial"><title>Jul 2025: 82 clicks (from 26 July)</title></rect>
+<text x="65" y="214" class="ax" text-anchor="middle">Jul</text>
+<rect x="92" y="125.2" width="26" height="70.8" rx="3" class="bar"><title>Aug 2025: 354 clicks</title></rect>
+<text x="105" y="214" class="ax" text-anchor="middle">Aug</text>
+<text x="105" y="120.2" class="val" text-anchor="middle">354</text>
+<rect x="132" y="124.2" width="26" height="71.8" rx="3" class="bar"><title>Sep 2025: 359 clicks</title></rect>
+<text x="145" y="214" class="ax" text-anchor="middle">Sep</text>
+<rect x="172" y="143.8" width="26" height="52.2" rx="3" class="bar"><title>Oct 2025: 261 clicks</title></rect>
+<text x="185" y="214" class="ax" text-anchor="middle">Oct</text>
+<rect x="212" y="137.2" width="26" height="58.8" rx="3" class="bar"><title>Nov 2025: 294 clicks</title></rect>
+<text x="225" y="214" class="ax" text-anchor="middle">Nov</text>
+<rect x="252" y="134.6" width="26" height="61.4" rx="3" class="bar"><title>Dec 2025: 307 clicks</title></rect>
+<text x="265" y="214" class="ax" text-anchor="middle">Dec</text>
+<rect x="292" y="127.8" width="26" height="68.2" rx="3" class="bar y26"><title>Jan 2026: 341 clicks</title></rect>
+<text x="305" y="214" class="ax" text-anchor="middle">Jan</text>
+<rect x="332" y="139.6" width="26" height="56.4" rx="3" class="bar y26"><title>Feb 2026: 282 clicks</title></rect>
+<text x="345" y="214" class="ax" text-anchor="middle">Feb</text>
+<rect x="372" y="138.6" width="26" height="57.4" rx="3" class="bar y26"><title>Mar 2026: 287 clicks</title></rect>
+<text x="385" y="214" class="ax" text-anchor="middle">Mar</text>
+<rect x="412" y="114.0" width="26" height="82.0" rx="3" class="bar y26"><title>Apr 2026: 410 clicks</title></rect>
+<text x="425" y="214" class="ax" text-anchor="middle">Apr</text>
+<rect x="452" y="92.2" width="26" height="103.8" rx="3" class="bar y26"><title>May 2026: 519 clicks</title></rect>
+<text x="465" y="214" class="ax" text-anchor="middle">May</text>
+<rect x="492" y="79.6" width="26" height="116.4" rx="3" class="bar y26"><title>Jun 2026: 582 clicks</title></rect>
+<text x="505" y="214" class="ax" text-anchor="middle">Jun</text>
+<rect x="532" y="34.6" width="26" height="161.4" rx="3" class="bar y26"><title>Jul 2026: 807 clicks</title></rect>
+<text x="545" y="214" class="ax" text-anchor="middle">Jul</text>
+<text x="545" y="29.6" class="val" text-anchor="middle">807</text>
+<rect x="572" y="63.6" width="26" height="132.4" rx="3" class="bar y26"><title>Aug 2026: 662 clicks</title></rect>
+<text x="585" y="214" class="ax" text-anchor="middle">Aug</text>
+<text x="585" y="58.6" class="val" text-anchor="middle">662</text>
+<rect x="612" y="77.4" width="26" height="118.6" rx="3" class="bar y26"><title>Sep 2026: 593 clicks</title></rect>
+<text x="625" y="214" class="ax" text-anchor="middle">Sep</text>
+<rect x="652" y="94.2" width="26" height="101.8" rx="3" class="bar y26"><title>Oct 2026: 509 clicks</title></rect>
+<text x="665" y="214" class="ax" text-anchor="middle">Oct</text>
+<rect x="692" y="86.6" width="26" height="109.4" rx="3" class="bar partial y26"><title>Nov 2026: 547 clicks (to 25 November)</title></rect>
+<text x="705" y="214" class="ax" text-anchor="middle">Nov</text>
+<line x1="285" x2="285" y1="200" y2="240" class="sep"/>
+<text x="165" y="236" class="ax yr" text-anchor="middle">2025</text><text x="505" y="236" class="ax yr" text-anchor="middle">2026</text>
+    </svg>
+    <div class="legend" id="chart-cap"><span><i style="background:var(--bar25)"></i>2025</span><span><i style="background:var(--bar26)"></i>2026</span><span>Faded bars are part months (from 26 Jul 2025; to 25 Nov 2026). Source: Google Search Console, 7,196 clicks in 16 months</span></div>
+  </figure>
+  <div class="prose">
+    <p>Other points from the data:</p>
+    <ul>
+      <li>The 2026 site restructure worked, and the July peak shows when students search most.</li>
+      <li>76% of clicks come from mobile phones and 95% from India.</li>
+      <li>Brand searches for "ITHS" are rising fast: 222 clicks in November alone, mostly for the listing named "Institute of Translational Health Science (ITHS) Kurali".</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="urgent" aria-labelledby="urgent-h">
+  <h2 id="urgent-h">Fix this week</h2>
+  <div class="urgent">
+    <h3>These carry money, privacy or reputation risk today</h3>
+    <ol>
+      <li><b>Admission form bank details.</b> The form for the RBU, RBPU and BU campuses shows a bank account in the name of the SGSU Bhopal registrar. Please confirm the correct account for each campus.</li>
+      <li><b>Workshop certificates are in Google.</b> 17 certificate PDFs with participants' full names appear in search. Their "Scan to verify" QR code leads to a page that no longer exists. We will hide the PDFs from search and rebuild the verification page.</li>
+      <li><b>Public test sites.</b> A test site link sits on the RBU campus page. demo.ithsedu.in is open to the public, and iths.rbuchd.in shows a copy of an admissions page. Each needs a password or removal.</li>
+      <li><b>Visible build note.</b> The Shimla page shows a note saying its photos are temporary stock images.</li>
+      <li><b>Wrong accreditation badge.</b> The Shimla page shows a NAAC badge for Rayat Bahra University on a Bahra University page.</li>
+      <li><b>Claims that need proof.</b> Placement figures (95%, 100% and 0% on different pages), "India's first" and "the only institute in the world", and "15+ patents" (these should read "patent applications").</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="old-site" aria-labelledby="old-h">
+  <h2 id="old-h"><span class="q">Your point 1</span>translationalhealthscience.in for admissions and ads</h2>
+  <p class="answer"><b>Agreed.</b> This website brings 44% of visits and 46% of enquiries and calls. The page used for paid search in 2026 was the top enquiry page on the site. We keep it as the admissions and ads website and make it safer and stronger.</p>
+  <div class="prose">
+    <ol>
+      <li><b>Protect what ranks.</b> Every page with clicks keeps its web address. Any move needs a redirect we approve.</li>
+      <li><b>Merge six weak posts</b> into their programme pages: two nutrigenetics posts, two B.Tech posts and two older embryology and career posts. The useful content moves first, then the old address redirects.</li>
+      <li><b>Win the near misses.</b> Rewrite the titles of pages shown often but clicked rarely: "embryologist" (6,640 views), "bsc embryology" (5,107) and "stem cell and regenerative medicine course in india" (position 4.6, no clicks).</li>
+      <li><b>Link the course levels.</b> Show BSc, MSc, PhD and PG Diploma under each programme in the Courses menu. The PhD page has only two internal links, and the MSc Embryology page is not in Google at all.</li>
+      <li><b>Refresh the season pages before April.</b> The two "after 12th" guides rank first and second on Google for searches like "ivf courses after 12th".</li>
+      <li><b>Ads:</b> brand and PG/PhD search from February, with the peak May to August. Target students aged 18+ and parents only, with tracking fixed first.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="campuses" aria-labelledby="camp-h">
+  <h2 id="camp-h"><span class="q">Your point 2</span>The four campuses</h2>
+  <p class="answer"><b>Agreed, with one website for all four.</b> Bhopal's page is the best-performing campus page and lives on the old website, so that website should keep serving every campus. The other three campus pages need local search work before the season.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Campus</th><th class="num">Clicks, 16 months</th><th class="num">Enquiries, 12 months</th><th>In local search today</th></tr></thead>
+    <tbody>
+      <tr><td>SGSU Bhopal</td><td class="num">249</td><td class="num">194</td><td><span class="chip ok">Performing</span> Found mostly through searches for SGSU</td></tr>
+      <tr><td>RBU Mohali</td><td class="num">50</td><td class="num">62</td><td><span class="chip risk">Not found</span> Position 30 for "Chandigarh" searches. Brand searches go to the homepage instead</td></tr>
+      <tr><td>BU Shimla</td><td class="num">46</td><td class="num">9</td><td><span class="chip risk">Lost</span> No clicks since April 2026, when an older Bahra University page was redirected</td></tr>
+      <tr><td>RBPU Hoshiarpur</td><td class="num">10</td><td class="num">1</td><td><span class="chip risk">Never visible</span> "rbpu hoshiarpur" at position 7, no clicks</td></tr>
+    </tbody>
+  </table></div>
+  <h3>One naming pattern</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Campus</th><th>Website and Google</th><th>Social media name (your wording)</th></tr></thead>
+    <tbody>
+      <tr><td>RBU</td><td>ITHS at Rayat Bahra University, Mohali (near Chandigarh)</td><td>ITHS at RBU</td></tr>
+      <tr><td>RBPU</td><td>ITHS at Rayat Bahra Professional University, Hoshiarpur</td><td>Department of Clinical Embryology by ITHS at RBPU, Hoshiarpur</td></tr>
+      <tr><td>BU</td><td>ITHS at Bahra University, Shimla Hills</td><td>Department of Clinical Embryology by ITHS at BU, Shimla. If Stem Cell also runs there, "ITHS at BU, Shimla"</td></tr>
+      <tr><td>SGSU</td><td>ITHS at SCOPE Global Skills University (SGSU), Bhopal</td><td>Department of Clinical Embryology by ITHS at SGSU, Bhopal</td></tr>
+    </tbody>
+  </table></div>
+  <div class="prose">
+    <p>People search for the university and the city, so those go first in page titles. Each campus page then gets:</p>
+    <ul>
+      <li>the full address with PIN, the campus phone and WhatsApp, and a map;</li>
+      <li>real photos, hostel and travel information;</li>
+      <li>fees and FAQs;</li>
+      <li>its own Google Business Profile, named as on the campus signage;</li>
+      <li>a link from the university's own programme page.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="ithsedu" aria-labelledby="edu-h">
+  <h2 id="edu-h"><span class="q">Your point 3</span>ithsedu.in, now and as the future university website</h2>
+  <p class="answer"><b>Agreed.</b> ithsedu.in becomes the official voice of the institute. It never copies admission content. If ITHS later becomes a university, the old website moves into it cleanly.</p>
+  <div class="split">
+    <div class="site">
+      <h3>ithsedu.in <small>Official institute site</small></h3>
+      <ul>
+        <li>About ITHS, leadership, faculty</li>
+        <li>Partner universities</li>
+        <li>Research: publications, patent applications with numbers</li>
+        <li>Achievements, news and events</li>
+        <li>Media kit, careers, contact, policies</li>
+      </ul>
+      <p class="never">Never: programme details, fees, admission forms. Its "Programmes &amp; Admissions" button goes to the admissions website.</p>
+    </div>
+    <div class="site">
+      <h3>translationalhealthscience.in <small>Admissions and ads</small></h3>
+      <ul>
+        <li>All programmes and course levels</li>
+        <li>All four campus pages</li>
+        <li>Eligibility, fees, ITHS-SET scholarship</li>
+        <li>Apply and enquiry forms, ad landing pages</li>
+        <li>Career and course guides</li>
+      </ul>
+      <p class="never">Never: institute news. That moves to ithsedu.in at launch, together with Careers.</p>
+    </div>
+  </div>
+  <div class="prose">
+    <p><b>Brand searches will move.</b> Today the old homepage takes searches for "ITHS", and they bring enquiries. Once ithsedu.in is live, Google will likely show it first. So ithsedu.in's home page carries an "Admissions 2027–28" band at the top, which sends applicants straight to the admissions website.</p>
+    <p><b>Timeline:</b> wireframes and copy by 20 December, staging approved by 31 January, launch on Tuesday 9 February 2027 (to be confirmed). Until university status is official, neither website calls ITHS a university.</p>
+  </div>
+</section>
+
+<section class="sec" id="social" aria-labelledby="soc-h">
+  <h2 id="soc-h"><span class="q">Your point 4</span>Social media</h2>
+  <p class="answer"><b>Agreed on the split</b>: daily activity on the campus accounts, important news on @ithsedu. <b>One change:</b> the old accounts hold all your followers today, so they should become the official @ithsedu, and RBU gets a new account. Otherwise the official account starts from zero, and followers from Shimla, Hoshiarpur and Bhopal stay on an RBU account.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Account</th><th>Platforms</th><th>Posts</th><th>Content</th></tr></thead>
+    <tbody>
+      <tr><td><b>@ithsedu</b> (official)</td><td>Instagram, Facebook, LinkedIn, YouTube, X</td><td>3–4 a week</td><td>Achievements, announcements, research, results, session launch, ITHS-SET</td></tr>
+      <tr><td><b>@iths.rbu</b></td><td>Instagram, Facebook, LinkedIn showcase page</td><td>5–7 a week</td><td>Daily campus life, labs, visits, events, admission reminders in season</td></tr>
+      <tr><td><b>@iths.rbpu</b>, <b>@iths.bushimla</b>, <b>@iths.sgsu</b></td><td>Instagram, Facebook, LinkedIn showcase pages</td><td>4–6 a week</td><td>The same, for each campus</td></tr>
+    </tbody>
+  </table></div>
+  <div class="prose">
+    <ul>
+      <li><b>Share, don't repost.</b> Instagram Collab posts show one post on both the campus account and @ithsedu.</li>
+      <li><b>One YouTube channel.</b> Two different ITHS channel names appear online today; we keep one and use campus playlists.</li>
+      <li><b>Trackable links</b> on every bio and post, so we can see which posts bring enquiries.</li>
+      <li><b>Consent and claims.</b> Written consent for student photos (a parent's consent under 18), and no claims without proof.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="duplication" aria-labelledby="dup-h">
+  <h2 id="dup-h"><span class="q">Your point 5</span>Will this cause duplication?</h2>
+  <p class="answer"><b>No.</b> Two websites for one institute are normal when each topic has one home:</p>
+  <div class="prose">
+    <ul>
+      <li>admission content lives only on the old website;</li>
+      <li>institute content lives only on ithsedu.in;</li>
+      <li>Google is told both sites belong to the same organisation.</li>
+    </ul>
+    <p>The duplication we found comes from copies that should not be public:</p>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Found today</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>iths.rbuchd.in: a copy of an ITHS admissions page on the RBU domain</td><td>Hide from search, or redirect to the Shimla campus page</td></tr>
+      <tr><td>demo.ithsedu.in and a TechnoTaau test site: public test copies</td><td>Password-protect</td></tr>
+      <tr><td>Old bu. and rbu. sub-sites: errors and duplicate pages in Google</td><td>Close, or redirect to the campus pages</td></tr>
+      <tr><td>Overlapping posts on nutrigenetics, B.Tech and embryology</td><td>The six merges in point 1</td></tr>
+      <tr><td>A full copy of the EmbryoGenesis website on 34gaon.com (sister organisation)</td><td>Take down or hide from search</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec" id="roadmap" aria-labelledby="road-h">
+  <h2 id="road-h"><span class="q">Your point 6</span>How we proceed</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>When</th><th>ITHS team</th><th>Developer</th><th>TechnoTaau Team</th></tr></thead>
+    <tbody>
+      <tr><td><b>Week of 30 Nov</b></td><td>Confirm bank account, test-site owners, the Kurali listing, the YouTube channel; reserve social names</td><td>Urgent fixes; analytics settings</td><td>Corrected claim wording; new titles for six key pages</td></tr>
+      <tr><td><b>Week of 7 Dec</b></td><td>Decisions below; fact sheet; programmes per campus; lead and admission numbers</td><td>Clean-up of search settings and broken links</td><td>Targets; ithsedu.in page plan; Punjab course guide</td></tr>
+      <tr><td><b>14–31 Dec</b></td><td>Approve wording; legal check of collaboration wording and form data</td><td>Course-level menu; campus page templates</td><td>ithsedu.in wireframes and copy; campus page copy; social playbook</td></tr>
+      <tr><td><b>January 2027</b></td><td>Google Business Profiles; university link requests; real photos</td><td>ithsedu.in on staging; post merges</td><td>Remaining copy; new guides; social accounts live</td></tr>
+      <tr><td><b>9 Feb 2027</b></td><td>Approve launch</td><td>ithsedu.in live; Careers and News move</td><td>Launch checks; brand-search monitoring</td></tr>
+      <tr><td><b>By 1 Mar 2027</b></td><td>2027–28 dates, fees, ITHS-SET details</td><td>2027–28 page updates</td><td>Season pages refreshed; ads plan with budget</td></tr>
+      <tr><td><b>Apr–Aug 2027</b></td><td>Call every enquiry within 24 hours; campus posting</td><td>Support</td><td>Ads peak May–Aug; weekly lead review; monthly report</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec" id="decisions" aria-labelledby="dec-h">
+  <h2 id="dec-h">Your decisions, by 11 December 2026</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>#</th><th>Decision</th><th>Our recommendation</th></tr></thead>
+    <tbody>
+      <tr><td>D1</td><td>Old social accounts become the official @ithsedu, or ITHS at RBU?</td><td>Official @ithsedu, with a new @iths.rbu</td></tr>
+      <tr><td>D2</td><td>Old website for all four campuses, or RBU only?</td><td>All four</td></tr>
+      <tr><td>D3</td><td>Names and programmes per campus</td><td>The naming table in point 2, after the programme list is confirmed</td></tr>
+      <tr><td>D4</td><td>How to describe the RBU location (Chandigarh, Mohali, Kharar and Kurali are all in use today)</td><td>"Mohali (near Chandigarh)", with one PIN code everywhere</td></tr>
+      <tr><td>D13</td><td>Is anthropology still offered? The 2025 anthropology post earned 206 clicks, and "bsc anthropology" is still searched</td><td>If yes, restore a programme page; if no, retire the old pages</td></tr>
+    </tbody>
+  </table></div>
+  <div class="prose">
+    <p><b>Also needed from you:</b></p>
+    <ul>
+      <li>enquiry, application and admission numbers per campus for 2025–26 and 2026–27;</li>
+      <li>the ads budget;</li>
+      <li>who builds ithsedu.in;</li>
+      <li>who manages the "Kurali" Google listing.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <p><b>Sources:</b> Google Search Console (URL-prefix property, 26 Jul 2025 to 25 Nov 2026, plus the Domain property for sub-site checks), Google Analytics 4 (27 Nov 2025 to 26 Nov 2026), and our review of the live websites on 27 November 2026. "Enquiries" means GA4 key events: form submissions, phone clicks and WhatsApp clicks. Form submissions are currently counted about twice, so these figures will be reset once tracking is fixed.</p>
+  <p>Prepared by TechnoTaau Team. Sign-off: Jakhar Singh.</p>
+</footer>
+</main>
+</div>
