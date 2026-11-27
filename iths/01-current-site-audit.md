@@ -78,6 +78,7 @@
 | B9 | Third-party names: "200+ graduates working at … Nova IVF, Indira IVF, Cloudnine & Apollo Fertility"; "Work with Giostar, Stempeutics" | Remove unless written permission and evidence exist |
 | B10 | Salary figures ("₹4–8 LPA", "₹8–12 LPA", "₹15–25 LPA", "$40–80K") | Present as industry ranges with a cited, dated source, not as ITHS outcomes; or remove |
 | B11 | "ART Bill Compliant" | The ART (Regulation) Act became law in 2021. Reword to what is actually true (for example, "curriculum covers the ART Act 2021 and ICMR guidelines") |
+| B15 | A link uses `Admission.iths@gmail.com` as a relative `href` (no `mailto:`), creating 404 URLs such as `/category/…/feed/Admission.iths@gmail.com` | Change it to `mailto:admission.iths@gmail.com` |
 | B12 | Typos ("Admission Proccess" on three campus pages) | Fix |
 | B13 | No schema on the campus pages and the two landing pages; FAQPage earns no rich result since 7 May 2026, and Course info rich results are gone (R07 §1) | Schema plan in master plan §6.4 |
 | B14 | Phone numbers: five numbers across the site (main, Hoshiarpur, Shimla, Bhopal, form help) | Keep per-campus numbers but list them in one place; use one main number in sitewide schema |

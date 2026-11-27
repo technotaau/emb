@@ -119,7 +119,7 @@ Flag ⚑ = two or more pages each with more than 10% of a cluster's clicks.
 | Reason | Pages | Action |
 |---|---|---|
 | Page with redirect | 29 | Expected: old `/rayat-bahra-university/…`, `/bahra-university/…`, `/courses/` and profile URLs 301 correctly (we checked five) |
-| Not found (404) | 17 | 301 those that still get visits (§3.4) to the closest page; leave the rest |
+| Not found (404) | 17 (12 on the www property, down from 16 in September) | 301 those that still get visits (§3.4) to the closest page; leave the rest. **Template bug:** five 404s end in `/Admission.iths@gmail.com` (for example `/category/higher-education-admissions/feed/Admission.iths@gmail.com`). A link somewhere uses the email address as a relative `href` without `mailto:`. Fix the link to `mailto:admission.iths@gmail.com` |
 | Duplicate without user-selected canonical | 8 | Check the list when the files arrive |
 | Alternate page with proper canonical | 6 | Expected |
 | Excluded by noindex | 2 | Includes `/art-and-clinical-embryology-program/`, the ads page. Correct |
@@ -356,6 +356,8 @@ Targets (E) are set after the files arrive and after the client shares 2025–26
   - crawled not indexed (39: mostly RSS feeds and old redirected URLs, which is harmless, plus the MSc page and three PDFs);
   - discovered not indexed (7: thin categories and the two admission forms).
 - The indexed-pages list (122); Core Web Vitals (mobile, no failing URLs); top linking sites, latest links, sample links, top target pages (internal).
+
+- URL-prefix property `https://www.translationalhealthscience.in/` (uploaded separately): Core Web Vitals and the 404, alternate-canonical, noindex and other-4xx drilldowns. They match the Domain property, minus the subdomain URLs. Mobile Core Web Vitals "good" URLs rose from 40 (29 Aug) to 53 (26 Nov), with none poor.
 
 **Still missing:**
 - The Performance exports 01–16: all-pages, 3-month, season, brand and non-brand, and the ten clusters. The cluster numbers in §2.5 come from the Chrome summary.
