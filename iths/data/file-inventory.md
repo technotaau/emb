@@ -25,12 +25,12 @@ Chrome saved every export under Google's default name. So the numbers in the nam
 | 06 | Non-brand, 16 months | `_5` | – | 1,084 clicks |
 | 07 | Cluster: embryology | `_6` | – | 368 |
 | 08 | Cluster: nutrigenetics | `_7` | – | 110 |
-| 09 | Cluster: stem cell | **missing** (Chrome reported the page froze) | – | Domain figure 45 (Chrome summary) |
+| 09 | Cluster: stem cell | re-export `…_1.zip` (`1e896f3a`; filter: query contains "stem cell") | – | 28 |
 | 10 | Cluster: cancer | `_8` | – | 202 |
 | 11 | Cluster: Shimla | `_9` | – | 25 |
-| 12 | Cluster: Bhopal | **missing** | – | Domain figure 10 (Chrome summary) |
+| 12 | Cluster: Bhopal | re-export `…_2.zip` (`c2639b91`; contains "Bhopal") | – | 5 |
 | 13 | Cluster: Hoshiarpur | `_10` | – | 0 |
-| 14 | Cluster: Chandigarh/Mohali | **missing** | – | Domain figure 13 (Chrome summary) |
+| 14 | Cluster: Chandigarh/Mohali | re-exports `…_3.zip` (`ab65ec1f`; contains "Chandigarh") and `…_4.zip` (`f087cf83`; contains "Mohali") | – | 12 + 1 |
 | 15 | Cluster: after 12th / NEET | `_11` | – | 140 |
 | 16 | Cluster: admission/fees | `_12` | – | 9 |
 | 17 | Page 01: homepage (3 months) | `_13` | – | 398 |
@@ -73,8 +73,10 @@ Chrome saved every export under Google's default name. So the numbers in the nam
 | 43 | Events | `Events_Event_name.csv` | 12 months |
 | 45 | Channel plus source / medium | `…_2.csv` | 12 months |
 
+**Name clash warning:** the four re-exports are named `…_1.zip` to `…_4.zip`, the same names as the earlier files 02 (last 3 months), 03 (compare), 04 (season) and 05 (brand). Their contents are different (checked with `Filters.csv`). They are stored separately as `z/new_<upload-id>/`.
+
 ## What this changes
 
 - **Baseline source:** the URL-prefix property, because it has the longer history (26 Jul 2025 onwards) and supplied all the Performance totals. Domain figures (since 29 Apr 2026, from the Chrome summary) are kept for reference only, and the baseline report labels them.
 - **Subdomain problems** (bu./rbu.) are visible only in the Domain property, so keep both properties in Search Console.
-- **Still missing** (low impact): clusters 09 (stem cell), 12 (Bhopal) and 14 (Chandigarh/Mohali), and the embryologist post's page export. Re-export them from the URL-prefix property if 16-month figures are needed for those rows.
+- **Still missing** (low impact): only the embryologist post's page export; its queries appear in clusters 07 and 15.

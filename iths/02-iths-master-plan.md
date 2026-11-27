@@ -163,6 +163,7 @@ Method, per cluster:
 | BSc clinical embryology | `/programs/clinical-embryology/bsc/`, `bsc-clinical-embryology-scope…`, `exploring-the-possibilities…`, `want-to-become-an-embryologist…`, `bsc-embryology-colleges-in-india…` | Keep the embryologist post (220 clicks in 3 months), the colleges guide and the PhD page. BSc programme page takes "bsc embryology". Merge only `exploring-the-possibilities…` |
 | Nutrigenetics | `/programs/nutrigenetics-personalized-nutrition/` (+bsc, msc), `/nutrigenetics-admissions/`, `bsc-and-msc-nutrigenetics-admission-2025`, `join-indias-leading-program…` | Programme page (now position 10–19: strengthen it); merge the 2025 admission post and the "leading" post |
 | B.Tech stem cell | `/programs/b-tech-stem-cell-tissue-engineering/`, `study-stem-cell-tissue-engineering…`, `indias-1st-b-tech…`, `stem-cell-tissue-engineering-…-course-india-guide` | Programme page plus the 2026 guide; merge the two older posts |
+| RBU Mohali / Chandigarh | `/campuses/mohali/` (position 30.6 for "chandigarh" searches), homepage (brand) | `/campuses/mohali/`: title "ITHS at Rayat Bahra University, Mohali (near Chandigarh)", full address and PIN, Google Business Profile, RBU link; supported by the December Punjab guide |
 | Cancer biology | `/programs/cancer-biology/` (+bsc, msc), `want-to-become-a-cancer-research-scientist…`, `bsc-cancer-biology-colleges-in-india…` | Programme page plus the colleges guide; the BSc page takes "bsc cancer biology" and "bsc oncology" queries |
 
 ### 4.3a Internal links to level pages (baseline §2.9)

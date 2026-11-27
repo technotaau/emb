@@ -169,19 +169,19 @@ About 70% of clicks come from queries Google does not show, so query-level concl
 
 Flag ⚑ = two or more pages each with more than 10% of a cluster's clicks.
 
-Source: URL-prefix, 16 months, where the file was uploaded (`_6` to `_12`). For stem cell, Bhopal and Chandigarh, the URL-prefix files were not among the uploads, so those rows use the Domain figures from the Chrome summary (since 29 Apr 2026).
+Source: URL-prefix, 16 months, for every row. The stem cell, Bhopal, Chandigarh and Mohali rows come from the later re-exports, which use a simple "query contains" filter rather than the prompt's regex, so they are narrower than the other rows.
 
 | Cluster | Clicks | Pages sharing clicks | Verdict |
 |---|---|---|---|
 | Embryology ⚑ (URL-prefix) | 368 | Embryologist post 65%, colleges guide 13%, PhD page 11% | **Healthy.** Each answers a different question (become one / which college / PhD). Keep all three; link them to each other and to the BSc and MSc pages |
 | Nutrigenetics ⚑ (URL-prefix) | 110 | Nutrition and dietetics guide 64%, "India's leading" post 21%, programme 15% | The programme ranks at position 14.8. Merge the "leading" post and the 2025 admission post into it (§4.2) |
-| Stem cell ⚑ (Domain, since 29 Apr) | 45 | Programme 69%, its BSc page 24% | Healthy (parent and child). The B.Tech page gets 2 clicks; merge the two older B.Tech posts into it |
+| Stem cell (URL-prefix, contains "stem cell") | 28 | Programme 32%, BSc 29%, old RBU URL 21% (redirected) | Small. "stem cell and regenerative medicine course in india" gets 236 impressions at position 4.6 and **0 clicks**: rewrite the programme title and meta. "bsc molecular medicine stem cell subjects per semester" (214 impressions) shows demand for a semester-wise syllabus. Merge the two older B.Tech posts into the B.Tech page (§4.2). Answer "stem cell therapy courses" searches as academic courses only (guardrail 11) |
 | Cancer ⚑ (URL-prefix) | 202 | Old RBU URL 28% (now 301 to the BSc page), programme 25%, BSc 25%, scientist post 21% | Healthy. Watch "bsc cancer biology", where the programme and BSc pages may swap; make the BSc page the target for "bsc" queries |
 | After 12th ⚑ (URL-prefix) | 140 | Embryologist post 52%, ART guide 33% | Healthy. Different angles (embryologist vs ART course) |
 | Shimla (URL-prefix) | 25 (0 since April 2026) | Old `/apply-now-in-bahra-university/` page | **Visibility lost in the restructure** (§2.0a) |
 | Hoshiarpur (URL-prefix) | 0 | – | **Never ranked** |
-| Bhopal (Domain, since 29 Apr) | 10 | Campus page 70% | Fine. The regex picked up general "scope" searches |
-| Chandigarh/Mohali (Domain, since 29 Apr) | 13 | Homepage 85% | Brand-driven. "bsc embryology colleges in punjab" has 89 impressions and 0 clicks: the planned Punjab guide (plan §4.5, January) fills this |
+| Bhopal (URL-prefix, contains "bhopal") | 5 | Campus page 100% | The campus page's 249 clicks come mostly from hidden or SGSU searches ("sgsu college bhopal" position 9.2, "sgsu bhopal" 7.0), not from "bhopal" searches. Put "SCOPE Global Skills University (SGSU), Bhopal" in the title and H1 (§2.10) |
+| Chandigarh and Mohali (URL-prefix, "chandigarh" plus "mohali") | 12 + 1 | Homepage 92% ("iths chandigarh" 11) | **The RBU campus page is invisible for location searches.** `/campuses/mohali/` ranks at **position 30.6** for "chandigarh" searches and gets no Mohali clicks ("rbu mohali" 40 impressions). Only brand searches reach the homepage. The main campus needs the same local work as Shimla and Hoshiarpur: a title with "Rayat Bahra University, Mohali (near Chandigarh)", full address and PIN, a Google Business Profile check (the "Kurali" listing) and an RBU link. The Punjab guide (December) supports this |
 | Admission/fees (URL-prefix) | 9 | – | Too small to judge. People search fees ("ivf course fees", "embryology course fees"); supports publishing fees (D8) |
 
 **Conclusion:** the overlaps are mostly healthy. Merge only posts with almost no clicks (§5, item 3). Keep every page listed in §2.4.
@@ -405,7 +405,7 @@ Also: `/anthropology/` 301s to the B.Tech stem cell page, and the two anthropolo
    - anthropology posts: after B7.
 
    File 01 (16 months, §4.2) confirms the list and the click numbers. Content first, then the 301.
-4. **Campus visibility for Shimla and Hoshiarpur becomes a priority:**
+4. **Campus visibility for Shimla, Hoshiarpur and the RBU Mohali page becomes a priority** (the Mohali page ranks at position 30 for Chandigarh searches; only Bhopal's page performs):
    - Google Business Profiles (if signage exists);
    - deeper campus pages (programmes, labs, hostel, travel, fees, FAQs, real photos);
    - links from Bahra University and RBPU;
