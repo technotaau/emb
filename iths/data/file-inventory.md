@@ -17,7 +17,7 @@ Chrome saved every export under Google's default name. So the numbers in the nam
 
 | Prompt no. | Export | URL-prefix file | Domain file | Key figure |
 |---|---|---|---|---|
-| 01 | All, last 16 months | `…Performance-on-Search-2026-11-27.zip` | – | 7,196 clicks (chart); 201 pages |
+| 01 | All, last 16 months | `…Performance-on-Search-2026-11-27.zip` (uploaded twice; the second copy, `f1a482ef`, is byte-identical) | – | 7,196 clicks (chart); 201 pages |
 | 02 | All, last 3 months | `_1` | – | 1,759 clicks |
 | 03 | Compare 3 months, year on year | `_2` | – | Pages: 1,797 vs 941 clicks |
 | 04 | Season, 1 May – 31 Aug 2026 | `_3` | – | 2,570 clicks |

@@ -258,6 +258,21 @@ Source: URL-prefix, 16 months, where the file was uploaded (`_6` to `_12`). For 
 
 Devices: 80–95% of clicks are on mobile for the guides (the PhD page is about half desktop). Country: India for almost all clicks.
 
+**Whole site, 16 months (URL-prefix):**
+
+| Measure | Result |
+|---|---|
+| Mobile | 5,498 clicks (76%), position 4.9 |
+| Desktop | 1,524 clicks (21%), position 10.2 |
+| Tablet | 174 clicks |
+| India | 6,816 clicks (95%) |
+| Next countries | UAE 48, US 26, Nepal 23, UK 21 |
+| **"Translated results"** | **174 clicks, 14,879 impressions** |
+
+"Translated results" are visits where Google translated the English page for a user searching in another language, most likely Hindi. This is a sign of Hindi-language demand. It is not a reason to change the English-only decision now, but Hindi summaries of key pages are worth revisiting after the season.
+
+Desktop ranks about 5 positions lower than mobile, so check the desktop layout of the programme pages (heavy sliders, content lower on the page).
+
 ## 3. GA4
 
 ### 3.1 Channels (27 Nov 2025 – 26 Nov 2026; sum of channel rows)
