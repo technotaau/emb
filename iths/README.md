@@ -13,6 +13,7 @@ TechnoTaau Team's planning folder for ITHS, the sister academic institute of Emb
 | `04-baseline-report.md` | Search Console and GA4 baseline (27 Nov 2026): traffic, leads, clusters, indexing, links, measurement fixes and plan changes |
 | `06-ithsedu-website-workflow.md` | ithsedu.in blueprint: how it works with the admissions site, visitor journeys, 18 pages and menu, news routine, 10 build steps, content checklist |
 | `06-ithsedu-website-workflow.html` | Client-ready page of the blueprint (private Artifact: https://claude.ai/artifact/G8ahGuPmgB49EeX4Fzmh2V) |
+| Client note (Claude Doc) | "ITHS Website & Social Media Plan": short, plain-language summary for the client (28 Nov 2026): https://claude.ai/artifact/BHoKXPRqSExKsZGxox6dQZ |
 | `data/raw/` | Raw exports (git-ignored) |
 
 **Current direction in one line:** translationalhealthscience.in = admissions and ads for all campuses (keep every ranking URL); ithsedu.in = official institute site for achievements and announcements; campus social accounts for daily activity, @ithsedu for important news, shared through Collab posts; every topic has one home.
