@@ -199,7 +199,7 @@ Salary and placement sections in guides follow Appendix B.
 
 ## 5. ithsedu.in: the official institute site
 
-### 5.1 Sitemap (launch set: 16 pages plus news)
+### 5.1 Sitemap (launch set: 18 pages plus news items; see `06-ithsedu-website-workflow.md`)
 
 Paths reuse the admissions site's paths where the meaning is the same, so a future merge keeps them (section 14). Paths reserved for the admissions content (`/programs/`, `/campuses/`, `/admission/`, `/apply-now/`, `/iths-set/`, `/blog/`) are **not used** on ithsedu.in.
 

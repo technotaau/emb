@@ -1,0 +1,333 @@
+<title>ithsedu.in Website Blueprint</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: a website blueprint for an institute's leadership. One reading sheet; diagrams built from boxes and arrows
+   that wrap on phones; the sitemap as menu columns. Same indigo and saffron palette as the ITHS Digital Plan page. */
+:root{
+  --bg:#F2F3F8; --paper:#FFFFFF; --ink:#1B2033; --ink-2:#4F5670; --line:#DADDEA; --tint:#ECEEF8;
+  --indigo:#2F3F8F; --indigo-2:#5A6BC4; --on-indigo:#FFFFFF; --saffron:#B76E00; --saffron-tint:#FBF0DD;
+  --ok:#22683F; --ok-bg:#E1F1E7; --risk:#A3302A; --risk-bg:#FBE5E3;
+  --display:"Manrope","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1120; --paper:#151A2E; --ink:#E4E7F4; --ink-2:#A8AEC8; --line:#2A3150; --tint:#1D2440;
+  --indigo:#9AA8F0; --indigo-2:#7C8BE0; --on-indigo:#11152A; --saffron:#F0B055; --saffron-tint:#33260E;
+  --ok:#8FD6A8; --ok-bg:#16301F; --risk:#F29A92; --risk-bg:#3A1A18; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1120; --paper:#151A2E; --ink:#E4E7F4; --ink-2:#A8AEC8; --line:#2A3150; --tint:#1D2440;
+  --indigo:#9AA8F0; --indigo-2:#7C8BE0; --on-indigo:#11152A; --saffron:#F0B055; --saffron-tint:#33260E;
+  --ok:#8FD6A8; --ok-bg:#16301F; --risk:#F29A92; --risk-bg:#3A1A18; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);margin:0;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:28px 56px}
+a{color:var(--indigo);text-underline-offset:2px}
+a:focus-visible{outline:3px solid var(--indigo-2);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);text-wrap:balance;line-height:1.2;margin:0}
+p{margin:0}
+code{font-family:var(--mono);font-size:.82em;background:var(--tint);padding:.06em .34em;border-radius:4px;overflow-wrap:anywhere}
+
+.sheet{max-width:1100px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+.mast{padding:40px 44px 30px;border-bottom:1px solid var(--line);display:grid;gap:14px}
+.kicker{font:700 .76rem/1.3 var(--display);letter-spacing:.13em;text-transform:uppercase;color:var(--saffron)}
+h1{font-size:clamp(2rem,4.4vw,2.8rem);font-weight:800;letter-spacing:-.015em}
+.lede{max-width:66ch;font-size:1.1rem;color:var(--ink-2)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.92rem;color:var(--ink-2);margin:0;padding:0;list-style:none}
+.meta b{color:var(--ink)}
+
+.sec{padding:34px 44px;border-bottom:1px solid var(--line);display:grid;gap:18px}
+.sec:last-of-type{border-bottom:0}
+.sec > *{min-width:0}
+h2{font-size:1.5rem;font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.05rem;font-weight:700}
+.note{max-width:70ch;color:var(--ink-2)}
+
+/* two sites */
+.sites{display:grid;grid-template-columns:minmax(0,1fr) 120px minmax(0,1fr);gap:0;align-items:stretch}
+.site{border:2px solid var(--line);border-radius:14px;padding:18px 20px;display:grid;gap:8px;align-content:start}
+.site.main{border-color:var(--indigo)}
+.site .tag{font:700 .72rem/1.3 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--saffron)}
+.site h3{font-size:1.2rem}
+.site ul{margin:0;padding-left:1.1em;display:grid;gap:3px;font-size:.96rem}
+.bridge{display:grid;place-items:center;text-align:center;padding:8px;font:700 .8rem/1.3 var(--display);color:var(--indigo)}
+.bridge span{display:block;padding:8px 6px;border-radius:999px;background:var(--tint)}
+.bridge .arr{font-size:1.6rem;line-height:1;margin-top:4px}
+
+/* flows */
+.journeys{display:grid;gap:14px}
+.journey{border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+.journey h3 small{font:600 .85rem var(--body);color:var(--ink-2);margin-left:6px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;list-style:none;margin:0;padding:0}
+.flow li{display:flex;align-items:center;gap:6px;font-size:.93rem}
+.flow li span{padding:6px 11px;border-radius:8px;background:var(--tint);border:1px solid var(--line)}
+.flow li.edu span{background:var(--indigo);color:var(--on-indigo);border-color:var(--indigo)}
+.flow li.adm span{background:var(--saffron-tint);border-color:var(--saffron);color:var(--ink)}
+.flow li + li::before{content:"→";color:var(--ink-2);font-weight:700}
+.key{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.86rem;color:var(--ink-2)}
+.key i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;border:1px solid var(--line)}
+
+/* page count */
+.count{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.count div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:2px}
+.count b{font:800 2rem/1.1 var(--display);color:var(--indigo);font-variant-numeric:tabular-nums}
+.count span{font-size:.92rem;color:var(--ink-2)}
+
+.menu{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;padding:12px 16px;background:var(--tint);border-bottom:1px solid var(--line);font:700 .9rem var(--display)}
+.bar .logo{font-weight:800;color:var(--indigo);margin-right:auto}
+.bar .btn{padding:6px 12px;border-radius:999px;background:var(--indigo);color:var(--on-indigo)}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.col{padding:14px 16px;border-right:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.col:last-child{border-right:0}
+.col h3{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--saffron)}
+.col ol{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.col li{display:grid;gap:1px;font-size:.95rem}
+.col li b{font-weight:700}
+.col li code{justify-self:start;font-size:.76rem}
+.n{display:inline-grid;place-items:center;width:1.5em;height:1.5em;border-radius:50%;background:var(--tint);color:var(--indigo);font:800 .72rem var(--display);margin-right:6px;vertical-align:1px}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{font:700 .78rem/1.3 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:var(--tint);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.when{white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:12px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--indigo);color:var(--on-indigo);font:800 .95rem var(--display)}
+.steps li div{display:grid;gap:2px;padding-top:4px}
+.steps li b{font-family:var(--display)}
+.steps li span{color:var(--ink-2);font-size:.95rem}
+.steps li.gate div{background:var(--saffron-tint);border-radius:10px;padding:8px 12px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.box{border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:8px;align-content:start}
+.box ul{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:.96rem}
+.box.rules{border-color:var(--risk-bg);background:var(--risk-bg)}
+.box.rules h3{color:var(--risk)}
+
+.foot{padding:24px 44px 30px;font-size:.88rem;color:var(--ink-2)}
+
+@media (max-width: 860px){
+  .sites{grid-template-columns:minmax(0,1fr)}
+  .bridge .arr{transform:rotate(90deg)}
+  .cols{grid-template-columns:1fr 1fr}
+  .col:nth-child(2){border-right:0}
+  .col:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .count{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+}
+@media (max-width: 560px){
+  .mast,.sec,.foot{padding-left:20px;padding-right:20px}
+  .cols{grid-template-columns:1fr}
+  .col{border-right:0;border-bottom:1px solid var(--line)}
+  .col:last-child{border-bottom:0}
+}
+</style>
+
+<main class="sheet">
+<header class="mast">
+  <p class="kicker">Institute of Translational Health Science (ITHS)</p>
+  <h1>ithsedu.in Website Blueprint</h1>
+  <p class="lede">How the new official website works with the admissions website, how many pages it needs, how news gets published, and the ten steps to launch on 9 February 2027.</p>
+  <ul class="meta">
+    <li>Prepared by <b>TechnoTaau Team</b></li>
+    <li>Sign-off <b>Jakhar Singh</b></li>
+    <li>Date <b>28 November 2026</b></li>
+  </ul>
+</header>
+
+<section class="sec" aria-labelledby="how-h">
+  <h2 id="how-h">How the two websites work together</h2>
+  <div class="sites">
+    <div class="site main">
+      <p class="tag">Official website · trust</p>
+      <h3>ithsedu.in</h3>
+      <ul>
+        <li>Who ITHS is: about, leadership, faculty</li>
+        <li>The four partner universities</li>
+        <li>Research and patent applications</li>
+        <li>Achievements, news and events</li>
+        <li>Media kit, careers, contact</li>
+      </ul>
+    </div>
+    <div class="bridge" aria-hidden="true"><div><span>"Programmes &amp; Admissions" button</span><div class="arr">→</div></div></div>
+    <div class="site">
+      <p class="tag">Admissions website · enquiries</p>
+      <h3>translationalhealthscience.in</h3>
+      <ul>
+        <li>All programmes and course levels</li>
+        <li>All four campus pages</li>
+        <li>Fees, eligibility, ITHS-SET scholarship</li>
+        <li>Enquiry and apply forms</li>
+        <li>Career and course guides; ads land here</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">One topic, one home. ithsedu.in never copies programme, campus or fee pages. It links to them. That keeps Google from seeing two sites competing, and keeps every enquiry in one place.</p>
+</section>
+
+<section class="sec" aria-labelledby="jour-h">
+  <h2 id="jour-h">Four visitor journeys</h2>
+  <div class="key"><span><i style="background:var(--indigo)"></i>On ithsedu.in</span><span><i style="background:var(--saffron-tint);border-color:var(--saffron)"></i>On the admissions website</span><span><i style="background:var(--tint)"></i>Outside the websites</span></div>
+  <div class="journeys">
+    <div class="journey">
+      <h3>A parent checks ITHS<small>before choosing a course</small></h3>
+      <ol class="flow"><li><span>Searches "ITHS" on Google</span></li><li class="edu"><span>ithsedu.in home</span></li><li class="edu"><span>About, Leadership, Partners</span></li><li class="edu"><span>"Programmes &amp; Admissions"</span></li><li class="adm"><span>Campus page</span></li><li class="adm"><span>Enquiry form</span></li><li><span>Counsellor calls within 24 hours</span></li></ol>
+    </div>
+    <div class="journey">
+      <h3>A student looks for a course</h3>
+      <ol class="flow"><li><span>Searches "bsc clinical embryology"</span></li><li class="adm"><span>Programme page</span></li><li class="adm"><span>Campus and level</span></li><li class="adm"><span>Enquiry or apply</span></li></ol>
+    </div>
+    <div class="journey">
+      <h3>A hospital, university or journalist</h3>
+      <ol class="flow"><li class="edu"><span>News, Research or Media kit</span></li><li class="edu"><span>Contact form: Partnership or Media</span></li><li><span>ITHS office replies</span></li></ol>
+    </div>
+    <div class="journey">
+      <h3>Someone wants to work at ITHS</h3>
+      <ol class="flow"><li class="edu"><span>Careers</span></li><li class="edu"><span>Application form</span></li><li><span>HR shortlists</span></li></ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="pages-h">
+  <h2 id="pages-h">How many pages</h2>
+  <div class="count">
+    <div><b>15</b><span>main pages</span></div>
+    <div><b>3</b><span>policy pages</span></div>
+    <div><b>4</b><span>templates, designed once and reused</span></div>
+    <div><b>6+</b><span>news stories at launch</span></div>
+  </div>
+  <p class="note"><b>18 pages to write and design.</b> The templates cover every news story, every event, the thank-you page and the 404 page.</p>
+  <div class="menu" role="figure" aria-label="ithsedu.in menu and pages">
+    <div class="bar"><span class="logo">ithsedu.in</span><span>About</span><span>Partners</span><span>Research</span><span>News &amp; Events</span><span>Careers</span><span>Contact</span><span class="btn">Programmes &amp; Admissions</span></div>
+    <div class="cols">
+      <div class="col">
+        <h3>Home and About</h3>
+        <ol>
+          <li><b><span class="n">1</span>Home</b><code>/</code></li>
+          <li><b><span class="n">2</span>About ITHS</b><code>/about/</code></li>
+          <li><b><span class="n">3</span>Leadership</b><code>/leadership/</code></li>
+          <li><b><span class="n">4</span>Founder profile</b><code>/leadership/jyoti-garhewal/</code></li>
+          <li><b><span class="n">5</span>Director profile</b><code>/leadership/pulakes-purkait/</code></li>
+          <li><b><span class="n">6</span>Faculty</b><code>/faculty/</code></li>
+        </ol>
+      </div>
+      <div class="col">
+        <h3>Partners and Research</h3>
+        <ol>
+          <li><b><span class="n">7</span>Partner universities</b><code>/partners/</code></li>
+          <li><b><span class="n">8</span>Research</b><code>/research/</code></li>
+          <li><b><span class="n">9</span>Publications</b><code>/research/publications/</code></li>
+        </ol>
+      </div>
+      <div class="col">
+        <h3>News and Events</h3>
+        <ol>
+          <li><b><span class="n">10</span>Achievements</b><code>/achievements/</code></li>
+          <li><b><span class="n">11</span>News</b><code>/news/</code></li>
+          <li><b><span class="n">12</span>Events</b><code>/events/</code></li>
+          <li><b><span class="n">13</span>Media kit</b><code>/media/</code></li>
+        </ol>
+      </div>
+      <div class="col">
+        <h3>Careers, Contact, Policies</h3>
+        <ol>
+          <li><b><span class="n">14</span>Careers</b><code>/careers/</code></li>
+          <li><b><span class="n">15</span>Contact</b><code>/contact-us/</code></li>
+          <li><b><span class="n">16</span>Privacy policy</b><code>/privacy-policy/</code></li>
+          <li><b><span class="n">17</span>Terms of use</b><code>/terms/</code></li>
+          <li><b><span class="n">18</span>Grievance redressal</b><code>/grievance-redressal/</code></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Key page</th><th>What goes on it</th></tr></thead>
+    <tbody>
+      <tr><td><b>Home</b></td><td>One-line mission; an "Admissions 2027–28" band at the top linking to the admissions website; latest 3 news stories; the 4 partner universities; research highlights; leadership</td></tr>
+      <tr><td><b>About ITHS</b></td><td>Story and founding year, mission and vision, how the university collaboration works (wording checked by your lawyer), values</td></tr>
+      <tr><td><b>Leadership profiles</b></td><td>Qualifications, ORCID, publications, patent applications with numbers, awards with exact name, issuer and year</td></tr>
+      <tr><td><b>Partner universities</b></td><td>RBU Mohali, RBPU Hoshiarpur, BU Shimla, SGSU Bhopal: what each awards, the campus, approvals, and a link to each campus page on the admissions website</td></tr>
+      <tr><td><b>News</b></td><td>Every announcement, newest first, filterable by category and campus. At launch: the 5 existing news posts move here from the old site, plus at least one new story</td></tr>
+      <tr><td><b>Careers</b></td><td>Moves from the old site with its job listings; the old address redirects here</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><b>Later, only if there is real content:</b> 4–8 more pages, such as research areas, an annual report, alumni, or a page for each partner university.</p>
+</section>
+
+<section class="sec" aria-labelledby="news-h">
+  <h2 id="news-h">How news gets published</h2>
+  <p class="note">Daily activity stays on the campus social accounts. Only institute-level news reaches ithsedu.in: awards, new collaborations, results, published papers, patent applications and programme launches. Target: 2–4 stories a month.</p>
+  <ol class="steps">
+    <li><div><b>Something happens at a campus</b><span>An event, award, visit or result.</span></div></li>
+    <li><div><b>The campus coordinator posts it the same day</b><span>On the campus Instagram and Facebook. Daily activity ends here.</span></div></li>
+    <li class="gate"><div><b>Is it important for the whole institute?</b><span>If yes, send the central team 3–6 real photos, who, what, where and when, and photo consent, on the same day.</span></div></li>
+    <li><div><b>The central team writes the story</b><span>150–400 words, checked against the fact sheet and the claims rules.</span></div></li>
+    <li><div><b>The Director's office approves</b><span>Within 24 hours.</span></div></li>
+    <li><div><b>Published on ithsedu.in/news</b><span>With a date, the place, and captions on every photo.</span></div></li>
+    <li><div><b>Shared on @ithsedu</b><span>As an Instagram Collab post with the campus account, plus LinkedIn. One post, both profiles, no duplicate.</span></div></li>
+  </ol>
+</section>
+
+<section class="sec" aria-labelledby="build-h">
+  <h2 id="build-h">Ten steps to launch</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Step</th><th>What happens</th><th>Who</th><th>By</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Approve this page list and menu</td><td>ITHS leadership</td><td class="when">11 Dec 2026</td></tr>
+      <tr><td>2</td><td>Send the content (checklist below)</td><td>ITHS team</td><td class="when">18 Dec 2026</td></tr>
+      <tr><td>3</td><td>Page layouts (wireframes) for Home, About, Leadership, Partners, Research and News</td><td>TechnoTaau Team</td><td class="when">20 Dec 2026</td></tr>
+      <tr><td>4</td><td>Visual design matched to the ITHS logo and colours</td><td>TechnoTaau Team</td><td class="when">31 Dec 2026</td></tr>
+      <tr><td>5</td><td>Copy for all 18 pages, with search titles and descriptions</td><td>TechnoTaau Team; review by Prof. Purkait</td><td class="when">10 Jan 2027</td></tr>
+      <tr><td>6</td><td>Build in WordPress on the password-protected test site</td><td>Developer</td><td class="when">24 Jan 2027</td></tr>
+      <tr><td>7</td><td>Review and corrections</td><td>ITHS team and TechnoTaau Team</td><td class="when">31 Jan 2027</td></tr>
+      <tr><td>8</td><td>Pre-launch checks: speed, mobile, forms, Google tools, analytics across both sites</td><td>TechnoTaau Team and developer</td><td class="when">6 Feb 2027</td></tr>
+      <tr><td>9</td><td><b>Launch</b>: careers and news move across with redirects; social bios updated</td><td>Developer</td><td class="when"><b>9 Feb 2027</b></td></tr>
+      <tr><td>10</td><td>Weekly checks for 8 weeks; 2–4 news stories a month</td><td>TechnoTaau Team and central team</td><td class="when">From 10 Feb 2027</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="sec" aria-labelledby="need-h">
+  <h2 id="need-h">What we need from you, and the rules</h2>
+  <div class="two">
+    <div class="box">
+      <h3>Content checklist (by 18 December)</h3>
+      <ul>
+        <li>Fact sheet: official name, founding year, campus count, addresses with PIN, phones, emails</li>
+        <li>Mission, vision and 5–8 milestones with years</li>
+        <li>Bios and photos of the Founder, Director and programme heads</li>
+        <li>Faculty list per campus with qualifications and photos</li>
+        <li>For each university: approved collaboration wording, degrees awarded, logo permission</li>
+        <li>Research areas, publications (ORCID), patent application numbers and dates</li>
+        <li>Awards with exact name, issuer and year</li>
+        <li>Real photos of labs, campuses and events, with consent</li>
+        <li>Open job roles; grievance officer contact; logo files</li>
+      </ul>
+    </div>
+    <div class="box rules">
+      <h3>Rules for ithsedu.in</h3>
+      <ul>
+        <li>No copies of programme, campus, fee or admission pages: link to the admissions website</li>
+        <li>No "No. 1" and no unproven "first" or "only"</li>
+        <li>No placement or salary figures on this site</li>
+        <li>"Patent applications" with numbers, never "patents" unless granted</li>
+        <li>Name the degree-awarding university whenever a programme is mentioned</li>
+        <li>Do not call ITHS a university until it has that status</li>
+        <li>Real photos with consent (a parent's consent under 18); no AI-made people</li>
+        <li>Keep the test site password-protected</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">Prepared by TechnoTaau Team. Sign-off: Jakhar Singh. Detailed specification: ITHS master plan, section 5.</footer>
+</main>
