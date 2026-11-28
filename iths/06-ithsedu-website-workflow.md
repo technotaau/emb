@@ -32,7 +32,7 @@
 
 | # | Page | Web address | What goes on it |
 |---|---|---|---|
-| 1 | Home | `/` | One-line mission; "Admissions 2027–28" band linking to the admissions site; latest 3 news items; the 4 partner universities; research highlights; leadership; one fact strip (numbers from the fact sheet only) |
+| 1 | Home | `/` | One-line mission; "Admissions 2027–28" band linking to the admissions site; **"Our Programmes" cards that open the admissions site (§3a)**; latest 3 news items; the 4 partner universities; research highlights; leadership; one fact strip (numbers from the fact sheet only) |
 | 2 | About ITHS | `/about/` | Story, founding year, mission and vision, how the university collaboration works (wording approved by counsel), values |
 | 3 | Leadership | `/leadership/` | Founder, Director and programme heads, with short bios |
 | 4 | Founder profile | `/leadership/jyoti-garhewal/` | Qualifications, research, awards (exact name, issuer, year) |
@@ -78,6 +78,42 @@ About 4–8 more pages, only if there is real content for them:
 - alumni;
 - a page for each partner university;
 - a page for each convocation or conference.
+
+## 3a. The "Our Programmes" section on the home page: where each click goes
+
+The home page shows one card per programme. **Every card opens the matching page on the admissions website**, in the same tab. There is no course page on ithsedu.in, so there is nothing to duplicate, and every enquiry still lands in one place.
+
+**Example:** a visitor on ithsedu.in clicks **Clinical Embryology** → `https://www.translationalhealthscience.in/programs/clinical-embryology/` → chooses a level (BSc, MSc, PhD, PG Diploma) and a campus → enquiry form → the campus counsellor calls within 24 hours.
+
+**What each card shows:**
+- programme name;
+- a 1–2 line description;
+- the levels, as small links;
+- the campuses where it runs, and the awarding universities;
+- a button "View course & apply →", with the small note "opens our admissions website".
+
+| Card on ithsedu.in | Main button goes to | Level links |
+|---|---|---|
+| Clinical Embryology (ART) | `/programs/clinical-embryology/` | BSc `/programs/clinical-embryology/bsc/` · MSc `/msc/` · PhD `/phd/` · PG Diploma `/pgd-clinical-embryology/` |
+| Nutrigenetics & Personalised Nutrition | `/programs/nutrigenetics-personalized-nutrition/` | BSc `/bsc/` · MSc `/msc/` |
+| Stem Cell & Regenerative Medicine | `/programs/stem-cell-regenerative-medicine/` | BSc `/bsc/` · MSc `/msc/` |
+| Cancer Biology | `/programs/cancer-biology/` | BSc `/bsc/` · MSc `/msc/` |
+| B.Tech Stem Cell & Tissue Engineering | `/programs/b-tech-stem-cell-tissue-engineering/` | – |
+| Molecular Medicine | `/molecular-medicine/` | BSc `/molecular-medicine/bsc-molecular-medicine/` · MSc `/molecular-medicine/msc-molecular-medicine/` |
+| Neuroscience | `/msc-neuroscience/` | – |
+| Anthropology | Only if D13 confirms it is offered | – |
+| "View all programmes" | `/programs/` | – |
+
+All addresses are on `https://www.translationalhealthscience.in` (all checked live on 28 Nov 2026).
+
+**Rules for these links:**
+1. **Same tab, not a new tab.** On phones (76% of visitors), new tabs confuse people. The admissions site has the same logo and colours and a slim line "Official website: ithsedu.in" at the top, so the visitor knows they are still with ITHS and can go back.
+2. **No UTM tags on these links.** Both sites share one GA4 setup with cross-domain measurement, so the visit counts as one journey from ithsedu.in to the enquiry. UTM tags between our own sites would break that.
+3. **Track the click.** A GA4 event `programme_click` with the programme name, so we can see which cards send applicants.
+4. **Normal links** (no `nofollow`), with descriptive text ("Clinical Embryology: BSc, MSc, PhD, PG Diploma"). This passes trust from the official site to the course pages.
+5. **One source of truth for facts.** Card text (levels, campuses) comes from the fact sheet and must match the admissions site.
+
+The header button **"Programmes & Admissions"** goes to `/programs/`. The **Partner universities** page links each university to its campus page (`/campuses/mohali/`, `/campuses/hoshiarpur/`, `/campuses/shimla/`, `/campuses/bhopal/`).
 
 ## 4. Menu
 
